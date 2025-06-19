@@ -1,5 +1,11 @@
 import type { Metadata } from 'next'
 import '../styles/all.css'
+import '../styles/css/bootstrap.min.css'
+import '../styles/css/aos.min.css'
+import '../styles/css/magnific-popup.min.css'
+import '../styles/css/meanmenu.css'
+import '../styles/css/responsive.css'
+import '../styles/css/slick.css'
 
 export const metadata: Metadata = {
   title: 'v0 App',
