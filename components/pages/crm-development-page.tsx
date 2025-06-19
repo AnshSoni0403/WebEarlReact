@@ -30,15 +30,15 @@ const CrmDevelopmentPage = () => {
       <div 
         className="blog-hero-banner" 
         style={{
-          backgroundImage: 'url(/img/blog/crm_development_1.jpg)',
+          backgroundImage: 'url(/img/blog/crm_development_2.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="blog-hero-banner-text">
-          <h1>CRM Development Services</h1>
-          <p>Transform your customer relationships with our custom CRM solutions</p>
+          <h1>Know more about CRM Development</h1>
+          <p>The purpose of business is to create and keep a customer.</p>
         </div>
       </div>
       
@@ -55,13 +55,12 @@ const CrmDevelopmentPage = () => {
                 </div>
                 
                 <div className="blog-body-content">
-                  <p><strong>Custom CRM Solutions for Your Business</strong></p>
-                  <p>Customer Relationship Management (CRM) systems are essential for managing your company's interactions with current and potential customers. Our custom CRM solutions are designed to streamline your sales, marketing, and customer service processes.</p>
+                  <p>CRM Application Development means a complete solution for your business. The customer relationship management computer program is developed to sustain customer records at a central place that can be accessed by every employee. The main aim of this computer application is to maintain the customers or clients' records at a centralized location wherein, all departments will have access such that its benefits can be leveraged to uphold the interests of customers or clients, a crucial aspect that will benefit the organization. It is mostly useful to servicing departments such as client servicing and sales.</p>
                   
                   {/* Blog Image */}
                   <div className="blog-inner">
                     <Image 
-                      src="/img/blog/crm_development_2.jpg" 
+                      src="/img/blog/crm_development_1.jpg" 
                       alt="CRM Development" 
                       width={800} 
                       height={450}
@@ -70,22 +69,9 @@ const CrmDevelopmentPage = () => {
                     />
                   </div>
                   
-                  <h3>Our CRM Development Services</h3>
+                  <p>If the data is under one umbrella, it will help the client service, sales or customer departments to improve the sales and the after sales service etc. It also helps to denote variables like changes in the market trend, changes in customers' preferences, shift in purchasing power etc. This application is one of the best computer applications to manage the data in a concise and centralized way. Small or big, any type of organizational or business setup requires such a system for it synchronizes information in just a click.</p><br />
                   
-                  <h4>Custom CRM Development</h4>
-                  <p>We build custom CRM solutions tailored to your specific business needs, ensuring seamless integration with your existing systems and workflows.</p>
-                  
-                  <h4>CRM Integration</h4>
-                  <p>Integrate your CRM with other business applications like email, marketing automation, and ERP systems for a unified business management solution.</p>
-                  
-                  <h4>Mobile CRM</h4>
-                  <p>Access your CRM on the go with our mobile-optimized solutions that keep your team connected from anywhere.</p>
-                  
-                  <h4>CRM Migration</h4>
-                  <p>Seamlessly migrate your existing CRM data to a new system with minimal disruption to your business operations.</p>
-                  
-                  <h4>CRM Support & Maintenance</h4>
-                  <p>Ongoing support and maintenance services to ensure your CRM system continues to meet your business needs.</p>
+                  <p>WebEarl Technologies CRM application development professionals can work wonders for your business, it not only generates information about the clients or customers, but also is of great help to the research and development department of your company. They can study the customers' behavior, their attitude towards the product, the consistency of the sold products etc. These will always help in promoting the business, bringing changes as per the trends. CRM is not only about centralizing the client's data, but also a ready source to generate information about the changing trends.</p>
                 </div>
               </div>
             </div>
@@ -115,22 +101,28 @@ const CrmDevelopmentPage = () => {
                       className="img-fluid"
                       style={{ width: '100%', height: 'auto' }}
                     />
-                    <h4>CRM Solutions</h4>
-                    <p>We help businesses build strong customer relationships through custom CRM solutions that improve efficiency and drive growth.</p>
+                    <h4>CRM Development</h4>
+                    <p>WebEarl Technologies is a information technology company for developing softwares, websites, providing design and online services of different kinds. With CRM, the developers first understand the needs and requirements of the business, before working on the software to maintain the database. It helps to streamline the functioning of various sinews of the organization through the usage of CRM application.</p>
                   </div>
                 </div>
                 
-                {/* Features */}
-                <div className="main-category" style={{ marginTop: '30px' }}>
-                  <h3>Key Features</h3>
+                {/* Category & Features */}
+                <div className="main-category">
+                  <h3>Category & Features</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Contact Management</li>
                       <li>Lead Management</li>
-                      <li>Sales Pipeline</li>
-                      <li>Task Management</li>
-                      <li>Reporting & Analytics</li>
-                      <li>Email Integration</li>
+                      <li>Deal Management</li>
+                      <li>Contact Management</li>
+                      <li>Workflow Automation</li>
+                      <li>Sales Process Builder</li>
+                      <li>Processing Rules</li>
+                      <li>Review Process</li>
+                      <li>Quotes and Finance</li>
+                      <li>Partner Portals</li>
+                      <li>Calendar</li>
+                      <li>Territory Management</li>
+                      <li>Gamification</li>
                     </ul>
                   </div>
                 </div>
