@@ -73,7 +73,7 @@ export default function Header() {
                       </ul>
                     </li>
                     <li>
-                      <Link href="/portfolio">Portfolio</Link>
+                      <Link href="/portfolio">portfolio</Link>
                     </li>
                     <li>
                       <Link href="/blog">Blog</Link>
