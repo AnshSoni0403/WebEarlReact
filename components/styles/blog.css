@@ -1,0 +1,255 @@
+/* Blog Hero Section */
+.blog-home-page {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.blog-hero-home {
+  background-image: url('/img/blog/blog-home.jpg');
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.blog-hero-home::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.blog-home-text {
+  color: #fff;
+  padding: 0 15px;
+}
+
+.blog-home-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.blog-home-text p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Blog List Styles */
+.main-blog-list {
+  padding: 0 15px;
+}
+
+.section-heading-3 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-heading-3 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff4a57;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-heading-3 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f2235;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.section-heading-3 h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: #ff4a57;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Single Blog Styles */
+.home-single-blog {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-single-blog:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.s-blog-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.s-blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.home-single-blog:hover .s-blog-image img {
+  transform: scale(1.05);
+}
+
+.blog-post-date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff4a57;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.s-blog-content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.s-blog-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2235;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.s-blog-content p {
+  color: #666;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.s-blog-content a {
+  color: #ff4a57;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.s-blog-content a:hover {
+  color: #1f2235;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .blog-home-text h1 {
+    font-size: 50px;
+  }
+  
+  .section-heading-3 h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog-home-text h1 {
+    font-size: 42px;
+  }
+  
+  .section-heading-3 h3 {
+    font-size: 32px;
+  }
+  
+  .s-blog-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-hero-home {
+    height: 40vh;
+  }
+  
+  .blog-home-text h1 {
+    font-size: 36px;
+  }
+  
+  .blog-home-text p {
+    font-size: 16px;
+  }
+  
+  .section-heading-3 h4 {
+    font-size: 16px;
+  }
+  
+  .section-heading-3 h3 {
+    font-size: 28px;
+  }
+  
+  .s-blog-content h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-hero-home {
+    height: 50vh;
+  }
+  
+  .blog-home-text h1 {
+    font-size: 32px;
+  }
+  
+  .section-heading-3 {
+    margin-bottom: 40px;
+  }
+  
+  .section-heading-3 h3 {
+    font-size: 26px;
+  }
+  
+  .s-blog-image {
+    height: 200px;
+  }
+}
