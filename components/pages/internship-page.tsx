@@ -30,15 +30,15 @@ const InternshipPage = () => {
       <div 
         className="blog-hero-banner" 
         style={{
-          backgroundImage: 'url(/img/blog/internship_1.jpg)',
+          backgroundImage: 'url(/img/blog/training_and_internship_2.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="blog-hero-banner-text">
-          <h1>Internship & Training Program</h1>
-          <p>Kickstart your career with hands-on experience and industry-relevant training</p>
+          <h1>Know more about Training & Internship</h1>
+          <p>Practice is the hardest part of learning, and training is the essence of transformation.</p>
         </div>
       </div>
       
@@ -55,14 +55,27 @@ const InternshipPage = () => {
                 </div>
                 
                 <div className="blog-body-content">
-                  <p><strong>Launch Your Tech Career with Our Internship Program</strong></p>
-                  <p>Our internship program is designed to provide students and recent graduates with real-world experience in web and mobile application development. Work on live projects and gain hands-on experience that will set you apart in the job market.</p>
+                  <b>Discover a Professional World full of Opportunities!</b>
+                  <p>Right skills and right opportunities are the two main prerequisites to get on the road of success that ultimately leads to a path of constant learning. <b>WebEarl Technologies</b> offers an opportunity to jobseekers to learn through its On-job training program.</p><br />
+                  
+                  <b>By getting involved with our live training procedure you will get,</b>
+                  <ul>
+                    <li>Expert mentors to get <b>100% practical training</b></li>
+                    <li>Be familiar with the vision and working environments of an IT firm</li>
+                    <li>Interoperability amongst <b>different programming languages</b></li>
+                    <li>Learn the best thing and proven practice</li>
+                    <li>Improve the <b>qualities of leadership</b></li>
+                    <li>Understand the <b>complete project life cycle</b> step by step</li>
+                    <li>Improve the logical, analytical as well as <b>communication skills</b></li>
+                    <li>Increase the level of <b>confidence</b></li>
+                    <li>Learn different approaches and tactics to <b>develop high-quality projects</b></li>
+                  </ul>
                   
                   {/* Blog Image */}
                   <div className="blog-inner">
                     <Image 
-                      src="/img/blog/internship_2.jpg" 
-                      alt="Internship Program" 
+                      src="/img/blog/training_and_internship_1.jpg" 
+                      alt="Training & Internship" 
                       width={800} 
                       height={450}
                       className="img-fluid"
@@ -70,45 +83,10 @@ const InternshipPage = () => {
                     />
                   </div>
                   
-                  <h3>Why Choose Our Internship Program?</h3>
+                  <p><b>Evaluation and Placement!</b><br />After the completion of training program, the performance of each candidate will be evaluated and the <b>best performers</b> will get an opportunity to work with the company as a <b>full time employee.</b></p><br />
                   
-                  <h4>Real-World Experience</h4>
-                  <p>Work on actual client projects and gain experience that employers value. Our internship program gives you the opportunity to apply your knowledge in a professional setting.</p>
-                  
-                  <h4>Mentorship</h4>
-                  <p>Learn from experienced professionals who are passionate about helping you grow. Our team will provide guidance and support throughout your internship.</p>
-                  
-                  <h4>Skill Development</h4>
-                  <p>Enhance your technical skills and learn industry best practices. We offer training in the latest technologies and development methodologies.</p>
-                  
-                  <h4>Networking Opportunities</h4>
-                  <p>Connect with industry professionals and build relationships that can help launch your career. Our alumni network includes successful professionals at top companies.</p>
-                  
-                  <h4>Potential Employment</h4>
-                  <p>Outstanding interns may be considered for full-time positions upon successful completion of the program.</p>
-                  
-                  <h3>Available Tracks</h3>
-                  <ul>
-                    <li>Web Development (React, Node.js, PHP, etc.)</li>
-                    <li>Mobile App Development (Android, iOS, Flutter, React Native)</li>
-                    <li>UI/UX Design</li>
-                    <li>Digital Marketing</li>
-                    <li>Quality Assurance</li>
-                  </ul>
-                  
-                  <div className="blog-inner" style={{ marginTop: '30px' }}>
-                    <Image 
-                      src="/img/blog/internship_3.jpg" 
-                      alt="Internship Benefits" 
-                      width={800} 
-                      height={450}
-                      className="img-fluid"
-                      style={{ width: '100%', height: 'auto' }}
-                    />
-                  </div>
-                  
-                  <h3>How to Apply</h3>
-                  <p>To apply for our internship program, please send your resume and a brief cover letter to <a href="mailto:internship@webearl.com">internship@webearl.com</a>. Be sure to include your area of interest and availability.</p>
+                  <b>We groom Fresh Talent and prepare them for Top Jobs!</b>
+                  <p>Right, bright and aspiring graduates are the <b>future of Information Technology</b>. WebEarl Technologies believes in providing <b>equal opportunity</b> to everyone, be it a fresher or an experienced one. The company recognizes the talent and nurtures them through its On-Job Training Program. <b>WebEarl Technologies</b> training program does not include classroom training practice rather it facilitates the students/jobseekers to get a <b>digital learning environment</b>. They get an opportunity to work on <b>updated technology</b> and live projects to enrich their professional capabilities, develop their critical skills and enhance their overall personality.</p>
                 </div>
               </div>
             </div>
@@ -128,42 +106,32 @@ const InternshipPage = () => {
                 
                 {/* About Section */}
                 <div className="author-profile">
-                  <h3>About Our Internship Program</h3>
+                  <h3>About Training & Internship</h3>
                   <div className="author-content">
                     <Image 
-                      src="/img/blog/internship_4.jpg" 
-                      alt="Internship Program" 
+                      src="/img/blog/training_and_internship_3.jpg" 
+                      alt="Training & Internship" 
                       width={300} 
                       height={200}
                       className="img-fluid"
                       style={{ width: '100%', height: 'auto' }}
                     />
-                    <h4>Internship & Training</h4>
-                    <p>Our internship program provides a platform for students and recent graduates to gain practical experience and develop their skills in a professional environment.</p>
+                    <h4>Training & Internship</h4>
+                    <p>WebEarl Technologies provides comprehensive training and internship programs to help aspiring professionals gain practical experience and enhance their skills in the IT industry.</p>
                   </div>
                 </div>
                 
-                {/* Program Details */}
-                <div className="main-category" style={{ marginTop: '30px' }}>
-                  <h3>Program Details</h3>
+                {/* Category */}
+                <div className="main-category">
+                  <h3>Category</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Duration: 3-6 months</li>
-                      <li>Full-time/Part-time options</li>
-                      <li>Stipend available</li>
-                      <li>Certificate upon completion</li>
-                      <li>Flexible start dates</li>
+                      <li>Web Development</li>
+                      <li>Mobile App Development</li>
+                      <li>UI/UX Design</li>
+                      <li>Digital Marketing</li>
+                      <li>Software Testing</li>
                     </ul>
-                  </div>
-                </div>
-                
-                {/* Contact Info */}
-                <div className="main-category" style={{ marginTop: '30px' }}>
-                  <h3>Contact Us</h3>
-                  <div className="category-list">
-                    <p>Email: <a href="mailto:internship@webearl.com">internship@webearl.com</a></p>
-                    <p>Phone: +91-XXXXXXXXXX</p>
-                    <p>Address: Your Company Address Here</p>
                   </div>
                 </div>
               </div>
