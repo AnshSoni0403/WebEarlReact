@@ -30,15 +30,15 @@ const WebErpDevelopmentPage = () => {
       <div 
         className="blog-hero-banner" 
         style={{
-          backgroundImage: 'url(/img/blog/erp_development_1.jpg)',
+          backgroundImage: 'url(/img/blog/erp_4.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="blog-hero-banner-text">
-          <h1>Web ERP Development</h1>
-          <p>Streamline your business operations with our custom Web ERP solutions</p>
+          <h1>Know more about Web ERP Development</h1>
+          <p>Rules always cost the business something. This cost must be balanced against business risks.</p>
         </div>
       </div>
       
@@ -55,13 +55,14 @@ const WebErpDevelopmentPage = () => {
                 </div>
                 
                 <div className="blog-body-content">
-                  <p><strong>Comprehensive Web ERP Solutions</strong></p>
-                  <p>Enterprise Resource Planning (ERP) systems are the backbone of modern businesses. Our custom Web ERP solutions help organizations integrate and manage their core business processes in real-time, improving efficiency and decision-making.</p>
+                  <p>WebEarl is a Custom ERP Development Company that can develop and deliver a custom ERP Solution based on your business requirements and to help you grow your business exponentially by automating all your reoccuring tasks.</p><br />
+                  
+                  <p>Enterprise Resource Planning systems are software systems that prove to be of great help in operations planning, administration and to optimize internal business processes, comprising of manufacturing, supply chain, financials, customer relationship management, human resources as well as warehouse management. With the help of these solutions, a typical ERP software integrates the data and processes of an organization into a single unified system.</p>
                   
                   {/* Blog Image */}
                   <div className="blog-inner">
                     <Image 
-                      src="/img/blog/erp_development_2.jpg" 
+                      src="/img/blog/erp_1.jpg" 
                       alt="Web ERP Development" 
                       width={800} 
                       height={450}
@@ -70,33 +71,14 @@ const WebErpDevelopmentPage = () => {
                     />
                   </div>
                   
-                  <h3>Our Web ERP Development Services</h3>
-                  
-                  <h4>Custom ERP Development</h4>
-                  <p>We develop tailored ERP solutions that align with your business processes, ensuring maximum efficiency and return on investment.</p>
-                  
-                  <h4>ERP Integration</h4>
-                  <p>Seamlessly integrate your ERP system with existing business applications, databases, and third-party services for a unified business management solution.</p>
-                  
-                  <h4>Cloud-Based ERP</h4>
-                  <p>Access your ERP system from anywhere with our secure, scalable cloud-based solutions that reduce infrastructure costs.</p>
-                  
-                  <h4>Mobile ERP</h4>
-                  <p>Empower your workforce with mobile access to critical business data and processes through our mobile-optimized ERP solutions.</p>
-                  
-                  <h4>ERP Migration & Upgrades</h4>
-                  <p>Upgrade your existing ERP system or migrate to a new platform with minimal disruption to your business operations.</p>
-                  
-                  <h3>Key Modules</h3>
-                  <ul>
-                    <li>Financial Management</li>
-                    <li>Supply Chain Management</li>
-                    <li>Human Resources</li>
-                    <li>Customer Relationship Management</li>
-                    <li>Inventory Management</li>
-                    <li>Project Management</li>
-                    <li>Business Intelligence & Reporting</li>
-                  </ul>
+                  <p><b>ERP-SALES MANAGEMENT SOLUTION</b><br />
+                  Our offshore app development team excels in the development of interactive, feature-packed, and high-functioning applications. We manage a multi-thread work environment with a team of proficient designers, developers, engineers, business analysts & architects. They specialize in custom android app development for creating cross-platform as well as native apps for SMEs and large organizations. We provide an edge over your competitors by creating applications to leverage future-proof technology and app trends.</p><br />
+
+                  <p><b>ERP-CUSTOMER RELATION MANAGEMENT</b><br />Our offshore app development team excels in the development of interactive, feature-packed, and high-functioning applications. We manage a multi-thread work environment with a team of proficient designers, developers, engineers, business analysts & architects. They specialize in custom android app development for creating cross-platform as well as native apps for SMEs and large organizations. We provide an edge over your competitors by creating applications to leverage future-proof technology and app trends.</p><br />
+
+                  <p><b>ERP-HUMAN CAPITAL MANAGEMENT</b><br />Our offshore app development team excels in the development of interactive, feature-packed, and high-functioning applications. We manage a multi-thread work environment with a team of proficient designers, developers, engineers, business analysts & architects. They specialize in custom android app development for creating cross-platform as well as native apps for SMEs and large organizations. We provide an edge over your competitors by creating applications to leverage future-proof technology and app trends.</p><br />
+
+                  <p><b>ERP-FINANCE MANAGEMENT SOLUTIONS</b><br />Our offshore app development team excels in the development of interactive, feature-packed, and high-functioning applications. We manage a multi-thread work environment with a team of proficient designers, developers, engineers, business analysts & architects. They specialize in custom android app development for creating cross-platform as well as native apps for SMEs and large organizations. We provide an edge over your competitors by creating applications to leverage future-proof technology and app trends.</p>
                 </div>
               </div>
             </div>
@@ -116,32 +98,37 @@ const WebErpDevelopmentPage = () => {
                 
                 {/* About Section */}
                 <div className="author-profile">
-                  <h3>About Web ERP</h3>
+                  <h3>about Web ERP Development</h3>
                   <div className="author-content">
                     <Image 
-                      src="/img/blog/erp_development_3.jpg" 
+                      src="/img/blog/erp_3.jpg" 
                       alt="Web ERP Development" 
                       width={300} 
                       height={200}
                       className="img-fluid"
                       style={{ width: '100%', height: 'auto' }}
                     />
-                    <h4>Enterprise Resource Planning</h4>
-                    <p>Our Web ERP solutions help businesses of all sizes automate and integrate their core business processes for improved efficiency and growth.</p>
+                    <h4>Web ERP Development</h4><br />
+                    <b>ERP-PRODUCTION MANAGEMENT SOLUTIONS</b>
+                    <p>Our offshore app development team excels in the development of interactive, feature-packed, and high-functioning applications. We manage a multi-thread work environment with a team of proficient designers, developers, engineers, business analysts & architects. They specialize in custom android app development for creating cross-platform as well as native apps for SMEs and large organizations. We provide an edge over your competitors by creating applications to leverage future-proof technology and app trends.</p><br />
                   </div>
                 </div>
                 
-                {/* Benefits */}
-                <div className="main-category" style={{ marginTop: '30px' }}>
-                  <h3>Business Benefits</h3>
+                {/* Category & Features */}
+                <div className="main-category">
+                  <h3>Category & Features</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Improved Operational Efficiency</li>
-                      <li>Better Decision Making</li>
-                      <li>Reduced Operational Costs</li>
-                      <li>Enhanced Collaboration</li>
-                      <li>Scalable Solutions</li>
-                      <li>Real-time Data Access</li>
+                      <li>Finance</li>
+                      <li>Inventory</li>
+                      <li>Purchase</li>
+                      <li>Order Management</li>
+                      <li>Support</li>
+                      <li>Customer Relationship</li>
+                      <li>Time & Expanse</li>
+                      <li>Project Management</li>
+                      <li>Services</li>
+                      <li>Human Resource & Payroll</li>
                     </ul>
                   </div>
                 </div>
