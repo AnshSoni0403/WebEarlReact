@@ -29,9 +29,7 @@ export default function ExpertiseSection() {
                   advertisements via any and every channel you could think of that it&apos;s often more taxing to find
                   that original concept that sets your agency and your client apart from the rest.
                 </p>
-                <div className="section-button">
-                  <Link href="#">get quote</Link>
-                </div>
+                
                 <div className="e-pattern">
                   <Image src="/img/expertise/e-pattern.png" alt="" width={100} height={100} />
                 </div>

@@ -7,8 +7,8 @@ import ExpertiseSection from "@/components/expertise-section"
 import ClientSection from "@/components/client-section"
 import CounterSection from "@/components/counter-section"
 import TestimonialSection from "@/components/testimonial-section"
-import PricingSection from "@/components/pricing-section"
-import BlogSection from "@/components/blog-section"
+// import PricingSection from "@/components/pricing-section"
+// import BlogSection from "@/components/blog-section"
 import CallToAction from "@/components/call-to-action"
 import Footer from "@/components/footer"
 
@@ -24,8 +24,8 @@ export default function HomePage() {
       <ClientSection />
       <CounterSection />
       <TestimonialSection />
-      <PricingSection />
-      <BlogSection />
+      {/* <PricingSection />
+      <BlogSection /> */}
       <CallToAction />
       <Footer />
     </div>

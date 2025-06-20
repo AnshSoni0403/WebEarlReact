@@ -89,13 +89,9 @@ export default function CounterSection() {
                 <h4>Summary</h4>
                 <h3>Achievement we have</h3>
                 <p>
-                  2020 came to an end. Seeing our calendars dotted with success and our shelves bursting with awards, we
-                  know deep down, that our accomplishments were possible only because of the trust of our clients and
-                  the dedication of our team.
+                Webearl Technologies stands as a leader in the IT industry, known for delivering innovative and high-impact digital transformation solutions. With expertise in web development, mobile app creation, and cutting-edge technologies, Webearl helps businesses enhance efficiency and achieve growth. Their client-centric approach and commitment to quality have earned them a reputation as a trusted IT partner across various industries. By staying ahead of industry trends and adopting the latest technologies, Webearl Technologies empowers businesses to thrive in the rapidly evolving digital world.
                 </p>
-                <div className="section-button">
-                  <Link href="#">Request quote</Link>
-                </div>
+                
                 <div className="e-pattern">
                   <Image src="/img/expertise/e-pattern.png" alt="" width={100} height={100} />
                 </div>
