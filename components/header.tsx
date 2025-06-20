@@ -155,10 +155,10 @@ export default function Header() {
               {/* Get Quote Buttons */}
               <div className="navbar-new-btn">
                 <button className="navbar-new-btn-button">
-                  <Link href="/quotation">Get Quote</Link>
+                  <Link href="/Quotation">Get Quote</Link>
                 </button>
                 <button className="navbar-new-btn-button-2">
-                  <Link href="/quotation">></Link>
+                  <Link href="/Quotation">></Link>
                 </button>
               </div>
               

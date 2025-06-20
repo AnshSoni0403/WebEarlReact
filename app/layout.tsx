@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ChatIcons from '@/components/common/ChatIcons'
 import '../styles/all.css'
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/aos.min.css'
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <ChatIcons />
+      </body>
     </html>
   )
 }

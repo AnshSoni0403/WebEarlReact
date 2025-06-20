@@ -2,6 +2,8 @@
 
 import { useEffect } from "react"
 import "../styles/all.css"
+import Header from '../header';
+import Footer from '../footer';
 
 
 export default function CareerPage() {
@@ -39,6 +41,7 @@ export default function CareerPage() {
 
   return (
     <>
+      <Header />
       {/* Google Tag Manager (noscript) */}
       <noscript>
         <iframe
@@ -259,24 +262,9 @@ export default function CareerPage() {
           </div>
         </div>
       </section>
+      <Footer />
 
-      {/* Chat icon */}
-      <section className="messenger-chat">
-        <div>
-          <a href="https://www.facebook.com/messages/t/437017136395453" target="_blank" rel="noopener noreferrer">
-            <img src="./img/messenger-logo.png" className="img-fluid" alt="Chatbot Icon" />
-          </a>
-        </div>
-      </section>
-
-      {/* Chat icon */}
-      <section className="whatsapp-chat">
-        <div>
-          <a href="https://web.whatsapp.com/send?phone=919033251903" target="_blank" rel="noopener noreferrer">
-            <img src="./img/WhatsApp.png" className="img-fluid" alt="Whatsapp Icon" />
-          </a>
-        </div>
-      </section>
+      
 
       
       
