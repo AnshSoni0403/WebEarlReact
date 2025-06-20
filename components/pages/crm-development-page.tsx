@@ -46,37 +46,7 @@ const CrmDevelopmentPage = () => {
       <div className="blog-body">
         <div className="container">
           <div className="row">
-            {/* Left Content */}
-            <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-              <div className="left-side">
-                <div className="blog-post-heading">
-                  <h1>CRM Development</h1>
-                  <span className="publishe-date">With WebEarl Technologies Pvt Ltd</span>
-                </div>
-                
-                <div className="blog-body-content">
-                  <p>CRM Application Development means a complete solution for your business. The customer relationship management computer program is developed to sustain customer records at a central place that can be accessed by every employee. The main aim of this computer application is to maintain the customers or clients' records at a centralized location wherein, all departments will have access such that its benefits can be leveraged to uphold the interests of customers or clients, a crucial aspect that will benefit the organization. It is mostly useful to servicing departments such as client servicing and sales.</p>
-                  
-                  {/* Blog Image */}
-                  <div className="blog-inner">
-                    <Image 
-                      src="/img/blog/crm_development_1.jpg" 
-                      alt="CRM Development" 
-                      width={800} 
-                      height={450}
-                      className="img-fluid"
-                      style={{ width: '100%', height: 'auto' }}
-                    />
-                  </div>
-                  
-                  <p>If the data is under one umbrella, it will help the client service, sales or customer departments to improve the sales and the after sales service etc. It also helps to denote variables like changes in the market trend, changes in customers' preferences, shift in purchasing power etc. This application is one of the best computer applications to manage the data in a concise and centralized way. Small or big, any type of organizational or business setup requires such a system for it synchronizes information in just a click.</p><br />
-                  
-                  <p>WebEarl Technologies CRM application development professionals can work wonders for your business, it not only generates information about the clients or customers, but also is of great help to the research and development department of your company. They can study the customers' behavior, their attitude towards the product, the consistency of the sold products etc. These will always help in promoting the business, bringing changes as per the trends. CRM is not only about centralizing the client's data, but also a ready source to generate information about the changing trends.</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right Sidebar */}
+            {/* Left Sidebar - Moved from Right */}
             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
               <div className="right-side">
                 {/* Search */}
@@ -125,6 +95,36 @@ const CrmDevelopmentPage = () => {
                       <li>Gamification</li>
                     </ul>
                   </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Right Content - Moved from Left */}
+            <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+              <div className="left-side">
+                <div className="blog-post-heading">
+                  <h1>CRM Development</h1>
+                  <span className="publishe-date">With WebEarl Technologies Pvt Ltd</span>
+                </div>
+                
+                <div className="blog-body-content">
+                  <p>CRM Application Development means a complete solution for your business. The customer relationship management computer program is developed to sustain customer records at a central place that can be accessed by every employee. The main aim of this computer application is to maintain the customers or clients' records at a centralized location wherein, all departments will have access such that its benefits can be leveraged to uphold the interests of customers or clients, a crucial aspect that will benefit the organization. It is mostly useful to servicing departments such as client servicing and sales.</p>
+                  
+                  {/* Blog Image */}
+                  <div className="blog-inner">
+                    <Image 
+                      src="/img/blog/crm_development_1.jpg" 
+                      alt="CRM Development" 
+                      width={800} 
+                      height={450}
+                      className="img-fluid"
+                      style={{ width: '100%', height: 'auto' }}
+                    />
+                  </div>
+                  
+                  <p>If the data is under one umbrella, it will help the client service, sales or customer departments to improve the sales and the after sales service etc. It also helps to denote variables like changes in the market trend, changes in customers' preferences, shift in purchasing power etc. This application is one of the best computer applications to manage the data in a concise and centralized way. Small or big, any type of organizational or business setup requires such a system for it synchronizes information in just a click.</p><br />
+                  
+                  <p>WebEarl Technologies CRM application development professionals can work wonders for your business, it not only generates information about the clients or customers, but also is of great help to the research and development department of your company. They can study the customers' behavior, their attitude towards the product, the consistency of the sold products etc. These will always help in promoting the business, bringing changes as per the trends. CRM is not only about centralizing the client's data, but also a ready source to generate information about the changing trends.</p>
                 </div>
               </div>
             </div>

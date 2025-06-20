@@ -119,27 +119,22 @@ const MobileApplicationDevelopmentPage = () => {
                   <div className="blog-post-heading">
                     <span className="publishe-date">Android Application</span>
                   </div>
-                  <p>Android is the most popular mobile operating system in the world, powering billions of devices. Our Android app development services help businesses reach a wider audience with high-quality, performant applications. We specialize in both native Android development using Java and Kotlin, as well as cross-platform solutions.</p>
+                  <p>WebEarl's team of application developers have in-depth knowledge and substantial experience in leveraging the Software Development Kit (SDK) APIs, Android Native Development Kit (NDK), emulator, and debugging resources. It is with a command on Kotlin, Java, C, C++ HTML, and CSS that enables us to deliver innovative apps. They stay informed and updated with the new versions to support customers with creating next-generation solutions. Further, as an Android application development company, we are well versed in the practical app development approach. It is in-line with our objective to help businesses reach the widest audience and achieve maximum ROI.</p><br/>
                   
                   {/* iOS Application Section */}
                   <div className="blog-post-heading">
                     <span className="publishe-date">iOS Application</span>
                   </div>
-                  <p>iOS apps are known for their premium quality and seamless user experience. Our iOS app development team creates stunning, high-performance applications for iPhones and iPads using Swift and Objective-C. We follow Apple's Human Interface Guidelines to ensure your app feels right at home on iOS devices.</p>
+                  <p>WebEarl's helps create engaging apps with its iOS Development focus. We cover the entire development cycle, right from the concept to distribution — it is with the creation of custom applications for iPhone and iPad. We serve customers across industries, ranging from banking, finance, media, logistics, Tourism, <a href='/ecommerce-development'>eCommerce</a>, <a href='/digital-marketing'>social media</a>, healthcare, and hospitality.</p><br/>
                   
                   {/* Cross-Platform Section */}
                   <div className="blog-post-heading">
                     <span className="publishe-date">Cross-Platform Development</span>
                   </div>
-                  <p>Reach both Android and iOS users with a single codebase. Our cross-platform development services using frameworks like Flutter and React Native allow you to save time and resources while delivering native-like performance and user experience across platforms.</p>
+                  <p>Multi-platform mobile application development provides the user experience and functionality of native apps with the multi-platform compatibility of mobile web apps. This approach provides the best of both worlds and has been gaining a lot of acceptance due to the trade-offs with native development and mobile web approaches. In today’s dynamic marketplace where the future is unclear, cross-platform apps provide a middle ground to achieve success for your mobile strategy.</p>
                   
-                  {/* Enterprise Mobility */}
-                  <div className="blog-post-heading">
-                    <span className="publishe-date">Enterprise Mobility Solutions</span>
-                  </div>
-                  <p>Transform your business operations with our enterprise mobility solutions. We develop secure, scalable mobile applications that integrate with your existing systems, enabling your workforce to be more productive and efficient, whether they're in the office or on the go.</p>
+                 
                   
-                  <p>At WebEarl Technologies, we understand that mobile is no longer just a channel but an integral part of the customer journey. Our mobile app development services are designed to help businesses leverage the power of mobile to engage customers, streamline operations, and drive growth.</p>
                 </div>
               </div>
             </div>

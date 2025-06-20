@@ -33,7 +33,7 @@ const AboutPage = () => {
                   <div className="about-section-title">
                     <h4>What We do?</h4>
                   </div>
-                  <p>We design and develop custom mobile applications for Android and iOS platforms and web applications as per customer's needs. Our mobile app developers have the expertise to create mobile applications using AI and ML Technologies. Want to make your own app?</p>
+                  <p>we specialize in designing and developing custom mobile applications for Android and iOS platforms, along with tailored web applications that align perfectly with your business goals. Our highly skilled developers leverage the latest in Artificial Intelligence (AI) and Machine Learning (ML) technologies to create intelligent, scalable apps that not only enhance user engagement but also optimize business processes. Whether you’re launching a new app or upgrading an existing one, we deliver innovative, high-performance solutions. Choose Webearl to transform your ideas into powerful, future-ready mobile and web applications.</p>
                   <div className="section-button">
                     <Link href="/contact">Request Quote</Link>
                   </div>

@@ -129,6 +129,10 @@ const WebErpDevelopmentPage = () => {
                       <li>Project Management</li>
                       <li>Services</li>
                       <li>Human Resource & Payroll</li>
+                      <li>Warehouse</li>
+                      <li>Manufacturing</li>
+                      <li>Asset Management</li>
+                      <li>Document Management System</li>
                     </ul>
                   </div>
                 </div>

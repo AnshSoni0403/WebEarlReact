@@ -72,19 +72,22 @@ const EcommerceDevelopmentPage = () => {
                     />
                   </div>
                   
-                  <h3>Why Choose Us for Your Next eCommerce Development?</h3>
+                  <p><b>Why Choose Us for Your Next eCommerce Development?</b></p>
+                  <p><b>Affordable eCommerce Web Design Service</b></p>
+                  <p>We are very conscious about the timeframes and budget while doing eCommerce web design. We strive to <br/> keep our prices reasonable to deliver great eCommerce store without draining your entire marketing budget.</p><br/>
+
+                  <p><b>Our eCommerce Design and Development Process</b></p>
+                  <p>We are an eCommerce expert in building simplified user experience and navigation with quick response time. Our artwork is completely original and with innovative conceptual coding so that you can run your online store with optimum ease.</p><br/>
+
+                  <p><b>Extensive Portfolio with Years of eCommerce Development Service Experiences</b></p>
+                  <p>We have a track record of improving online businesses and numerous industries for both B2B and B2C clientele. No matter what kind of business you have, we can create something great for you.</p><br/>
+
+                  <p><b>Flexible in eCommerce Re-designing and Re-development</b></p>
+                  <p>You’ll definitely praise us for our flexibility and great communication. We are always flexible about making changes in the eCommerce design, as well as content. We keep continuing doing so until we see your 100% satisfaction and requirements fulfilled.</p><br/>
                   
-                  <h4>Affordable eCommerce Web Design Service</h4>
-                  <p>We are very conscious about the timeframes and budget while doing eCommerce web design. We strive to keep our prices reasonable to deliver great eCommerce store without draining your entire marketing budget.</p>
+                
                   
-                  <h4>Our eCommerce Design and Development Process</h4>
-                  <p>We are an eCommerce expert in building simplified user experience and navigation with quick response time. Our artwork is completely original and with innovative conceptual coding so that you can run your online store with optimum ease.</p>
-                  
-                  <h4>Extensive Portfolio with Years of eCommerce Development Service Experiences</h4>
-                  <p>We have a track record of improving online businesses and numerous industries for both B2B and B2C clientele. No matter what kind of business you have, we can create something great for you.</p>
-                  
-                  <h4>Flexible in eCommerce Re-designing and Re-development</h4>
-                  <p>You'll definitely praise us for our flexibility and great communication. We are always flexible about making changes in the eCommerce design, as well as content. We keep continuing doing so until we see your 100% satisfaction and requirements fulfilled.</p>
+          
                 </div>
               </div>
             </div>
@@ -115,7 +118,11 @@ const EcommerceDevelopmentPage = () => {
                       style={{ width: '100%', height: 'auto' }}
                     />
                     <h4>E Commerce Development</h4>
-                    <p>We provide comprehensive e-commerce solutions that help businesses establish and grow their online presence. Our team specializes in creating user-friendly, secure, and scalable e-commerce platforms that drive sales and enhance customer experience.</p>
+                    <p><b>Online Store Web Design & Online Shop Website Design Frameworks</b></p>
+                    <p>Our dedicated resources can create the complete online store using powerful eCommerce frameworks such as Magento, Woocommerce, Shopify, etc which are loaded with everything you need to be successful in the online business.</p><br/>
+
+                    
+                    <p>Our team of eCommerce experts helps you maintain the highest possible eCommerce standards. We work hand-in-hand with you to identify business objectives and brainstorming project requirements to create a better end-product with the top shopping state-of-art website platforms.</p>
                   </div>
                 </div>
                 
@@ -124,12 +131,18 @@ const EcommerceDevelopmentPage = () => {
                   <h3>Our Services</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Custom E-commerce Development</li>
-                      <li>Magento Development</li>
-                      <li>WooCommerce Development</li>
-                      <li>Shopify Development</li>
-                      <li>Payment Gateway Integration</li>
-                      <li>E-commerce SEO</li>
+                    <li>WordPress + WooCommerce</li>
+                    <li>Magento</li>
+                    <li>Shopify</li>
+                    <li>OpenCart</li>
+                    <li>PrestaShop</li>
+                    <li>BigCommerce</li>
+                    <li>Drupal Commerce</li>
+                    <li>Volusion</li>
+                    <li>OsCommerce</li>
+                    <li>SimpleCart</li>
+                    <li>Squarespace</li>
+
                     </ul>
                   </div>
                 </div>

@@ -74,10 +74,12 @@ const PrototypeDevelopmentPage = () => {
                   </div>
                   
                   <p><b>Why Is Wireframe Important?</b><br />
-                  Wireframe is the skeleton of the product. It is a static low-fidelity representation of the product, which is usually used in the early stage of the product design process. The wireframe can help the team to focus on the structure and layout of the product, rather than the visual design. It is a great tool for communication between designers, developers, and stakeholders.</p><br />
+                  The Wireframe specifies the details of the whole project at the initial stage as the project description. Because it is simple and fast to draw, the wireframe is often used for informal occasions, such as internal communication. Thus, it cannot be used as the user testing material.</p><br />
                   
-                  <p><b>Our Prototype & Wireframe Development Services</b><br />
-                  At WebEarl Technologies, we provide comprehensive prototype and wireframe development services to help you visualize your ideas and validate your concepts before moving to the development phase. Our team of experienced designers and developers work closely with you to create high-fidelity prototypes and wireframes that meet your business requirements and user needs.</p>
+                  <p><b>What Is A Wireframe?</b><br />
+                  The Wireframe is the skeleton of the product. It is a static low-fidelity representation of the product, which is usually used in the early stage of the product design process. The wireframe can help the team to focus on the structure and layout of the product, rather than the visual design. It is a great tool for communication between designers, developers, and stakeholders.</p><br />
+                  
+                  
                 </div>
               </div>
             </div>

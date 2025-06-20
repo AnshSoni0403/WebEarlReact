@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="big-footer" style={{ backgroundImage: "url(/img/f-pattern.png)" }}>
         <div className="container">
           <div className="row">
-            {/* footer logo */}
+            {/* Footer Logo and Address */}
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6">
               <div className="footer-logo">
                 <Link href="#">
@@ -94,45 +94,37 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            {/* footer latest work */}
+
+            {/* Company Links */}
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6">
               <div className="footer-heading">
-                <h3>Latest Works</h3>
+                <h3>Company</h3>
               </div>
               <div className="footer-content">
                 <ul>
                   <li>
-                    <Link href="http://www.startyourtour.com" target="_blank">
-                      Start Your Tour
-                    </Link>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li>
-                    <Link href="" target="_blank">
-                      Minto App
-                    </Link>
+                    <Link href="/portfolio">Portfolio</Link>
                   </li>
                   <li>
-                    <Link href="https://play.google.com/store/apps/details?id=com.nowochat" target="_blank">
-                      Nowo Chat
-                    </Link>
+                    <Link href="/hiring">Hire Us</Link>
                   </li>
                   <li>
-                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN" target="_blank">
-                      Care For Each
-                    </Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <Link href="https://play.google.com/store/apps/details?id=com.knockknock&hl=en" target="_blank">
-                      Knock Knock
-                    </Link>
+                    <Link href="/career">Career</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            {/* footer quick links */}
+
+            {/* Services Links */}
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6">
               <div className="footer-heading">
-                <h3>quick links</h3>
+                <h3>Services</h3>
               </div>
               <div className="footer-content">
                 <ul>
@@ -149,34 +141,52 @@ export default function Footer() {
                     <Link href="/ecommerce-development">E-Commerce Development</Link>
                   </li>
                   <li>
-                    <Link href="/prototype-development">Prototype & Wireframe Development</Link>
+                    <Link href="/api-development">API Development</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            {/* footer subscribe */}
+
+            {/* Newsletter */}
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6">
               <div className="footer-heading">
                 <h3>Get Updates</h3>
               </div>
               <div className="footer-content footer-cont-mar-40">
                 <form action="#">
-                  <input id="leadgenaration" type="email" placeholder="Enter your email" />
+                  <input
+                    id="leadgenaration"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
                   <input id="subscribe" type="submit" value="Subscribe" />
                 </form>
+              </div>
+              <div className="footer-rating-image mt-4">
+                <a
+                  href="https://g.page/r/CUBh5bTBGHQ-EAE/review"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image 
+                    src="/img/webearl-rating.png" 
+                    alt="WebEarl Rating" 
+                    width={150} 
+                    height={30} 
+                    className="img-fluid"
+                  />
+                  <h4 className="mb-1 mt-2">(4.7)</h4>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* copyright */}
+      {/* Copyright */}
       <footer>
         <p>
-          All rights reserved @{" "}
-          <Link href="/" style={{ color: "#FFF" }}>
-            WebEarl
-          </Link>{" "}
-          2013
+          All rights reserved @
+          <Link href="/" style={{ color: "#fff" }}> WebEarl</Link> 2017
         </p>
       </footer>
     </section>

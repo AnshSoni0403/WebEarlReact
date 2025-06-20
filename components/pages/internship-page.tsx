@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
-import '../styles/blog.css';
+// import '../styles/blog.css';
 
 const InternshipPage = () => {
   useEffect(() => {
@@ -50,7 +50,7 @@ const InternshipPage = () => {
             <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
               <div className="left-side">
                 <div className="blog-post-heading">
-                  <h1>Internship & Training</h1>
+                  <h1>Training & Internship</h1>
                   <span className="publishe-date">With WebEarl Technologies Pvt Ltd</span>
                 </div>
                 
@@ -59,7 +59,7 @@ const InternshipPage = () => {
                   <p>Right skills and right opportunities are the two main prerequisites to get on the road of success that ultimately leads to a path of constant learning. <b>WebEarl Technologies</b> offers an opportunity to jobseekers to learn through its On-job training program.</p><br />
                   
                   <b>By getting involved with our live training procedure you will get,</b>
-                  <ul>
+                  <ul style={{ listStyleType: 'disc', marginLeft: '20px', paddingLeft: '20px' }}>
                     <li>Expert mentors to get <b>100% practical training</b></li>
                     <li>Be familiar with the vision and working environments of an IT firm</li>
                     <li>Interoperability amongst <b>different programming languages</b></li>
@@ -117,20 +117,29 @@ const InternshipPage = () => {
                       style={{ width: '100%', height: 'auto' }}
                     />
                     <h4>Training & Internship</h4>
-                    <p>WebEarl Technologies provides comprehensive training and internship programs to help aspiring professionals gain practical experience and enhance their skills in the IT industry.</p>
+                    
                   </div>
                 </div>
                 
                 {/* Category */}
                 <div className="main-category">
-                  <h3>Category</h3>
+                  <h3>Technologies</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Web Development</li>
-                      <li>Mobile App Development</li>
-                      <li>UI/UX Design</li>
+                      <li>Artificial Intelligence (AI)</li>
+                      <li>Internet of Things (IoT)</li>
+                      <li>PHP, WordPress, Magento</li>
+                      <li>ASP.Net (MVC) & NTT Framework</li>
+                      <li>JAVA, Spring, Hibernate, Struts</li>
+                      <li>Python, Flask, Django, Odoo</li>
+                      <li>Web Designing</li>
+                      <li>Graphics Designing</li>
                       <li>Digital Marketing</li>
-                      <li>Software Testing</li>
+                      <li>Android with JAVA & Kotlin</li>
+                      <li>iOS Swift</li>
+                      <li>Flutter</li>
+                      <li>React Native</li>
+  <li>Xamarin</li>
                     </ul>
                   </div>
                 </div>
