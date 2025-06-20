@@ -6,7 +6,7 @@ import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import "../styles/all.css"
 
-export default function Header() {
+export default function Header2() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
   const pathname = usePathname()
@@ -17,19 +17,20 @@ export default function Header() {
 
   return (
     <header id="home" style={{
-      backgroundImage: "url('/img/navbg.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      zIndex: 1000,
-      minHeight: '100px',
-      width: '100%',
-      backgroundColor: 'rgba(255, 255, 255, 0.95)',
-      boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+    //   backgroundImage: "url('/img/navbg.png')",
+    //   backgroundSize: 'cover',
+    //   backgroundPosition: 'center',
+    //   backgroundRepeat: 'no-repeat',
+    //   position: 'fixed',
+    //   top: 0,
+    //   left: 0,
+    //   right: 0,
+    //   zIndex: 1000,
+    //   minHeight: '100px',
+    //   width: '100%',
+    //   backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    //   boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+    //   backdropFilter: 'blur(5px)'
     }}>
       <div className="main-navigation">
         <div className="container">
