@@ -16,7 +16,7 @@ export default function Header() {
   }, [pathname])
 
   return (
-    <header id="home" style={{
+    <header id="home" style={ {
     backgroundImage: "url('/img/navbg.png')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
