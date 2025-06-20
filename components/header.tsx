@@ -132,7 +132,7 @@ export default function Header() {
                     <li>
                       <Link
                         className={activeLink.startsWith('/hiring') ? 'current' : ''}
-                        href="/hiring"
+                        href="hiring"
                         style={{ whiteSpace: 'nowrap' }}
                       >
                         Hire Us <i className="fas fa-briefcase ml-1" />
