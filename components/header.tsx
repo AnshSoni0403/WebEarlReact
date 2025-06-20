@@ -17,12 +17,14 @@ export default function Header() {
 
   return (
     <header id="home" style={{
-      backgroundImage: "url('/img/navbg.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      position: 'relative',
-      zIndex: 1
+    backgroundImage: "url('/img/navbg.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    position: 'relative',
+    zIndex: 1,
+    minHeight: '100px',
+    width: '100%',
     }}>
       <div className="main-navigation">
         <div className="container">

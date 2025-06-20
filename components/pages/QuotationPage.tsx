@@ -131,8 +131,8 @@ export default function QuotationPage() {
     <>
       
 
-
-      <section className="mb-5">
+      <Header />
+      <section className="mp-5 pt-5 mb-5">
 
         <div className="container">
           <div className="request-form-box row">
