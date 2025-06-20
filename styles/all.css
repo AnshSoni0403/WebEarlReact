@@ -425,13 +425,36 @@ ul {
 
 /*2.1 Menu CSS*/
 .main-menu {
-  margin-right: 170px;
+  margin-right: 200px;
 }
 
 .main-menu ul li {
   display: inline-block;
-  margin-left: 25px;
+  margin: 0 10px;
   position: relative;
+}
+
+.main-menu ul li .fa-angle-down {
+  margin-left: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.main-menu ul li .fa-briefcase {
+  margin-left: 5px;
+  font-size: 14px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+/* Adjust the dropdown menu position */
+.main-menu ul li.has-dropdown:hover .dropdown {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
 }
 
 .main-menu ul li a {

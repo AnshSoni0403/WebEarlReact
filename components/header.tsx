@@ -1,12 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from 'next/navigation'
 import "../styles/all.css"
 
 export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [activeLink, setActiveLink] = useState('')
+  const pathname = usePathname()
+
+  useEffect(() => {
+    setActiveLink(pathname)
+  }, [pathname])
 
   return (
     <header id="home" style={{
@@ -30,63 +37,114 @@ export default function Header() {
             </div>
             {/* mainmenu-area */}
             <div className="col-xl-10 col-lg-9 col-md-9">
-              <div className="main-menu f-right">
+              <div className="main-menu f-right" style={{ marginRight: '160px' }}>
                 <nav id="mobile-menu">
-                  <ul>
+                  <ul style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    margin: 0, 
+                    padding: 0,
+                    flexWrap: 'wrap',
+                    justifyContent: 'flex-end'
+                  }}>
                     <li>
-                      <Link className="current" href="/">
-                        home
+                      <Link className={activeLink === '/' ? 'current' : ''} href="/">
+                        Home
                       </Link>
                     </li>
                     <li>
-                      <Link href="/about-us">About Us</Link>
+                      <Link className={activeLink.startsWith('/about-us') ? 'current' : ''} href="/about-us">
+                        About Us
+                      </Link>
                     </li>
                     {/* dropdown menu-area */}
-                    <li>
-                      <Link href="#" onClick={(e) => e.preventDefault()}>
-                        Services <i className="fas fa-angle-down"></i>
+                    <li className="has-dropdown">
+                      <Link 
+                        className={`${activeLink.startsWith('/services') ? 'current' : ''} dropdown-toggle`} 
+                        href="#" 
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        {'Services '}
+                        <i className="fas fa-angle-down" />
                       </Link>
                       <ul className="dropdown">
                         <li>
-                          <Link href="/web-application-development">Web Application Development</Link>
+                          <Link href="/web-application-development">
+                            Web Application Development
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/mobile-application-development">Mobile Application Development</Link>
+                          <Link href="/mobile-application-development">
+                            Mobile Application Development
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/ecommerce-development">E-Commerce Development</Link>
+                          <Link href="/ecommerce-development">
+                            E-Commerce Development
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/digital-marketing">Digital Marketing</Link>
+                          <Link href="/digital-marketing">
+                            Digital Marketing
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/internship">Internship/Training</Link>
+                          <Link href="/internship">
+                            {'Internship/Training'}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/crm-development">CRM Development</Link>
+                          <Link href="/crm-development">
+                            {'CRM Development'}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/web-erp-development">Web ERP Development</Link>
+                          <Link href="/web-erp-development">
+                            {'Web ERP Development'}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/prototype-development">Prototype Development</Link>
+                          <Link href="/prototype-development">
+                            {'Prototype Development'}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/api-development">API Development</Link>
+                          <Link href="/api-development">
+                            {'API Development'}
+                          </Link>
                         </li>
                         <li>
-                          <Link href="/field-force-management">FieldFource Management</Link>
+                          <Link href="/field-force-management">
+                            Field Force Management
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link href="/portfolio">portfolio</Link>
+                      <Link 
+                        className={activeLink.startsWith('/portfolio') ? 'current' : ''} 
+                        href="/portfolio"
+                        style={{ whiteSpace: 'nowrap' }}
+                      >
+                        Portfolio
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/blog">Blog</Link>
+                      <Link
+                        className={activeLink.startsWith('/hiring') ? 'current' : ''}
+                        href="/hiring"
+                        style={{ whiteSpace: 'nowrap' }}
+                      >
+                        Hire Us <i className="fas fa-briefcase ml-1" />
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/contact">contact</Link>
+                      <Link 
+                        className={activeLink.startsWith('/contact') ? 'current' : ''} 
+                        href="/contact"
+                      >
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                 </nav>
