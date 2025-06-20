@@ -27,11 +27,12 @@ export default function TestimonialSection() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
 
   return (
+    /* =========Testimonial Area=========== */
     <section>
       <div className="testimonial-area">
         <div className="container">
           <div className="row">
-            {/* testimonial heading text */}
+            {/* testimonial heading text*/}
             <div className="col-xl-12">
               <div className="section-heading-3">
                 <h4>Testimonial</h4>
@@ -40,39 +41,78 @@ export default function TestimonialSection() {
             </div>
           </div>
           <div className="row testimonial-slider">
+            {/* single testimonial*/}
             <div className="single-testimonial d-flex align-items-center">
               <div className="left-content">
                 <div className="quotation">
-                  <Image src="/img/client/qoute.png" alt="" width={50} height={50} />
+                  <img src="img/client/qoute.png" alt="" />
                 </div>
                 <div className="testi-slider-text">
-                  <p>{testimonials[currentTestimonial].text}</p>
-                  <h4>{testimonials[currentTestimonial].name}</h4>
+                  <p>
+                    WebEarl is incredibly knowledgeable in web development, creating robust, fully functional sites from
+                    scratch. Ashok listens to his clients and delivers outstanding results on time, surpassing
+                    expectations. My company website was entirely designed and developed by WebEarl.
+                  </p>
+                  <h4>Kimberly Morgan</h4>
+                  {/*<h5>CEO,XYZ.com</h5>*/}
                 </div>
                 <div className="right-quote">
-                  <Image src="/img/client/right-quote.png" alt="" width={50} height={50} />
-                </div>
-                <div
-                  className="left-arrow-2"
-                  onClick={() => setCurrentTestimonial((prev) => (prev > 0 ? prev - 1 : testimonials.length - 1))}
-                >
-                  <i className="fas fa-arrow-left"></i>
-                </div>
-                <div
-                  className="right-arrow-2"
-                  onClick={() => setCurrentTestimonial((prev) => (prev < testimonials.length - 1 ? prev + 1 : 0))}
-                >
-                  <i className="fas fa-arrow-right"></i>
+                  <img src="img/client/right-quote.png" alt="" />
                 </div>
               </div>
               <div className="right-content">
                 <div className="testimonial-img">
-                  <Image
-                    src={testimonials[currentTestimonial].image || "/placeholder.svg"}
-                    alt=""
-                    width={300}
-                    height={300}
-                  />
+                  <img src="img/client/Kimberly Morgan.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            {/* single testimonial*/}
+            <div className="single-testimonial d-flex align-items-center">
+              <div className="left-content">
+                <div className="quotation">
+                  <img src="img/client/qoute.png" alt="" />
+                </div>
+                <div className="testi-slider-text">
+                  <p>
+                    Starting my small business was daunting, but WebEarl made the website-building process stress-free
+                    and exciting. Ashok & Team were patient and attentive, ensuring the final product was exactly what I
+                    envisioned—beautiful, smart, and professional.
+                  </p>
+                  <h4>Tamla Boone</h4>
+                  {/*<h5>CEO,XYZ.com</h5>*/}
+                </div>
+                <div className="right-quote">
+                  <img src="img/client/right-quote.png" alt="" />
+                </div>
+              </div>
+              <div className="right-content">
+                <div className="testimonial-img">
+                  <img src="img/client/Tamla Boone.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            {/* single testimonial*/}
+            <div className="single-testimonial d-flex align-items-center">
+              <div className="left-content">
+                <div className="quotation">
+                  <img src="img/client/qoute.png" alt="" />
+                </div>
+                <div className="testi-slider-text">
+                  <p>
+                    WebEarl Technologies quickly restored and improved my website, adding practical innovations while
+                    maintaining the original format. After a poor experience with my previous designer, WebEarl
+                    efficiently rebuilt my web presence, helping me regain my customers' trust.
+                  </p>
+                  <h4>Dr. William Depaula</h4>
+                  {/*<h5>CEO,XYZ.com</h5>*/}
+                </div>
+                <div className="right-quote">
+                  <img src="img/client/right-quote.png" alt="" />
+                </div>
+              </div>
+              <div className="right-content">
+                <div className="testimonial-img">
+                  <img src="img/client/Dr. William Depaula.jpg" alt="" />
                 </div>
               </div>
             </div>
