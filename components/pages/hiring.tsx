@@ -1,9 +1,10 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Header from "../header";
 import Footer from "../footer";
 import "../styles/all.css"
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function HiringPage() {
   useEffect(() => {
@@ -144,6 +145,62 @@ export default function HiringPage() {
     }
   }, [])
 
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const faqData = [
+    {
+      question: "How do I hire dedicated developers or team?",
+      answer: (
+        <ol>
+          <li>Define your project requirements by detailing the technology stack, timeline, budget, and any specific needs to ensure a successful project setup.</li>
+          <li>Choose your engagement model by selecting the option that best fits your needs, whether it's a dedicated team, time and material, or fixed price.</li>
+          <li>Shortlist potential candidates with our help, based on your specific requirements, expertise, and experience.</li>
+          <li>Conduct interviews with shortlisted candidates to evaluate their skills, communication abilities, and cultural fit for your project.</li>
+          <li>Select your team by choosing the ideal dedicated developers or development team that best fits your project needs, and begin your journey to success.</li>
+        </ol>
+      ),
+    },
+    {
+      question: "What our developers can do for you?",
+      answer: (
+        <ol>
+          <li><b>Custom software development:</b> We create tailored software solutions to meet your business needs, including web and mobile applications as well as enterprise solutions.</li>
+          <li><b>E-commerce development:</b> Our team specializes in building robust e-commerce platforms designed to elevate your online business and drive growth.</li>
+          <li><b>Blockchain development:</b> We specialize in creating decentralized applications (DApps), smart contracts, and other blockchain-based solutions to meet your specific needs.</li>
+          <li><b>UI/UX design:</b> We craft intuitive and engaging user interfaces that deliver an optimal user experience across all devices.</li>
+          <li><b>Cloud computing:</b> Our developers excel in developing and deploying cloud-based solutions on leading platforms such as AWS, Azure, and Google Cloud.</li>
+          <li><b>Maintenance and support:</b> Our dedicated team provides ongoing maintenance and support to keep your software solutions up-to-date and secure.</li>
+        </ol>
+      ),
+    },
+    {
+      question: "Can I hire dedicated developer for hourly or project based tasks?",
+      answer: (
+        <ol>
+          <li>Yes, you can hire dedicated developers for hourly or project-based tasks based on your business needs. We offer flexible engagement models tailored to meet your specific requirements.</li>
+          <li>If you have a short-term project or need help with a specific task, you can choose our hourly engagement model. This flexible option lets you hire our developers for a set number of hours, ensuring you only pay for the actual time worked.</li>
+          <li>For long-term projects or ongoing support, choose our project-based engagement model. This approach allows you to hire a dedicated team of developers who will focus exclusively on your project until completion. This model offers a cost-effective solution with enhanced flexibility and control over your project.</li>
+          <li>At WebEarl, we recognize that every business has unique needs, which is why we offer customized engagement models tailored to your specific requirements. Contact us to discover how our flexible engagement options can help you achieve your goals and drive success.</li>
+        </ol>
+      ),
+    },
+    {
+      question: "How much does it cost to hire developers?",
+      answer: (
+        <ol>
+          <li>Determining the cost of hiring a developer depends on factors like the development platform, project type, design complexity, number of pages, features, and maintenance costs. Depending on your business needs, you can hire offshore developers on an hourly or fixed cost basis, providing greater flexibility and control over your project budget.</li>
+        </ol>
+      ),
+    },
+    {
+      question: "Why hire dedicated developers?",
+      answer: (
+        <ol>
+          <li>Hiring dedicated developers offers substantial benefits, including enhanced optimization, greater flexibility, cost-effectiveness, and higher output. Gain access to specialized skills, efficient project management, and rapid response to emergencies. With dedicated developers, you ensure your project meets the highest standards of quality and timeliness, while keeping control over your budget and resources. At WebEarl, our dedicated development team excels in delivering top-tier software solutions across various frameworks and technologies, providing the expertise needed to bring your project to life.</li>
+        </ol>
+      ),
+    },
+  ]
+
   return (
     <>
       {/* Google Tag Manager (noscript) */}
@@ -159,14 +216,11 @@ export default function HiringPage() {
     
 
      
+      <Header />
 
+      {/* Page Banner */}
       {/* Portfolio Image Area */}
-      <div className="hiring-hero-banner">
-        <div className="hiring-hero-text">
-          <h1>Hire Dedicated</h1>
-          <p>Developers</p>
-        </div>
-      </div>
+      
 
       {/* Hiring Process */}
       <div className="container">
@@ -242,7 +296,7 @@ export default function HiringPage() {
                 </ol>
 
                 <div className="section-button">
-                  <a href="quotation.html">Request quote</a>
+                  <a href="/Quotation">Request quote</a>
                 </div>
               </div>
             </div>
@@ -393,124 +447,26 @@ export default function HiringPage() {
           </div>
 
           <div className="accordion">
-            <div className="accordion-item">
-              <div className="accordion-button">How do I hire dedicated developers or team?</div>
-              <div className="accordion-content">
-                <ol>
-                  <li>
-                    Define your project requirements by detailing the technology stack, timeline, budget, and any
-                    specific needs to ensure a successful project setup.
-                  </li>
-                  <li>
-                    Choose your engagement model by selecting the option that best fits your needs, whether {"it's"} a
-                    dedicated team, time and material, or fixed price.
-                  </li>
-                  <li>
-                    Shortlist potential candidates with our help, based on your specific requirements, expertise, and
-                    experience.
-                  </li>
-                  <li>
-                    Conduct interviews with shortlisted candidates to evaluate their skills, communication abilities,
-                    and cultural fit for your project.
-                  </li>
-                  <li>
-                    Select your team by choosing the ideal dedicated developers or development team that best fits your
-                    project needs, and begin your journey to success.
-                  </li>
-                </ol>
+            {faqData.map((faq, idx) => (
+              <div className="accordion-item" key={idx}>
+                <div
+                  className="accordion-button d-flex align-items-center justify-content-between"
+                  style={{ cursor: "pointer", fontWeight: 600, fontSize: 22 }}
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                >
+                  <span>{faq.question}</span>
+                  <span style={{ marginLeft: 16, fontSize: 20, transition: 'transform 0.2s', transform: openFaq === idx ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                    {openFaq === idx ? <FaChevronUp /> : <FaChevronDown />}
+                  </span>
+                </div>
+                <div
+                  className="accordion-content"
+                  style={{ display: openFaq === idx ? "block" : "none", background: "#fff", borderRadius: 8, marginTop: 0, padding: openFaq === idx ? "24px" : "0 24px", boxShadow: openFaq === idx ? "0 2px 12px rgba(0,0,0,0.06)" : "none" }}
+                >
+                  {faq.answer}
+                </div>
               </div>
-            </div>
-
-            <div className="accordion-item">
-              <div className="accordion-button">What our developers can do for you?</div>
-              <div className="accordion-content">
-                <ol>
-                  <li>
-                    <b>Custom software development:</b> We create tailored software solutions to meet your business
-                    needs, including web and mobile applications as well as enterprise solutions.
-                  </li>
-                  <li>
-                    <b>E-commerce development:</b> Our team specializes in building robust e-commerce platforms designed
-                    to elevate your online business and drive growth.
-                  </li>
-                  <li>
-                    <b>Blockchain development:</b> We specialize in creating decentralized applications (DApps), smart
-                    contracts, and other blockchain-based solutions to meet your specific needs.
-                  </li>
-                  <li>
-                    <b>UI/UX design:</b> We craft intuitive and engaging user interfaces that deliver an optimal user
-                    experience across all devices.
-                  </li>
-                  <li>
-                    <b>Cloud computing:</b> Our developers excel in developing and deploying cloud-based solutions on
-                    leading platforms such as AWS, Azure, and Google Cloud.
-                  </li>
-                  <li>
-                    <b>Maintenance and support:</b> Our dedicated team provides ongoing maintenance and support to keep
-                    your software solutions up-to-date and secure.
-                  </li>
-                </ol>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <div className="accordion-button">Can I hire dedicated developer for hourly or project based tasks?</div>
-              <div className="accordion-content">
-                <ol>
-                  <li>
-                    Yes, you can hire dedicated developers for hourly or project-based tasks based on your business
-                    needs. We offer flexible engagement models tailored to meet your specific requirements.
-                  </li>
-                  <li>
-                    If you have a short-term project or need help with a specific task, you can choose our hourly
-                    engagement model. This flexible option lets you hire our developers for a set number of hours,
-                    ensuring you only pay for the actual time worked.
-                  </li>
-                  <li>
-                    For long-term projects or ongoing support, choose our project-based engagement model. This approach
-                    allows you to hire a dedicated team of developers who will focus exclusively on your project until
-                    completion. This model offers a cost-effective solution with enhanced flexibility and control over
-                    your project.
-                  </li>
-                  <li>
-                    At WebEarl, we recognize that every business has unique needs, which is why we offer customized
-                    engagement models tailored to your specific requirements. Contact us to discover how our flexible
-                    engagement options can help you achieve your goals and drive success.
-                  </li>
-                </ol>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <div className="accordion-button">How much does it cost to hire developers?</div>
-              <div className="accordion-content">
-                <ol>
-                  <li>
-                    Determining the cost of hiring a developer depends on factors like the development platform, project
-                    type, design complexity, number of pages, features, and maintenance costs. Depending on your
-                    business needs, you can hire offshore developers on an hourly or fixed cost basis, providing greater
-                    flexibility and control over your project budget.
-                  </li>
-                </ol>
-              </div>
-            </div>
-
-            <div className="accordion-item">
-              <div className="accordion-button">Why hire dedicated developers?</div>
-              <div className="accordion-content">
-                <ol>
-                  <li>
-                    Hiring dedicated developers offers substantial benefits, including enhanced optimization, greater
-                    flexibility, cost-effectiveness, and higher output. Gain access to specialized skills, efficient
-                    project management, and rapid response to emergencies. With dedicated developers, you ensure your
-                    project meets the highest standards of quality and timeliness, while keeping control over your
-                    budget and resources. At WebEarl, our dedicated development team excels in delivering top-tier
-                    software solutions across various frameworks and technologies, providing the expertise needed to
-                    bring your project to life.
-                  </li>
-                </ol>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

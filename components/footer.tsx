@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa";
 import "../styles/all.css"
 
 export default function Footer() {
@@ -28,70 +29,21 @@ export default function Footer() {
                 </p>
               </div>
               {/* footer social */}
-              <div className="social">
-                <ul>
-                  <li>
-                    <Link
-                      className="footer-socials"
-                      href="https://www.facebook.com/webearltechnologiespvtltd"
-                      target="_blank"
-                    >
-                      <i className="fab fa-facebook"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="footer-socials"
-                      href="https://www.instagram.com/webearltechnologies/"
-                      target="_blank"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="footer-socials" href="https://twitter.com/WebEarl" target="_blank">
-                      <i className="fab fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="footer-socials"
-                      href="https://www.youtube.com/channel/UCLIyO2okxv_EzZ9wOMqiv0A"
-                      target="_blank"
-                    >
-                      <i className="fab fa-youtube"></i>
-                    </Link>
-                  </li>
-                  <br />
-                  <li>
-                    <Link
-                      className="footer-socials"
-                      href="https://www.linkedin.com/in/ashok-sindhav-a758808b/"
-                      target="_blank"
-                    >
-                      <i className="fab fa-linkedin"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="footer-socials" href="https://www.behance.net/webearl" target="_blank">
-                      <i className="fab fa-behance"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="footer-socials" href="https://dribbble.com/Webearl" target="_blank">
-                      <i className="fab fa-dribbble"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="footer-socials"
-                      href="https://in.pinterest.com/webearlitsolution/_created/"
-                      target="_blank"
-                    >
-                      <i className="fab fa-pinterest"></i>
-                    </Link>
-                  </li>
-                </ul>
+              <div className="social" style={{ marginTop: 20 }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  <div style={{ display: "flex", gap: 18 }}>
+                    <Link className="footer-socials" href="https://www.facebook.com/webearltechnologiespvtltd" target="_blank"><FaFacebook size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://www.instagram.com/webearltechnologies/" target="_blank"><FaInstagram size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://twitter.com/WebEarl" target="_blank"><FaTwitter size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://www.youtube.com/channel/UCLIyO2okxv_EzZ9wOMqiv0A" target="_blank"><FaYoutube size={28} color="#fff" /></Link>
+                  </div>
+                  <div style={{ display: "flex", gap: 18 }}>
+                    <Link className="footer-socials" href="https://www.linkedin.com/company/webearl-technologies" target="_blank"><FaLinkedin size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://www.behance.net/webearl" target="_blank"><FaBehance size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://dribbble.com/Webearl" target="_blank"><FaDribbble size={28} color="#fff" /></Link>
+                    <Link className="footer-socials" href="https://in.pinterest.com/webearlitsolution/_created/" target="_blank"><FaPinterest size={28} color="#fff" /></Link>
+                  </div>
+                </div>
               </div>
             </div>
 
