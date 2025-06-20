@@ -115,7 +115,9 @@ export default function Footer() {
                     <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <Link href="/career">Career</Link>
+                    <Link href="/career" className="career-link">
+                      <i className="fas fa-briefcase"></i> Career
+                    </Link>
                   </li>
                 </ul>
               </div>

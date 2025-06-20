@@ -114,6 +114,31 @@ const BlogPage = () => {
                 </div>
               ))}
             </div>
+            
+            {/* Pagination */}
+            <div className="col-xl-12">
+              <div className="next-previous-page">
+                <nav aria-label="Blog pagination">
+                  <ul className="pagination">
+                    <li className="page-item disabled">
+                      <a className="page-link" href="#" tabIndex={-1}> &lt; </a>
+                    </li>
+                    <li className="page-item active">
+                      <a className="page-link" href="#">1 <span className="sr-only">(current)</span></a>
+                    </li>
+                    <li className="page-item">
+                      <a className="page-link" href="#">2</a>
+                    </li>
+                    <li className="page-item">
+                      <a className="page-link" href="#">3</a>
+                    </li>
+                    <li className="page-item">
+                      <a className="page-link" href="#">&gt;</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
         </div>
       </div>

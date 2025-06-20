@@ -1,0 +1,12 @@
+.careerLink {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.careerLink i {
+  margin-right: 0px;
+}
+
+.careerLink:hover {
+  color: #ffffff !important;
+}
