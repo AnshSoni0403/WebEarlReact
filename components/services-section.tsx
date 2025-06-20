@@ -19,15 +19,15 @@ export default function ServicesSection() {
               {/* service heading text */}
               <div className="section-heading-2 section-heading-2-p">
                 <h4>our services</h4>
-                <h3>Services We provides</h3>
+                <h3>Services We provide</h3>
                 <p>
                   The <b>WebEarl Technologies Pvt Ltd</b> has the experience and expertise to help your business meet
                   your goals and objectives faster, with less risk. WebEarl is an organization who assists customers in
                   achieving their business objectives with the use of technology.
                 </p>
-                <div className="section-button">
+                {/* <div className="section-button">
                   <Link href="#">get service</Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-7">
