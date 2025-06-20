@@ -9,7 +9,14 @@ export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
 
   return (
-    <header id="home">
+    <header id="home" style={{
+      backgroundImage: "url('/img/navbg.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      position: 'relative',
+      zIndex: 1
+    }}>
       <div className="main-navigation">
         <div className="container">
           <div className="row">
@@ -32,7 +39,7 @@ export default function Header() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/about-us">about</Link>
+                      <Link href="/about-us">About Us</Link>
                     </li>
                     {/* dropdown menu-area */}
                     <li>
@@ -86,8 +93,19 @@ export default function Header() {
               </div>
               {/* mobile menu */}
               <div className="mobile-menu"></div>
+              
+              {/* Get Quote Buttons */}
+              <div className="navbar-new-btn">
+                <button className="navbar-new-btn-button">
+                  <Link href="/quotation">Get Quote</Link>
+                </button>
+                <button className="navbar-new-btn-button-2">
+                  <Link href="/quotation">></Link>
+                </button>
+              </div>
+              
               {/* Search */}
-              <div className="search-box-area">
+              {/* <div className="search-box-area">
                 <div id="search" className={`fade ${isSearchOpen ? "open" : ""}`}>
                   <Link href="#" className="close-btn" onClick={() => setIsSearchOpen(false)}>
                     <em className="fa fa-times"></em>
@@ -99,7 +117,7 @@ export default function Header() {
                     <i className="fa fa-search"></i>
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
