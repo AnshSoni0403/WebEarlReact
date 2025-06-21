@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '../header';
 import Footer from '../footer';
+import BlogSection from '../blog-section';
 
 const AboutPage = () => {
   return (
@@ -110,7 +111,7 @@ const AboutPage = () => {
             <div className="col-xl-6 d-flex align-items-center">
               <div className="section-heading-2 section-heading-2-p-a about-counter-text">
                 <h4>Summary</h4>
-                <h3>Achivement we have</h3>
+                <h3>Achievement we have</h3>
                 <p>At Webearl Technologies, we are proud of our significant achievements in providing top-tier app development solutions Our innovative techniques in user engagement and system integration paired with the latest cutting-edge technology have successfully elevated businesses to new levels of success. Our track record in delivering enterprise mobility solutions highlights our dedication to enhancing business performance and driving growth. With our focus on high-performance, customized solutions, we have built a reputation for excellence, helping businesses excel in today’s competitive digital landscape.</p>
                 
               </div>
@@ -137,7 +138,7 @@ const AboutPage = () => {
                   <div className="single-count-area">
                     <img src="img/counter/project-delivered.png" alt="Profit" className="img-fluid" />
                     <br />
-                    <span className="counter">100</span><span>k+</span>
+                    <span className="counter">100</span><span>+</span>
                     <p>Projects Delivered</p>
                   </div>
                 </div>
@@ -154,6 +155,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <BlogSection />
 
       {/* Call to Action Section */}
       <div className="callto-action">
@@ -172,6 +174,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      
 
       <Footer />
     </>

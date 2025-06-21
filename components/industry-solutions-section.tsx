@@ -5,220 +5,199 @@ import Image from "next/image";
 import Link from "next/link";
 import "../styles/all.css";
 
-interface Industry {
-  key: string;
-  name: string;
-  description: string;
-  image: string;
-}
-
-const industries: Industry[] = [
-  {
-    key: "travel",
-    name: "Travel",
-    description:
-      "Webearl Technologies has extensive experience delivering innovative IT solutions for the travel industry. We specialize in building custom travel management systems, online booking platforms, and mobile apps designed to streamline operations and enhance customer experiences. With features like real-time travel updates, secure payment integration, and personalized itineraries, our solutions help travel agencies, tour operators, and online travel agencies (OTAs) stay competitive. Our expertise ensures that your business can offer seamless travel services and a user-friendly experience across all platforms.",
-    image: "/img/industries/travel.png",
-  },
-  {
-    key: "healthcare",
-    name: "Health Care",
-    description:
-      "We build secure, compliant healthcare apps and platforms—tele-medicine, EHR, lab management, and patient-centric mobile solutions—helping providers give better, faster care.",
-    image: "/img/industries/healthcare.png",
-  },
-  {
-    key: "retail",
-    name: "Retail & E-Commerce",
-    description:
-      "From multi-vendor marketplaces to POS-integrated mobile apps, our retail solutions keep inventory moving and customers engaged across every channel.",
-    image: "/img/industries/retail.png",
-  },
-  {
-    key: "energy",
-    name: "Energy",
-    description:
-      "We craft web & mobile tools for energy businesses—monitoring dashboards, IoT data visualisation, and customer portals—to optimise efficiency and transparency.",
-    image: "/img/industries/energy.png",
-  },
-  {
-    key: "fantasy",
-    name: "Fantasy Game",
-    description:
-      "Our gaming team creates engaging fantasy-sports platforms with real-time leaderboards, secure payments, and social features that keep fans hooked.",
-    image: "/img/industries/fantasy.png",
-  },
-  {
-    key: "chemical",
-    name: "Chemical",
-    description:
-      "ERP integrations, supply-chain tracking, and safety-compliance portals—digital solutions tailored for the chemical sector’s unique challenges.",
-    image: "/img/industries/chemical.png",
-  },
-  {
-    key: "social",
-    name: "Social & Matrimonial",
-    description:
-      "We build scalable social platforms and matrimonial apps featuring advanced search, chat, media upload, and AI-powered match suggestions.",
-    image: "/img/industries/social.png",
-  },
-  {
-    key: "transport",
-    name: "Transport",
-    description:
-      "Fleet tracking, ride-sharing, and logistics portals—our transport solutions optimise routes and elevate user convenience.",
-    image: "/img/industries/transport.png",
-  },
-  {
-    key: "agriculture",
-    name: "Agriculture",
-    description:
-      "IoT-enabled farm monitoring, supply-chain traceability, and marketplace apps that connect producers with buyers in real-time.",
-    image: "/img/industries/agriculture.png",
-  },
+const industries = [
+	{
+		key: "travel",
+		name: "Travel",
+		description:
+			"Webearl Technologies has extensive experience delivering innovative IT solutions for the travel industry. We specialize in building custom travel management systems, online booking platforms, and mobile apps designed to streamline operations and enhance customer experiences. With features like real-time travel updates, secure payment integration, and personalized itineraries, our solutions help travel agencies, tour operators, and online travel agencies (OTAs) stay competitive. Our expertise ensures that your business can offer seamless travel services and a user-friendly experience across all platforms.",
+		image: "/img/travel.jpg",
+		heading: "Innovative IT Solutions for the Travel Industry",
+	},
+	{
+		key: "healthcare",
+		name: "Health Care",
+		description:
+			"At Webearl Technologies, we deliver innovative IT solutions tailored for the healthcare industry, focusing on enhancing patient care and operational efficiency. Our expertise includes developing custom healthcare management systems, secure patient portals, and mobile health apps that offer real-time health monitoring, telemedicine capabilities, and seamless data management. By leveraging cutting-edge technology, we help hospitals, clinics, and healthcare providers streamline workflows, ensure compliance, and improve patient engagement. With Webearl, healthcare organizations are empowered to deliver personalized, efficient care while staying ahead in the digital health revolution.",
+		image: "/img/healthcare.jpg",
+		heading:
+			"Advanced IT Solutions for Healthcare: Empowering Patient Care with Webearl Technologies",
+	},
+	{
+		key: "retail",
+		name: "Retail & E- Commerce",
+		description:
+			"Webearl Technologies offers transformative IT solutions for the retail and e-commerce sectors, aimed at optimizing operations and enhancing customer experiences. We provide custom e-commerce platforms, sophisticated inventory management systems, and secure payment gateways designed to boost sales and improve user engagement. Our solutions include personalized shopping experiences, real-time inventory updates, and seamless payment integrations, empowering both online retailers and brick-and-mortar stores. With Webearl's technology, businesses can drive growth and maintain a competitive edge in the evolving digital commerce landscape.",
+		image: "/img/ecommerce.jpg",
+		heading:
+			"Transforming Retail & E-Commerce with IT Solutions by Webearl Technologies",
+	},
+	{
+		key: "energy",
+		name: "Energy",
+		description:
+			"Webearl Technologies offers groundbreaking IT solutions for the energy sector, designed to enhance efficiency and drive sustainability. Our expertise includes developing advanced energy management systems, real-time monitoring solutions, and comprehensive data analytics platforms. Key features such as smart grid technology, predictive maintenance, and detailed performance analytics enable energy companies to optimize operations, reduce costs, and improve resource management. With Webearl's innovative technology, businesses in the energy sector can stay competitive, adapt to industry changes, and lead in a modern, sustainable energy landscape.",
+		image: "/img/energy.jpg",
+		heading:
+			"Revolutionary IT Solutions for the Energy Sector by Webearl Technologies",
+	},
+	{
+		key: "fantasy",
+		name: "Fantasy Game",
+		description:
+			"Webearl Technologies brings epic IT solutions to the fantasy gaming industry, offering state-of-the-art technology to enhance gameplay and immersive experiences. We specialize in developing custom game engines, dynamic world-building tools, and interactive multiplayer platforms that captivate players and drive engagement. Our solutions include real-time game analytics, advanced AI for NPC behavior, and seamless cross-platform integration to ensure a rich, immersive gaming environment. With Webearl’s technology, fantasy game developers can create enchanting worlds, deliver engaging storylines, and provide players with unforgettable adventures, setting new standards in the gaming universe.",
+		image: "/img/fantasy_gaming.png",
+		heading:
+			"Epic IT Solutions for Fantasy Games: Webearl Technologies' Cutting-Edge Innovations",
+	},
+	{
+		key: "chemical",
+		name: "Chemical",
+		description:
+			"Webearl Technologies delivers transformative IT solutions tailored for the chemical industry, focusing on enhancing efficiency and ensuring regulatory compliance. Our offerings include bespoke chemical process management systems, advanced real-time monitoring solutions, and powerful data analytics platforms. With features like automated quality assurance, predictive maintenance, and integrated safety protocols, we help chemical companies streamline operations, minimize downtime, and manage intricate data with precision. Leveraging Webearl’s innovative technology, the chemical sector can achieve optimized production, superior product quality, and a competitive advantage in a rapidly evolving market.",
+		image: "/img/chemical.jpg",
+		heading:
+			"Transformative IT Solutions for the Chemical Industry: Webearl Technologies Leads the Way",
+	},
+	{
+		key: "social",
+		name: "Social & Matrimonial",
+		description:
+			"Webearl Technologies provides next-gen IT solutions tailored for social and matrimonial platforms, designed to enhance user interaction and optimize matchmaking efficiency. We offer custom social networking solutions, innovative matchmaking algorithms, and engaging user interfaces that facilitate genuine connections. Our technology features real-time messaging, robust data security, and personalized matchmaking experiences to meet the diverse needs of users. With Webearl’s advanced solutions, social and matrimonial platforms can deliver a seamless, secure, and dynamic experience, ensuring higher user satisfaction and engagement in today’s competitive digital environment.",
+		image: "/img/social_and_matrimony.png",
+		heading:
+			"Next-Gen IT Solutions for Social & Matrimonial Platforms by Webearl Technologies",
+	},
+	{
+		key: "transport",
+		name: "Transport",
+		description:
+			"Webearl Technologies delivers revolutionary IT solutions for the transport industry, designed to boost efficiency and streamline operations. Our cutting-edge services include custom transportation management systems, real-time vehicle tracking, and advanced data analytics. We offer features like route optimization, fleet management, and integrated scheduling to enhance operational effectiveness and reduce costs. With Webearl’s innovative technology, transport companies can achieve improved fleet performance, optimized route planning, and timely delivery services. Our solutions empower businesses to stay competitive and excel in a dynamic transport sector with precision and agility.",
+		image: "/img/transport.jpg",
+		heading:
+			"Driving Innovation in the Transport Industry with Webearl Technologies' IT Solutions",
+	},
+	{
+		key: "agriculture",
+		name: "Agriculture",
+		description:
+			"Webearl Technologies delivers transformative IT solutions tailored for the agriculture sector, designed to boost efficiency and promote sustainability. Our services include custom farm management systems, precision agriculture technologies, and advanced data analytics platforms. With features like real-time crop monitoring, automated irrigation systems, and predictive analytics, we help farmers optimize resource usage, enhance crop yields, and streamline agricultural operations. By integrating Webearl’s innovative technology, the agriculture industry can achieve smarter farming practices, drive growth, and meet the demands of a modern agricultural landscape with precision and ease.",
+		image: "/img/agriculture.jpg",
+		heading:
+			"Transformative IT Solutions for Agriculture: Webearl Technologies' Innovative Approach",
+	},
 ];
 
 export default function IndustrySolutionsSection() {
-  const [selected, setSelected] = useState<string>(industries[0].key);
+	const [activeIndex, setActiveIndex] = useState(0);
 
-  const activeIndustry = industries.find((i) => i.key === selected)!;
-
-  return (
-    <section className="industry-section py-5">
-      <div className="container">
-        {/* Section intro */}
-        <div className="section-heading mb-5">
-          <h5 className="text-uppercase text-muted mb-1">Case Study</h5>
-          <h2 className="fw-bold mb-3">We Take Pride In All Of Our Work</h2>
-          <p className="lead lh-base">
-            At Webearl Technologies, we take immense pride in delivering top-notch IT
-            solutions that boost business performance. Our expert team specializes in
-            innovative software development, web design, and IT consulting services
-            that consistently exceed expectations. From mobile app development and
-            cloud solutions to full-scale digital transformation projects, we ensure
-            every solution reflects our unwavering commitment to quality and client
-            satisfaction. Choose Webearl for reliable, cutting-edge technology
-            solutions designed to drive your business success and stay ahead in the
-            digital world.
-          </p>
-        </div>
-        <div className="row g-4">
-          {/* left list */}
-          <div className="col-lg-3">
-            <ul className="industry-list list-unstyled mb-0">
-              {industries.map((ind) => (
-                <li
-                  key={ind.key}
-                  className={
-                    "industry-item d-block py-2 px-3 " +
-                    (ind.key === selected ? "active" : "")
-                  }
-                  onClick={() => setSelected(ind.key)}
-                  role="button"
-                >
-                  {ind.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* right content */}
-          <div className="col-lg-9">
-            <div className="industry-content p-4 bg-white rounded shadow-sm d-flex flex-column flex-md-row align-items-start gap-4">
-              <div className="flex-grow-1">
-                <h4 className="fw-semibold mb-3">
-                  Innovative IT Solutions for the {activeIndustry.name} Industry
-                </h4>
-                <p className="mb-4">{activeIndustry.description}</p>
-                <Link href="/hiring" className="btn hire-btn">
-                  Hire Us
-                </Link>
-              </div>
-              <div className="text-center">
-                <Image
-                  src={activeIndustry.image}
-                  alt={activeIndustry.name}
-                  width={260}
-                  height={200}
-                  className="rounded industry-img"
-                />
-                <p className="mt-2 fw-semibold">{activeIndustry.name}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <style jsx>{`
-        .industry-section {
-          background: #f7fbf6;
-          padding: 100px 0;
-        }
-        .industry-list {
-          background: #ffffff;
-          border-radius: 6px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        }
-        .industry-item {
-          cursor: pointer;
-          padding: 10px 20px;
-          border-left: 3px solid transparent;
-          color: #4b5563;
-          transition: all 0.2s ease;
-        }
-        .industry-item:hover {
-          color: #111827;
-        }
-        .industry-item.active {
-          font-weight: 600;
-          color: #111827;
-          border-color: #30b76a;
-        }
-        .industry-content {
-          background: #ffffff;
-          border-radius: 6px;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        }
-        .hire-btn {
-          background: linear-gradient(90deg, #8bd6b6, #4ab0e3);
-          color: #fff;
-          border: none;
-          padding: 8px 32px;
-        }
-        .hire-btn:hover {
-          opacity: 0.9;
-          color: #fff;
-        }
-        .industry-img {
-          object-fit: cover;
-        }
-        .industry-item {
-          cursor: pointer;
-          border-left: 3px solid transparent;
-          color: #4b5563;
-          transition: all 0.2s ease;
-        }
-        .industry-item:hover {
-          color: #111827;
-        }
-        .industry-item.active {
-          font-weight: 600;
-          color: #111827;
-          border-color: #111827;
-        }
-        .hire-btn {
-          background: linear-gradient(90deg, #8bd6b6, #4ab0e3);
-          color: #fff;
-          border: none;
-        }
-        .hire-btn:hover {
-          opacity: 0.9;
-          color: #fff;
-        }
-        .industry-img {
-          object-fit: cover;
-        }
-      `}</style>
-    </section>
-  );
+	return (
+		<section className="category-section-area">
+			<div className="container">
+				<div className="category-section-header mb-5">
+					<h4>Case Study</h4>
+					<h3>We take pride in all of our work</h3>
+					<p>
+						At Webearl Technologies, we take immense pride in delivering
+						top-notch IT solutions that boost business performance. Our expert
+						team specializes in innovative software development, web design,
+						and IT consulting services that consistently exceed expectations.
+						From mobile app development and cloud solutions to full-scale
+						digital transformation projects, we ensure every solution reflects
+						our unwavering commitment to quality and client satisfaction.
+						Choose Webearl for reliable, cutting-edge technology solutions
+						designed to drive your business success and stay ahead in the
+						digital world.
+					</p>
+				</div>
+				<div className="row">
+					{/* Menu Column */}
+					<div className="col-md-3 col-12">
+						<div className="category-menu-section h-100">
+							<ul
+								className="nav flex-column align-items-start nav-pills"
+								id="v-pills-tab"
+								role="tablist"
+								aria-orientation="vertical"
+							>
+								{industries.map((ind, idx) => (
+									<li className="nav-item" key={ind.key}>
+										<a
+											className={
+												"nav-link" + (activeIndex === idx ? " active" : "")
+											}
+											data-bs-slide-to={idx}
+											role="button"
+											onClick={() => setActiveIndex(idx)}
+											tabIndex={0}
+										>
+											{ind.name}
+										</a>
+									</li>
+								))}
+							</ul>
+						</div>
+					</div>
+					{/* Data Display Column */}
+					<div className="col-md-9 col-12">
+						<div className="category-slides-content h-100">
+							<div className="carousel slide">
+								<div className="carousel-inner">
+									<div className="carousel-item active">
+										<div className="data-slide">
+											<div className="row">
+												<div className="col-sm-8 col-12">
+													<div className="category-slide-content">
+														{/* <p><i className="fa-solid fa-user-doctor"></i></p> */}
+														<h5 className="mb-2">
+															{
+																industries[activeIndex]
+																	.heading
+															}
+														</h5>
+														<p>
+															{
+																industries[activeIndex]
+																	.description
+															}
+														</p>
+														<div className="section-button d-flex">
+															<Link href="/hiring">Hire us</Link>
+														</div>
+													</div>
+												</div>
+												<div className="col-sm-4 col-12">
+													<Image
+														src={
+															industries[activeIndex]
+																.image
+														}
+														alt={
+															industries[activeIndex]
+																.name
+														}
+														width={260}
+														height={200}
+														className="img-fluid"
+													/>
+													<h5 className="text-center mt-2">
+														<b>
+															{
+																industries[activeIndex]
+																	.name
+															}
+														</b>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
