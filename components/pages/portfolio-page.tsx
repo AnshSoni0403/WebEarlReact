@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Header from '../header';
 import Footer from '../footer';
 import '../styles/portfolio.css';
+import '../styles/all.css';
 
 const PortfolioPage = () => {
   // Initialize AOS animation on component mount

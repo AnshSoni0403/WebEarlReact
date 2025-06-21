@@ -2796,7 +2796,7 @@ footer p {
 
 .portfolio-main-area {
   background-color: #fff;
-  margin-top: 120px;
+  margin-top: 0px;
 }
 
 /*17.1 Portfolio Banner*/
@@ -3751,6 +3751,7 @@ footer p {
   text-transform: uppercase;
   text-align: center;
   padding: 50px 0px 50px 0px !important;
+  margin-top: 85px;
 }
 
 .hiring-content-box span {
