@@ -204,7 +204,7 @@ const PortfolioCarousel = () => {
       <style jsx>{`
         .portfolio-area {
           padding: 100px 0;
-          background: #f9f9f9;
+          background: #linear-gradient(to top, #FDFFFD, #F5FFF5, rgba(202, 245, 202, 0.3));;
           position: relative;
           overflow: hidden;
         }
