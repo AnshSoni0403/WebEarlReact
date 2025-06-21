@@ -3150,3 +3150,44 @@ footer p {
 	border: 2px solid transparent
 }
 
+/*============== 21. Call to Action ============*/
+.callto-action {
+    background-color: #191c2f;
+    color: #fff;
+    padding: 45px 0
+}
+ 
+.callto-action-text h5 {
+    font-size: 30px;
+}
+ 
+.callto-action span {
+    font-weight: 700
+}
+ 
+.callto-action-btn {
+    text-align: right
+}
+ 
+.callto-action-btn a {
+    background: transparent;
+    border-radius: 68px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    margin-top: -5px;
+    display: inline-block;
+    font-weight: 600;
+    -webkit-transition: .7s;
+    transition: .7s;
+    border-radius: 30px;
+    transition: .7s;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #fff
+}
+ 
+.callto-action-btn a:hover {
+    background: linear-gradient(252.62deg, #84FC6A 8.92%, #48D6F2 96.59%);
+    border: 2px solid transparent
+}
+ 

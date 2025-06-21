@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import ScrollToTop from './ScrollToTop';
 
 const ChatIcons = () => {
   return (
@@ -45,6 +46,9 @@ const ChatIcons = () => {
           </a>
         </div>
       </section>
+
+      {/* Scroll To Top Icon - placed below Messenger */}
+      <ScrollToTop />
     </>
   );
 };

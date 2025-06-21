@@ -1,4 +1,5 @@
 import Header2 from "@/components/header2"
+import IndustrySolutionsSection from "@/components/industry-solutions-section"
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
@@ -18,6 +19,7 @@ export default function HomePage() {
   return (
     <div>
       <Header2 />
+      
       <HeroSection />
       <AboutSection />
       <ServicesSection />
@@ -26,6 +28,7 @@ export default function HomePage() {
       <ExpertiseSection />
       <ClientSection />
       <CounterSection />
+      <IndustrySolutionsSection />
       <TestimonialCarousel />
       {/* <TestimonialSection /> */}
 
