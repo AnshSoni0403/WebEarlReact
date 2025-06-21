@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa";
 import Header from '../header';
 import Footer from '../footer';
+import CallToAction from "../call-to-action";
 import "../styles/all.css"
 
 export default function QuotationPage() {
@@ -407,7 +408,7 @@ export default function QuotationPage() {
         </div>
       </section>
 
-      
+      <CallToAction />
       <Footer />
 
       

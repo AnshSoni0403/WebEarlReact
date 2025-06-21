@@ -5,32 +5,72 @@ export default function ClientSection() {
   const clients = [
     { src: "/img/syt-logo.png", alt: "Client 1" },
     { src: "/img/client/33.png", alt: "Client 2" },
-    { src: "/img/saptavidhi-logo.png", alt: "Client 4", style: { width: "180px" } },
-    { src: "/img/client/55.png", alt: "Client 3" },
-    { src: "/img/client/66.png", alt: "Client 4" },
-
-    
-
+    { src: "/img/saptavidhi-logo.png", alt: "Client 3" },
+    { src: "/img/client/55.png", alt: "Client 4" },
+    { src: "/img/client/66.png", alt: "Client 5" },
   ]
 
   return (
-    <div className="client-area">
-      <div className="container">
-        <div className="row d-flex align-items-center">
-          {clients.map((client, index) => (
-            <div key={index} className="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
-              <div className="single-client-img">
-                  <Image
-                  src={client.src || "/placeholder.svg"}
-                    alt={client.alt}
-                  width={client.style?.width ? Number.parseInt(client.style.width) : 120}
-                    height={80}
-                  style={client.style}
+    <div className="client-area" style={{
+      width: '100vw',
+      height: '30vh',
+      padding: '4rem 0',
+      overflow: 'hidden'
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+        maxWidth: '1400px',
+        margin: '0 auto',
+        padding: '0 2rem',
+        gap: '1rem',
+        flexWrap: 'wrap'
+      }}>
+        {clients.map((client, index) => (
+          <div key={index} style={{
+            flex: '1',
+            minWidth: '180px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '1rem'
+          }}>
+            <div style={{
+              position: 'relative',
+              width: '100%',
+              height: '80px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <div style={{
+                position: 'relative',
+                width: '100%',
+                height: '100%',
+                maxWidth: '100%',
+                maxHeight: '100%'
+              }}>
+                <Image
+                  src={client.src}
+                  alt={client.alt}
+                  fill
+                  style={{
+                    objectFit: 'contain',
+                    width: '100%',
+                    height: '100%',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0
+                  }}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={index < 2}
                 />
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   )
