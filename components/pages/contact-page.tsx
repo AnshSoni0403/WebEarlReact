@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
+import { FaRegEnvelope, FaMobileAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactPage = () => {
   // Initialize AOS animation on component mount
@@ -47,7 +48,7 @@ const ContactPage = () => {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                 <div className="single-contact-info" data-aos="fade-up">
                   <div className="info-icon">
-                    <i className="far fa-envelope"></i>
+                    <FaRegEnvelope size={56} />
                   </div>
                   <div className="info-content">
                     <h6>Mail address</h6>
@@ -60,7 +61,7 @@ const ContactPage = () => {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin-top-sb-30">
                 <div className="single-contact-info" data-aos="fade-up" data-aos-delay="100">
                   <div className="info-icon">
-                    <i className="fas fa-mobile-alt"></i>
+                    <FaMobileAlt size={48} />
                   </div>
                   <div className="info-content">
                     <h6>Our Phone</h6>
@@ -74,7 +75,7 @@ const ContactPage = () => {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin-top-sb-30">
                 <div className="single-contact-info large-mb-d" data-aos="fade-up" data-aos-delay="200">
                   <div className="info-icon">
-                    <i className="fas fa-map-marker-alt"></i>
+                    <FaMapMarkerAlt size={56} />
                   </div>
                   <div className="info-content">
                     <h6>Our Location</h6>
@@ -108,8 +109,9 @@ const ContactPage = () => {
                 
                 <div className="contact-form">
                   <form action="#">
-                    <input type="text" placeholder="First Name" />
-                    <input className="margin-top-lb-30 margin-top-sb-30" type="text" placeholder="Last Name" />
+                    <div style={{ width: '100%' }}>
+                      <input type="text" placeholder="First Name" style={{ width: '100%' }} />
+                    </div>
                     <input type="email" placeholder="Enter your email" />
                     <textarea placeholder="Write your message"></textarea>
                     <div className="send-btn">

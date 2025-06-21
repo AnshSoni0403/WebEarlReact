@@ -2328,7 +2328,7 @@ footer p {
   background: linear-gradient(253.52deg, #84fc6a 8.92%, #48d6f2 96.59%);
 }
 
-/*=========== 14. Blog List Area CSS =============*/
+/*=========== 14. Blog List Area =============*/
 .blog-hero-home {
   background-image: url(/img/blog/blog-home.jpg);
   width: 100%;
@@ -2663,19 +2663,48 @@ footer p {
 }
 
 .info-icon {
-  margin-top: -125px;
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #48d6f2 0%, #84fc6a 100%);
+  margin: 0 auto 30px auto;
+  box-shadow: 0 8px 32px rgba(72, 214, 242, 0.10);
 }
 
-.info-icon i {
-  background: linear-gradient(180deg, #89f794 0%, #4edae5 100%);
-  color: #fff;
-  height: 90px;
-  width: 90px;
-  line-height: 90px;
+.info-icon svg {
+  color: #fff !important;
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+/* Optional: Make sure text is centered under icon */
+.single-contact-info .info-content {
   text-align: center;
-  border-radius: 50%;
-  font-size: 35px;
+}
+
+/* Optional: Adjust heading color for consistency */
+.single-contact-info .info-content h6 {
+  color: #3ed60e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Optional: Make links blue as in screenshot */
+.single-contact-info .info-content a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Optional: Remove underline on hover */
+.single-contact-info .info-content a:hover {
+  text-decoration: none;
+  color: #000000;
 }
 
 .info-content h6 {
@@ -2685,7 +2714,7 @@ footer p {
   -webkit-background-clip: text;
   font-weight: 700;
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 /*16.4 Contact Form*/
@@ -2726,6 +2755,8 @@ footer p {
   color: #323657;
   padding: 10px 5px;
 }
+
+
 
 .contact-form-area textarea {
   width: 100%;
@@ -3896,7 +3927,7 @@ footer p {
 }
 
 .accordion-button::after {
-  content: "▼";
+  content: "";
   font-size: 18px;
   position: absolute;
   right: 15px;

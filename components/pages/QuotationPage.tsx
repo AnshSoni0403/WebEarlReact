@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa";
 import Header from '../header';
 import Footer from '../footer';
 import "../styles/all.css"
@@ -132,7 +133,7 @@ export default function QuotationPage() {
       
 
       <Header />
-      <section className="mp-5 pt-5 mb-5">
+      <section className="mp-5 pt-0 mb-5">
 
         <div className="container">
           <div className="request-form-box row">
@@ -382,91 +383,21 @@ export default function QuotationPage() {
               
                   <div>
                     <h6>Join Our Community</h6>
-                    <div className="social">
-                      <ul className="">
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://www.facebook.com/webearltechnologiespvtltd"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/fb-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://www.instagram.com/webearltechnologies/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/insta-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://twitter.com/WebEarl"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/x-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://www.linkedin.com/company/webearl-technologies"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/link-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                      </ul>
-                      <ul className="mt-3">
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://www.youtube.com/channel/UCLIyO2okxv_EzZ9wOMqiv0A"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/youtube-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://www.behance.net/webearl"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/be-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://dribbble.com/Webearl"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/dribble-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="footer-socials"
-                            href="https://in.pinterest.com/webearlitsolution/_created/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img src="img/pinrest-logo.png" alt="" className="img-fluid" />
-                          </a>
-                        </li>
-                      </ul>
+                    <div className="social" style={{ marginTop: 10 }}>
+                      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                        <div style={{ display: "flex", gap: 18 }}>
+                          <a className="footer-socials" href="https://www.facebook.com/webearltechnologiespvtltd" target="_blank" rel="noopener noreferrer"><FaFacebook size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://www.instagram.com/webearltechnologies/" target="_blank" rel="noopener noreferrer"><FaInstagram size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://twitter.com/WebEarl" target="_blank" rel="noopener noreferrer"><FaTwitter size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://www.youtube.com/channel/UCLIyO2okxv_EzZ9wOMqiv0A" target="_blank" rel="noopener noreferrer"><FaYoutube size={28} color="#000" /></a>
+                        </div>
+                        <div style={{ display: "flex", gap: 18 }}>
+                          <a className="footer-socials" href="https://www.linkedin.com/company/webearl-technologies" target="_blank" rel="noopener noreferrer"><FaLinkedin size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://www.behance.net/webearl" target="_blank" rel="noopener noreferrer"><FaBehance size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://dribbble.com/Webearl" target="_blank" rel="noopener noreferrer"><FaDribbble size={28} color="#000" /></a>
+                          <a className="footer-socials" href="https://in.pinterest.com/webearlitsolution/_created/" target="_blank" rel="noopener noreferrer"><FaPinterest size={28} color="#000" /></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
