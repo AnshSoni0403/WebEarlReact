@@ -7,6 +7,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import CallToAction from "../call-to-action";
+import { FaSearch } from "react-icons/fa";
 // import '../styles/blog.css';
 
 const InternshipPage = () => {
@@ -96,11 +97,11 @@ const InternshipPage = () => {
             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
               <div className="right-side">
                 {/* Search */}
-                <div className="blog-search">
+                <div className="blog-search" style={{ position: 'relative' }}>
                   <form action="#">
                     <input type="search" id="blog-search" placeholder="Search" />
-                    <button type="submit" className="blog-search-icon-small">
-                      <i className="fas fa-search"></i>
+                    <button type="submit" className="blog-search-icon-small" style={{ background: 'none', border: 'none', position: 'absolute', right: 20, top: 12, cursor: 'pointer' }}>
+                      <FaSearch size={22} color="#bdbdbd" />
                     </button>
                   </form>
                 </div>
