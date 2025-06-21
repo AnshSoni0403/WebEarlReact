@@ -3394,6 +3394,10 @@ footer p {
 }
 
 /*============== 21. Call to Action ============*/
+
+.dropdown-toggle::after{
+  display: none !important;
+}
 .callto-action {
   background-color: #191c2f;
   color: #fff;

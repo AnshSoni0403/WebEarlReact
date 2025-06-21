@@ -6,6 +6,8 @@ import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import "../styles/all.css"
 
+import { FaChevronDown } from "react-icons/fa"
+
 export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
@@ -72,7 +74,7 @@ export default function Header() {
                         onClick={(e) => e.preventDefault()}
                       >
                         {'Services '}
-                        <i className="fas fa-angle-down" />
+                        <FaChevronDown />
                       </Link>
                       <ul className="dropdown">
                         <li>
