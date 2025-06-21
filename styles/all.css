@@ -2679,8 +2679,8 @@ footer p {
 
 .info-icon svg {
   color: #fff !important;
-  width: 56px;
-  height: 56px;
+  width: 35px;
+  height: 35px;
   display: block;
 }
 
@@ -2692,7 +2692,7 @@ footer p {
 /* Optional: Adjust heading color for consistency */
 .single-contact-info .info-content h6 {
   color: #3ed60e;
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
 }

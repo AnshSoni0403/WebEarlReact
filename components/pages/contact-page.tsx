@@ -80,8 +80,8 @@ const ContactPage = () => {
                   </div>
                   <div className="info-content">
                     <h6>Our Location</h6>
-                    <p><b>Ahmedabad:</b><br />Cradle, EDII<br />Gandhinagar - Ahmedabad Rd,<br />Next to Apollo Hospital,<br />Bhat, Ahmedabad, Gujarat 382428</p>
-                    <p className="mt-3"><b>Anand:</b><br />1/2 Top Floor, Super Market,<br />Nana Bajar, Vidhyanagar</p>
+                    <p><b>Ahmedabad:</b>Cradle, EDII<br />Gandhinagar - Ahmedabad Rd,<br />Next to Apollo Hospital,<br />Bhat, Ahmedabad, Gujarat 382428</p>
+                    <p className="mt-3"><b>Anand:</b>1/2 Top Floor, Super Market,<br />Nana Bajar, Vidhyanagar</p>
                   </div>
                 </div>
               </div>

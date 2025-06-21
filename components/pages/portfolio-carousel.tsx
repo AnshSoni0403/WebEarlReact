@@ -133,13 +133,35 @@ const PortfolioCarousel = () => {
     <section className="portfolio-area">
       <div className="container">
         <div className="row">
-          <div className="col-xl-12">
-            <div className="section-heading-2">
+          <div className="col-xl-6 col-lg-6 col-md-6">
+            <div className="section-heading-2 portfolio-pattern">
               <h4>Case Study</h4>
               <h3>Our Recent Work</h3>
+              <p>
+                  We take pride in all of our work and our proud at what we do.
+                  We view all of our websites as
+                  <a href="portfolio.html"> ongoing projects</a>, evolving as
+                  your business changes and grows. Below is a sample of some of
+                  <a href="portfolio.html"> our projects.</a>
+                </p>
+                <div className="p-pattern">
+                  <img src="img/portfolio/p-pattern.png" alt="" />
+                </div>
             </div>
           </div>
+         
+            <div className="col-xl-6 col-lg-6 col-md-6">
+              <div className="portfolio-button-area">
+                <div className="section-button">
+                  <a href="/portfolio">view more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row portfolio-item-slider">
+          
         </div>
+        
         
         <div className="row portfolio-item-slider">
           <div className="col-12 position-relative">
@@ -359,7 +381,7 @@ const PortfolioCarousel = () => {
            height: 45px;
            line-height: 45px;
            text-align: center;
-           background: #4a6cf7;
+           background: linear-gradient(238.45deg, #42d2ff 3.32%, #49e513 98.6%);;
            color: #fff;
            border-radius: 50%;
            border: none;
@@ -410,6 +432,11 @@ const PortfolioCarousel = () => {
         
         .portfolio-item-slider .row > div {
           animation: slideIn 0.5s ease forwards;
+        }
+
+        .carousel-control carousel-control-prev{
+        border: solid 2px #75dded;
+        background: linear-gradient(238.45deg, #42d2ff 3.32%, #49e513 98.6%);
         }
         
         @media (max-width: 1200px) {
