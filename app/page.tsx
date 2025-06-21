@@ -3,6 +3,7 @@ import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
 import PortfolioSection from "@/components/portfolio-section"
+import PortfolioCarousel from "@/components/pages/portfolio-carousel"
 import ExpertiseSection from "@/components/expertise-section"
 import ClientSection from "@/components/client-section"
 import CounterSection from "@/components/counter-section"
@@ -20,7 +21,8 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
+      <PortfolioCarousel />
       <ExpertiseSection />
       <ClientSection />
       <CounterSection />

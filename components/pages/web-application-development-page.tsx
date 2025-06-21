@@ -7,6 +7,8 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
+import CallToAction from "../call-to-action";
+import { FaSearch } from "react-icons/fa";
 
 const WebApplicationDevelopmentPage = () => {
   useEffect(() => {
@@ -84,8 +86,8 @@ const WebApplicationDevelopmentPage = () => {
                 <div className="blog-search">
                   <form action="#">
                     <input type="search" id="blog-search" placeholder="Search" />
-                    <button type="submit" className="blog-search-icon-small">
-                      <i className="fas fa-search"></i>
+                    <button type="submit" className="blog-search-icon-small" style={{ background: 'none', border: 'none', position: 'absolute', right: 20, top: 70, cursor: 'pointer' }}>
+                      <FaSearch size={22} color="#bdbdbd" />
                     </button>
                   </form>
                 </div>
@@ -133,7 +135,7 @@ const WebApplicationDevelopmentPage = () => {
           </div>
         </div>
       </div>
-      
+      <CallToAction />
       <Footer />
     </>
   );
