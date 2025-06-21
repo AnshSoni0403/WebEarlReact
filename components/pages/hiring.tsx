@@ -5,6 +5,7 @@ import Header from "../header";
 import Footer from "../footer";
 import "../styles/all.css"
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import CallToAction from "../call-to-action";
 
 export default function HiringPage() {
   useEffect(() => {
@@ -667,7 +668,7 @@ export default function HiringPage() {
           </a>
         </div>
       </section>
-
+      <CallToAction/>
       <Footer />
     </>
   )

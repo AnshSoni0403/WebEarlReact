@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Header from '../header';
 import Footer from '../footer';
 '../styles/blog.css';
+import CallToAction from '../call-to-action';
 
 const BlogPage = () => {
   // Initialize AOS animation on component mount
@@ -142,7 +143,7 @@ const BlogPage = () => {
           </div>
         </div>
       </div>
-
+<CallToAction />
       <Footer />
     </>
   );

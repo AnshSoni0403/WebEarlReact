@@ -7,6 +7,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
+import CallToAction from "../call-to-action";
 
 const EcommerceDevelopmentPage = () => {
   useEffect(() => {
@@ -151,6 +152,8 @@ const EcommerceDevelopmentPage = () => {
           </div>
         </div>
       </div>
+      {/* Call to Action */}
+      <CallToAction/>
       
       <Footer />
     </>

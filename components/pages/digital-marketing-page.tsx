@@ -7,6 +7,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
+import CallToAction from "../call-to-action";
 
 const DigitalMarketingPage = () => {
   useEffect(() => {
@@ -218,7 +219,7 @@ const DigitalMarketingPage = () => {
           </div>
         </div>
       </div>
-      
+      <CallToAction/>
       <Footer />
     </>
   );

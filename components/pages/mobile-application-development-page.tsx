@@ -7,6 +7,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
+import CallToAction from "../call-to-action";
 
 const MobileApplicationDevelopmentPage = () => {
   useEffect(() => {
@@ -141,6 +142,8 @@ const MobileApplicationDevelopmentPage = () => {
           </div>
         </div>
       </div>
+      {/* Call to Action Section */}
+      <CallToAction/>
       
       <Footer />
     </>

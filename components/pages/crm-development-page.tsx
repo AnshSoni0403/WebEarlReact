@@ -7,6 +7,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
+import CallToAction from "../call-to-action";
 
 const CrmDevelopmentPage = () => {
   useEffect(() => {
@@ -131,7 +132,7 @@ const CrmDevelopmentPage = () => {
           </div>
         </div>
       </div>
-      
+      <CallToAction />
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import "../styles/all.css"
+import CallToAction from "../components/call-to-action";
 
 export default function BlogSection() {
   const blogPosts = [
@@ -72,6 +73,8 @@ export default function BlogSection() {
           </div>
         </div>
       </div>
+     
     </section>
+
   )
 }

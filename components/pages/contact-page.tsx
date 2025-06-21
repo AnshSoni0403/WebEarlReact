@@ -8,6 +8,7 @@ import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
 import { FaRegEnvelope, FaMobileAlt, FaMapMarkerAlt } from "react-icons/fa";
+import CallToAction from "../call-to-action";
 
 const ContactPage = () => {
   // Initialize AOS animation on component mount
@@ -142,22 +143,12 @@ const ContactPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="google-map">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.899753342866!2d72.5561193150217!3d23.09820608491193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83a9d9a2f7a5%3A0x63b7f4f8f9b8b8b8!2sWebEarl%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="450" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy"
-                  title="WebEarl Technologies Location"
-                ></iframe>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-
+       <CallToAction/>
       <Footer />
     </>
   );

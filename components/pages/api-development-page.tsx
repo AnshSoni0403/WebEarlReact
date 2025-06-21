@@ -8,6 +8,7 @@ import Footer from '../footer';
 import '../styles/all.css';
 import '../styles/blog.css';
 import Head from 'next/head';
+import CallToAction from "../call-to-action";
 
 const ApiDevelopmentPage = () => {
   useEffect(() => {
@@ -244,7 +245,9 @@ const ApiDevelopmentPage = () => {
           </div>
         </div>
       </div>
+      <CallToAction />
 
+      {/* Footer */}
       <Footer />
     </>
   );

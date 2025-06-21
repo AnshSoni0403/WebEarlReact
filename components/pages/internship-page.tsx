@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Header from '../header';
 import Footer from '../footer';
 import '../styles/all.css';
+import CallToAction from "../call-to-action";
 // import '../styles/blog.css';
 
 const InternshipPage = () => {
@@ -148,7 +149,7 @@ const InternshipPage = () => {
           </div>
         </div>
       </div>
-      
+      <CallToAction/>
       <Footer />
     </>
   );
