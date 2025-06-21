@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ChatIcons from '@/components/common/ChatIcons'
+import Preloader from '@/components/common/Preloader'
 import '../styles/all.css'
 import '../styles/css/bootstrap.min.css'
 import '../styles/css/aos.min.css'
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        
+        <Preloader />
         {children}
         <ChatIcons />
       </body>
