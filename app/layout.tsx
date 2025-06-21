@@ -8,6 +8,7 @@ import '../styles/css/meanmenu.css'
 import '../styles/css/responsive.css'
 import '../styles/css/slick.css'
 
+
 export const metadata: Metadata = {
   title: 'Ansh Krish Clone',
   description: 'WebEarl Technologies Pvt Ltd',
