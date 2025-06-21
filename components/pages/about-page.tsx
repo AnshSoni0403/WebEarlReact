@@ -35,7 +35,7 @@ const AboutPage = () => {
                   </div>
                   <p>we specialize in designing and developing custom mobile applications for Android and iOS platforms, along with tailored web applications that align perfectly with your business goals. Our highly skilled developers leverage the latest in Artificial Intelligence (AI) and Machine Learning (ML) technologies to create intelligent, scalable apps that not only enhance user engagement but also optimize business processes. Whether you’re launching a new app or upgrading an existing one, we deliver innovative, high-performance solutions. Choose Webearl to transform your ideas into powerful, future-ready mobile and web applications.</p>
                   <div className="section-button">
-                    <Link href="/contact">Request Quote</Link>
+                    <Link href="/hiring">Hire Us</Link>
                   </div>
                 </div>
               </div>
@@ -66,10 +66,8 @@ const AboutPage = () => {
                   <div className="about-section-title">
                     <h4>Most Dedicated team we have</h4>
                   </div>
-                  <p>We have a team of 20+ associates (UI/UX designers, mobile app developers, Web Developers, API Developers, Digital Marketers and quality analysts) in our work centers to deliver strategically designed and creatively crafted mobile application development services to take your business to the next level.</p>
-                  <div className="section-button">
-                    <Link href="/contact">Request Quote</Link>
-                  </div>
+                  <p>our diverse team of 20+ experts, including UI/UX designers, mobile app developers, web developers, API developers, digital marketers, and quality analysts, is dedicated to delivering top-notch mobile application development services. We strategically design and creatively craft custom mobile apps and web applications to elevate your business. By integrating innovative design with advanced technology, we ensure that every project enhances user experience and drives business growth. Trust Webearl Technologies for comprehensive, high-quality solutions that take your business to the next level.</p>
+                  
                 </div>
               </div>
             </div>
@@ -87,12 +85,8 @@ const AboutPage = () => {
                   <div className="about-section-title">
                     <h4>Working with Startup</h4>
                   </div>
-                  <p>We are transforming startup ideas into success stories. Our commitment and cutting edge
-                    software technology will bolster your new dare to fly high. We help start-ups to nurture
-                    their ideas and provide them with their respective launch pads.</p>
-                  <div className="section-button">
-                    <Link href="/contact">Request Quote</Link>
-                  </div>
+                  <p>we excel in transforming startup ideas into successful ventures. Our commitment to cutting-edge software technology and innovative solutions provides startups with the essential tools and support needed to thrive. We specialize in nurturing startup ideas and offering comprehensive launch pad services to help turn your vision into a thriving reality. With our expert guidance and advanced technology, your startup can confidently soar to new heights and achieve remarkable success..</p>
+                  
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6 margin-top-lb-30 margin-top-sb-30">
@@ -100,13 +94,8 @@ const AboutPage = () => {
                   <div className="about-section-title">
                     <h4>Working with Enterprise</h4>
                   </div>
-                  <p>We offer a spectrum of app development solutions with innovative methods for engagement
-                    and system integration with support of cutting edge latest technology that takes
-                    businesses to the next level. Our experts have built such enterprise mobility solutions
-                    which will enhance your business.</p>
-                  <div className="section-button">
-                    <Link href="/contact">Request Quote</Link>
-                  </div>
+                  <p>We offer a comprehensive range of app development solutions utilizing innovative methods for engagement and system integration all supported by the latest cutting-edge technology. Our expert team specializes in creating enterprise mobility solutions that elevate businesses to the next level. By leveraging advanced technology and strategic design, we enhance your business operations and drive growth through tailored, high-performance app development. Choose us to transform your ideas into effective, scalable solutions that set your business apart.</p>
+                  
                 </div>
               </div>
             </div>
@@ -122,49 +111,42 @@ const AboutPage = () => {
               <div className="section-heading-2 section-heading-2-p-a about-counter-text">
                 <h4>Summary</h4>
                 <h3>Achivement we have</h3>
-                <p>We started WebEarl in just 8000/- INR and 2 computers on rent, and our first year turnover
-                  was 1400000/- INR. In this journey we launch two own products, 100+ satisfied Clients and
-                  350+ Completed Projects and many more projects are in progress. MOU with MBIT Engineering
-                  College for Industrial Training for Final year Students. MOU with SAN SA Company from
-                  Tunisia, South Africa for IT Development Services. Like to know about us? Let's work with
-                  and be a part of our journey </p>
-                <div className="section-button">
-                  <Link href="/contact">Request quote</Link>
-                </div>
+                <p>At Webearl Technologies, we are proud of our significant achievements in providing top-tier app development solutions Our innovative techniques in user engagement and system integration paired with the latest cutting-edge technology have successfully elevated businesses to new levels of success. Our track record in delivering enterprise mobility solutions highlights our dedication to enhancing business performance and driving growth. With our focus on high-performance, customized solutions, we have built a reputation for excellence, helping businesses excel in today’s competitive digital landscape.</p>
+                
               </div>
             </div>
             <div className="col-xl-6">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
                   <div className="single-count-area">
-                    <img src="/img/counter/manager.png" alt="Clients" className="img-fluid" />
+                    <img src="img/counter/year-in-business.png" alt="Clients" className="img-fluid" />
                     <br />
-                    <span className="counter">102</span><span>+</span>
-                    <p>clients</p>
+                    <span className="counter">7</span><span>+</span>
+                    <p>Years in business</p>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
                   <div className="single-count-area">
-                    <img src="/img/counter/chart.png" alt="Projects" className="img-fluid" />
+                    <img src="img/counter/team-member.png" alt="Projects" className="img-fluid" />
                     <br />
-                    <span className="counter">398</span><span>+</span>
-                    <p>projects</p>
+                    <span className="counter">20</span><span>+</span>
+                    <p>Team Members</p>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <div className="single-count-area">
-                    <img src="/img/counter/coin.png" alt="Profit" className="img-fluid" />
+                    <img src="img/counter/project-delivered.png" alt="Profit" className="img-fluid" />
                     <br />
-                    <span className="counter">89</span><span>k+</span>
-                    <p>profit</p>
+                    <span className="counter">100</span><span>k+</span>
+                    <p>Projects Delivered</p>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 margin-top-sb-30">
                   <div className="single-count-area">
-                    <img src="/img/counter/theme.png" alt="Coming Soon" className="img-fluid" />
+                    <img src="img/counter/client-served.png" alt="Coming Soon" className="img-fluid" />
                     <br />
-                    <span className="counter">28</span><span>+</span>
-                    <p>coming</p>
+                    <span className="counter">50</span><span>+</span>
+                    <p>Clients Served</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ import PortfolioCarousel from "@/components/pages/portfolio-carousel"
 import ExpertiseSection from "@/components/expertise-section"
 import ClientSection from "@/components/client-section"
 import CounterSection from "@/components/counter-section"
-
+import TestimonialCarousel from "@/components/pages/testimonial-carousel"
 import TestimonialSection from "@/components/testimonial-section"
 // import PricingSection from "@/components/pricing-section"
 // import BlogSection from "@/components/blog-section"
@@ -26,8 +26,8 @@ export default function HomePage() {
       <ExpertiseSection />
       <ClientSection />
       <CounterSection />
-     
-      <TestimonialSection />
+      <TestimonialCarousel />
+      {/* <TestimonialSection /> */}
 
       {/* <PricingSection />
       <BlogSection /> */}
