@@ -123,7 +123,7 @@ Website: www.enventer.com
 --------------------------------------------------------------*/
 
 /*==================== 1. Default Theme CSS ===================*/
-
+@import "@fontsource/nunito";
 html,
 body {
   height: 100%;
