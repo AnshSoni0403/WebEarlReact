@@ -12,6 +12,7 @@ export default function SYT() {
     <>
       <style jsx>{`
         .hero-section {
+        margin-top: 50px;
           background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
           min-height: 100vh;
           position: relative;
@@ -217,7 +218,7 @@ export default function SYT() {
         .screen-content {
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(270deg, #00b0e7 0%, #75f389 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -313,6 +314,9 @@ export default function SYT() {
           max-width: 600px;
           margin: 0 auto;
         }
+        .feature-column{
+          margin-bottom: 50px;
+        }
 
         .feature-card {
           padding: 30px;
@@ -322,8 +326,10 @@ export default function SYT() {
           height: 100%;
           transition: all 0.3s ease;
           border: 1px solid #e2e8f0;
-          margin-bottom: 40px;
-        }
+          margin-bottom: 50px;
+      }
+          
+      
 
         .feature-card:hover {
           transform: translateY(-5px);
@@ -446,15 +452,15 @@ export default function SYT() {
 
                     <Link 
                       href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" 
-                      className="btn-secondary-cta"
+                      className="callto-action-btn"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '8px',
-                        textDecoration: 'none'
-                      }}
+                      // style={{
+                      //   display: 'flex',
+                      //   alignItems: 'center',
+                      //   gap: '8px',
+                      //   textDecoration: 'none'
+                      // }}
                     >
                       📱 View Demo
                     </Link>
