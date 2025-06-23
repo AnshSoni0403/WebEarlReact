@@ -8,6 +8,73 @@ import "@/styles/all.css"
 
 export default function SYT() {
   const [scrollY, setScrollY] = useState(0)
+  const [activeDevice, setActiveDevice] = useState("desktop")
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  // Screen arrays for different devices
+  const desktopScreens = ["/img/SYTHome.png", "/img/SYTTours.png", "/img/SYTBooking.png", "/img/SYTProfile.png"]
+
+  const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
+
+  const mobileScreens = [
+    "/img/SYTMobile.png",
+    "/img/SYTMobileTours.png",
+    "/img/SYTMobileBooking.png",
+    "/img/SYTMobileProfile.png",
+  ]
+
+  const getCurrentScreens = () => {
+    switch (activeDevice) {
+      case "desktop":
+        return desktopScreens
+      case "tablet":
+        return tabletScreens
+      case "mobile":
+        return mobileScreens
+      default:
+        return desktopScreens
+    }
+  }
+
+  const getScreenInfo = () => {
+    const screens = {
+      desktop: [
+        { title: "Homepage", description: "Clean and intuitive landing page with tour discovery" },
+        { title: "Tour Listings", description: "Comprehensive tour catalog with filters and search" },
+        { title: "Booking Process", description: "Streamlined booking flow with calendar integration" },
+        { title: "User Profile", description: "Personal dashboard for managing bookings and preferences" },
+      ],
+      tablet: [
+        { title: "Tablet Homepage", description: "Optimized tablet experience with touch-friendly interface" },
+        { title: "Tour Browse", description: "Grid-based tour discovery perfect for tablet viewing" },
+        { title: "Mobile Booking", description: "Touch-optimized booking process" },
+        { title: "Profile Management", description: "Easy profile management on tablet devices" },
+      ],
+      mobile: [
+        { title: "Mobile Homepage", description: "Mobile-first design with quick tour discovery" },
+        { title: "Tour Search", description: "Swipe-friendly tour browsing experience" },
+        { title: "Quick Booking", description: "One-tap booking process optimized for mobile" },
+        { title: "Mobile Profile", description: "Compact profile view with essential features" },
+      ],
+    }
+
+    return screens[activeDevice][currentSlide] || screens.desktop[0]
+  }
+
+  const handleNextSlide = () => {
+    const screens = getCurrentScreens()
+    setCurrentSlide((prev) => (prev + 1) % screens.length)
+  }
+
+  const handlePrevSlide = () => {
+    const screens = getCurrentScreens()
+    setCurrentSlide((prev) => (prev - 1 + screens.length) % screens.length)
+  }
+
+  // Reset slide when device changes
+  useEffect(() => {
+    setCurrentSlide(0)
+  }, [activeDevice])
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
@@ -24,52 +91,7 @@ export default function SYT() {
           text-align: center;
           position: relative;
           overflow: hidden;
-          margin-top : 30px
-        }
-
-        .floating-elements {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          pointer-events: none;
-        }
-
-        .floating-circle {
-          position: absolute;
-          border-radius: 50%;
-          background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-          animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-circle:nth-child(1) {
-          width: 100px;
-          height: 100px;
-          top: 10%;
-          left: 10%;
-          animation-delay: 0s;
-        }
-
-        .floating-circle:nth-child(2) {
-          width: 150px;
-          height: 150px;
-          top: 20%;
-          right: 15%;
-          animation-delay: 2s;
-        }
-
-        .floating-circle:nth-child(3) {
-          width: 80px;
-          height: 80px;
-          bottom: 20%;
-          left: 20%;
-          animation-delay: 4s;
-        }
-
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(180deg); }
+          margin-top: 30px;
         }
 
         .logo-section {
@@ -107,6 +129,9 @@ export default function SYT() {
 
         .logo-icon:hover {
           transform: scale(1.1) rotate(5deg);
+        }
+
+        .logo-icon:hover .logo-image {
           box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
         }
 
@@ -128,7 +153,7 @@ export default function SYT() {
           animation: fadeInUp 1s ease-out 0.4s both;
         }
 
-        .cta-buttons {
+        .section-button {
           display: flex;
           gap: 20px;
           justify-content: center;
@@ -216,7 +241,7 @@ export default function SYT() {
         }
 
         .devices-section {
-          background: linear-gradient(135deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%);
+          background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
           padding: 150px 0;
           position: relative;
           overflow: hidden;
@@ -262,28 +287,53 @@ export default function SYT() {
         .laptop-base {
           width: 100%;
           height: 100%;
-          background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+          background: linear-gradient(145deg, #e5e7eb, #f3f4f6);
           border-radius: 25px 25px 8px 8px;
           padding: 25px 25px 50px 25px;
           position: relative;
           box-shadow: 
-            0 40px 80px rgba(0, 0, 0, 0.4),
-            0 20px 40px rgba(0, 0, 0, 0.3),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            0 40px 80px rgba(0, 0, 0, 0.25),
+            0 20px 40px rgba(0, 0, 0, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.8),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
         }
 
         .laptop-screen {
           width: 100%;
           height: 100%;
-          border-radius: 18px;
+          border-radius: 12px;
           overflow: hidden;
           position: relative;
-          background-color: #000;
+          background: #000;
+          box-shadow: 
+            inset 0 0 0 2px rgba(0, 0, 0, 0.1),
+            inset 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .laptop-screen-content {
+          width: 100%;
+          height: 100%;
           background-image: url('/img/SYTHome.png');
           background-size: cover;
-          background-position: center;
+          background-position: center top;
           background-repeat: no-repeat;
-          box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+          position: relative;
+        }
+
+        .laptop-screen-reflection {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 30%,
+            transparent 70%,
+            rgba(255, 255, 255, 0.05) 100%
+          );
+          pointer-events: none;
         }
 
         .laptop-bottom {
@@ -293,9 +343,9 @@ export default function SYT() {
           transform: translateX(-50%);
           width: 85%;
           height: 20px;
-          background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+          background: linear-gradient(145deg, #d1d5db, #e5e7eb);
           border-radius: 0 0 20px 20px;
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .laptop-hinge {
@@ -305,7 +355,7 @@ export default function SYT() {
           transform: translateX(-50%);
           width: 70%;
           height: 5px;
-          background: #0f0f0f;
+          background: #9ca3af;
           border-radius: 3px;
         }
 
@@ -316,9 +366,22 @@ export default function SYT() {
           transform: translateX(-50%);
           width: 8px;
           height: 8px;
-          background: #333;
+          background: #374151;
           border-radius: 50%;
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          z-index: 10;
+        }
+
+        .laptop-brand {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20px;
+          height: 20px;
+          background: linear-gradient(145deg, #d1d5db, #f3f4f6);
+          border-radius: 50%;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         .tablet-mockup {
@@ -351,14 +414,15 @@ export default function SYT() {
         .tablet-frame {
           width: 100%;
           height: 100%;
-          background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+          background: linear-gradient(145deg, #e5e7eb, #f3f4f6);
           border-radius: 25px;
           padding: 20px;
           position: relative;
           box-shadow: 
-            0 30px 60px rgba(0, 0, 0, 0.4),
-            0 15px 30px rgba(0, 0, 0, 0.3),
-            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            0 30px 60px rgba(0, 0, 0, 0.25),
+            0 15px 30px rgba(0, 0, 0, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.8),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
         }
 
         .tablet-screen {
@@ -367,12 +431,36 @@ export default function SYT() {
           border-radius: 18px;
           overflow: hidden;
           position: relative;
-          background-color: #000;
+          background: #000;
+          box-shadow: 
+            inset 0 0 0 2px rgba(0, 0, 0, 0.1),
+            inset 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tablet-screen-content {
+          width: 100%;
+          height: 100%;
           background-image: url('/img/SYTTab.png');
           background-size: cover;
-          background-position: center;
+          background-position: center top;
           background-repeat: no-repeat;
-          box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+          position: relative;
+        }
+
+        .tablet-screen-reflection {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 30%,
+            transparent 70%,
+            rgba(255, 255, 255, 0.05) 100%
+          );
+          pointer-events: none;
         }
 
         .tablet-home-button {
@@ -382,10 +470,10 @@ export default function SYT() {
           transform: translateX(-50%);
           width: 50px;
           height: 50px;
-          background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+          background: linear-gradient(145deg, #d1d5db, #f3f4f6);
           border-radius: 50%;
-          border: 3px solid #0f0f0f;
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          border: 3px solid #9ca3af;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
 
         .background-pattern {
@@ -395,25 +483,9 @@ export default function SYT() {
           right: 0;
           bottom: 0;
           background-image: 
-            radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
-          opacity: 0.6;
-        }
-
-        .scroll-indicator {
-          position: absolute;
-          bottom: 30px;
-          left: 50%;
-          transform: translateX(-50%);
-          color: #667eea;
-          font-size: 14px;
-          animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-          0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-          40% { transform: translateX(-50%) translateY(-10px); }
-          60% { transform: translateX(-50%) translateY(-5px); }
+            radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(118, 75, 162, 0.05) 0%, transparent 50%);
+          opacity: 0.8;
         }
 
         .core-features-section {
@@ -599,17 +671,6 @@ export default function SYT() {
           overflow: hidden;
         }
 
-        .cta-section::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-         
-          opacity: 0.5;
-        }
-
         .cta-content {
           position: relative;
           z-index: 2;
@@ -631,45 +692,6 @@ export default function SYT() {
           margin-left: auto;
           margin-right: auto;
           animation: fadeInUp 1s ease-out 0.2s both;
-        }
-
-        .btn-white {
-          display: inline-flex;
-          align-items: center;
-          background-color: white;
-          color: #667eea;
-          padding: 18px 36px;
-          border-radius: 50px;
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 16px;
-          transition: all 0.3s ease;
-          box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
-          position: relative;
-          overflow: hidden;
-          animation: fadeInUp 1s ease-out 0.4s both;
-        }
-
-        .btn-white::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
-          transition: left 0.5s;
-        }
-
-        .btn-white:hover::before {
-          left: 100%;
-        }
-
-        .btn-white:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
-          color: #667eea;
-          text-decoration: none;
         }
 
         @media (max-width: 1200px) {
@@ -726,23 +748,388 @@ export default function SYT() {
             height: 350px;
           }
         }
+
+        .visuals-section {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          padding: 120px 0;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .visuals-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          opacity: 0.5;
+        }
+
+        .visuals-header {
+          text-align: center;
+          margin-bottom: 60px;
+          position: relative;
+          z-index: 2;
+        }
+
+        .visuals-title {
+          font-size: clamp(3rem, 5vw, 4rem);
+          font-weight: 800;
+          color: white;
+          margin-bottom: 20px;
+          animation: fadeInUp 1s ease-out both;
+        }
+
+        .visuals-subtitle {
+          font-size: 1.2rem;
+          color: rgba(255, 255, 255, 0.9);
+          animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .device-selector {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 60px;
+          position: relative;
+          z-index: 2;
+        }
+
+        .device-btn {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          padding: 20px 30px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          border-radius: 16px;
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 600;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          backdrop-filter: blur(10px);
+        }
+
+        .device-btn:hover {
+          background: rgba(255, 255, 255, 0.15);
+          border-color: rgba(255, 255, 255, 0.4);
+          color: white;
+          transform: translateY(-2px);
+        }
+
+        .device-btn.active {
+          background: rgba(255, 255, 255, 0.2);
+          border-color: rgba(255, 255, 255, 0.6);
+          color: white;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .device-btn svg {
+          width: 32px;
+          height: 32px;
+        }
+
+        .carousel-container {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 40px;
+          z-index: 2;
+        }
+
+        .carousel-nav {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 60px;
+          height: 60px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          border-radius: 50%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
+          z-index: 3;
+        }
+
+        .carousel-nav:hover {
+          background: rgba(255, 255, 255, 0.2);
+          border-color: rgba(255, 255, 255, 0.4);
+          transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-nav.prev {
+          left: -80px;
+        }
+
+        .carousel-nav.next {
+          right: -80px;
+        }
+
+        .carousel-content {
+          width: 100%;
+          max-width: 900px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .device-mockup {
+          transition: all 0.5s ease;
+          animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        /* Desktop Mockup */
+        .desktop-mockup {
+          width: 800px;
+          height: 500px;
+        }
+
+        .desktop-frame {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+          border-radius: 12px;
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+          overflow: hidden;
+        }
+
+        .desktop-header {
+          height: 40px;
+          background: #e5e7eb;
+          display: flex;
+          align-items: center;
+          padding: 0 16px;
+          border-bottom: 1px solid #d1d5db;
+        }
+
+        .desktop-controls {
+          display: flex;
+          gap: 8px;
+        }
+
+        .control {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+
+        .control.red { background: #ef4444; }
+        .control.yellow { background: #f59e0b; }
+        .control.green { background: #10b981; }
+
+        .address-bar {
+          flex: 1;
+          text-align: center;
+          font-size: 14px;
+          color: #6b7280;
+          font-weight: 500;
+        }
+
+        .desktop-screen {
+          height: calc(100% - 40px);
+          background: #000;
+          overflow: hidden;
+        }
+
+        /* Tablet Mockup */
+        .tablet-mockup-new {
+          width: 400px;
+          height: 550px;
+        }
+
+        .tablet-frame-new {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+          border-radius: 25px;
+          padding: 20px;
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+          position: relative;
+        }
+
+        .tablet-camera {
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 8px;
+          height: 8px;
+          background: #374151;
+          border-radius: 50%;
+          z-index: 10;
+        }
+
+        .tablet-screen-new {
+          width: 100%;
+          height: calc(100% - 40px);
+          background: #000;
+          border-radius: 18px;
+          overflow: hidden;
+          margin-top: 20px;
+        }
+
+        .tablet-home-btn {
+          position: absolute;
+          bottom: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 40px;
+          height: 40px;
+          background: linear-gradient(145deg, #d1d5db, #f3f4f6);
+          border-radius: 50%;
+          border: 2px solid #9ca3af;
+        }
+
+        /* Mobile Mockup */
+        .mobile-mockup {
+          width: 300px;
+          height: 600px;
+        }
+
+        .mobile-frame {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(145deg, #1f2937, #111827);
+          border-radius: 30px;
+          padding: 8px;
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+          position: relative;
+        }
+
+        .mobile-notch {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 120px;
+          height: 25px;
+          background: #000;
+          border-radius: 0 0 15px 15px;
+          z-index: 10;
+        }
+
+        .mobile-screen {
+          width: 100%;
+          height: 100%;
+          background: #000;
+          border-radius: 22px;
+          overflow: hidden;
+        }
+
+        .screen-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center top;
+        }
+
+        .slide-indicators {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+          margin-bottom: 40px;
+          position: relative;
+          z-index: 2;
+        }
+
+        .indicator {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.3);
+          border: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+          background: white;
+          transform: scale(1.2);
+        }
+
+        .screen-info {
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+
+        .screen-info h3 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        .screen-info p {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.8);
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+          .device-selector {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+          }
+          
+          .device-btn {
+            flex-direction: row;
+            padding: 15px 25px;
+          }
+          
+          .carousel-nav {
+            display: none;
+          }
+          
+          .desktop-mockup {
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+          }
+          
+          .tablet-mockup-new {
+            width: 280px;
+            height: 380px;
+          }
+          
+          .mobile-mockup {
+            width: 250px;
+            height: 500px;
+          }
+        }
       `}</style>
 
       <Header />
       <div className="portfolio-detail-page">
         {/* Hero Section - Centered Logo and Title */}
         <div className="hero-section">
-          {/* <div className="floating-elements">
-            <div className="floating-circle"></div>
-            <div className="floating-circle"></div>
-            <div className="floating-circle"></div>
-          </div> */}
-
           <div className="container">
             <div className="logo-section">
               <div className="logo-icon">
-                <Image 
-                  src="/img/sytlogo.png" 
+                <Image
+                  src="/img/sytlogo.png"
                   alt="Start Your Tour Logo"
                   width={100}
                   height={100}
@@ -766,53 +1153,157 @@ export default function SYT() {
               </Link>
             </div>
           </div>
-
-          {/* <div className="scroll-indicator">
-            <div>Scroll to explore ↓</div>
-          </div> */}
         </div>
 
-        {/* Devices Section - Perfect Clone Layout */}
-        {/* Devices Section - Replaced with Figma design */}
-        <div className="devices-section min-h-screen flex items-center justify-center w-full py-16 bg-gray-50">
-          <div className="max-w-5xl w-full px-4 mx-auto">
-            <div className="relative w-full" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
-              <Image 
-                src="/img/portfolio/SYT/figma-main.png" 
-                alt="Start Your Tour Design" 
-                fill
-                className="absolute top-0 left-0 w-full h-full object-contain rounded-lg shadow-2xl"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Original devices section - commented out
-        <div className="devices-section">
-          <div className="background-pattern" />
+        {/* Interactive Visuals Carousel Section */}
+        <div className="visuals-section">
           <div className="container">
-            <div className="devices-container">
-              <div className="laptop-mockup">
-                <div className="laptop-base">
-                  <div className="laptop-camera" />
-                  <div className="laptop-screen" />
-                  <div className="laptop-bottom" />
-                  <div className="laptop-hinge" />
+            <div className="visuals-header">
+              <h2 className="visuals-title">Visuals</h2>
+              <p className="visuals-subtitle">Explore Start Your Tour across different devices</p>
+            </div>
+
+            {/* Device Type Selector */}
+            <div className="device-selector">
+              <button
+                className={`device-btn ${activeDevice === "desktop" ? "active" : ""}`}
+                onClick={() => setActiveDevice("desktop")}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="4" width="20" height="12" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <rect x="8" y="18" width="8" height="2" rx="1" fill="currentColor" />
+                  <path d="M6 18h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+                <span>Desktop</span>
+              </button>
+
+              <button
+                className={`device-btn ${activeDevice === "tablet" ? "active" : ""}`}
+                onClick={() => setActiveDevice("tablet")}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="12" cy="18" r="1" fill="currentColor" />
+                </svg>
+                <span>Tablet</span>
+              </button>
+
+              <button
+                className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
+                onClick={() => setActiveDevice("mobile")}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <circle cx="12" cy="18" r="1" fill="currentColor" />
+                </svg>
+                <span>Mobile</span>
+              </button>
+            </div>
+
+            {/* Carousel Container */}
+            <div className="carousel-container">
+              <button className="carousel-nav prev" onClick={handlePrevSlide}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 18l-6-6 6-6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <div className="carousel-content">
+                <div className={`device-mockup ${activeDevice}`}>
+                  {activeDevice === "desktop" && (
+                    <div className="desktop-mockup">
+                      <div className="desktop-frame">
+                        <div className="desktop-header">
+                          <div className="desktop-controls">
+                            <span className="control red"></span>
+                            <span className="control yellow"></span>
+                            <span className="control green"></span>
+                          </div>
+                          <div className="address-bar">startyourtour.com</div>
+                        </div>
+                        <div className="desktop-screen">
+                          <img
+                            src={desktopScreens[currentSlide] || "/placeholder.svg"}
+                            alt={`Desktop view ${currentSlide + 1}`}
+                            className="screen-image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {activeDevice === "tablet" && (
+                    <div className="tablet-mockup-new">
+                      <div className="tablet-frame-new">
+                        <div className="tablet-camera"></div>
+                        <div className="tablet-screen-new">
+                          <img
+                            src={tabletScreens[currentSlide] || "/placeholder.svg"}
+                            alt={`Tablet view ${currentSlide + 1}`}
+                            className="screen-image"
+                          />
+                        </div>
+                        <div className="tablet-home-btn"></div>
+                      </div>
+                    </div>
+                  )}
+
+                  {activeDevice === "mobile" && (
+                    <div className="mobile-mockup">
+                      <div className="mobile-frame">
+                        <div className="mobile-notch"></div>
+                        <div className="mobile-screen">
+                          <img
+                            src={mobileScreens[currentSlide] || "/placeholder.svg"}
+                            alt={`Mobile view ${currentSlide + 1}`}
+                            className="screen-image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-              <div className="tablet-mockup">
-                <div className="tablet-frame">
-                  <div className="tablet-screen" />
-                  <div className="tablet-home-button" />
-                </div>
-              </div>
+
+              <button className="carousel-nav next" onClick={handleNextSlide}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 18l6-6-6-6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* Slide Indicators */}
+            <div className="slide-indicators">
+              {getCurrentScreens().map((_, index) => (
+                <button
+                  key={index}
+                  className={`indicator ${currentSlide === index ? "active" : ""}`}
+                  onClick={() => setCurrentSlide(index)}
+                />
+              ))}
+            </div>
+
+            {/* Screen Info */}
+            <div className="screen-info">
+              <h3>{getScreenInfo().title}</h3>
+              <p>{getScreenInfo().description}</p>
             </div>
           </div>
         </div>
-        */}
 
-        {/* Core Features Section with Scroll Effects */}
+        {/* Core Features Section */}
         <div className="core-features-section">
           <div className="container">
             <div className="features-layout">
@@ -866,40 +1357,61 @@ export default function SYT() {
               <div className="feature-card">
                 <div className="feature-icon">🎯</div>
                 <h3>Focused on Tours Only</h3>
-                <p>Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get relevant results quickly.</p>
+                <p>
+                  Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour
+                  specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get
+                  relevant results quickly.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🎨</div>
                 <h3>Visually Clean & Intuitive</h3>
-                <p>The interface is clean and modern — built using React.js, making it fast, interactive, and mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease of navigation.</p>
+                <p>
+                  The interface is clean and modern — built using React.js, making it fast, interactive, and
+                  mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease
+                  of navigation.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🤖</div>
                 <h3>Personalized Recommendations</h3>
-                <p>The idea is to help users get suggestions based on their travel style — for example, recommending eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart, personalized layer beyond traditional listings.</p>
+                <p>
+                  The idea is to help users get suggestions based on their travel style — for example, recommending
+                  eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart,
+                  personalized layer beyond traditional listings.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🔍</div>
                 <h3>Transparent Tour Information</h3>
-                <p>Each tour listing includes detailed information like itinerary, what's included/excluded, maps, images, and real customer reviews — so users can make informed choices.</p>
+                <p>
+                  Each tour listing includes detailed information like itinerary, what's included/excluded, maps,
+                  images, and real customer reviews — so users can make informed choices.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">📱</div>
                 <h3>End-to-End Booking Workflow</h3>
-                <p>The platform handles everything from browsing to booking, so users won't need to leave the site or coordinate over calls/messages.</p>
+                <p>
+                  The platform handles everything from browsing to booking, so users won't need to leave the site or
+                  coordinate over calls/messages.
+                </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">💡</div>
                 <h3>Why It's Useful</h3>
                 <p>
-                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to search across multiple websites or worry about what's authentic — everything is curated.
-                  <br /><br />
-                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and manage bookings efficiently without building a separate website.
+                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to
+                  search across multiple websites or worry about what's authentic — everything is curated.
+                  <br />
+                  <br />
+                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and
+                  manage bookings efficiently without building a separate website.
                 </p>
               </div>
             </div>
@@ -913,9 +1425,6 @@ export default function SYT() {
             <p className="cta-description">
               Join thousands of travelers who have discovered their perfect tours with our innovative platform.
             </p>
-            {/* <Link href="http://startyourtour.com" className="btn-white" target="_blank" rel="noopener noreferrer">
-              🌟 Explore Tours Now
-            </Link> */}
           </div>
         </div>
       </div>
