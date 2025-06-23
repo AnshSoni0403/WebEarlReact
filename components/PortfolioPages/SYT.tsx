@@ -292,20 +292,22 @@ export default function SYT() {
 
         .features-section {
           background: white;
-          margin-top: 60px;
+          margin: 100px 0;
           padding: 80px 0;
           border-top: 1px solid #e2e8f0;
+          border-bottom: 1px solid #e2e8f0;
         }
 
         .features-header {
-          margin-bottom: 60px;
+          margin-bottom: 80px;
         }
 
         .features-title {
           font-size: clamp(2rem, 4vw, 3rem);
           font-weight: 700;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           color: #1a202c;
+          padding-top: 20px;
         }
 
         .features-subtitle {
@@ -319,15 +321,15 @@ export default function SYT() {
         }
 
         .feature-card {
-          padding: 30px;
+          padding: 35px 30px;
           border-radius: 20px;
           background-color: white;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
           height: 100%;
           transition: all 0.3s ease;
           border: 1px solid #e2e8f0;
-          margin-bottom: 50px;
-      }
+          margin-bottom: 40px;
+        }
           
       
 
@@ -358,8 +360,9 @@ export default function SYT() {
 
         .download-section {
           background: linear-gradient(270deg, #00b0e7 0%, #75f389 100%);
-          padding: 80px 0;
+          padding: 100px 0;
           color: white;
+          margin-top: 60px;
         }
 
         .download-title {
@@ -445,7 +448,7 @@ export default function SYT() {
                   </p>
 
                   {/* CTA Buttons */}
-                  <div className="cta-buttons">
+                  <div className="section-button">
                     <Link href="http://startyourtour.com" className="btn-primary-cta" target="_blank" rel="noopener noreferrer">
                       🚀 Visit Live Site
                     </Link>
@@ -577,14 +580,70 @@ export default function SYT() {
                 <p className="download-description">
                   Join thousands of travelers who have discovered their perfect tours with us.
                 </p>
-                <div className="download-buttons">
-                  <Link href="http://startyourtour.com" className="btn-download">
+                <div className="download-buttons" style={{
+                  display: 'flex',
+                  gap: '20px',
+                  marginTop: '30px',
+                  flexWrap: 'wrap'
+                }}>
+                  <Link 
+                    href="http://startyourtour.com" 
+                    className="btn-download"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '15px 30px',
+                      borderRadius: '50px',
+                      background: 'white',
+                      color: '#00b0e7',
+                      textDecoration: 'none',
+                      fontWeight: '600',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
+                    }}
+                  >
                     🌟 Explore Tours Now
+                  </Link>
+                  <Link 
+                    href="#" 
+                    className="btn-download"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      padding: '15px 30px',
+                      borderRadius: '50px',
+                      background: 'transparent',
+                      color: 'white',
+                      border: '2px solid white',
+                      textDecoration: 'none',
+                      fontWeight: '600',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    📱 Download App
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-4 text-center">
-                <div className="download-icon">🗺️</div>
+              <div className="col-lg-4 text-center" style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '15px'
+              }}>
+                <div className="download-icon" style={{
+                  fontSize: '80px',
+                  marginBottom: '20px'
+                }}>✈️</div>
+                <div style={{
+                  display: 'flex',
+                  gap: '10px',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center'
+                }}>
+                 
+                </div>
               </div>
             </div>
           </div>
