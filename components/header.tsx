@@ -19,21 +19,23 @@ export default function Header() {
 
   return (
     <header id="home" style={{
-      backgroundImage: "url('/img/navbg.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
+      // backgroundImage: "url('/img/navbg.png')",
+      // backgroundSize: 'cover',
+      // backgroundPosition: 'center',
+      // backgroundRepeat: 'no-repeat',
       position: 'fixed',
       top: 0,
       left: 0,
       right: 0,
       zIndex: 1000,
-      minHeight: '100px',
-      width: '100%',
-      backgroundColor: 'rgba(255, 255, 255, 0.95)',
-      boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+      // minHeight: '100px',
+      // width: '100%',
+      // backgroundColor: 'rgba(255, 255, 255, 0.95)',
+      // boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)'
+      width: '100%'
     }}>
-      <div className="main-navigation">
+      {/* <div className="main-navigation"></div> */}
+      <div className="main-navigation" style={{ background: 'linear-gradient(270deg, #00b0e7 0%, #75f389 100%)' }}>
         <div className="container">
           <div className="row">
             {/* logo-area */}
@@ -167,7 +169,8 @@ export default function Header() {
                   <Link href="/Quotation">Get Quote</Link>
                 </button>
                 <button className="navbar-new-btn-button-2">
-                  <Link href="/Quotation">></Link>
+                {/* <Link href="/Quotation">></Link> */}
+                  <Link href="/Quotation">{'>'}</Link>
                 </button>
               </div>
               

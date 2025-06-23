@@ -1,3 +1,4 @@
+//FOR MAIN PAGE
 "use client"
 
 import { useState, useEffect } from "react"
@@ -10,6 +11,15 @@ import { FaChevronDown } from "react-icons/fa"
 export default function Header2() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
+  const [isSticky, setIsSticky] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
   const pathname = usePathname()
 
   useEffect(() => {
@@ -17,23 +27,8 @@ export default function Header2() {
   }, [pathname])
 
   return (
-    <header id="home" style={{
-    //   backgroundImage: "url('/img/navbg.png')",
-    //   backgroundSize: 'cover',
-    //   backgroundPosition: 'center',
-    //   backgroundRepeat: 'no-repeat',
-    //   position: 'fixed',
-    //   top: 0,
-    //   left: 0,
-    //   right: 0,
-    //   zIndex: 1000,
-    //   minHeight: '100px',
-    //   width: '100%',
-    //   backgroundColor: 'rgba(255, 255, 255, 0.95)',
-    //   boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-    //   backdropFilter: 'blur(5px)'
-    }}>
-      <div className="main-navigation">
+    <header id="home">
+      <div className={`main-navigation${isSticky ? ' sticky' : ''}`}>
         <div className="container">
           <div className="row">
             {/* logo-area */}
@@ -167,7 +162,7 @@ export default function Header2() {
                   <Link href="/Quotation">Get Quote</Link>
                 </button>
                 <button className="navbar-new-btn-button-2">
-                  <Link href="/Quotation">></Link>
+                  <Link href="/Quotation">{'>'}</Link>
                 </button>
               </div>
               
