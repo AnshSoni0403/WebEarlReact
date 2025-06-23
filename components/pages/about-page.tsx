@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Header from '../header';
 import Footer from '../footer';
 import BlogSection from '../blog-section';
+import CounterSection from '../counter-section';
 
 const AboutPage = () => {
   return (
@@ -104,8 +105,10 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <CounterSection />
+
       {/* Counter Section */}
-      <div className="about-counter-area">
+      {/* <div className="about-counter-area">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 d-flex align-items-center">
@@ -154,7 +157,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <BlogSection />
 
       {/* Call to Action Section */}

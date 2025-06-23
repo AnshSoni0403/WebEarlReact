@@ -7,41 +7,107 @@ import "../styles/all.css"
 
 export default function CounterSection() {
   const [counters, setCounters] = useState({
-    clients: 0,
+    years: 0,
+    team: 0,
     projects: 0,
-    profit: 0,
-    coming: 0,
+    clients: 0,
   })
 
   useEffect(() => {
-    // Simple counter animation
-    const animateCounter = (target: number, key: keyof typeof counters) => {
+    // Counter animation with customizable speed
+    const animateCounter = (target: number, key: keyof typeof counters, speedDivider: number) => {
       let current = 0
-      const increment = target / 100
+      const increment = Math.max(0.5, target / speedDivider)
       const timer = setInterval(() => {
         current += increment
         if (current >= target) {
           current = target
           clearInterval(timer)
         }
-        setCounters((prev) => ({ ...prev, [key]: Math.floor(current) }))
-      }, 20)
+        setCounters((prev) => ({ ...prev, [key]: Math.round(current) }))
+      }, 50) // Fixed interval for all counters
     }
 
-    animateCounter(102, "clients")
-    animateCounter(398, "projects")
-    animateCounter(89, "profit")
-    animateCounter(29, "coming")
+    // Start animations with different speeds
+    // Years counter with very slow animation
+    const yearsTimer = setInterval(() => {
+      setCounters(prev => {
+        if (prev.years >= 7) {
+          clearInterval(yearsTimer);
+          return { ...prev, years: 7 };
+        }
+        return { ...prev, years: prev.years + 0.10 };
+      });
+    }, 50);
+    
+    // Other counters
+    animateCounter(20, "team", 200)     // Team counter
+    animateCounter(100, "projects", 80)  // Projects counter
+    animateCounter(50, "clients", 80)    // Clients counter
   }, [])
 
   return (
+    
     <section>
-      <div className="main-counter-area">
+      <div className="about-counter-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-6 d-flex align-items-center">
+              <div className="section-heading-2 section-heading-2-p-a about-counter-text">
+                <h4>Summary</h4>
+                <h3>Achievement we have</h3>
+                <p>At Webearl Technologies, we are proud of our significant achievements in providing top-tier app development solutions Our innovative techniques in user engagement and system integration paired with the latest cutting-edge technology have successfully elevated businesses to new levels of success. Our track record in delivering enterprise mobility solutions highlights our dedication to enhancing business performance and driving growth. With our focus on high-performance, customized solutions, we have built a reputation for excellence, helping businesses excel in today’s competitive digital landscape.</p>
+                
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="row">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
+                  <div className="single-count-area">
+                    <img src="img/counter/year-in-business.png" alt="Years in business" className="img-fluid" />
+                    <br />
+                    <span className="counter">{Math.floor(counters.years)}</span><span>+</span>
+                    <p>Years in business</p>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
+                  <div className="single-count-area">
+                    <img src="img/counter/team-member.png" alt="Team Members" className="img-fluid" />
+                    <br />
+                    <span className="counter">{counters.team}</span><span>+</span>
+                    <p>Team Members</p>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <div className="single-count-area">
+                    <img src="img/counter/project-delivered.png" alt="Projects Delivered" className="img-fluid" />
+                    <br />
+                    <span className="counter">{counters.projects}</span><span>+</span>
+                    <p>Projects Delivered</p>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 margin-top-sb-30">
+                  <div className="single-count-area">
+                    <img src="img/counter/client-served.png" alt="Clients Served" className="img-fluid" />
+                    <br />
+                    <span className="counter">{counters.clients}</span><span>+</span>
+                    <p>Clients Served</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      {/* <div className="main-counter-area">
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <div className="row counter-area-small">
-                {/* single-countdown */}
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
                   <div className="single-count-area">
                     <Image src="/img/counter/manager.png" alt="" width={50} height={50} />
@@ -51,7 +117,6 @@ export default function CounterSection() {
                     <p>Clients</p>
                   </div>
                 </div>
-                {/* single-countdown */}
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 single-count-item-mb">
                   <div className="single-count-area">
                     <Image src="/img/counter/chart.png" alt="" width={50} height={50} />
@@ -61,7 +126,7 @@ export default function CounterSection() {
                     <p>Projects</p>
                   </div>
                 </div>
-                {/* single-countdown */}
+
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <div className="single-count-area">
                     <Image src="/img/counter/coin.png" alt="" width={50} height={50} />
@@ -71,7 +136,7 @@ export default function CounterSection() {
                     <p>profit</p>
                   </div>
                 </div>
-                {/* single-countdown */}
+
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 margin-top-sb-30">
                   <div className="single-count-area">
                     <Image src="/img/counter/theme.png" alt="" width={50} height={50} />
@@ -83,7 +148,6 @@ export default function CounterSection() {
                 </div>
               </div>
             </div>
-            {/* section heading text */}
             <div className="col-xl-6 d-flex align-items-center">
               <div className="section-heading-1 home-counter-text">
                 <h4>Summary</h4>
@@ -99,7 +163,7 @@ export default function CounterSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
