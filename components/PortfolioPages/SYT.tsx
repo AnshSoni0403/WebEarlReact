@@ -591,7 +591,7 @@ export default function SYT() {
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(270deg, #00b0e7 0%, #75f389 100%);
           padding: 120px 0;
           color: white;
           text-align: center;
@@ -897,9 +897,9 @@ export default function SYT() {
             <p className="cta-description">
               Join thousands of travelers who have discovered their perfect tours with our innovative platform.
             </p>
-            <Link href="http://startyourtour.com" className="btn-white" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="http://startyourtour.com" className="btn-white" target="_blank" rel="noopener noreferrer">
               🌟 Explore Tours Now
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
