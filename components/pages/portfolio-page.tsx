@@ -132,7 +132,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="http://startyourtour.com/" target="_blank">
+                    <Link href="/portfolio/syt">
                       View Details
                     </Link>
                   </div>
