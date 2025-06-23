@@ -500,7 +500,7 @@ export default function SYT() {
         }
 
         .other-features-section {
-          background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+          background: #ffffff;
           padding: 120px 0;
           position: relative;
         }
@@ -550,7 +550,7 @@ export default function SYT() {
           left: 0;
           width: 100%;
           height: 4px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(270deg, #00b0e7 0%, #75f389 100%);
           transform: scaleX(0);
           transition: transform 0.3s ease;
         }
@@ -843,47 +843,49 @@ export default function SYT() {
           </div>
         </div>
 
-        {/* Other Features Section */}
+        {/* What Makes it Unique Section */}
         <div className="other-features-section">
           <div className="container">
-            <h2 className="other-features-title">Other Features</h2>
+            <h2 className="other-features-title">✨ What Makes it Unique?</h2>
 
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">⏱️</div>
-                <h3>Real-time Tracking</h3>
-                <p>Admins can track and monitor tour guides with a map integrated into this web solution.</p>
+                <div className="feature-icon">🎯</div>
+                <h3>Focused on Tours Only</h3>
+                <p>Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get relevant results quickly.</p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">👥</div>
-                <h3>User-friendly CMS</h3>
-                <p>Admins can easily manage the travelers, guides and content on the web platform.</p>
+                <div className="feature-icon">🎨</div>
+                <h3>Visually Clean & Intuitive</h3>
+                <p>The interface is clean and modern — built using React.js, making it fast, interactive, and mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease of navigation.</p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🔄</div>
-                <h3>Seamless Flexibility</h3>
-                <p>It helps travelers to manage all the aspects of their tour booking and travel needs.</p>
+                <div className="feature-icon">🤖</div>
+                <h3>Personalized Recommendations</h3>
+                <p>The idea is to help users get suggestions based on their travel style — for example, recommending eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart, personalized layer beyond traditional listings.</p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📋</div>
-                <h3>Application Form</h3>
-                <p>Travelers can fill up this form in order to make precise requests with additional information.</p>
+                <div className="feature-icon">🔍</div>
+                <h3>Transparent Tour Information</h3>
+                <p>Each tour listing includes detailed information like itinerary, what's included/excluded, maps, images, and real customer reviews — so users can make informed choices.</p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">💰</div>
-                <h3>Invoice Modifications</h3>
-                <p>Automated new invoices are generated and sent to travelers if more or lesser tour items are used.</p>
+                <div className="feature-icon">📱</div>
+                <h3>End-to-End Booking Workflow</h3>
+                <p>The platform handles everything from browsing to booking, so users won't need to leave the site or coordinate over calls/messages.</p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🌐</div>
-                <h3>All-in-One Platform</h3>
+                <div className="feature-icon">💡</div>
+                <h3>Why It's Useful</h3>
                 <p>
-                  The platform is used by all the guides, travelers, and administrators making it simple and effective.
+                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to search across multiple websites or worry about what's authentic — everything is curated.
+                  <br /><br />
+                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and manage bookings efficiently without building a separate website.
                 </p>
               </div>
             </div>
