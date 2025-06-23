@@ -279,7 +279,7 @@ export default function SYT() {
           overflow: hidden;
           position: relative;
           background-color: #000;
-          background-image: url('/img/desktop-screenshot.jpg');
+          background-image: url('/img/SYTHome.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
