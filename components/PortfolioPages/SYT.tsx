@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import Header from "../header"
 import Footer from "../footer"
 import "@/styles/all.css"
@@ -23,6 +24,7 @@ export default function SYT() {
           text-align: center;
           position: relative;
           overflow: hidden;
+          margin-top : 30px
         }
 
         .floating-elements {
@@ -71,7 +73,9 @@ export default function SYT() {
         }
 
         .logo-section {
-          margin-bottom: 40px;
+          margin: 0 auto 40px auto;
+          max-width: 800px;
+          text-align: center;
           animation: fadeInUp 1s ease-out;
         }
 
@@ -87,19 +91,18 @@ export default function SYT() {
         }
 
         .logo-icon {
-          width: 80px;
-          height: 80px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          border-radius: 20px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 32px;
-          font-weight: bold;
-          color: white;
-          margin-bottom: 30px;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 30px auto;
+          position: relative;
+          transition: all 0.3s ease;
+        }
+        
+        .logo-image {
+          border-radius: 24px;
           box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
           transition: all 0.3s ease;
+          object-fit: contain;
         }
 
         .logo-icon:hover {
@@ -213,7 +216,7 @@ export default function SYT() {
         }
 
         .devices-section {
-          background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+          background: linear-gradient(135deg,rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%);
           padding: 150px 0;
           position: relative;
           overflow: hidden;
@@ -276,7 +279,7 @@ export default function SYT() {
           overflow: hidden;
           position: relative;
           background-color: #000;
-          background-image: url('/img/desktop-screenshot.jpg');
+          background-image: url('/img/SYTHome.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -365,7 +368,7 @@ export default function SYT() {
           overflow: hidden;
           position: relative;
           background-color: #000;
-          background-image: url('/img/mobile-screenshot.jpg');
+          background-image: url('/img/SYTTab.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -603,7 +606,7 @@ export default function SYT() {
           left: 0;
           right: 0;
           bottom: 0;
-          background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23ffffff' fillOpacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+         
           opacity: 0.5;
         }
 
@@ -729,15 +732,23 @@ export default function SYT() {
       <div className="portfolio-detail-page">
         {/* Hero Section - Centered Logo and Title */}
         <div className="hero-section">
-          <div className="floating-elements">
+          {/* <div className="floating-elements">
             <div className="floating-circle"></div>
             <div className="floating-circle"></div>
             <div className="floating-circle"></div>
-          </div>
+          </div> */}
 
           <div className="container">
             <div className="logo-section">
-              <div className="logo-icon">SYT</div>
+              <div className="logo-icon">
+                <Image 
+                  src="/img/sytlogo.png" 
+                  alt="Start Your Tour Logo"
+                  width={100}
+                  height={100}
+                  className="logo-image"
+                />
+              </div>
               <h1 className="main-title">Start Your Tour</h1>
               <p className="main-subtitle">
                 Book storage space for personal belongings of travelers when they go off-destination in between a tour.

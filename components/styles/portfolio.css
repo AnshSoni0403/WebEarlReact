@@ -61,7 +61,7 @@
   background: #fff;
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -177,7 +177,7 @@
 
 .portfolio-titile h4 {
   font-size: 18px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   text-transform: capitalize;
   font-weight: 600;
   color: #333;
