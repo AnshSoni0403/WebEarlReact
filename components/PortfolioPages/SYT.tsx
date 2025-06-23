@@ -321,6 +321,8 @@ export default function SYT() {
         }
 
         .feature-card {
+        min-height: 40px;
+        max-height: 350px;
           padding: 35px 30px;
           border-radius: 20px;
           background-color: white;
@@ -329,6 +331,7 @@ export default function SYT() {
           transition: all 0.3s ease;
           border: 1px solid #e2e8f0;
           margin-bottom: 40px;
+          margin-top: 40px;
         }
           
       

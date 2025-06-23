@@ -1048,7 +1048,7 @@ ul.dropdown li a:after {
 /*6.2 Portfolio Item*/
 .single-portfolio-item {
 	position: relative;
-	margin: 0 15px
+	margin: 0 15px;
 }
 
 .single-portfolio-item:last-child {
@@ -2592,7 +2592,7 @@ footer p {
 	text-transform: capitalize;
 	color: #323657;
 	font-weight: 700;
-	margin-top: 13px;
+	margin-top: 0px;
 	transition: .6s
 }
 

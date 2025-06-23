@@ -358,6 +358,7 @@ ul {
   text-transform: capitalize;
   margin-top: 25px;
   display: inline-block;
+  margin-left: 5px;
 }
 
 .section-button a:hover {
