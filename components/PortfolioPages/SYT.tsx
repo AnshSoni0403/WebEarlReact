@@ -757,7 +757,7 @@ export default function SYT() {
               </p>
             </div>
 
-            <div className="cta-buttons">
+            <div className="section-button">
               <Link href="http://startyourtour.com" className="btn-primary" target="_blank" rel="noopener noreferrer">
                 🚀 Visit Live Site
               </Link>
@@ -767,17 +767,32 @@ export default function SYT() {
             </div>
           </div>
 
-          <div className="scroll-indicator">
+          {/* <div className="scroll-indicator">
             <div>Scroll to explore ↓</div>
-          </div>
+          </div> */}
         </div>
 
         {/* Devices Section - Perfect Clone Layout */}
+        {/* Devices Section - Replaced with Figma design */}
+        <div className="devices-section min-h-screen flex items-center justify-center w-full py-16 bg-gray-50">
+          <div className="max-w-5xl w-full px-4 mx-auto">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
+              <Image 
+                src="/img/portfolio/SYT/figma-main.png" 
+                alt="Start Your Tour Design" 
+                fill
+                className="absolute top-0 left-0 w-full h-full object-contain rounded-lg shadow-2xl"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Original devices section - commented out
         <div className="devices-section">
           <div className="background-pattern" />
           <div className="container">
             <div className="devices-container">
-              {/* Laptop Mockup - Exact positioning */}
               <div className="laptop-mockup">
                 <div className="laptop-base">
                   <div className="laptop-camera" />
@@ -786,8 +801,6 @@ export default function SYT() {
                   <div className="laptop-hinge" />
                 </div>
               </div>
-
-              {/* Tablet Mockup - Exact positioning */}
               <div className="tablet-mockup">
                 <div className="tablet-frame">
                   <div className="tablet-screen" />
@@ -797,6 +810,7 @@ export default function SYT() {
             </div>
           </div>
         </div>
+        */}
 
         {/* Core Features Section with Scroll Effects */}
         <div className="core-features-section">
