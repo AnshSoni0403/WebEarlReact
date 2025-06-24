@@ -19,6 +19,7 @@ export default function CareAppPortfolio() {
         .portfolio-page {
           background: white;
           min-height: 100vh;
+          margin-top: 60px;
         }
 
         .hero-section {
@@ -39,11 +40,13 @@ export default function CareAppPortfolio() {
           gap: 80px;
           align-items: center;
           width: 100%;
+  
         }
 
         .hero-left {
           color: white;
           z-index: 2;
+          margin-left:150px;
         }
 
         .category-label {
@@ -1199,60 +1202,8 @@ export default function CareAppPortfolio() {
           </div>
         </div>
 
-        {/* Patient Stories Section */}
-        <div className="patient-stories-section">
-          <div className="stories-content">
-            <h2 className="section-title">Real Stories, Real Impact</h2>
-            <p className="stories-subtitle">See how Care is transforming healthcare experiences across the country</p>
-
-            <div className="stories-grid">
-              <div className="story-card">
-                <div className="story-header">
-                  <div className="patient-avatar">👩‍💼</div>
-                  <div className="patient-info">
-                    <h4>Priya Sharma</h4>
-                    <span>Working Professional, Mumbai</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "As a working mother, finding time for health checkups was impossible. Care's doorstep service saved
-                  me hours of waiting. The technician was professional and the reports came faster than expected!"
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              <div className="story-card featured">
-                <div className="story-header">
-                  <div className="patient-avatar">👨‍🦳</div>
-                  <div className="patient-info">
-                    <h4>Rajesh Kumar</h4>
-                    <span>Senior Citizen, Delhi</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "At my age, visiting labs was becoming difficult. Care's home collection service is a blessing. The
-                  staff is caring, and I can track everything on my phone. Highly recommended for elderly patients."
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              <div className="story-card">
-                <div className="story-header">
-                  <div className="patient-avatar">👨‍💻</div>
-                  <div className="patient-info">
-                    <h4>Arjun Patel</h4>
-                    <span>Software Engineer, Bangalore</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "The app is incredibly user-friendly. Booking tests, tracking samples, and downloading reports -
-                  everything is seamless. Care has made health monitoring as easy as ordering food online!"
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+      
 
        
       </div>

@@ -484,9 +484,9 @@ export default function MintoPortfolio() {
         <div className="hero-header">
           <div className="hero-content">
             <div className="hero-left">
-              <h1 className="project-title">Bright Spark</h1>
+              <h1 className="project-title">Minto</h1>
               <p className="project-description">
-                ❤️ Welcome to SaptaVidhi – Where Meaningful Matches Begin. At SaptaVidhi, we believe that love is a
+                ❤️ Welcome to Minto – Where Meaningful Matches Begin. At Minto, we believe that love is a
                 journey—and every individual deserves a meaningful and lasting connection. Our platform blends
                 traditional values with modern technology, offering a trusted and efficient path to finding your life
                 partner through seamless and personalized matchmaking.

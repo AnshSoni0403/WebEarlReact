@@ -216,7 +216,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="https://webearl.com/img/pdf/Batting_App_Mockup.pdf" target="_blank">
+                    <Link href="/portfolio/battingapp">
                       View Details
                     </Link>
                   </div>
