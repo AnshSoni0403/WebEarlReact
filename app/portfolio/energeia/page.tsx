@@ -1,5 +1,5 @@
-import Energeia from '@/components/PortfolioPages/energeia';
+// import Energeia from '@/components/PortfolioPages/energeia';
 
-export default function EnergeiaPage() {
-  return <Energeia />;
-}
+// export default function EnergeiaPage() {
+//   return <Energeia />;
+// }
