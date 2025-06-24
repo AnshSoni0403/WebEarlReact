@@ -188,7 +188,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="#" target="_blank">
+                    <Link href="/icare">
                       View Details
                     </Link>
                   </div>
