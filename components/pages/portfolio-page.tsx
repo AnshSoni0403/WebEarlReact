@@ -428,7 +428,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="http://www.brightspark.co.in/" target="_blank">
+                    <Link href="/brightSpark" target="_blank">
                       View Details
                     </Link>
                   </div>
