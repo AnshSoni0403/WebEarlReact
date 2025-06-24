@@ -85,16 +85,16 @@ export default function SaptaVidhiPortfolio() {
           border-color: #ec4899;
         }
 
-        .logo-container {
-          width: 100px;
-          height: 100px;
-          background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
-          border-radius: 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
-        }
+        // .logo-container {
+        //   width: 100px;
+        //   height: 100px;
+        //   background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+        //   border-radius: 20px;
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: center;
+        //   box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+        // }
 
         .logo-text {
           font-size: 2rem;
@@ -503,8 +503,15 @@ export default function SaptaVidhiPortfolio() {
               </div>
             </div>
             <div className="hero-right">
-              <div className="logo-container">
-                <div className="logo-text">SV</div>
+              <div className="logo-container" style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
+                <img 
+                  src="/img/portfolio/saptavidhi/logo.png" 
+                  alt="Saptavidhi Logo" 
+                  style={{ maxWidth: '180px', height: 'auto', borderRadius: '20px',marginTop: '40px' }} 
+                  onError={(e) => {
+                    e.target.src = "/placeholder-logo.png";
+                  }}
+                />
               </div>
             </div>
           </div>
