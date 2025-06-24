@@ -620,8 +620,8 @@ export default function SYT() {
           position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
-          height: 4px;
+          width: 10%;
+          height: 2px;
           background: linear-gradient(270deg, #00b0e7 0%, #75f389 100%);
           transform: scaleX(0);
           transition: transform 0.3s ease;
@@ -774,10 +774,11 @@ export default function SYT() {
         }
 
         .visuals-title {
-          font-size: clamp(3rem, 5vw, 4rem);
+          font-size: clamp(2rem, 4vw, 3rem);
           font-weight: 800;
           color: white;
-          margin-bottom: 20px;
+          margin-bottom: 0px;
+          margin-top: -90px;
           animation: fadeInUp 1s ease-out both;
         }
 
@@ -794,6 +795,7 @@ export default function SYT() {
           margin-bottom: 60px;
           position: relative;
           z-index: 2;
+          margin-top: -40px;
         }
 
         .device-btn {
@@ -828,8 +830,8 @@ export default function SYT() {
         }
 
         .device-btn svg {
-          width: 32px;
-          height: 32px;
+          width: 20px;
+          height: 20px;
         }
 
         .carousel-container {
@@ -839,6 +841,7 @@ export default function SYT() {
           justify-content: center;
           margin-bottom: 40px;
           z-index: 2;
+          margin-top: -20px;
         }
 
         .carousel-nav {
@@ -867,11 +870,13 @@ export default function SYT() {
         }
 
         .carousel-nav.prev {
-          left: -80px;
+          left:80px;
+          top:180px
         }
 
         .carousel-nav.next {
-          right: -80px;
+          right: 80px;
+          top:180px
         }
 
         .carousel-content {
@@ -905,7 +910,7 @@ export default function SYT() {
 
         .desktop-frame {
           width: 100%;
-          height: 100%;
+          height: 80%;
           background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
           border-radius: 12px;
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
@@ -958,7 +963,7 @@ export default function SYT() {
 
         .tablet-frame-new {
           width: 100%;
-          height: 100%;
+          height: 90%;
           background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
           border-radius: 25px;
           padding: 20px;
@@ -1001,13 +1006,15 @@ export default function SYT() {
 
         /* Mobile Mockup */
         .mobile-mockup {
-          width: 300px;
-          height: 600px;
+          width: 275px;
+          height: 575px;
+          left:20px
         }
 
         .mobile-frame {
-          width: 100%;
-          height: 100%;
+          width: 90%;
+          left: 10%;
+          height: 80%;
           background: linear-gradient(145deg, #1f2937, #111827);
           border-radius: 30px;
           padding: 8px;
@@ -1049,6 +1056,7 @@ export default function SYT() {
           margin-bottom: 40px;
           position: relative;
           z-index: 2;
+          margin-top: -90px;
         }
 
         .indicator {
@@ -1076,14 +1084,15 @@ export default function SYT() {
           font-size: 1.5rem;
           font-weight: 700;
           color: white;
-          margin-bottom: 10px;
+          margin-bottom: 1px;
         }
 
         .screen-info p {
           font-size: 1rem;
           color: rgba(255, 255, 255, 0.8);
-          max-width: 600px;
+          max-width: 700px;
           margin: 0 auto;
+          margin-bottom: -100px;
         }
 
         @media (max-width: 768px) {
@@ -1095,7 +1104,7 @@ export default function SYT() {
           
           .device-btn {
             flex-direction: row;
-            padding: 15px 25px;
+            padding: 10px 20px;
           }
           
           .carousel-nav {
@@ -1168,7 +1177,7 @@ export default function SYT() {
                 className={`device-btn ${activeDevice === "desktop" ? "active" : ""}`}
                 onClick={() => setActiveDevice("desktop")}
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="2" y="4" width="20" height="12" rx="2" stroke="currentColor" strokeWidth="2" />
                   <rect x="8" y="18" width="8" height="2" rx="1" fill="currentColor" />
                   <path d="M6 18h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -1180,7 +1189,7 @@ export default function SYT() {
                 className={`device-btn ${activeDevice === "tablet" ? "active" : ""}`}
                 onClick={() => setActiveDevice("tablet")}
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
                   <circle cx="12" cy="18" r="1" fill="currentColor" />
                 </svg>
@@ -1191,7 +1200,7 @@ export default function SYT() {
                 className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
                 onClick={() => setActiveDevice("mobile")}
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
                   <circle cx="12" cy="18" r="1" fill="currentColor" />
                 </svg>
@@ -1202,7 +1211,7 @@ export default function SYT() {
             {/* Carousel Container */}
             <div className="carousel-container">
               <button className="carousel-nav prev" onClick={handlePrevSlide}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 18l-6-6 6-6"
                     stroke="currentColor"

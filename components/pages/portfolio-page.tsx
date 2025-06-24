@@ -160,14 +160,14 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="https://webearl.com/img/pdf/SaptaVidhi_vendor_Mockup.pdf" target="_blank">
+                    <Link href="/portfolio/saptavidhi" target="_blank">
                       View Details
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>Saptavidhi Vendor</h4>
+                <h4>Saptavidhi</h4>
               </div>
             </div>
 
