@@ -216,7 +216,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/battingapp">
+                    <Link href="#">
                       View Details
                     </Link>
                   </div>
@@ -338,7 +338,7 @@ const PortfolioPage = () => {
                     <br />
                     Mobile : Android & iOS
                     <br />
-                    <Link href="/oneclick" target="_blank">
+                    <Link href="#" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -428,7 +428,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="/brightSpark" target="_blank">
+                    <Link href="#" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -521,7 +521,7 @@ const PortfolioPage = () => {
                     API : PHP
                     <br />
                     Database : My SQL
-                    <Link href="/Minto">View Details</Link>
+                    <Link href="#">View Details</Link>
                   </div>
                 </div>
               </div>
