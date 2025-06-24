@@ -521,7 +521,7 @@ const PortfolioPage = () => {
                     API : PHP
                     <br />
                     Database : My SQL
-                    <Link href="#">View Details</Link>
+                    <Link href="/minto">View Details</Link>
                   </div>
                 </div>
               </div>
