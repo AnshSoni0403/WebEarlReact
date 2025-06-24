@@ -250,7 +250,7 @@ const PortfolioPage = () => {
                       Mobile: Flutter
                       <br />
                     </p>
-                    <Link href="/portfolio/minto" target="_blank">
+                    <Link href="https://play.google.com/store/apps/details?id=com.saptavidhi&hl=en" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -279,7 +279,7 @@ const PortfolioPage = () => {
                     Web : Angular 9<br />
                     API : PHP
                     <br />
-                    <Link href="/portfolio/nowochat">
+                    <Link href="https://play.google.com/store/apps/details?id=com.nowochat" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -309,7 +309,7 @@ const PortfolioPage = () => {
                     <br />
                     API : Code Igniter
                     <br />
-                    <Link href="/portfolio/lechalo">
+                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -338,7 +338,7 @@ const PortfolioPage = () => {
                     <br />
                     Mobile : Android & iOS
                     <br />
-                    <Link href="/oneclick">
+                    <Link href="/oneclick" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -371,7 +371,7 @@ const PortfolioPage = () => {
                       Mobile: iOS
                       <br />
                     </p>
-                    <Link href="/portfolio/aha">View Details</Link>
+                    <Link href="#">View Details</Link>
                   </div>
                 </div>
               </div>
@@ -400,7 +400,7 @@ const PortfolioPage = () => {
                       Database: My SQL
                       <br />
                     </p>
-                    <Link href="/portfolio/energeia">
+                    <Link href="http://www.energeiasolutions.com" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -428,7 +428,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="/portfolio/brightspark">
+                    <Link href="http://www.brightspark.co.in/" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -459,7 +459,7 @@ const PortfolioPage = () => {
                       Mobile: iOS
                       <br />
                     </p>
-                    <Link href="/portfolio/voila">
+                    <Link href="/img/pdf/Voila_Ecommorce.pdf" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -492,7 +492,7 @@ const PortfolioPage = () => {
                       API : PHP
                       <br />
                     </p>
-                    <Link href="/portfolio/careforeach">
+                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN" target="_blank">
                       View Details
                     </Link>
                   </div>
@@ -521,7 +521,7 @@ const PortfolioPage = () => {
                     API : PHP
                     <br />
                     Database : My SQL
-                    <Link href="/portfolio/minto">View Details</Link>
+                    <Link href="#">View Details</Link>
                   </div>
                 </div>
               </div>
@@ -553,7 +553,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="/portfolio/diccigujarat">
+                    <Link href="http://www.diccigujarat.org/" target="_blank">
                       View Details
                     </Link>
                   </div>
