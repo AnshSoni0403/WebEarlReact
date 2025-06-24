@@ -599,11 +599,11 @@ export default function SaptaVidhiPortfolio() {
               </div>
               <div className="screen-content tall">
                 <img
-                  src="/img/SaptaVidhiProfiles.png"
+                  src="/img/energy.jpg"
                   alt="Profile Discovery"
                   className="screen-image"
                   onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=400&width=700&text=Profile+Discovery"
+                    e.target.src = "/placeholder.svg?height=400&width=1100&text=Profile+Discovery"
                   }}
                 />
               </div>

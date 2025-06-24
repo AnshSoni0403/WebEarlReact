@@ -338,7 +338,7 @@ const PortfolioPage = () => {
                     <br />
                     Mobile : Android & iOS
                     <br />
-                    <Link href="https://webearl.com/img/pdf/OneClick.pdf" target="_blank">
+                    <Link href="/oneclick" target="_blank">
                       View Details
                     </Link>
                   </div>

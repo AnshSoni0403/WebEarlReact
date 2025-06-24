@@ -774,7 +774,7 @@ export default function SYT() {
         }
 
         .visuals-title {
-          font-size: clamp(2rem, 4vw, 3rem);
+          font-size: clamp(1.5rem, 3.5vw, 2.5rem);
           font-weight: 800;
           color: white;
           margin-bottom: 0px;
@@ -783,7 +783,7 @@ export default function SYT() {
         }
 
         .visuals-subtitle {
-          font-size: 1.2rem;
+          font-size: 1rem;
           color: rgba(255, 255, 255, 0.9);
           animation: fadeInUp 1s ease-out 0.2s both;
         }
@@ -792,10 +792,10 @@ export default function SYT() {
           display: flex;
           justify-content: center;
           gap: 20px;
-          margin-bottom: 60px;
+          margin-bottom: 40px;
           position: relative;
           z-index: 2;
-          margin-top: -40px;
+          margin-top: -70px;
         }
 
         .device-btn {
@@ -803,7 +803,7 @@ export default function SYT() {
           flex-direction: column;
           align-items: center;
           gap: 8px;
-          padding: 20px 30px;
+          padding: 10px 20px;
           background: rgba(255, 255, 255, 0.1);
           border: 2px solid rgba(255, 255, 255, 0.2);
           border-radius: 16px;
@@ -812,6 +812,7 @@ export default function SYT() {
           transition: all 0.3s ease;
           cursor: pointer;
           backdrop-filter: blur(10px);
+          outline: none !important;
         }
 
         .device-btn:hover {
@@ -830,8 +831,8 @@ export default function SYT() {
         }
 
         .device-btn svg {
-          width: 20px;
-          height: 20px;
+          width: 15px;
+          height: 15px;
         }
 
         .carousel-container {
@@ -861,11 +862,12 @@ export default function SYT() {
           transition: all 0.3s ease;
           backdrop-filter: blur(10px);
           z-index: 3;
+          outline: none !important;
         }
 
         .carousel-nav:hover {
           background: rgba(255, 255, 255, 0.2);
-          border-color: rgba(255, 255, 255, 0.4);
+          border-color: rgb(255, 255, 255);
           transform: translateY(-50%) scale(1.1);
         }
 
@@ -918,7 +920,7 @@ export default function SYT() {
         }
 
         .desktop-header {
-          height: 40px;
+          height: 30px;
           background: #e5e7eb;
           display: flex;
           align-items: center;
@@ -1004,6 +1006,27 @@ export default function SYT() {
           border: 2px solid #9ca3af;
         }
 
+        /* Global button focus styles */
+        button:focus {
+          outline: none !important;
+          box-shadow: none !important;
+        }
+
+        /* Device buttons */
+        .device-btn {
+          outline: none !important;
+        }
+
+        /* Carousel navigation */
+        .carousel-nav {
+          outline: none !important;
+        }
+
+        /* Slide indicators */
+        .indicator {
+          outline: none !important;
+        }
+
         /* Mobile Mockup */
         .mobile-mockup {
           width: 275px;
@@ -1067,6 +1090,7 @@ export default function SYT() {
           border: none;
           cursor: pointer;
           transition: all 0.3s ease;
+          outline: none !important;
         }
 
         .indicator.active {
@@ -1104,7 +1128,7 @@ export default function SYT() {
           
           .device-btn {
             flex-direction: row;
-            padding: 10px 20px;
+            padding: 5px 10px;
           }
           
           .carousel-nav {
@@ -1152,24 +1176,24 @@ export default function SYT() {
               </p>
             </div>
 
-            <div className="section-button">
+            {/* <div className="section-button">
               <Link href="http://startyourtour.com" className="btn-primary" target="_blank" rel="noopener noreferrer">
                 🚀 Visit Live Site
               </Link>
               <Link href="#" className="btn-secondary">
                 📱 View Demo
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Interactive Visuals Carousel Section */}
         <div className="visuals-section">
           <div className="container">
-            <div className="visuals-header">
-              <h2 className="visuals-title">Visuals</h2>
+            {/* <div className="visuals-header">
+              <h4 className="visuals-title">Visuals</h4>
               <p className="visuals-subtitle">Explore Start Your Tour across different devices</p>
-            </div>
+            </div> */}
 
             {/* Device Type Selector */}
             <div className="device-selector">
