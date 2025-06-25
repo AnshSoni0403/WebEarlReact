@@ -11,7 +11,35 @@ import { FaChevronDown } from "react-icons/fa"
 export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState('')
+  const [isLargeScreen, setIsLargeScreen] = useState(true)
   const pathname = usePathname()
+
+  useEffect(() => {
+    // Check screen size on mount and window resize
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1080)
+    }
+    
+    // Initial check
+    checkScreenSize()
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkScreenSize)
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : ''
+  }
+
+  const toggleDropdown = (name: string) => {
+    setActiveDropdown(activeDropdown === name ? '' : name)
+  }
 
   useEffect(() => {
     setActiveLink(pathname)
@@ -48,8 +76,19 @@ export default function Header() {
             </div>
             {/* mainmenu-area */}
             <div className="col-xl-10 col-lg-9 col-md-9">
-              <div className="main-menu f-right" style={{ marginRight: '160px' }}>
-                <nav id="mobile-menu">
+              <div className="main-menu f-right" style={{ marginRight: '180px' }}>
+                <button 
+                  className="menu-toggle" 
+                  onClick={toggleMenu}
+                  aria-label="Toggle menu"
+                >
+                  ☰
+                </button>
+                <div 
+                  className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} 
+                  onClick={toggleMenu}
+                />
+                <nav id="mobile-menu" className={isMenuOpen ? 'active' : ''}>
                   <ul style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
@@ -69,14 +108,17 @@ export default function Header() {
                       </Link>
                     </li>
                     {/* dropdown menu-area */}
-                    <li className="has-dropdown">
+                    <li className={`has-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
                       <Link 
                         className={`${activeLink.startsWith('/services') ? 'current' : ''} dropdown-toggle`} 
                         href="#" 
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          toggleDropdown('services')
+                        }}
                       >
                         {'Services '}
-                        <FaChevronDown />
+                        <FaChevronDown className="dropdown-icon" />
                       </Link>
                       <ul className="dropdown">
                         <li>
@@ -163,16 +205,58 @@ export default function Header() {
               {/* mobile menu */}
               <div className="mobile-menu"></div>
               
-              {/* Get Quote Buttons */}
-              <div className="navbar-new-btn">
-                <button className="navbar-new-btn-button">
-                  <Link href="/Quotation">Get Quote</Link>
+              {/* Get Quote Buttons - Only visible on screens ≥ 1080px */}
+              {isLargeScreen && (
+                <div className="navbar-new-btn" style={{
+                  position: 'absolute',
+                  right: '15px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  display: 'flex',
+                  gap: '5px',
+                  zIndex: 1002
+                }}>
+                <button className="navbar-new-btn-button" style={{
+                  background: '#fff',
+                  color: '#00b0e7',
+                  border: 'none',
+                  borderRadius: '4px',
+                  padding: '8px 15px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  whiteSpace: 'nowrap'
+                }}>
+                  <Link href="/Quotation" style={{
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    display: 'block',
+                    width: '100%',
+                    height: '100%'
+                  }}>Get Quote</Link>
                 </button>
-                <button className="navbar-new-btn-button-2">
-                {/* <Link href="/Quotation">></Link> */}
-                  <Link href="/Quotation">{'>'}</Link>
+                <button className="navbar-new-btn-button-2" style={{
+                  background: '#00b0e7',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  padding: '8px 12px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <Link href="/Quotation" style={{
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    display: 'block',
+                    width: '100%',
+                    height: '100%',
+                    lineHeight: 1
+                  }}>{'>'}</Link>
                 </button>
               </div>
+              )}
               
               {/* Search */}
               {/* <div className="search-box-area">

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '../header';
+
 import Footer from '../footer';
 import BlogSection from '../blog-section';
 import CounterSection from '../counter-section';

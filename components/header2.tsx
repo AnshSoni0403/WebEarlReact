@@ -12,6 +12,14 @@ export default function Header2() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
   const [isSticky, setIsSticky] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLargeScreen, setIsLargeScreen] = useState(true)
+  
+  // Toggle menu function
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : ''
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +33,22 @@ export default function Header2() {
   useEffect(() => {
     setActiveLink(pathname)
   }, [pathname])
+  
+  // Handle screen size changes
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const isLarge = window.innerWidth >= 1080
+      setIsLargeScreen(isLarge)
+      if (isLarge) {
+        setIsMenuOpen(false)
+        document.body.style.overflow = ''
+      }
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
 
   return (
     <header id="home">
@@ -42,7 +66,50 @@ export default function Header2() {
             {/* mainmenu-area */}
             <div className="col-xl-10 col-lg-9 col-md-9">
               <div className="main-menu f-right" style={{ marginRight: '160px' }}>
-                <nav id="mobile-menu">
+                <button 
+                  className="menu-toggle" 
+                  onClick={toggleMenu}
+                  aria-label="Toggle menu"
+                  style={{
+                    display: 'none',
+                    background: 'none',
+                    border: 'none',
+                    fontSize: '24px',
+                    cursor: 'pointer',
+                    color: '#fff',
+                    position: 'absolute',
+                    right: '15px',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    zIndex: 1002
+                  }}
+                >
+                  ☰
+                </button>
+                <div 
+                  className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} 
+                  onClick={toggleMenu}
+                  style={{
+                    display: 'none',
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'rgba(0,0,0,0.5)',
+                    zIndex: 1000,
+                    opacity: 0,
+                    visibility: 'hidden',
+                    transition: 'all 0.3s ease'
+                  }}
+                />
+                <nav 
+                  id="mobile-menu" 
+                  className={isMenuOpen ? 'active' : ''}
+                  style={{
+                    transition: 'transform 0.3s ease-in-out'
+                  }}
+                >
                   <ul style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
@@ -153,8 +220,61 @@ export default function Header2() {
                   </ul>
                 </nav>
               </div>
-              {/* mobile menu */}
-              <div className="mobile-menu"></div>
+              {/* Mobile menu styles */}
+              <style jsx>{`
+                @media (max-width: 1079px) {
+                  .menu-toggle {
+                    display: block !important;
+                  }
+                  .menu-overlay.active {
+                    display: block !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                  }
+                  #mobile-menu {
+                    position: fixed;
+                    top: 0;
+                    right: -300px;
+                    width: 280px;
+                    height: 100%;
+                    background: #fff;
+                    z-index: 1001;
+                    padding: 20px;
+                    overflow-y: auto;
+                    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+                    transition: right 0.3s ease-in-out;
+                  }
+                  #mobile-menu.active {
+                    right: 0;
+                  }
+                  #mobile-menu ul {
+                    flex-direction: column !important;
+                    align-items: flex-start !important;
+                    padding: 20px 0 !important;
+                  }
+                  #mobile-menu li {
+                    width: 100%;
+                    margin: 10px 0;
+                  }
+                  #mobile-menu a {
+                    color: #333 !important;
+                    padding: 10px 0 !important;
+                    display: block;
+                    width: 100%;
+                  }
+                  .dropdown {
+                    position: static !important;
+                    display: none !important;
+                    padding-left: 15px !important;
+                    box-shadow: none !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                  }
+                  .dropdown.active {
+                    display: block !important;
+                  }
+                }
+              `}</style>
               
               {/* Get Quote Buttons */}
               <div className="navbar-new-btn">
