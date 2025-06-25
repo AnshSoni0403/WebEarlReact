@@ -1,4 +1,3 @@
-//FOR MAIN PAGE
 "use client"
 
 import { useState, useEffect } from "react"
@@ -6,36 +5,20 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import "../styles/all.css"
+
 import { FaChevronDown } from "react-icons/fa"
 
 export default function Header2() {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('')
-  const [isSticky, setIsSticky] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState('')
   const [isLargeScreen, setIsLargeScreen] = useState(true)
-  
-  // Toggle menu function
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-    document.body.style.overflow = !isMenuOpen ? 'hidden' : ''
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 0)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const [isSticky, setIsSticky] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
-    setActiveLink(pathname)
-  }, [pathname])
-  
-  // Handle screen size changes
-  useEffect(() => {
+    // Check screen size on mount and window resize
     const checkScreenSize = () => {
       const isLarge = window.innerWidth >= 1080
       setIsLargeScreen(isLarge)
@@ -45,10 +28,36 @@ export default function Header2() {
       }
     }
     
+    // Initial check
     checkScreenSize()
+    
+    // Add event listener for window resize
     window.addEventListener('resize', checkScreenSize)
+    
+    // Cleanup
     return () => window.removeEventListener('resize', checkScreenSize)
   }, [])
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 0)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : ''
+  }
+
+  const toggleDropdown = (name: string) => {
+    setActiveDropdown(activeDropdown === name ? '' : name)
+  }
+
+  useEffect(() => {
+    setActiveLink(pathname)
+  }, [pathname])
 
   return (
     <header id="home">
@@ -70,46 +79,14 @@ export default function Header2() {
                   className="menu-toggle" 
                   onClick={toggleMenu}
                   aria-label="Toggle menu"
-                  style={{
-                    display: 'none',
-                    background: 'none',
-                    border: 'none',
-                    fontSize: '24px',
-                    cursor: 'pointer',
-                    color: '#fff',
-                    position: 'absolute',
-                    right: '15px',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 1002
-                  }}
                 >
                   ☰
                 </button>
                 <div 
                   className={`menu-overlay ${isMenuOpen ? 'active' : ''}`} 
                   onClick={toggleMenu}
-                  style={{
-                    display: 'none',
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'rgba(0,0,0,0.5)',
-                    zIndex: 1000,
-                    opacity: 0,
-                    visibility: 'hidden',
-                    transition: 'all 0.3s ease'
-                  }}
                 />
-                <nav 
-                  id="mobile-menu" 
-                  className={isMenuOpen ? 'active' : ''}
-                  style={{
-                    transition: 'transform 0.3s ease-in-out'
-                  }}
-                >
+                <nav id="mobile-menu" className={isMenuOpen ? 'active' : ''}>
                   <ul style={{ 
                     display: 'flex', 
                     alignItems: 'center', 
@@ -129,14 +106,17 @@ export default function Header2() {
                       </Link>
                     </li>
                     {/* dropdown menu-area */}
-                    <li className="has-dropdown">
+                    <li className={`has-dropdown ${activeDropdown === 'services' ? 'active' : ''}`}>
                       <Link 
                         className={`${activeLink.startsWith('/services') ? 'current' : ''} dropdown-toggle`} 
                         href="#" 
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(e) => {
+                          e.preventDefault()
+                          toggleDropdown('services')
+                        }}
                       >
                         {'Services '}
-                        <FaChevronDown />
+                        <FaChevronDown className="dropdown-icon" />
                       </Link>
                       <ul className="dropdown">
                         <li>
