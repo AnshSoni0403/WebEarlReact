@@ -8,6 +8,7 @@ import '../styles/css/magnific-popup.min.css'
 import '../styles/css/meanmenu.css'
 import '../styles/css/responsive.css'
 import '../styles/css/slick.css'
+import QuoteButton from '@/components/common/QuoteButton'
 
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Preloader />
         {children}
         <ChatIcons />
+        <QuoteButton/>
       </body>
     </html>
   )
