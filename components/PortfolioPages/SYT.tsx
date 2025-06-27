@@ -12,7 +12,7 @@ export default function SYT() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Screen arrays for different devices
-  const desktopScreens = ["/img/SYTHome.png", "/img/SYTTours.png", "/img/SYTBooking.png", "/img/SYTProfile.png"]
+  const desktopScreens = ["/img/portfolio/SYT/home.png", "/img/SYTTours.png", "/img/SYTBooking.png", "/img/SYTProfile.png"]
 
   const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
 
