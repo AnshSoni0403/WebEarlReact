@@ -8,7 +8,7 @@ import "@/styles/all.css"
 
 export default function SYT() {
   const [scrollY, setScrollY] = useState(0)
-  const [activeDevice, setActiveDevice] = useState("desktop")
+  const [activeDevice, setActiveDevice] = useState<"desktop" | "tablet" | "mobile">("desktop")
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Screen arrays for different devices
@@ -17,10 +17,10 @@ export default function SYT() {
   const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
 
   const mobileScreens = [
-    "/img/SYTMobile.png",
-    "/img/SYTMobileTours.png",
-    "/img/SYTMobileBooking.png",
-    "/img/SYTMobileProfile.png",
+    "/img/portfolio/newphotos/SYT/SYTApp_WebEarl_1.png",
+    "/img/portfolio/newphotos/SYT/SYTApp_WebEarl_2.png",
+    "/img/portfolio/newphotos/SYT/SYTApp_WebEarl_3.png",
+    "/img/portfolio/newphotos/SYT/SYTApp_WebEarl_4.png",
   ]
 
   const getCurrentScreens = () => {
