@@ -320,6 +320,34 @@ const PortfolioPage = () => {
               </div>
             </div>
 
+            {/* single portfolio - Start Your Tour */}
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+              <div className="single-portfolio">
+                <div className="portfolio-image">
+                  <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
+                  <div className="portfolio-content">
+                    <p>
+                      Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
+                      updates for seamless journeys.
+                    </p>
+                    <br />
+                    <b>Technology:</b>
+                    <br />
+                    Web : ReactJs
+                    <br />
+                    Database : MongoDB
+                    <br />
+                    <Link href="/portfolio/syt">
+                      View Details
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="portfolio-titile">
+                <h4>CricGem</h4>
+              </div>
+            </div>
+
             {/* single portfolio */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
