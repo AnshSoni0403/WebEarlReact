@@ -30,7 +30,7 @@ const PortfolioPage = () => {
       description: 'The OneClick Application offers an easy way to quickly and easily search for local businesses, goods, or services that is interactive, intuitive, and quick. You can now use the top local search engine from your smartphone.',
       technologies: 'UI/UX: Figma\nMobile: Android & iOS',
       detailsLink: '/img/pdf/OneClick - Mock-up.pdf',
-      target: '_blank'
+  
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ const PortfolioPage = () => {
       description: 'Urja Energy Solutions is a proud channel partner of Bharat Petroleum (BPCL) to supply LPG for Industrial / commercial applications',
       technologies: 'Web: Wordpress\nDatabase: My SQL',
       detailsLink: 'http://www.energeiasolutions.com',
-      target: '_blank'
+    
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const PortfolioPage = () => {
       description: 'The main purpose of this application is to facilitate matchmaking business by applying the information in the field.\n\nUser can get information regarding their dream life partner at his/her home at his/her convenience.',
       technologies: 'UI/UX: Figma\nMobile: iOS',
       detailsLink: '/img/pdf/Matrimonial_App.pdf',
-      target: '_blank'
+
     },
     {
       id: 5,
@@ -66,7 +66,7 @@ const PortfolioPage = () => {
       description: 'On the shot you can see the onboarding screen, where users can choose the goods category. The screen also shows goods cards, you can add them to your cart and buy it',
       technologies: 'UI/UX: Figma\nMobile: iOS',
       detailsLink: '/img/pdf/Voila_Ecommorce.pdf',
-      target: '_blank'
+   
     },
     {
       id: 6,
@@ -250,7 +250,7 @@ const PortfolioPage = () => {
                       Mobile: Flutter
                       <br />
                     </p>
-                    <Link href="https://play.google.com/store/apps/details?id=com.saptavidhi&hl=en">
+                    <Link href="https://play.google.com/store/apps/details?id=com.saptavidhi&hl=en" >
                       View Details
                     </Link>
                   </div>
@@ -279,7 +279,7 @@ const PortfolioPage = () => {
                     Web : Angular 9<br />
                     API : PHP
                     <br />
-                    <Link href="/portfolio/nowo">
+                    <Link href="/portfolio/nowo" >
                       View Details
                     </Link>
                   </div>
@@ -309,7 +309,7 @@ const PortfolioPage = () => {
                     <br />
                     API : Code Igniter
                     <br />
-                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en">
+                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en" >
                       View Details
                     </Link>
                   </div>
@@ -338,7 +338,7 @@ const PortfolioPage = () => {
                     <br />
                     Mobile : Android & iOS
                     <br />
-                    <Link href="#">
+                    <Link href="#" >
                       View Details
                     </Link>
                   </div>
@@ -400,7 +400,7 @@ const PortfolioPage = () => {
                       Database: My SQL
                       <br />
                     </p>
-                    <Link href="http://www.energeiasolutions.com">
+                    <Link href="http://www.energeiasolutions.com" >
                       View Details
                     </Link>
                   </div>
@@ -428,7 +428,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="#">
+                    <Link href="#" >
                       View Details
                     </Link>
                   </div>
@@ -459,7 +459,7 @@ const PortfolioPage = () => {
                       Mobile: iOS
                       <br />
                     </p>
-                    <Link href="/img/pdf/Voila_Ecommorce.pdf">
+                    <Link href="/img/pdf/Voila_Ecommorce.pdf" >
                       View Details
                     </Link>
                   </div>
@@ -492,7 +492,7 @@ const PortfolioPage = () => {
                       API : PHP
                       <br />
                     </p>
-                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN">
+                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN" >
                       View Details
                     </Link>
                   </div>
@@ -553,7 +553,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="http://www.diccigujarat.org/">
+                    <Link href="http://www.diccigujarat.org/" >
                       View Details
                     </Link>
                   </div>
