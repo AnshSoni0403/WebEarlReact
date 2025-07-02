@@ -160,7 +160,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/saptavidhi" target="_blank">
+                    <Link href="/portfolio/saptavidhi">
                       View Details
                     </Link>
                   </div>
@@ -250,7 +250,7 @@ const PortfolioPage = () => {
                       Mobile: Flutter
                       <br />
                     </p>
-                    <Link href="https://play.google.com/store/apps/details?id=com.saptavidhi&hl=en" target="_blank">
+                    <Link href="https://play.google.com/store/apps/details?id=com.saptavidhi&hl=en">
                       View Details
                     </Link>
                   </div>
@@ -279,7 +279,7 @@ const PortfolioPage = () => {
                     Web : Angular 9<br />
                     API : PHP
                     <br />
-                    <Link href="/portfolio/nowo" target="_blank">
+                    <Link href="/portfolio/nowo">
                       View Details
                     </Link>
                   </div>
@@ -309,7 +309,7 @@ const PortfolioPage = () => {
                     <br />
                     API : Code Igniter
                     <br />
-                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en" target="_blank">
+                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en">
                       View Details
                     </Link>
                   </div>
@@ -338,7 +338,7 @@ const PortfolioPage = () => {
                     <br />
                     Mobile : Android & iOS
                     <br />
-                    <Link href="#" target="_blank">
+                    <Link href="#">
                       View Details
                     </Link>
                   </div>
@@ -400,7 +400,7 @@ const PortfolioPage = () => {
                       Database: My SQL
                       <br />
                     </p>
-                    <Link href="http://www.energeiasolutions.com" target="_blank">
+                    <Link href="http://www.energeiasolutions.com">
                       View Details
                     </Link>
                   </div>
@@ -428,7 +428,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="#" target="_blank">
+                    <Link href="#">
                       View Details
                     </Link>
                   </div>
@@ -459,7 +459,7 @@ const PortfolioPage = () => {
                       Mobile: iOS
                       <br />
                     </p>
-                    <Link href="/img/pdf/Voila_Ecommorce.pdf" target="_blank">
+                    <Link href="/img/pdf/Voila_Ecommorce.pdf">
                       View Details
                     </Link>
                   </div>
@@ -492,7 +492,7 @@ const PortfolioPage = () => {
                       API : PHP
                       <br />
                     </p>
-                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN" target="_blank">
+                    <Link href="https://play.google.com/store/apps/details?id=com.careforeach&hl=en_IN">
                       View Details
                     </Link>
                   </div>
@@ -553,7 +553,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : My SQL
                     <br />
-                    <Link href="http://www.diccigujarat.org/" target="_blank">
+                    <Link href="http://www.diccigujarat.org/">
                       View Details
                     </Link>
                   </div>
