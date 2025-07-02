@@ -279,7 +279,7 @@ const PortfolioPage = () => {
                     Web : Angular 9<br />
                     API : PHP
                     <br />
-                    <Link href="https://play.google.com/store/apps/details?id=com.nowochat" target="_blank">
+                    <Link href="/portfolio/nowo" target="_blank">
                       View Details
                     </Link>
                   </div>

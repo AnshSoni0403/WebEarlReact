@@ -19,6 +19,7 @@ export default function NowoPortfolio() {
         .portfolio-page {
           background: white;
           min-height: 100vh;
+          margin-top: 52px;
         }
 
         .hero-section {
@@ -927,7 +928,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-booking.png"
+                  src=""
                   alt="Care App Booking"
                   className="screen-bg"
                   onError={(e) => {
@@ -940,7 +941,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-reports.png"
+                  src="/img/newphotos/nowo/nowo_WebEarl_1.png"
                   alt="Care App Reports"
                   className="screen-bg"
                   onError={(e) => {
@@ -979,7 +980,7 @@ export default function NowoPortfolio() {
                 <div className="phone-notch"></div>
                 <div className="phone-screen">
                   <img
-                    src="/img/care-app-home.png"
+                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_1.png"
                     alt="Care App Homepage"
                     className="screen-bg"
                     onError={(e) => {
@@ -1011,7 +1012,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-home-feature.png"
+                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_2.png"
                       alt="Home Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1024,7 +1025,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-booking-feature.png"
+                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_4.png"
                       alt="Booking Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1037,7 +1038,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-reports-feature.png"
+                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_3.png"
                       alt="Reports Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1184,7 +1185,7 @@ export default function NowoPortfolio() {
                     <div className="phone-notch"></div>
                     <div className="phone-screen">
                       <img
-                        src="/img/care-app-dashboard.png"
+                        src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_6.png"
                         alt="Care App Dashboard"
                         className="screen-bg"
                         onError={(e) => {
@@ -1199,60 +1200,7 @@ export default function NowoPortfolio() {
           </div>
         </div>
 
-        {/* Patient Stories Section */}
-        <div className="patient-stories-section">
-          <div className="stories-content">
-            <h2 className="section-title">Real Stories, Real Impact</h2>
-            <p className="stories-subtitle">See how Care is transforming healthcare experiences across the country</p>
-
-            <div className="stories-grid">
-              <div className="story-card">
-                <div className="story-header">
-                  <div className="patient-avatar">👩‍💼</div>
-                  <div className="patient-info">
-                    <h4>Priya Sharma</h4>
-                    <span>Working Professional, Mumbai</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "As a working mother, finding time for health checkups was impossible. Care's doorstep service saved
-                  me hours of waiting. The technician was professional and the reports came faster than expected!"
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              <div className="story-card featured">
-                <div className="story-header">
-                  <div className="patient-avatar">👨‍🦳</div>
-                  <div className="patient-info">
-                    <h4>Rajesh Kumar</h4>
-                    <span>Senior Citizen, Delhi</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "At my age, visiting labs was becoming difficult. Care's home collection service is a blessing. The
-                  staff is caring, and I can track everything on my phone. Highly recommended for elderly patients."
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-
-              <div className="story-card">
-                <div className="story-header">
-                  <div className="patient-avatar">👨‍💻</div>
-                  <div className="patient-info">
-                    <h4>Arjun Patel</h4>
-                    <span>Software Engineer, Bangalore</span>
-                  </div>
-                </div>
-                <p className="story-text">
-                  "The app is incredibly user-friendly. Booking tests, tracking samples, and downloading reports -
-                  everything is seamless. Care has made health monitoring as easy as ordering food online!"
-                </p>
-                <div className="story-rating">⭐⭐⭐⭐⭐</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
 
        
       </div>
