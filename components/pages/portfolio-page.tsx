@@ -147,7 +147,7 @@ const PortfolioPage = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/saptavidhi-vendor-portfolio.png" alt="Saptavidhi Vendor" width={400} height={300} />
+                  <Image src="/img/portfolio/Matrimonial.png" alt="Saptavidhi Vendor" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
                       Saptavidhi helps users to easily find vendors for all types of events, simplifying event
@@ -228,7 +228,7 @@ const PortfolioPage = () => {
             </div>
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/Matrimonial.png" alt="Matrimonial App" width={400} height={300} />
@@ -259,7 +259,7 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Matrimonial App</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 margin-top-sb-30 portfolio-headmove">
