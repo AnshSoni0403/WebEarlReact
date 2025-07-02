@@ -150,8 +150,8 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/Matrimonial.png" alt="Saptavidhi Vendor" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Saptavidhi helps users to easily find vendors for all types of events, simplifying event
-                      management with a single app.
+                    The main purpose of this application is to facilitate matchmaking business by applying the
+                    information in the field.
                     </p>
                     <br />
                     <b>Technology:</b>
