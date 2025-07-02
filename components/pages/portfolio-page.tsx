@@ -216,7 +216,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="#">
+                    <Link href="/portfolio/battingapp">
                       View Details
                     </Link>
                   </div>
