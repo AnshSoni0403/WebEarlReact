@@ -12,15 +12,15 @@ export default function BattingApp() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Screen arrays for different devices
-  const desktopScreens = ["/img/SYTHome.png", "/img/SYTTours.png", "/img/SYTBooking.png", "/img/SYTProfile.png"]
+  const desktopScreens = ["/img/portfolio/newphotos/cricgem/Cric1.png", "/img/portfolio/newphotos/cricgem/Cric2.png", "/img/portfolio/newphotos/cricgem/Cric3.png", "/img/portfolio/newphotos/cricgem/Cric4.png"]
 
-  const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
+  const tabletScreens = ["/img/SYTTa.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
 
   const mobileScreens = [
-    "/img/SYTMobile.png",
-    "/img/SYTMobileTours.png",
-    "/img/SYTMobileBooking.png",
-    "/img/SYTMobileProfile.png",
+    "/img/portfolio/newphotos/cricgem/cricgem_WebEarl_1.png",
+    "/img/portfolio/newphotos/cricgem/cricgem_WebEarl_2.png",
+    "/img/portfolio/newphotos/cricgem/cricgem_WebEarl_3.png",
+    "/img/portfolio/newphotos/cricgem/cricgem_WebEarl_4.png",
   ]
 
   const getCurrentScreens = () => {
