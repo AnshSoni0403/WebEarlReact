@@ -1288,16 +1288,12 @@ export default function BattingApp() {
 
                   {activeDevice === "mobile" && (
                     <div className="mobile-mockup">
-                      <div className="mobile-frame">
-                        <div className="mobile-notch"></div>
-                        <div className="mobile-screen">
-                          <img
-                            src={mobileScreens[currentSlide] || "/placeholder.svg"}
-                            alt={`Mobile view ${currentSlide + 1}`}
-                            className="screen-image"
-                          />
-                        </div>
-                      </div>
+                      <img
+                        src={mobileScreens[currentSlide] || "/placeholder.svg"}
+                        alt={`Mobile view ${currentSlide + 1}`}
+                        className="screen-image"
+                        style={{ width: '100%', height: 'auto' }}
+                      />
                     </div>
                   )}
                 </div>

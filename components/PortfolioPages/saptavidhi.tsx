@@ -590,13 +590,13 @@ export default function SaptaVidhiPortfolio() {
 
           <div className="screens-grid">
             <div className="screen-mockup large">
-              <div className="screen-header">
+              {/* <div className="screen-header">
                 <div className="screen-controls">
                   <span className="control red"></span>
                   <span className="control yellow"></span>
                   <span className="control green"></span>
                 </div>
-              </div>
+              </div> */}
               <div className="screen-content tall">
                 <img
                   src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_1.png"
