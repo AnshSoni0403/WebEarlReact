@@ -625,15 +625,12 @@ export default function NowoPortfolio() {
         .center-phone {
           position: relative;
           z-index: 2;
-        }
-
-        .phone-mockup-large {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 300px;
           height: 600px;
-          background: linear-gradient(145deg, #f8fafc, #e2e8f0);
-          border-radius: 30px;
-          padding: 8px;
-          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+          margin: 0 auto;
         }
 
         .patient-stories-section {
@@ -1180,20 +1177,28 @@ export default function NowoPortfolio() {
                   </div>
                 </div>
 
-                <div className="center-phone">
-                  <div className="phone-mockup-large">
-                    <div className="phone-notch"></div>
-                    <div className="phone-screen">
-                      <img
-                        src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_6.png"
-                        alt="Care App Dashboard"
-                        className="screen-bg"
-                        onError={(e) => {
-                          e.target.src = "/placeholder.svg?height=584&width=284&text=Dashboard"
-                        }}
-                      />
-                    </div>
-                  </div>
+                <div className="center-phone" style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  width: '300px',
+                  height: '600px',
+                  margin: '0 auto'
+                }}>
+                  <img
+                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_6.png"
+                    alt="Care App Dashboard"
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      maxHeight: '100%',
+                      borderRadius: '12px',
+                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+                    }}
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=600&width=300&text=Dashboard"
+                    }}
+                  />
                 </div>
               </div>
             </div>
