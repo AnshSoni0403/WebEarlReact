@@ -938,7 +938,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/newphotos/nowo/nowo_WebEarl_1.png"
+                  src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_1.png"
                   alt="Care App Reports"
                   className="screen-bg"
                   onError={(e) => {
@@ -951,7 +951,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-profile.png"
+                  src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_5.png"
                   alt="Care App Profile"
                   className="screen-bg"
                   onError={(e) => {
@@ -964,8 +964,8 @@ export default function NowoPortfolio() {
 
           <div className="hero-content">
             <div className="hero-left">
-              <div className="category-label">HEALTHCARE</div>
-              <h1 className="hero-title">Nowo</h1>
+              {/* <div className="category-label">HEALTHCARE</div> */}
+              <h1 className="hero-title">XOXO</h1>
               <p className="hero-description">
                 Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
                 collection at your convenience. With just a few taps on the app, users can schedule tests and receive
@@ -974,10 +974,10 @@ export default function NowoPortfolio() {
             </div>
             <div className="hero-right">
               <div className="main-phone">
-                <div className="phone-notch"></div>
-                <div className="phone-screen">
+                {/* <div className="phone-notch"></div>
+                <div className="phone-screen"> */}
                   <img
-                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_1.png"
+                    src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_1.png"
                     alt="Care App Homepage"
                     className="screen-bg"
                     onError={(e) => {
@@ -985,7 +985,7 @@ export default function NowoPortfolio() {
                     }}
                   />
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -1009,7 +1009,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_2.png"
+                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_2.png"
                       alt="Home Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1022,7 +1022,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_4.png"
+                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_4.png"
                       alt="Booking Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1035,7 +1035,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_3.png"
+                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_3.png"
                       alt="Reports Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -1186,7 +1186,7 @@ export default function NowoPortfolio() {
                   margin: '0 auto'
                 }}>
                   <img
-                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_6.png"
+                    src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_5.png"
                     alt="Care App Dashboard"
                     style={{
                       width: '100%',
