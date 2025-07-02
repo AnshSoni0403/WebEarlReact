@@ -337,14 +337,14 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/syt">
+                    <Link href="/portfolio/markme">
                       View Details
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>CricGem</h4>
+                <h4>Mark Me</h4>
               </div>
             </div>
 
