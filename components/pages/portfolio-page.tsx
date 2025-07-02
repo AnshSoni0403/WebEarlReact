@@ -365,7 +365,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/syt">
+                    <Link href="/portfolio/word">
                       View Details
                     </Link>
                   </div>
@@ -393,7 +393,7 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/syt">
+                    <Link href="/portfolio/xoxo">
                       View Details
                     </Link>
                   </div>
