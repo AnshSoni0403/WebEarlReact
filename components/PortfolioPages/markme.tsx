@@ -599,7 +599,7 @@ export default function SaptaVidhiPortfolio() {
         </div>
 
         {/* Multiple Screens Section */}
-        <div className="multiple-screens-section">
+        {/* <div className="multiple-screens-section">
           <div className="geometric-bg">
             <div className="triangle triangle-1"></div>
             <div className="triangle triangle-2"></div>
@@ -608,7 +608,7 @@ export default function SaptaVidhiPortfolio() {
           </div>
 
           <div className="screens-grid">
-            <div className="screen-mockup large">
+            <div className="screen-mockup large"> */}
               {/* <div className="screen-header">
                 <div className="screen-controls">
                   <span className="control red"></span>
@@ -616,7 +616,7 @@ export default function SaptaVidhiPortfolio() {
                   <span className="control green"></span>
                 </div>
               </div> */}
-              <div className="screen-content tall">
+              {/* <div className="screen-content tall">
                 <img
                   src="/img/portfolio/newphotos/MarkMe/MarkMe_WebEarl_1.png"
                   alt="Profile Discovery"
@@ -668,7 +668,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Project Approach Section */}
         <div className="approach-section">
