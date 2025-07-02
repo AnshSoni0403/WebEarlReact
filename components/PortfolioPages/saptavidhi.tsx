@@ -222,7 +222,7 @@ export default function SaptaVidhiPortfolio() {
         }
 
         .browser-content {
-          height: 500px;
+          height: 400px;
           background: #000;
           position: relative;
           overflow: hidden;
@@ -358,7 +358,7 @@ export default function SaptaVidhiPortfolio() {
         }
 
         .screen-content {
-          height: 300px;
+          height: 350px;
           background: #000;
           position: relative;
         }
@@ -542,7 +542,7 @@ export default function SaptaVidhiPortfolio() {
                 </div>
                 <div className="browser-content">
                   <img
-                    src="/img/SaptaVidhiHome.png"
+                    src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_1.png"
                     alt="SaptaVidhi Homepage"
                     className="screen-image"
                     onError={(e) => {
@@ -599,7 +599,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
               <div className="screen-content tall">
                 <img
-                  src="/img/energy.jpg"
+                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_1.png"
                   alt="Profile Discovery"
                   className="screen-image"
                   onError={(e) => {
@@ -619,7 +619,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
               <div className="screen-content">
                 <img
-                  src="/img/SaptaVidhiMatching.png"
+                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_2.png"
                   alt="Smart Matching"
                   className="screen-image"
                   onError={(e) => {
@@ -639,7 +639,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
               <div className="screen-content">
                 <img
-                  src="/img/SaptaVidhiChat.png"
+                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_3.png"
                   alt="Secure Communication"
                   className="screen-image"
                   onError={(e) => {
