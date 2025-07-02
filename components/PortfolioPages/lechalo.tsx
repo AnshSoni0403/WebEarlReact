@@ -17,10 +17,10 @@ export default function Lechalo() {
   const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
 
   const mobileScreens = [
-    "/img/SYTMobile.png",
-    "/img/SYTMobileTours.png",
-    "/img/SYTMobileBooking.png",
-    "/img/SYTMobileProfile.png",
+    "/img/portfolio/newphotos/Leo/Leo_WebEarl_1.png",
+    "/img/portfolio/newphotos/Leo/Leo_WebEarl_2.png",
+    "/img/portfolio/newphotos/Leo/Leo_WebEarl_3.png",
+    "/img/portfolio/newphotos/Leo/Leo_WebEarl_4.png",
   ]
 
   const getCurrentScreens = () => {
