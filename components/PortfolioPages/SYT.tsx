@@ -1288,17 +1288,17 @@ export default function SYT() {
 
                   {activeDevice === "mobile" && (
                     <div className="mobile-mockup">
-                      <div className="mobile-frame">
+                      {/* <div className="mobile-frame">
                         <div className="mobile-notch"></div>
-                        <div className="mobile-screen">
+                        <div className="mobile-screen"> */}
                           <img
                             src={mobileScreens[currentSlide] || "/placeholder.svg"}
                             alt={`Mobile view ${currentSlide + 1}`}
                             className="screen-image"
                           />
                         </div>
-                      </div>
-                    </div>
+                      // </div>
+                    // </div>
                   )}
                 </div>
               </div>
