@@ -309,7 +309,7 @@ const PortfolioPage = () => {
                     <br />
                     API : Code Igniter
                     <br />
-                    <Link href="https://play.google.com/store/apps/details?id=com.leChalo&hl=en" >
+                    <Link href="/portfolio/lechalo">
                       View Details
                     </Link>
                   </div>

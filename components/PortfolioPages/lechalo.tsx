@@ -8,7 +8,7 @@ import "@/styles/all.css"
 
 export default function Lechalo() {
   const [scrollY, setScrollY] = useState(0)
-  const [activeDevice, setActiveDevice] = useState("desktop")
+  const [activeDevice, setActiveDevice] = useState("mobile")
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Screen arrays for different devices
@@ -1197,7 +1197,7 @@ export default function Lechalo() {
 
             {/* Device Type Selector */}
             <div className="device-selector">
-              <button
+              {/* <button
                 className={`device-btn ${activeDevice === "desktop" ? "active" : ""}`}
                 onClick={() => setActiveDevice("desktop")}
               >
@@ -1207,9 +1207,9 @@ export default function Lechalo() {
                   <path d="M6 18h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
                 <span>Desktop</span>
-              </button>
+              </button> */}
 
-              <button
+              {/* <button
                 className={`device-btn ${activeDevice === "tablet" ? "active" : ""}`}
                 onClick={() => setActiveDevice("tablet")}
               >
@@ -1218,7 +1218,7 @@ export default function Lechalo() {
                   <circle cx="12" cy="18" r="1" fill="currentColor" />
                 </svg>
                 <span>Tablet</span>
-              </button>
+              </button> */}
 
               <button
                 className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
