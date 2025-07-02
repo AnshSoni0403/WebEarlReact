@@ -484,9 +484,9 @@ export default function WayOut() {
         <div className="hero-header">
           <div className="hero-content">
             <div className="hero-left">
-              <h1 className="project-title">SaptaVidhi</h1>
+              <h1 className="project-title">Wayout</h1>
               <p className="project-description">
-                ❤️ Welcome to SaptaVidhi – Where Meaningful Matches Begin. At SaptaVidhi, we believe that love is a
+                ❤️ Welcome to Wayout – Where Meaningful Matches Begin. At Wayout, we believe that love is a
                 journey—and every individual deserves a meaningful and lasting connection. Our platform blends
                 traditional values with modern technology, offering a trusted and efficient path to finding your life
                 partner through seamless and personalized matchmaking.
@@ -542,7 +542,7 @@ export default function WayOut() {
                 </div>
                 <div className="browser-content">
                   <img
-                    src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_1.png"
+                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
                     alt="SaptaVidhi Homepage"
                     className="screen-image"
                     onError={(e) => {
@@ -599,7 +599,7 @@ export default function WayOut() {
               </div> */}
               <div className="screen-content tall">
                 <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_1.png"
+                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
                   alt="Profile Discovery"
                   className="screen-image"
                   onError={(e) => {
@@ -619,7 +619,7 @@ export default function WayOut() {
               </div>
               <div className="screen-content">
                 <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_2.png"
+                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_3.png"
                   alt="Smart Matching"
                   className="screen-image"
                   onError={(e) => {
@@ -639,7 +639,7 @@ export default function WayOut() {
               </div>
               <div className="screen-content">
                 <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_3.png"
+                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_4.png"
                   alt="Secure Communication"
                   className="screen-image"
                   onError={(e) => {
