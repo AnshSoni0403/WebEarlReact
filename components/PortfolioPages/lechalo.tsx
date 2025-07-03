@@ -240,17 +240,33 @@ export default function Lechalo() {
                   )}
 
                   {activeDevice === "mobile" && (
-                    <div className="mobile-mockup">
-                      <div className="mobile-frame">
-                        <div className="mobile-notch"></div>
-                        <div className="mobile-screen">
-                          <img
-                            src={mobileScreens[currentSlide] || "/placeholder.svg"}
-                            alt={`Mobile view ${currentSlide + 1}`}
-                            className="screen-image"
-                          />
-                        </div>
-                      </div>
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      gap: '20px',
+                      padding: '20px',
+                      margin: '0 auto',
+                      maxWidth: '1000px',
+                      width: '100%',
+                      flexWrap: 'wrap'
+                    }}>
+                      {[0, 1, 2].map((index) => (
+                        <img
+                          key={index}
+                          src={mobileScreens[(currentSlide + index) % mobileScreens.length] || "/placeholder.svg"}
+                          alt={`Screenshot ${index + 1}`}
+                          style={{
+                            flex: '1',
+                            minWidth: '200px',
+                            maxWidth: '300px',
+                            width: '100%',
+                            height: 'auto',
+                            display: 'block',
+                            borderRadius: '8px'
+                          }}
+                        />
+                      ))}
                     </div>
                   )}
                 </div>
