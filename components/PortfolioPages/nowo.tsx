@@ -149,7 +149,7 @@ export default function NowoPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🏠</div>
+                  <div className="feature-icon">💬</div>
                   <div className="feature-content">
                     <h3>Interest-Based Group Chats</h3>
                     <p> Easily connect with people who share your interests, passions, or personal challenges.</p>
@@ -157,7 +157,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📱</div>
+                  <div className="feature-icon">🌐</div>
                   <div className="feature-content">
                     <h3>150+ Pre-Built Communities</h3>
                     <p>Explore a wide variety of groups across healthcare, education, sports, technology, and more.
@@ -166,15 +166,15 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🔬</div>
+                  <div className="feature-icon">🔓</div>
                   <div className="feature-content">
                     <h3>Unlimited Group Joining</h3>
-                    <p> Join as many groups as you want—there’s no limit to how much you can explore and engage.</p>
+                    <p> Join as many groups as you want—there's no limit to how much you can explore and engage.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📊</div>
+                  <div className="feature-icon">🌍</div>
                   <div className="feature-content">
                     <h3>Global User Network</h3>
                     <p> Connect with individuals around the world to share ideas, get support, and expand your knowledge across cultures and industries.</p>
@@ -182,7 +182,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎯</div>
+                  <div className="feature-icon">🎓</div>
                   <div className="feature-content">
                     <h3>Expert & Mentor Access</h3>
                     <p> Find verified experts, coaches, and mentors in your desired category to get trusted answers and guidance.</p>
@@ -190,7 +190,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📦</div>
+                  <div className="feature-icon">🔍</div>
                   <div className="feature-content">
                     <h3>Smart Search & Discovery</h3>
                     <p> Search for users, topics, and groups by interest, profession, subject, or field—find exactly what you're looking for.</p>
@@ -198,7 +198,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">👨‍⚕️</div>
+                  <div className="feature-icon">🔒</div>
                   <div className="feature-content">
                     <h3>Secure, Private Messaging</h3>
                     <p>All conversations are protected with end-to-end encryption, ensuring your chats remain private and secure.</p>
@@ -243,7 +243,7 @@ export default function NowoPortfolio() {
                   </div> */}
                 </div>
 
-                <div className="revolution-features">
+               
                  {/* <div className="mini-feature">
                     <span className="mini-icon">⚡</span>
                     <span>Same-day sample collection</span>
@@ -256,26 +256,26 @@ export default function NowoPortfolio() {
                     <span className="mini-icon">📱</span>
                     <span>Real-time notifications</span>
                   </div> */}
-                </div>
+                
               </div>
 
               <div className="revolution-right">
                 <div className="floating-elements">
                   <div className="floating-card card-1">
-                    <div className="card-icon">🩺</div>
-                    <div className="card-text">Professional Care</div>
+                    <div className="card-icon">📤</div>
+                    <div className="card-text">Share</div>
                   </div>
                   <div className="floating-card card-2">
-                    <div className="card-icon">🏠</div>
-                    <div className="card-text">Home Comfort</div>
+                    <div className="card-icon">🤝</div>
+                    <div className="card-text">Connect</div>
                   </div>
                   <div className="floating-card card-3">
-                    <div className="card-icon">⏰</div>
-                    <div className="card-text">Time Saving</div>
+                    <div className="card-icon">🔎</div>
+                    <div className="card-text">Discover</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">📊</div>
-                    <div className="card-text">Instant Reports</div>
+                    <div className="card-icon">📈</div>
+                    <div className="card-text">Grow</div>
                   </div>
                 </div>
 
