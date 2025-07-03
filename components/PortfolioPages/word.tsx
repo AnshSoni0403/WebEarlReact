@@ -39,7 +39,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/newphotos/nowo/nowo_WebEarl_1.png"
+                  src="/img/portfolio/newphotos/Word/Word_WebEarl_1.png"
                   alt="Care App Reports"
                   className="screen-bg"
                   onError={(e) => {
@@ -52,7 +52,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-profile.png"
+                  src="/img/portfolio/newphotos/Word/Word_WebEarl_2.png"
                   alt="Care App Profile"
                   className="screen-bg"
                   onError={(e) => {
@@ -123,7 +123,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/Word/Word_WebEarl_3.png"
+                      src="/img/portfolio/newphotos/Word/WayOut_WebEarl_3.png"
                       alt="Booking Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -136,7 +136,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/Word/Word_WebEarl_4.png"
+                      src="/img/portfolio/newphotos/Word/WayOut_WebEarl_4.png"
                       alt="Reports Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -287,14 +287,13 @@ export default function NowoPortfolio() {
                   margin: '0 auto'
                 }}>
                   <img
-                    src="/img/portfolio/newphotos/Word/Word_WebEarl_5.png"
+                    src="/img/portfolio/newphotos/Word/WayOut_WebEarl_5.png"
                     alt="Care App Dashboard"
                     style={{
                       width: '100%',
                       height: 'auto',
                       maxHeight: '100%',
-                      borderRadius: '12px',
-                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+                      
                     }}
                     onError={(e) => {
                       e.target.src = "/placeholder.svg?height=600&width=300&text=Dashboard"

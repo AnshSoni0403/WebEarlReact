@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Header from "../header"
 import Footer from "../footer"
-import './saptavidhi.css'
+import './wayout.css'
 import "@/styles/all.css"
 
 export default function WayOut() {
@@ -16,8 +16,6 @@ export default function WayOut() {
 
   return (
     <>
-      
-
       <Header />
       <div className="portfolio-page">
         {/* Hero Header Section */}
@@ -45,8 +43,8 @@ export default function WayOut() {
             <div className="hero-right">
               <div className="logo-container" style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
                 <img 
-                  src="/img/portfolio/saptavidhi/logo.png" 
-                  alt="Saptavidhi Logo" 
+                  src="/img/portfolio/newphotos/WayOut/WayOutLogo_WebEarl_1.png"
+                  alt="Wayout Logo" 
                   style={{ maxWidth: '180px', height: 'auto', borderRadius: '20px',marginTop: '40px' }} 
                   onError={(e) => {
                     e.target.src = "/placeholder-logo.png";
@@ -68,27 +66,24 @@ export default function WayOut() {
 
           <div className="visuals-content">
             <div className="main-mockup">
-              <div className="floating-logo">
-                <div className="floating-logo-text">SV</div>
-              </div>
-              <div className="browser-mockup">
-                <div className="browser-header">
-                  <div className="browser-controls">
-                    <span className="control red"></span>
-                    <span className="control yellow"></span>
-                    <span className="control green"></span>
+              {/* <div className="floating-logo">
+                <div className="floating-logo-text">WayOut</div>
+              </div> */}
+              <div className="mobile-mockup">
+                <div className="mobile-frame">
+                  <div className="mobile-speaker"></div>
+                  <div className="mobile-camera"></div>
+                  <div className="mobile-screen">
+                    <img
+                      src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
+                      alt="Wayout Homepage"
+                      className="screen-image"
+                      onError={(e) => {
+                        e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Homepage"
+                      }}
+                    />
                   </div>
-                  <div className="address-bar">saptavidhi.com</div>
-                </div>
-                <div className="browser-content">
-                  <img
-                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
-                    alt="SaptaVidhi Homepage"
-                    className="screen-image"
-                    onError={(e) => {
-                      e.target.src = "/placeholder.svg?height=500&width=900&text=SaptaVidhi+Homepage"
-                    }}
-                  />
+                  <div className="mobile-home-button"></div>
                 </div>
               </div>
             </div>
@@ -129,63 +124,57 @@ export default function WayOut() {
           </div>
 
           <div className="screens-grid">
-            <div className="screen-mockup large">
-              {/* <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
+            <div className="mobile-mockup-grid large">
+              <div className="mobile-frame">
+                <div className="mobile-speaker"></div>
+                <div className="mobile-camera"></div>
+                <div className="mobile-screen">
+                  <img
+                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
+                    alt="Profile Discovery"
+                    className="screen-image"
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=400&width=700&text=Profile+Discovery"
+                    }}
+                  />
                 </div>
-              </div> */}
-              <div className="screen-content tall">
-                <img
-                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
-                  alt="Profile Discovery"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=400&width=1100&text=Profile+Discovery"
-                  }}
-                />
+                <div className="mobile-home-button"></div>
               </div>
             </div>
 
-            <div className="screen-mockup">
-              <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
+            <div className="mobile-mockup-grid" style={{ marginLeft: '120px' }}>
+              <div className="mobile-frame">
+                <div className="mobile-speaker"></div>
+                <div className="mobile-camera"></div>
+                <div className="mobile-screen">
+                  <img
+                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_3.png"
+                    alt="Smart Matching"
+                    className="screen-image"
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=400&width=700&text=Smart+Matching"
+                    }}
+                  />
                 </div>
-              </div>
-              <div className="screen-content">
-                <img
-                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_3.png"
-                  alt="Smart Matching"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=300&width=350&text=Smart+Matching"
-                  }}
-                />
+                <div className="mobile-home-button"></div>
               </div>
             </div>
 
-            <div className="screen-mockup">
-              <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
+            <div className="mobile-mockup-grid" style={{ marginLeft: '60px' }}>
+              <div className="mobile-frame">
+                <div className="mobile-speaker"></div>
+                <div className="mobile-camera"></div>
+                <div className="mobile-screen">
+                  <img
+                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_4.png"
+                    alt="Secure Communication"
+                    className="screen-image"
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=400&width=700&text=Secure+Communication"
+                    }}
+                  />
                 </div>
-              </div>
-              <div className="screen-content">
-                <img
-                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_4.png"
-                  alt="Secure Communication"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=300&width=350&text=Secure+Communication"
-                  }}
-                />
+                <div className="mobile-home-button"></div>
               </div>
             </div>
           </div>

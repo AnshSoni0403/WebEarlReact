@@ -569,7 +569,7 @@
 
   .card-1 {
     top: 15%;
-    left: 5%;
+    left: 3%;
     animation-delay: 0s;
     z-index: 2;
   }
@@ -590,7 +590,7 @@
 
   .card-4 {
     bottom: 10%;
-    right: 7%;
+    right: 5%;
     animation-delay: 4.5s;
     z-index: 2;
   }

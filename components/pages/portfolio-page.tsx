@@ -372,7 +372,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>Word</h4>
+                <h4>Wordix</h4>
               </div>
             </div>
 
