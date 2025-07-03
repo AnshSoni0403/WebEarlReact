@@ -16,9 +16,9 @@
   .hero-content {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 80px 0 120px; /* Increased left padding to 120px */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr; /* Slightly increased first column */
     gap: 80px;
     align-items: center;
     width: 100%;
@@ -27,7 +27,7 @@
   .hero-left {
     color: white;
     z-index: 2;
-   
+    margin-left: 20px; /* Added left margin */
   }
 
   .category-label {
