@@ -66,11 +66,9 @@ export default function NowoPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
-              <h1 className="hero-title">WORD</h1>
+              <h1 className="hero-title">Wordix</h1>
               <p className="hero-description">
-                Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
-                collection at your convenience. With just a few taps on the app, users can schedule tests and receive
-                diagnostic reports without stepping outside.
+              Wordix is a beautifully crafted word search puzzle game designed for players who enjoy testing their vocabulary skills in a calming and immersive environment. With its soothing visuals and brain-teasing gameplay, Wordix offers the perfect blend of relaxation and mental stimulation. Every level is a new voyage into the world of words.
               </p>
             </div>
             <div className="hero-right">
@@ -98,10 +96,7 @@ export default function NowoPortfolio() {
           <div className="about-content">
             <h2 className="section-title">About Project</h2>
             <p className="about-description">
-              Care is a comprehensive healthcare platform that revolutionizes diagnostic testing by bringing lab
-              services directly to your doorstep. Our platform simplifies diagnostic test bookings with an easy-to-use
-              interface, partnerships with NABL-accredited labs, and certified technicians who follow strict safety
-              protocols.
+            The Wordix project focuses on creating an engaging, and visually appealing word search experience for mobile users. With rich night-themed aesthetics, smooth interactions, and rewarding feedback mechanisms, the game enhances cognitive reflexes while offering casual entertainment. Each successfully completed level earns the player in-game coins and unlocks the next voyage, maintaining a smooth progression loop.
             </p>
 
             <div className="features-showcase">
@@ -166,56 +161,56 @@ export default function NowoPortfolio() {
                 <div className="feature-item">
                   <div className="feature-icon">🏠</div>
                   <div className="feature-content">
-                    <h3>Doorstep Sample Collection</h3>
-                    <p>Schedule lab tests from home with certified technicians visiting at your convenience</p>
+                    <h3>Progressive Gameplay</h3>
+                    <p>Unlock new voyages and challenges as you advance.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📱</div>
                   <div className="feature-content">
-                    <h3>Easy Booking Interface</h3>
-                    <p>Simple and intuitive app design for seamless test booking and scheduling</p>
+                    <h3>User-Friendly Interface</h3>
+                    <p>Smooth controls and clean design for an intuitive experience.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">🔬</div>
                   <div className="feature-content">
-                    <h3>NABL-Accredited Labs</h3>
-                    <p>Trusted partnerships with certified labs ensuring accurate and reliable test results</p>
+                    <h3>Engaging Sound Effects</h3>
+                    <p>Subtle audio adds immersion to every move.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📊</div>
                   <div className="feature-content">
-                    <h3>Digital Reports</h3>
-                    <p>Instant access to test results with downloadable digital reports and tracking</p>
+                    <h3>Reward System</h3>
+                    <p>Earn coins for every win to keep the motivation high.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">🎯</div>
                   <div className="feature-content">
-                    <h3>Personalized Recommendations</h3>
-                    <p>AI-driven test suggestions based on age, lifestyle, and medical history</p>
+                    <h3>Hint Feature</h3>
+                    <p> Stuck on a word? Use hints to guide your way forward.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📦</div>
                   <div className="feature-content">
-                    <h3>Health Packages</h3>
-                    <p>Curated health checkup packages for comprehensive wellness monitoring</p>
+                    <h3>Move Limits</h3>
+                    <p>Adds an extra layer of challenge with strategic thinking.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">👨‍⚕️</div>
                   <div className="feature-content">
-                    <h3>Trained Professionals</h3>
-                    <p>Certified phlebotomists following strict hygiene and safety protocols</p>
+                    <h3>Get More Moves</h3>
+                    <p>Option to gain additional moves and continue your voyage.</p>
                   </div>
                 </div>
               </div>
@@ -228,12 +223,10 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
-                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
+                {/* <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div> */}
+                <h2 className="revolution-title">Ready to Twist Your Mind?</h2>
                 <p className="revolution-description">
-                  Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
-                  healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
-                  complete safety.
+                Dive into Wordix and let the letters guide your way through wordy wonders.
                 </p>
 
                 <div className="revolution-stats">
@@ -275,19 +268,19 @@ export default function NowoPortfolio() {
                 <div className="floating-elements">
                   <div className="floating-card card-1">
                     <div className="card-icon">🩺</div>
-                    <div className="card-text">Professional Care</div>
+                    <div className="card-text">Relaxing</div>
                   </div>
                   <div className="floating-card card-2">
                     <div className="card-icon">🏠</div>
-                    <div className="card-text">Home Comfort</div>
+                    <div className="card-text">Engaging</div>
                   </div>
                   <div className="floating-card card-3">
                     <div className="card-icon">⏰</div>
-                    <div className="card-text">Time Saving</div>
+                    <div className="card-text">Rewarding</div>
                   </div>
                   <div className="floating-card card-4">
                     <div className="card-icon">📊</div>
-                    <div className="card-text">Instant Reports</div>
+                    <div className="card-text">Brainy</div>
                   </div>
                 </div>
 
