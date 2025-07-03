@@ -26,20 +26,19 @@ export default function SaptaVidhiPortfolio() {
             <div className="hero-left">
               <h1 className="project-title">Mark Me</h1>
               <p className="project-description">
-                ❤️ Welcome to Mark Me – Where Meaningful Matches Begin. At Mark Me, we believe that love is a
-                journey—and every individual deserves a meaningful and lasting connection. Our platform blends
-                traditional values with modern technology, offering a trusted and efficient path to finding your life
-                partner through seamless and personalized matchmaking.
+                 Mark Me is an intuitive, cross-platform attendance management app designed for offices, institutes, and coworking spaces. It simplifies the punch-in/punch-out process with real-time logging and calendar-based insights.
+
               </p>
               <div className="project-tags">
-                <span className="tag">matrimonial platform</span>
-                <span className="tag">matchmaking algorithms</span>
-                <span className="tag">cultural values</span>
-                <span className="tag">profile verification</span>
-                <span className="tag">secure communication</span>
-                <span className="tag">compatibility matching</span>
-                <span className="tag">traditional meets modern</span>
-                <span className="tag">life partner search</span>
+              <span className="tag">Attendance</span>
+              <span className="tag">Punch-in</span>
+              <span className="tag">Timesheet</span>
+              <span className="tag">Tracker</span>
+              <span className="tag">Office</span>
+              <span className="tag">Check-in</span>
+              <span className="tag">Worklog</span>
+<span className="tag">Calendar</span>
+
               </div>
             </div>
             <div className="hero-right">
@@ -116,21 +115,16 @@ export default function SaptaVidhiPortfolio() {
         {/* Project Objectives Section */}
         <div className="objectives-section">
           <div className="objectives-content">
-            <h2 className="section-title">Project Objectives</h2>
+            <h2 className="section-title">Objectives of the App</h2>
             <div className="objectives-layout">
               <div className="objectives-text">
-                The objective of this project is to create a comprehensive matrimonial platform that seamlessly blends
-                traditional matchmaking values with modern technology. SaptaVidhi aims to provide a trusted, secure, and
-                culturally-sensitive environment where individuals can find meaningful connections that align with their
-                values, preferences, and life goals. The platform focuses on verified profiles, advanced compatibility
-                algorithms, and personalized matchmaking to ensure users find not just a partner, but a lifelong
-                companion.
+              
+Mark Me allows users to record, manage, and review attendance logs through a smart calendar view. Whether it’s an office team, an institute, or even a shared workspace, this app centralizes attendance into a single, easy-to-use interface. With manual and automatic punch-in support, it ensures that every workday is accounted for with precision and zero hassle.
+
               </div>
               <div className="highlight-box">
                 <div className="highlight-text">
-                  The project focuses on creating meaningful connections through cultural understanding, advanced
-                  filtering systems, and secure communication channels for lasting relationships and matrimonial
-                  success.
+                To digitize and streamline attendance marking with accuracy, flexibility, and user-friendliness.
                 </div>
               </div>
             </div>
@@ -214,36 +208,36 @@ export default function SaptaVidhiPortfolio() {
           <div className="approach-content">
             <h2 className="section-title">Project Approach / Solution</h2>
             <p className="approach-intro">
-              Employ a user-focused and culturally-sensitive approach to streamline matrimonial operations, enhance
-              compatibility matching, and secure the platform for meaningful connections and lasting relationships.
+            The approach to developing Mark Me focused on simplicity, clarity, and versatility. We crafted a clean, calendar-driven UI that allows users to easily track their working hours, breaks, and logs. From onboarding to regular use, the experience remains intuitive. The solution was built keeping in mind hybrid work models, shared workspaces, and scalable usage across industries. It offers both flexibility and structure to ensure seamless attendance operations.
+
             </p>
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title">Advanced Profile Verification</h3>
+                <h3 className="solution-title">Interactive Calendar UI</h3>
                 <p className="solution-description">
-                  Implement comprehensive verification protocols to ensure authentic profiles and build trust within the
-                  matrimonial community.
+                Track and view your attendance history at a glance.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Cultural Compatibility Matching</h3>
+                <h3 className="solution-title">Custom Punch-In Time Selector</h3>
                 <p className="solution-description">
-                  Develop sophisticated algorithms that consider cultural values, traditions, and lifestyle preferences
-                  for meaningful matches.
+                Modify your punch-in manually using an easy-to-use clock interface for flexibility.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Secure Communication Platform</h3>
+                <h3 className="solution-title">Multi-Space Usability</h3>
                 <p className="solution-description">
-                  Create a safe and private messaging system that allows users to connect while maintaining privacy and
-                  security.
+                Whether it's for offices, colleges, coworking spaces, or remote teams, the app adapts to any environment needing attendance tracking.
+
                 </p>
               </div>
 
-              <div className="solution-card">
+              {/* <div className="solution-card">
                 <h3 className="solution-title">Personalized Matchmaking</h3>
                 <p className="solution-description">
                   Utilize AI-driven recommendations based on preferences, compatibility scores, and behavioral patterns
@@ -265,7 +259,7 @@ export default function SaptaVidhiPortfolio() {
                   Implement robust security measures and privacy controls to protect sensitive personal information and
                   user data.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
