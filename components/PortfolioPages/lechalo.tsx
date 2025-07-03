@@ -123,9 +123,7 @@ export default function Lechalo() {
               </div>
               <h1 className="main-title">Lechalo</h1>
               <p className="main-subtitle">
-                Book storage space for personal belongings of travelers when they go off-destination in between a tour.
-                Discover amazing destinations through curated guided tours with transparent pricing and authentic
-                reviews.
+              Le Chalo has evolved from a taxi-sharing app into a powerful super app for logistics and transportation. Designed with users and drivers in mind, Le Chalo simplifies parcel delivery with real-time tracking, driver bidding, and multi-vehicle support — all through a sleek and user-friendly mobile experience. Today, Le Chalo offers services across shuttle transport, parcel delivery, and taxi bookings, making it your all-in-one solution for efficient, reliable, and convenient travel and logistics.
               </p>
             </div>
 
@@ -315,33 +313,30 @@ export default function Lechalo() {
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>Easy Online Booking System</h3>
+                  <h3>📦 Real-Time Parcel Tracking</h3>
                   <p>
-                    Travelers can book tours via an online platform with curated experiences and a range of destination
-                    options.
+                  Stay updated with live location updates and know exactly where your parcel is at all times.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>System-driven Updates</h3>
+                  <h3>💰 Driver-Friendly Earnings Dashboard</h3>
                   <p>
-                    The whole system is automated for last-minute changes. No manual contact is required to deliver a
-                    hassle-free experience.
+                  Easily track your deliveries, payments, and earnings with complete transparency.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Automated Tour Updates</h3>
+                  <h3>🗺️ Turn-by-Turn Navigation</h3>
                   <p>
-                    Travelers and guides get updates about the tour status at every stage on the day of the booking.
+                  Optimize delivery routes with built-in directions to ensure faster and smoother journeys.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Accurate Calendar System</h3>
+                  <h3>💬 In-App Communication</h3>
                   <p>
-                    Travelers can select the exact time slot and place for their tours to be booked, scheduled, and
-                    confirmed.
+                  Chat directly with your driver or customer for updates, special instructions, or coordination.
                   </p>
                 </div>
               </div>
@@ -357,62 +352,57 @@ export default function Lechalo() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon">🎯</div>
-                <h3>Focused on Tours Only</h3>
+                <h3>Multi-Vehicle Delivery Support</h3>
                 <p>
-                  Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour
-                  specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get
-                  relevant results quickly.
+                Le Chalo offers flexible delivery options with 2-wheelers, 3-wheelers, and 4-wheelers to suit every parcel's size and weight. Whether it’s a quick city drop or an inter-city shipment, we’ve got you covered.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🎨</div>
-                <h3>Visually Clean & Intuitive</h3>
+                <h3>Live Bidding System for Drivers</h3>
                 <p>
-                  The interface is clean and modern — built using React.js, making it fast, interactive, and
-                  mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease
-                  of navigation.
+                Drivers can bid on available delivery requests in real-time, allowing users to get competitive rates. This creates a win-win environment where deliveries are faster and more cost-effective.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🤖</div>
-                <h3>Personalized Recommendations</h3>
+                <h3>Dual User Roles – Driver & Sender</h3>
                 <p>
-                  The idea is to help users get suggestions based on their travel style — for example, recommending
-                  eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart,
-                  personalized layer beyond traditional listings.
+                Whether you're sending a package or picking one up, Le Chalo allows easy profile setup for both users and drivers. This dual flexibility streamlines the entire logistics process.
+
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🔍</div>
-                <h3>Transparent Tour Information</h3>
+                <h3>End-to-End Data Security
+                </h3>
                 <p>
-                  Each tour listing includes detailed information like itinerary, what's included/excluded, maps,
-                  images, and real customer reviews — so users can make informed choices.
+                All user and delivery data is encrypted, ensuring complete privacy and protection throughout the app experience. Le Chalo follows strict security protocols to safeguard your personal information.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">📱</div>
-                <h3>End-to-End Booking Workflow</h3>
+                <h3>Clean, Responsive UI/UX</h3>
                 <p>
-                  The platform handles everything from browsing to booking, so users won't need to leave the site or
-                  coordinate over calls/messages.
+                The app’s sleek and minimalist interface is designed for ease of use by everyone — from tech-savvy users to first-time app users. Its responsive performance ensures smooth navigation and quick task execution.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">💡</div>
-                <h3>Why It's Useful</h3>
+                <h3>All-in-One Super App</h3>
                 <p>
-                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to
-                  search across multiple websites or worry about what's authentic — everything is curated.
-                  <br />
-                  <br />
-                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and
-                  manage bookings efficiently without building a separate website.
+                Originally launched for ride-sharing, Le Chalo now offers everything from parcel delivery to taxi bookings and shuttle services. It’s a one-stop app tailored for both logistics and travel needs.
+
                 </p>
               </div>
             </div>
@@ -422,9 +412,9 @@ export default function Lechalo() {
         {/* CTA Section */}
         <div className="cta-section">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Start Your Adventure?</h2>
+            <h2 className="cta-title"> Deliver Smarter, Live Simpler!</h2>
             <p className="cta-description">
-              Join thousands of travelers who have discovered their perfect tours with our innovative platform.
+            Step into the new era of hassle-free logistics — with Le Chalo, every delivery is quicker, smarter, and effortlessly managed.
             </p>
           </div>
         </div>
