@@ -129,65 +129,30 @@ export default function SaptaVidhiPortfolio() {
           </div>
 
           <div className="screens-grid">
-            <div className="screen-mockup large">
-              {/* <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
-                </div>
-              </div> */}
-              <div className="screen-content tall">
-                <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_1.png"
-                  alt="Profile Discovery"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=400&width=1100&text=Profile+Discovery"
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="screen-mockup">
-              <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
-                </div>
-              </div>
-              <div className="screen-content">
-                <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_2.png"
-                  alt="Smart Matching"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=300&width=350&text=Smart+Matching"
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="screen-mockup">
-              <div className="screen-header">
-                <div className="screen-controls">
-                  <span className="control red"></span>
-                  <span className="control yellow"></span>
-                  <span className="control green"></span>
-                </div>
-              </div>
-              <div className="screen-content">
-                <img
-                  src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiWeb_WebEarl_3.png"
-                  alt="Secure Communication"
-                  className="screen-image"
-                  onError={(e) => {
-                    e.target.src = "/placeholder.svg?height=300&width=350&text=Secure+Communication"
-                  }}
-                />
-              </div>
-            </div>
+            <img
+              src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_1.png"
+              alt="Profile Discovery"
+              className="screen-image"
+              onError={(e) => {
+                e.target.src = "/placeholder.svg?height=600&width=300&text=Profile+Discovery"
+              }}
+            />
+            <img
+              src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_2.png"
+              alt="Smart Matching"
+              className="screen-image"
+              onError={(e) => {
+                e.target.src = "/placeholder.svg?height=600&width=300&text=Smart+Matching"
+              }}
+            />
+            <img
+              src="/img/portfolio/newphotos/Saptavidhi/SaptaVidhiApp_WebEarl_3.png"
+              alt="Secure Communication"
+              className="screen-image"
+              onError={(e) => {
+                e.target.src = "/placeholder.svg?height=600&width=300&text=Secure+Communication"
+              }}
+            />
           </div>
         </div>
 

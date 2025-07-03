@@ -86,7 +86,7 @@
     }
 
     .visuals-section {
-      background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       padding: 100px 0;
       position: relative;
       overflow: hidden;
@@ -287,7 +287,7 @@
     }
 
     .multiple-screens-section {
-      background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+      background:  linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       padding: 100px 0;
       position: relative;
       overflow: hidden;
@@ -295,59 +295,49 @@
 
     .screens-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      max-width: 1200px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 20px;
       position: relative;
       z-index: 2;
     }
 
-    .screen-mockup {
-      background: #f7fafc;
+    .screen-image {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
       border-radius: 12px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-
-    .screen-mockup:hover {
-      transform: translateY(-10px);
-    }
-
-    .screen-mockup.large {
-      grid-column: span 2;
-      max-width: 700px;
+     
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       margin: 0 auto;
     }
 
-    .screen-header {
-      background: #e2e8f0;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      padding: 0 12px;
+    .screen-image:hover {
+      transform: translateY(-5px);
+      
     }
 
-    .screen-controls {
-      display: flex;
-      gap: 6px;
+    @media (max-width: 1024px) {
+      .screens-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 700px;
+      }
     }
 
-    .screen-controls .control {
-      width: 10px;
-      height: 10px;
-    }
-
-    .screen-content {
-      height: 350px;
-      background: #000;
-      position: relative;
-    }
-
-    .screen-content.tall {
-      height: 400px;
+    @media (max-width: 768px) {
+      .screens-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        gap: 20px;
+      }
+      
+      .screen-image {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     .approach-section {
