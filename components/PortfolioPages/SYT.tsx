@@ -103,9 +103,8 @@ export default function SYT() {
               </div>
               <h1 className="main-title">Start Your Tour</h1>
               <p className="main-subtitle">
-                Book storage space for personal belongings of travelers when they go off-destination in between a tour.
-                Discover amazing destinations through curated guided tours with transparent pricing and authentic
-                reviews.
+              Start Your Tour is a digital travel-tech platform. that bridges the gap between travellers and travel agencies. We provide an all-in-one solution for trip customisation, package management, and booking operations, making travel planning seamless and efficient.
+
               </p>
             </div>
 
@@ -279,33 +278,33 @@ export default function SYT() {
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>Easy Online Booking System</h3>
+                  <h3>User-Friendly Interface</h3>
                   <p>
-                    Travelers can book tours via an online platform with curated experiences and a range of destination
-                    options.
+                  The decent, easy to use, app experience provided by SYT, guarantees there are no problems navigating the app, whether you are a customer booking trips, or a services provider dealing with bookings.
+
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>System-driven Updates</h3>
+                  <h3>Real-Time Update & Alerts</h3>
                   <p>
-                    The whole system is automated for last-minute changes. No manual contact is required to deliver a
-                    hassle-free experience.
+                  Users and vendors are instantaneously notified of booking, messages, changes and confirmations.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Automated Tour Updates</h3>
+                  <h3>Customization Flexibility</h3>
                   <p>
-                    Travelers and guides get updates about the tour status at every stage on the day of the booking.
+                  Customers are able to order specialized packages, and sellers can simply design and adjust packages, hence the process is customized and streamlined.
+
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Accurate Calendar System</h3>
+                  <h3>Safe & Clear deals
+                  </h3>
                   <p>
-                    Travelers can select the exact time slot and place for their tours to be booked, scheduled, and
-                    confirmed.
+                  This will guarantee a convenient, clear and safe system to both vendors and users when booking an event and paying.
                   </p>
                 </div>
               </div>
@@ -321,62 +320,55 @@ export default function SYT() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon">🎯</div>
-                <h3>Focused on Tours Only</h3>
+                <h3>Vendor-Customer Direct Connection</h3>
                 <p>
-                  Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour
-                  specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get
-                  relevant results quickly.
+                Passing through intermediaries, the travellers do not need middlemen; they can talk and communicate with the confirmed local sellers and personalise the process of planning.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🎨</div>
-                <h3>Visually Clean & Intuitive</h3>
+                <h3>Clear Tour Details</h3>
                 <p>
-                  The interface is clean and modern — built using React.js, making it fast, interactive, and
-                  mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease
-                  of navigation.
+                Every touring itinerary is well-specified with itineraries, included/ excluded items, maps of localities, actual pictures, and true customer feedback, making users feel certain and consider their choices.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🤖</div>
-                <h3>Personalized Recommendations</h3>
+                <h3>Flexible Travel Packages</h3>
                 <p>
-                  The idea is to help users get suggestions based on their travel style — for example, recommending
-                  eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart,
-                  personalized layer beyond traditional listings.
+                Travellers can request, and vendors can build, fully personalised itineraries —  personal trips made easy.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🔍</div>
-                <h3>Transparent Tour Information</h3>
+                <h3>The All-in-One App experience</h3>
                 <p>
-                  Each tour listing includes detailed information like itinerary, what's included/excluded, maps,
-                  images, and real customer reviews — so users can make informed choices.
+                Finding a vendor, booking and paying everything takes place in the app- on both sides, the vendor and the user.
+
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">📱</div>
-                <h3>End-to-End Booking Workflow</h3>
+                <h3>Personalised Recommendations</h3>
                 <p>
-                  The platform handles everything from browsing to booking, so users won't need to leave the site or
-                  coordinate over calls/messages.
+                The idea is to help users get suggestions based on their travel style — for example, recommending  journeys within the style of their travel, contemporary smartness, and thoughtful experience.
+
+                
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">💡</div>
-                <h3>Why It's Useful</h3>
+                <h3>Intelligent Travel Aids</h3>
                 <p>
-                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to
-                  search across multiple websites or worry about what's authentic — everything is curated.
-                  <br />
-                  <br />
-                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and
-                  manage bookings efficiently without building a separate website.
+                Vendors have access to real-time analytics, reservation intelligence and trends data, whereas users can receive quick updates, filters, and saved trips.
+
                 </p>
               </div>
             </div>
@@ -386,9 +378,9 @@ export default function SYT() {
         {/* CTA Section */}
         <div className="cta-section">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Start Your Adventure?</h2>
+            <h2 className="cta-title">Connecting Explorers & Experience Creators</h2>
             <p className="cta-description">
-              Join thousands of travelers who have discovered their perfect tours with our innovative platform.
+            Whether you're planning your next trip or offering unforgettable experiences, everything starts here!
             </p>
           </div>
         </div>
