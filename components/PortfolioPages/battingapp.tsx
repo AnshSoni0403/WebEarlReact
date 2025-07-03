@@ -377,7 +377,7 @@ export default function BattingApp() {
           <div className="cta-content">
             <h2 className="cta-title">🏏 Ready to Build Your Winning Team?</h2>
             <p className="cta-description">
-            ⚡ Join thousands of cricket fans already competing on CricGem. Pick your match, build your dream team, and start winning real cash today!
+            Join thousands of cricket fans already competing on CricGem. Pick your match, build your dream team, and start winning real cash today!
             </p>
           </div>
         </div>
