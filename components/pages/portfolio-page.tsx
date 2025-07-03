@@ -255,8 +255,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/wordix.jpg" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
-                      updates for seamless journeys.
+                    An enchanting word search puzzle game that sharpens your mind and widens your vocabulary.
                     </p>
                     <br />
                     <b>Technology:</b>
