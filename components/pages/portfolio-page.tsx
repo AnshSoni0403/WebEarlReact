@@ -22,73 +22,6 @@ const PortfolioPage = () => {
     }
   }, []);
 
-  const portfolioItems = [
-    {
-      id: 1,
-      title: 'One Click',
-      image: '/img/OneClick Mobile Application.png',
-      description: 'The OneClick Application offers an easy way to quickly and easily search for local businesses, goods, or services that is interactive, intuitive, and quick. You can now use the top local search engine from your smartphone.',
-      technologies: 'UI/UX: Figma\nMobile: Android & iOS',
-      detailsLink: '/img/pdf/OneClick - Mock-up.pdf',
-  
-    },
-    {
-      id: 2,
-      title: 'AHA Application',
-      image: '/img/portfolio/AHA_Application.png',
-      description: 'Receive Personalized reports, recommendations, and prescriptions to improve organ function and health.\n\nUnderstand the implications of your blood test results on each of your organs and overall health.',
-      technologies: 'UI/UX: Figma\nMobile: iOS',
-      detailsLink: '#',
-      target: ''
-    },
-    {
-      id: 3,
-      title: 'Energeia Solutions',
-      image: '/img/portfolio/Energieagas1.png',
-      description: 'Urja Energy Solutions is a proud channel partner of Bharat Petroleum (BPCL) to supply LPG for Industrial / commercial applications',
-      technologies: 'Web: Wordpress\nDatabase: My SQL',
-      detailsLink: 'http://www.energeiasolutions.com',
-    
-    },
-    {
-      id: 4,
-      title: 'Matrimonial App',
-      image: '/img/portfolio/Matrimonial.png',
-      description: 'The main purpose of this application is to facilitate matchmaking business by applying the information in the field.\n\nUser can get information regarding their dream life partner at his/her home at his/her convenience.',
-      technologies: 'UI/UX: Figma\nMobile: iOS',
-      detailsLink: '/img/pdf/Matrimonial_App.pdf',
-
-    },
-    {
-      id: 5,
-      title: 'Voila Ecommorce',
-      image: '/img/portfolio/Ecommorce_Poster.png',
-      description: 'On the shot you can see the onboarding screen, where users can choose the goods category. The screen also shows goods cards, you can add them to your cart and buy it',
-      technologies: 'UI/UX: Figma\nMobile: iOS',
-      detailsLink: '/img/pdf/Voila_Ecommorce.pdf',
-   
-    },
-    {
-      id: 6,
-      title: 'Field Force Tracking',
-      image: '/img/portfolio/p2.png',
-      description: 'Online Staff\'s Current Location & Route of Employees on Map is available, Staff Tour / Visit Entry in mobile',
-      technologies: 'Mobile: Android\nWeb: Laravel\nAPI: PHP',
-      detailsLink: '#',
-      target: ''
-    },
-    {
-      id: 7,
-      title: 'Knock Knock',
-      image: '/img/portfolio/knock_knock.png',
-      description: 'Knock Knock visitor management application which secures the Visitors data at your work-places, Field, Exhibitions & Expo and many more places.',
-      technologies: 'Mobile: Android\nAPI: PHP',
-      detailsLink: '#',
-      target: ''
-    }
-    // Add more portfolio items as needed
-  ];
-
   return (
     <>
       <Head>
@@ -122,8 +55,7 @@ const PortfolioPage = () => {
                   <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
-                      updates for seamless journeys.
+                    Discover smarter, personalized travel with transparent listings and tailored experiences for every kind of explorer.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -150,8 +82,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/Matrimonial.png" alt="Saptavidhi Vendor" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    The main purpose of this application is to facilitate matchmaking business by applying the
-                    information in the field.
+                    SaptaVidhi is a culturally rooted matchmaking platform that blends traditional values with modern technology to help individuals find genuine and lasting relationships through a seamless and personalized experience.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -168,34 +99,6 @@ const PortfolioPage = () => {
               </div>
               <div className="portfolio-titile">
                 <h4>Saptavidhi</h4>
-              </div>
-            </div>
-
-            {/* single portfolio - iCare */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
-              <div className="single-portfolio">
-                <div className="portfolio-image">
-                  <Image src="/img/health-care-portfolio.png" alt="iCare" width={400} height={300} />
-                  <div className="portfolio-content">
-                    <p>
-                      iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book
-                      appointments through the app.
-                    </p>
-                    <br />
-                    <b>Technology:</b>
-                    <br />
-                    Web : ReactJs
-                    <br />
-                    Database : MongoDB
-                    <br />
-                    <Link href="/icare">
-                      View Details
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="portfolio-titile">
-                <h4>Icare</h4>
               </div>
             </div>
 
@@ -223,7 +126,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>Betting App</h4>
+                <h4>CricGem</h4>
               </div>
             </div>
 
@@ -268,8 +171,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/p1.png" alt="Nowo Chat" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      NOWO CHAT is a platform to connect two unknown persons with a COMMON interest in one place where
-                      they can CHAT according to their NEEDS and requirements.
+                    NowoChat is a global interest-based chat platform that connects users with similar hobbies, professions, or concerns. Whether you're looking to chat with experts, join support groups, or interact with people who share your passions, NowoChat offers secure, real-time conversations tailored to your needs.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -297,8 +199,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/p3.png" alt="LeChalo" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Find a ride to travel from one city to other as well as offer a ride to find a customer for
-                      traveling using only one application
+                    Effortlessly manage parcel deliveries with the Le Chalo App, whether you're a driver or a user, enjoy a seamless, secure, and feature-rich delivery experience available across all Android and iOS devices.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -432,8 +333,35 @@ const PortfolioPage = () => {
               </div>
             </div>
 
-            {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* single portfolio - iCare */}
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+              <div className="single-portfolio">
+                <div className="portfolio-image">
+                  <Image src="/img/health-care-portfolio.png" alt="iCare" width={400} height={300} />
+                  <div className="portfolio-content">
+                    <p>
+                      iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book
+                      appointments through the app.
+                    </p>
+                    <br />
+                    <b>Technology:</b>
+                    <br />
+                    Web : ReactJs
+                    <br />
+                    Database : MongoDB
+                    <br />
+                    <Link href="/icare">
+                      View Details
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="portfolio-titile">
+                <h4>Icare</h4>
+              </div>
+            </div>
+
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/OneClick Mobile Application.png" alt="One Click" width={400} height={300} />
@@ -459,10 +387,9 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>One Click</h4>
               </div>
-            </div>
+            </div> */}
 
-            {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/AHA_Application.png" alt="AHA Application" width={400} height={300} />
@@ -490,9 +417,9 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>AHA Application</h4>
               </div>
-            </div>
+            </div> */}
 
-            {/* single portfolio */}
+            {/* single portfolio
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
@@ -521,10 +448,10 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Energeia Solutions</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/p4.png" alt="Bright Spark" width={400} height={300} />
@@ -549,10 +476,10 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Bright Spark</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/Ecommorce_Poster.png" alt="Voila Ecommorce" width={400} height={300} />
@@ -580,10 +507,10 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Voila Ecommorce</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/p2.png" alt="Care For Each" width={400} height={300} />
@@ -613,10 +540,10 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Care For Each</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image src="/img/portfolio/minto1.png" alt="Minto App" width={400} height={300} />
@@ -640,10 +567,10 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>Minto App</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* single portfolio */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
                   <Image
@@ -674,7 +601,7 @@ const PortfolioPage = () => {
               <div className="portfolio-titile">
                 <h4>DICCI Gujarat</h4>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -699,8 +626,6 @@ const PortfolioPage = () => {
         </div>
       </div>
       
-
-
       <Footer />
       
       {/* Add necessary scripts */}
