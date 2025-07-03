@@ -232,15 +232,15 @@ export default function NowoPortfolio() {
 
               <div className="revolution-right">
                 <div className="floating-elements">
-                  <div className="floating-card card-1">
+                  <div className="floating-card card-1" style={{marginRight: '450px'}}>
                     <div className="card-icon">🎮</div>
                     <div className="card-text">Classic Gameplay</div>
                   </div>
-                  <div className="floating-card card-2">
+                  <div className="floating-card card-2" style={{marginLeft: '450px'}}>
                     <div className="card-icon">🤖</div>
                     <div className="card-text">Smart AI Opponent</div>
                   </div>
-                  <div className="floating-card card-3">
+                  <div className="floating-card card-3" style={{marginRight: '450px'}}>
                     <div className="card-icon">👥</div>
                     <div className="card-text">Multiplayer Fun</div>
                   </div>
