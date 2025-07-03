@@ -328,7 +328,7 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🎨</div>
+                <div className="feature-icon">🗺️</div>
                 <h3>Clear Tour Details</h3>
                 <p>
                 Every touring itinerary is well-specified with itineraries, included/ excluded items, maps of localities, actual pictures, and true customer feedback, making users feel certain and consider their choices.
@@ -336,7 +336,7 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🤖</div>
+                <div className="feature-icon">🧩</div>
                 <h3>Flexible Travel Packages</h3>
                 <p>
                 Travellers can request, and vendors can build, fully personalised itineraries —  personal trips made easy.
@@ -345,7 +345,7 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🔍</div>
+                <div className="feature-icon">📲</div>
                 <h3>The All-in-One App experience</h3>
                 <p>
                 Finding a vendor, booking and paying everything takes place in the app- on both sides, the vendor and the user.
@@ -354,7 +354,7 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📱</div>
+                <div className="feature-icon">🎯</div>
                 <h3>Personalised Recommendations</h3>
                 <p>
                 The idea is to help users get suggestions based on their travel style — for example, recommending  journeys within the style of their travel, contemporary smartness, and thoughtful experience.
