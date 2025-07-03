@@ -156,7 +156,7 @@ export default function NowoPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🏠</div>
+                  <div className="feature-icon">👆</div>
                   <div className="feature-content">
                     <h3>Easy One-Tap Gameplay</h3>
                     <p>Tap and play instantly with intuitive controls.</p>
@@ -164,7 +164,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📱</div>
+                  <div className="feature-icon">🤖</div>
                   <div className="feature-content">
                     <h3>Player vs AI Mode</h3>
                     <p>Challenge the AI and sharpen your skills.</p>
@@ -172,7 +172,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🔬</div>
+                  <div className="feature-icon">👥</div>
                   <div className="feature-content">
                     <h3>Multiplayer Mode</h3>
                     <p>Battle with friends for the ultimate bragging rights.</p>
@@ -180,7 +180,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📊</div>
+                  <div className="feature-icon">↩️</div>
                   <div className="feature-content">
                     <h3>Undo Move Option</h3>
                     <p>Made a mistake? Just undo and try again.</p>
@@ -188,7 +188,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎯</div>
+                  <div className="feature-icon">🎉</div>
                   <div className="feature-content">
                     <h3>Winning Animation</h3>
                     <p>Celebrate victories with colorful fireworks and effects.</p>
@@ -196,7 +196,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📦</div>
+                  <div className="feature-icon">🎨</div>
                   <div className="feature-content">
                     <h3>Free & Premium Themes</h3>
                     <p>Choose from basic and prime visual packages.</p>
