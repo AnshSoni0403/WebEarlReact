@@ -90,20 +90,45 @@ export default function BattingApp() {
       <Header />
       <div className="portfolio-detail-page">
         {/* Hero Section - Centered Logo and Title */}
-        <div className="hero-section">
-          <div className="container">
-            <div className="logo-section">
-              <div className="logo-icon">
-                <Image
-                  src="/img/sytlogo.png"
-                  alt="Start Your Tour Logo"
-                  width={100}
-                  height={100}
-                  className="logo-image"
+        <div className="hero-section" style={{ padding: '60px 0' }}>
+          <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
+              <div style={{ 
+                margin: ' auto 20px',
+                width: '60px',
+                height: '60px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+                
+              }}>
+                <img
+                  src="/img/portfolio/newphotos/cricgem/logo.png"
+                  alt="Betting App Logo"
+                  style={{ 
+                    width: '120%',
+                    height: '120%',
+                    objectFit: 'contain',
+                    display: 'block'
+                  }}
                 />
               </div>
-              <h1 className="main-title">BETTING APP</h1>
-              <p className="main-subtitle">
+              <h1 style={{ 
+                fontSize: '3rem', 
+                fontWeight: '800', 
+                color: '#1a202c',
+                margin: '0',
+                lineHeight: '1.2'
+              }}>
+                BETTING APP
+              </h1>
+              <p style={{
+                fontSize: '1.1rem',
+                color: '#4a5568',
+                maxWidth: '800px',
+                margin: '0 auto',
+                lineHeight: '1.7'
+              }}>
                 Book storage space for personal belongings of travelers when they go off-destination in between a tour.
                 Discover amazing destinations through curated guided tours with transparent pricing and authentic
                 reviews.
