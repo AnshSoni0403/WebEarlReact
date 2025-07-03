@@ -45,8 +45,8 @@ export default function SaptaVidhiPortfolio() {
             <div className="hero-right">
               <div className="logo-container" style={{ marginTop: '30px', display: 'flex', justifyContent: 'center' }}>
                 <img 
-                  src="/img/portfolio/saptavidhi/logo.png" 
-                  alt="Saptavidhi Logo" 
+                  src="/img/portfolio/newphotos/MarkMe/logo.jpg" 
+                  alt="Mark Me Logo" 
                   style={{ maxWidth: '180px', height: 'auto', borderRadius: '20px',marginTop: '40px' }} 
                   onError={(e) => {
                     e.target.src = "/placeholder-logo.png";
@@ -82,8 +82,7 @@ export default function SaptaVidhiPortfolio() {
                 position: 'relative',
                 borderRadius: '30px',
                 padding: '8px',
-                background: '#f5f5f7',
-                boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
+                
                 margin: '10px',
                 flex: '0 0 calc(25% - 40px)',
                 minWidth: '250px'
