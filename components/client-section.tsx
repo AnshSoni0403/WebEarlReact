@@ -3,10 +3,10 @@ import "../styles/all.css"
 
 export default function ClientSection() {
   const clients = [
-    { src: "/img/syt-logo.png", alt: "Client 1" },
-    { src: "/img/client/33.png", alt: "Client 2" },
+    { src: "/img/client/SYT.png", alt: "Client 1" },
+    { src: "/img/client/markme.png", alt: "Client 2" },
     { src: "/img/saptavidhi-logo.png", alt: "Client 3" },
-    { src: "/img/client/55.png", alt: "Client 4" },
+    { src: "/img/client/wayout.png", alt: "Client 4" },
     { src: "/img/client/66.png", alt: "Client 5" },
   ]
 

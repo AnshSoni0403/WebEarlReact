@@ -224,7 +224,7 @@ const PortfolioPage = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
+                  <Image src="/img/portfolio/Way out.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
                     A zombie survival game set in a locked-down college where you fight your way floor-by-floor to escape the walking dead.
