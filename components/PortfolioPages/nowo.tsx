@@ -67,11 +67,10 @@ export default function NowoPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
-              <h1 className="hero-title">Nowo</h1>
+              <h1 className="hero-title">NowoChat</h1>
               <p className="hero-description">
-                Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
-                collection at your convenience. With just a few taps on the app, users can schedule tests and receive
-                diagnostic reports without stepping outside.
+              An innovative community-based chatting app designed to bring together people who share similar interests, challenges, or career paths. Whether you're a student needing academic help, a patient seeking emotional support, or a professional looking to network, NowoChat helps you discover the right people and communities to connect, chat, and grow with. The platform offers a seamless way to join groups, ask questions, share experiences, and receive expert advice—all within a secure environment.
+
               </p>
             </div>
             <div className="hero-right">
@@ -99,10 +98,8 @@ export default function NowoPortfolio() {
           <div className="about-content">
             <h2 className="section-title">About Project</h2>
             <p className="about-description">
-              Care is a comprehensive healthcare platform that revolutionizes diagnostic testing by bringing lab
-              services directly to your doorstep. Our platform simplifies diagnostic test bookings with an easy-to-use
-              interface, partnerships with NABL-accredited labs, and certified technicians who follow strict safety
-              protocols.
+            Launched in 2020 by CDK Communication Private Limited, NowoChat was built to address a real need—helping individuals connect with like-minded people when facing specific life or career challenges. From students and job seekers to patients and professionals, NowoChat serves as a powerful interest-focused communication platform where users can join relevant groups, find mentors, ask questions, and build meaningful conversations. It is more than just a chatting app—it's a space for connection, clarity, and community support.
+
             </p>
 
             <div className="features-showcase">
@@ -154,56 +151,57 @@ export default function NowoPortfolio() {
                 <div className="feature-item">
                   <div className="feature-icon">🏠</div>
                   <div className="feature-content">
-                    <h3>Doorstep Sample Collection</h3>
-                    <p>Schedule lab tests from home with certified technicians visiting at your convenience</p>
+                    <h3>Interest-Based Group Chats</h3>
+                    <p> Easily connect with people who share your interests, passions, or personal challenges.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📱</div>
                   <div className="feature-content">
-                    <h3>Easy Booking Interface</h3>
-                    <p>Simple and intuitive app design for seamless test booking and scheduling</p>
+                    <h3>150+ Pre-Built Communities</h3>
+                    <p>Explore a wide variety of groups across healthcare, education, sports, technology, and more.
+                    </p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">🔬</div>
                   <div className="feature-content">
-                    <h3>NABL-Accredited Labs</h3>
-                    <p>Trusted partnerships with certified labs ensuring accurate and reliable test results</p>
+                    <h3>Unlimited Group Joining</h3>
+                    <p> Join as many groups as you want—there’s no limit to how much you can explore and engage.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📊</div>
                   <div className="feature-content">
-                    <h3>Digital Reports</h3>
-                    <p>Instant access to test results with downloadable digital reports and tracking</p>
+                    <h3>Global User Network</h3>
+                    <p> Connect with individuals around the world to share ideas, get support, and expand your knowledge across cultures and industries.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">🎯</div>
                   <div className="feature-content">
-                    <h3>Personalized Recommendations</h3>
-                    <p>AI-driven test suggestions based on age, lifestyle, and medical history</p>
+                    <h3>Expert & Mentor Access</h3>
+                    <p> Find verified experts, coaches, and mentors in your desired category to get trusted answers and guidance.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">📦</div>
                   <div className="feature-content">
-                    <h3>Health Packages</h3>
-                    <p>Curated health checkup packages for comprehensive wellness monitoring</p>
+                    <h3>Smart Search & Discovery</h3>
+                    <p> Search for users, topics, and groups by interest, profession, subject, or field—find exactly what you're looking for.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
                   <div className="feature-icon">👨‍⚕️</div>
                   <div className="feature-content">
-                    <h3>Trained Professionals</h3>
-                    <p>Certified phlebotomists following strict hygiene and safety protocols</p>
+                    <h3>Secure, Private Messaging</h3>
+                    <p>All conversations are protected with end-to-end encryption, ensuring your chats remain private and secure.</p>
                   </div>
                 </div>
               </div>
@@ -216,16 +214,18 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
-                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
+                <div className="revolution-badge"> CHATTING APPLICATION</div>
+                <h2 className="revolution-title">What Makes NowoChat Unique</h2>
                 <p className="revolution-description">
-                  Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
-                  healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
-                  complete safety.
+                The core mission of NowoChat is to create a safe and structured digital space where users can overcome isolation, confusion, and information overload by directly interacting with the right community. What sets NowoChat apart from random chat apps is its focused and functional approach—it connects people based on shared experiences, expertise, and needs.<br/>
+                Whether it’s a cancer patient seeking mental health support, a student preparing for exams, or an athlete connecting with peers, NowoChat helps users find answers, encouragement, and real companionship. It’s not just about chatting—it's about building a community that helps you grow.
+
+
                 </p>
+                <p></p>
 
                 <div className="revolution-stats">
-                  <div className="stat-item">
+                  {/* <div className="stat-item">
                     <div className="stat-number">50K+</div>
                     <div className="stat-label">Tests Completed</div>
                   </div>
@@ -240,22 +240,22 @@ export default function NowoPortfolio() {
                   <div className="stat-item">
                     <div className="stat-number">24/7</div>
                     <div className="stat-label">Support Available</div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="revolution-features">
-                  <div className="mini-feature">
+                 {/* <div className="mini-feature">
                     <span className="mini-icon">⚡</span>
                     <span>Same-day sample collection</span>
                   </div>
                   <div className="mini-feature">
                     <span className="mini-icon">🔒</span>
                     <span>100% secure & confidential</span>
-                  </div>
-                  <div className="mini-feature">
+                  </div> */}
+                  {/* <div className="mini-feature">
                     <span className="mini-icon">📱</span>
                     <span>Real-time notifications</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
