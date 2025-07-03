@@ -25,6 +25,7 @@ export default function SaptaVidhiPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               <h1 className="project-title">SaptaVidhi</h1>
+              <p style={{marginBottom: '15px'}}><b>Matrimonial Platform</b></p>
               <p className="project-description">
                 ❤️ SaptaVidhi is an enlightened marriage-making application developed in the conviction that one should seek a marriage partner in a dignified, relevant and intuitive manner. With its basis on Indian cultures and a target at the current generation, the platform ensures the users find desirable matches by identifying the things which are important to them, such as; caste, language, income, religion, or lifestyles, etc. SaptaVidhi sets a preference and all the way to real-time chat, it is personal, safe, and transparent.
               </p>

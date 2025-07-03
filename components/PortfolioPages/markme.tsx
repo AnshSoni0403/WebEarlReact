@@ -25,6 +25,7 @@ export default function SaptaVidhiPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               <h1 className="project-title">Mark Me</h1>
+              <p><b>Attendance Management App</b></p>
               <p className="project-description">
                  Mark Me is an intuitive, cross-platform attendance management app designed for offices, institutes, and coworking spaces. It simplifies the punch-in/punch-out process with real-time logging and calendar-based insights.
 

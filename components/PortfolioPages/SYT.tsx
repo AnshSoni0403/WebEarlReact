@@ -102,6 +102,8 @@ export default function SYT() {
                 />
               </div>
               <h1 className="main-title">Start Your Tour</h1>
+              <p className="main-subtitle"><b>Travel Website</b></p>
+              
               <p className="main-subtitle">
               Start Your Tour is a digital travel-tech platform. that bridges the gap between travellers and travel agencies. We provide an all-in-one solution for trip customisation, package management, and booking operations, making travel planning seamless and efficient.
 

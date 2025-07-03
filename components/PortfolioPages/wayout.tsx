@@ -23,6 +23,7 @@ export default function WayOut() {
           <div className="hero-content">
             <div className="hero-left">
               <h1 className="project-title">Wayout</h1>
+              <p className=""><b>Zombie Game</b></p>
               <p className="project-description">
               Way Out is a gripping 2D survival game where you navigate a zombie-ravaged college campus. Trapped on the top floor, you must fight your way down—level by level—collecting weapons, unlocking upgrades, and outsmarting the walking days. Every decision matters. Every floor is a test. Will you escape… or become one of them?
 

@@ -67,6 +67,7 @@ export default function NowoPortfolio() {
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
               <h1 className="hero-title">XOXO</h1>
+              <p style={{color:'white'}}><b>Tic Tac Toe Game</b></p>
               <p className="hero-description">
               XOXO brings the timeless fun of tic-tac-toe into a vibrant, modern digital format. With a striking neon-themed design, simple controls, and exciting player-versus-AI and multiplayer modes, it redefines casual gaming for all age groups. It delivers a fun, fast-paced brain teaser experience right from your mobile device.
               </p>

@@ -67,6 +67,7 @@ export default function NowoPortfolio() {
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
               <h1 className="hero-title">Wordix</h1>
+              <p style={{color:'white'}}><b>Word Search Game</b></p>
               <p className="hero-description">
               Wordix is a beautifully crafted word search puzzle game designed for players who enjoy testing their vocabulary skills in a calming and immersive environment. With its soothing visuals and brain-teasing gameplay, Wordix offers the perfect blend of relaxation and mental stimulation. Every level is a new voyage into the world of words.
               </p>

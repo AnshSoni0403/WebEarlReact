@@ -68,6 +68,7 @@ export default function NowoPortfolio() {
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
               <h1 className="hero-title">NowoChat</h1>
+              <p style={{color:'white',textAlign:'left'}}><b>Chatting App</b></p>
               <p className="hero-description">
               An innovative community-based chatting app designed to bring together people who share similar interests, challenges, or career paths. Whether you're a student needing academic help, a patient seeking emotional support, or a professional looking to network, NowoChat helps you discover the right people and communities to connect, chat, and grow with. The platform offers a seamless way to join groups, ask questions, share experiences, and receive expert advice—all within a secure environment.
 

@@ -122,6 +122,7 @@ export default function Lechalo() {
                 />
               </div>
               <h1 className="main-title">Lechalo</h1>
+              <p className="main-subtitle"><b>Automobility</b></p>
               <p className="main-subtitle">
               Le Chalo has evolved from a taxi-sharing app into a powerful super app for logistics and transportation. Designed with users and drivers in mind, Le Chalo simplifies parcel delivery with real-time tracking, driver bidding, and multi-vehicle support — all through a sleek and user-friendly mobile experience. Today, Le Chalo offers services across shuttle transport, parcel delivery, and taxi bookings, making it your all-in-one solution for efficient, reliable, and convenient travel and logistics.
               </p>
