@@ -220,7 +220,7 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
+                {/* <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div> */}
                 <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
                 <p className="revolution-description">
                   Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
@@ -233,20 +233,20 @@ export default function NowoPortfolio() {
               <div className="revolution-right">
                 <div className="floating-elements">
                   <div className="floating-card card-1">
-                    <div className="card-icon">🩺</div>
-                    <div className="card-text">Professional Care</div>
+                    <div className="card-icon">🎮</div>
+                    <div className="card-text">Classic Gameplay</div>
                   </div>
                   <div className="floating-card card-2">
-                    <div className="card-icon">🏠</div>
-                    <div className="card-text">Home Comfort</div>
+                    <div className="card-icon">🤖</div>
+                    <div className="card-text">Smart AI Opponent</div>
                   </div>
                   <div className="floating-card card-3">
-                    <div className="card-icon">⏰</div>
-                    <div className="card-text">Time Saving</div>
+                    <div className="card-icon">👥</div>
+                    <div className="card-text">Multiplayer Fun</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">📊</div>
-                    <div className="card-text">Instant Reports</div>
+                    <div className="card-icon">🏆</div>
+                    <div className="card-text">Win Rewards</div>
                   </div>
                 </div>
 
