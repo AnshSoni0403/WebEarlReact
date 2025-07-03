@@ -124,7 +124,7 @@ export default function NowoPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_4.png"
+                      src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_7.png"
                       alt="Booking Features"
                       className="screen-bg"
                       onError={(e) => {
