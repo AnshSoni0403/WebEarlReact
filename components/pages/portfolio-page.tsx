@@ -82,7 +82,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/Matrimonial.png" alt="Saptavidhi Vendor" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    SaptaVidhi is a culturally rooted matchmaking platform that blends traditional values with modern technology to help individuals find genuine and lasting relationships through a seamless and personalized experience.
+                    SaptaVidhi is a culturally rooted matchmaking platform that blends traditional values with modern technology to help individuals find genuine and lasting relationships.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -198,7 +198,7 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/p3.png" alt="LeChalo" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    Effortlessly manage parcel deliveries with the Le Chalo App, whether you're a driver or a user, enjoy a seamless, secure, and feature-rich delivery experience available across all Android and iOS devices.
+                    Effortlessly manage parcel deliveries with the Le Chalo App, whether you're a driver or a user -enjoy a seamless, secure experience available.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -227,8 +227,7 @@ const PortfolioPage = () => {
                   <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
-                      updates for seamless journeys.
+                    A zombie survival game set in a locked-down college where you fight your way floor-by-floor to escape the walking dead.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -310,8 +309,8 @@ const PortfolioPage = () => {
                   <Image src="/img/portfolio/MarkMe.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
-                      updates for seamless journeys.
+                    Smart, effortless attendance tracking for workplaces, campuses & more.
+
                     </p>
                     <br />
                     <b>Technology:</b>
