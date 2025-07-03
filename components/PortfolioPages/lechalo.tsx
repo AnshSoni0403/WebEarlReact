@@ -93,13 +93,32 @@ export default function Lechalo() {
         <div className="hero-section">
           <div className="container">
             <div className="logo-section">
-              <div className="logo-icon">
+              <div className="logo-icon" style={{
+                width: '120px',
+                height: '120px',
+                
+                
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                
+                margin: '0 auto 20px',
+                overflow: 'hidden',
+                padding: '15px',
+                boxSizing: 'border-box'
+              }}>
                 <Image
-                  src="/img/sytlogo.png"
-                  alt="Start Your Tour Logo"
-                  width={100}
-                  height={100}
-                  className="logo-image"
+                  src="/img/portfolio/newphotos/Leo/logo.png"
+                  alt="Lechalo Logo"
+                  width={90}
+                  height={90}
+                  style={{
+                    objectFit: 'contain',
+                    width: '100%',
+                    height: 'auto',
+                    maxWidth: '100%',
+                    maxHeight: '100%'
+                  }}
                 />
               </div>
               <h1 className="main-title">Lechalo</h1>
