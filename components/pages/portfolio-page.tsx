@@ -280,7 +280,7 @@ const PortfolioPage = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
+                  <Image src="/img/portfolio/xoxo.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
                       Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time
@@ -308,7 +308,7 @@ const PortfolioPage = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/syt-portfolio.png" alt="Start Your Tour" width={400} height={300} />
+                  <Image src="/img/portfolio/MarkMe.png" alt="Start Your Tour" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
                       Start Your Tour provides AI-powered travel experiences with smart itineraries and real-time

@@ -280,36 +280,35 @@ export default function BattingApp() {
             <div className="features-layout">
               <div className="features-left">
                 <div className="section-label">Core Features</div>
-                <h2 className="section-title">Enhancing User Experience</h2>
+                <h2 className="section-title">🏆 Enhancing User Experience</h2>
               </div>
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>Live Match Sync</h3>
+                  <h3>⚡ Live Match Sync</h3>
                   <p>
-                  Stay in sync with real-time match updates and track your fantasy team’s performance as the game unfolds.
+                  Stay in sync with real-time match updates and track your fantasy team's performance as the game unfolds.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>System-driven Updates</h3>
+                  <h3>🏆 Multiple Contest Types</h3>
                   <p>
-                    The whole system is automated for last-minute changes. No manual contact is required to deliver a
-                    hassle-free experience.
+                    Play in mega leagues, head-to-head battles, or private games with friends—there's a contest for every skill level.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Multiple Contest Types</h3>
-                  <p>
-                  Play in mega leagues, head-to-head battles, or private games with friends—there’s a contest for every skill level.
-                  </p>
-                </div>
-
-                <div className="feature-item">
-                  <h3>Instant Withdrawals</h3>
+                  <h3>🏦 Instant Withdrawals</h3>
                   <p>
                   Securely withdraw your winnings instantly with reliable payment gateways and zero hassle.
+                  </p>
+                </div>
+
+                <div className="feature-item">
+                  <h3>🔄 Live Match Sync</h3>
+                  <p>
+                  Stay updated with real-time match scores and track your fantasy team's performance as the game progresses.
                   </p>
                 </div>
               </div>
@@ -324,7 +323,7 @@ export default function BattingApp() {
 
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">🎯</div>
+                <div className="feature-icon">🛡️</div>
                 <h3>Secure Play</h3>
                 <p>
                 Play in a safe and fair environment with verified users, anti-cheat systems, and transparent scoring. CricGem is committed to ensuring integrity in every contest.
@@ -332,7 +331,7 @@ export default function BattingApp() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🎨</div>
+                <div className="feature-icon">⚡</div>
                 <h3>Quick Setup</h3>
                 <p>
                 Register easily, choose a match, and start building your fantasy team in just a few taps. CricGem is designed for smooth and fast onboarding.
@@ -340,23 +339,23 @@ export default function BattingApp() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🤖</div>
-                <h3> Live Leaderboards</h3>
+                <div className="feature-icon">🏆</div>
+                <h3>Live Leaderboards</h3>
                 <p>
-                Track your team’s progress in real time with live score updates and rankings. See how your strategy plays out as matches unfold.
+                Track your team's progress in real time with live score updates and rankings. See how your strategy plays out as matches unfold.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🔍</div>
-                <h3> Refer & Earn</h3>
+                <div className="feature-icon">👥</div>
+                <h3>Refer & Earn</h3>
                 <p>
                 Share CricGem with your friends using your referral code. As they join and participate, you unlock special benefits and exclusive in-app features.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📱</div>
+                <div className="feature-icon">📊</div>
                 <h3>Player Insights</h3>
                 <p>
                 Access useful stats, performance history, and expert tips to help you make better team decisions. CricGem supports informed, skillful play.
@@ -364,7 +363,7 @@ export default function BattingApp() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">💡</div>
+                <div className="feature-icon">🎁</div>
                 <h3>Referral Rewards</h3>
                 <p>New users receive a welcome benefit when they join CricGem. Invite friends and grow a network of fellow fans while enjoying added features along the way.
                 </p>
@@ -376,9 +375,9 @@ export default function BattingApp() {
         {/* CTA Section */}
         <div className="cta-section">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Build Your Winning Team?</h2>
+            <h2 className="cta-title">🏏 Ready to Build Your Winning Team?</h2>
             <p className="cta-description">
-            Join thousands of cricket fans already competing on CricGem. Pick your match, build your dream team, and start winning real cash today!
+            ⚡ Join thousands of cricket fans already competing on CricGem. Pick your match, build your dream team, and start winning real cash today!
             </p>
           </div>
         </div>
