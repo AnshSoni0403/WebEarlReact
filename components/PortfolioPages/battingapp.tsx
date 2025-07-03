@@ -94,20 +94,19 @@ export default function BattingApp() {
           <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '20px' }}>
               <div style={{ 
-                margin: ' auto 20px',
-                width: '60px',
-                height: '60px',
+                margin: '40px auto 20px',
+                width: '50px',
+                height: '50px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
-                
               }}>
                 <img
                   src="/img/portfolio/newphotos/cricgem/logo.png"
                   alt="Betting App Logo"
                   style={{ 
-                    width: '120%',
-                    height: '120%',
+                    width: '200%',
+                    height: '200%',
                     objectFit: 'contain',
                     display: 'block'
                   }}
