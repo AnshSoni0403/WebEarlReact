@@ -204,7 +204,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🪙</div>
+                  <div className="feature-icon">💰</div>
                   <div className="feature-content">
                     <h3>Coin Rewards System</h3>
                     <p>Earn coins to stay motivated.</p>
@@ -252,7 +252,7 @@ export default function NowoPortfolio() {
                     <div className="card-text">Competitive</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">🏅</div>
+                    <div className="card-icon">🎁</div>
                     <div className="card-text">Rewarding</div>
                   </div>
                 </div>
