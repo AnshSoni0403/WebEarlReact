@@ -142,7 +142,7 @@ export default function SYT() {
                 <span>Desktop</span>
               </button>
 
-              <button
+              {/* <button
                 className={`device-btn ${activeDevice === "tablet" ? "active" : ""}`}
                 onClick={() => setActiveDevice("tablet")}
               >
@@ -151,7 +151,7 @@ export default function SYT() {
                   <circle cx="12" cy="18" r="1" fill="currentColor" />
                 </svg>
                 <span>Tablet</span>
-              </button>
+              </button> */}
 
               <button
                 className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
