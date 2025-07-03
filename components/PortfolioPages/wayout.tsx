@@ -24,20 +24,21 @@ export default function WayOut() {
             <div className="hero-left">
               <h1 className="project-title">Wayout</h1>
               <p className="project-description">
-                ❤️ Welcome to Wayout – Where Meaningful Matches Begin. At Wayout, we believe that love is a
-                journey—and every individual deserves a meaningful and lasting connection. Our platform blends
-                traditional values with modern technology, offering a trusted and efficient path to finding your life
-                partner through seamless and personalized matchmaking.
+              Way Out is a gripping 2D survival game where you navigate a zombie-ravaged college campus. Trapped on the top floor, you must fight your way down—level by level—collecting weapons, unlocking upgrades, and outsmarting the walking days. Every decision matters. Every floor is a test. Will you escape… or become one of them?
+
+
+
               </p>
               <div className="project-tags">
-                <span className="tag">matrimonial platform</span>
-                <span className="tag">matchmaking algorithms</span>
-                <span className="tag">cultural values</span>
-                <span className="tag">profile verification</span>
-                <span className="tag">secure communication</span>
-                <span className="tag">compatibility matching</span>
-                <span className="tag">traditional meets modern</span>
-                <span className="tag">life partner search</span>
+              <span className="tag">Zombie game</span>
+              <span className="tag">Survival</span>
+              <span className="tag">Horror</span>
+              <span className="tag">Shooter</span>
+              <span className="tag">Apocalypse</span>
+              <span className="tag">School</span>
+              <span className="tag">Story mode</span>
+<span className="tag">Walking Dead</span>
+
               </div>
             </div>
             <div className="hero-right">
@@ -93,21 +94,17 @@ export default function WayOut() {
         {/* Project Objectives Section */}
         <div className="objectives-section">
           <div className="objectives-content">
-            <h2 className="section-title">Project Objectives</h2>
+            <h2 className="section-title">Objective of the App</h2>
             <div className="objectives-layout">
               <div className="objectives-text">
-                The objective of this project is to create a comprehensive matrimonial platform that seamlessly blends
-                traditional matchmaking values with modern technology. SaptaVidhi aims to provide a trusted, secure, and
-                culturally-sensitive environment where individuals can find meaningful connections that align with their
-                values, preferences, and life goals. The platform focuses on verified profiles, advanced compatibility
-                algorithms, and personalized matchmaking to ensure users find not just a partner, but a lifelong
-                companion.
+              Way Out is a fast-paced zombie survival game where players must fight, strategize, and escape from a deadly viral outbreak that has overrun their college campus. With immersive maps and action-packed combat, players battle through terrifying levels, unlock powerful weapons, and uncover hidden elements to reach freedom.<br/>
+<b>Your mission: Survive every floor. Escape every zombie. Or become one of them.
+</b>
               </div>
               <div className="highlight-box">
                 <div className="highlight-text">
-                  The project focuses on creating meaningful connections through cultural understanding, advanced
-                  filtering systems, and secure communication channels for lasting relationships and matrimonial
-                  success.
+                We took a narrative-first approach to designing Way Out, crafting the game around an intense storyline of infection, isolation, and survival. Our visual style blends suspense with stylized horror, keeping players engaged through cinematic UI and compelling level progression.
+
                 </div>
               </div>
             </div>
@@ -183,58 +180,57 @@ export default function WayOut() {
         {/* Project Approach Section */}
         <div className="approach-section">
           <div className="approach-content">
-            <h2 className="section-title">Project Approach / Solution</h2>
-            <p className="approach-intro">
-              Employ a user-focused and culturally-sensitive approach to streamline matrimonial operations, enhance
-              compatibility matching, and secure the platform for meaningful connections and lasting relationships.
-            </p>
+            <h2 className="section-title"> 6 Unique Features of the App </h2>
+            
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title">Advanced Profile Verification</h3>
+                <h3 className="solution-title"> Multi-Themed Story Maps  </h3>
                 <p className="solution-description">
-                  Implement comprehensive verification protocols to ensure authentic profiles and build trust within the
-                  matrimonial community.
+                Explore diverse in-game locations such as science labs, classrooms, dormitories, libraries, sports fields, and parking areas—each featuring unique zombie threats and survival paths.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Cultural Compatibility Matching</h3>
+                <h3 className="solution-title">Narrative-Driven Gameplay                </h3>
                 <p className="solution-description">
-                  Develop sophisticated algorithms that consider cultural values, traditions, and lifestyle preferences
-                  for meaningful matches.
+                Uncover notes, radio messages, and hidden objects that slowly reveal the origin of the virus and the fate of your fellow students.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Secure Communication Platform</h3>
+                <h3 className="solution-title"> Power Elements and Health Boosters                </h3>
                 <p className="solution-description">
-                  Create a safe and private messaging system that allows users to connect while maintaining privacy and
-                  security.
+                Pick up 2x damage boosters, medikits (+40% health), burgers (+20% health), and bullet reloads to increase your chances of surviving each wave.
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Personalized Matchmaking</h3>
+                <h3 className="solution-title">5 Unlockable Weapons
+                </h3>
                 <p className="solution-description">
-                  Utilize AI-driven recommendations based on preferences, compatibility scores, and behavioral patterns
-                  for better matches.
+                Unlock and upgrade a variety of military-grade weapons scattered across the destroyed campus—from handguns to high-impact rifles.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Mobile-First Experience</h3>
+                <h3 className="solution-title"> Immersive Game Sound Design
+                </h3>
                 <p className="solution-description">
-                  Design responsive interfaces optimized for mobile devices to ensure seamless access across all
-                  platforms.
+                Each game action is enhanced by custom sounds—from zombie growls to upgrade clicks—creating a rich audio-visual experience.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Privacy & Data Protection</h3>
+                <h3 className="solution-title"> League Progression & Visual Appeal
+                </h3>
                 <p className="solution-description">
-                  Implement robust security measures and privacy controls to protect sensitive personal information and
-                  user data.
+                Progress through Bronze, Silver, Gold, and Platinum leagues while battling horrifying zombie bosses in hauntingly designed campus environments.
+
                 </p>
               </div>
             </div>
