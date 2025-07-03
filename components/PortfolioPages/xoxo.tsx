@@ -105,46 +105,56 @@ export default function NowoPortfolio() {
             </p>
 
             <div className="features-showcase">
-              <div className="features-phones">
-                <div className="feature-phone">
-                  <div className="phone-notch"></div>
-                  <div className="phone-screen">
-                    <img
-                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_2.png"
-                      alt="Home Features"
-                      className="screen-bg"
-                      onError={(e) => {
-                        e.target.src = "/placeholder.svg?height=348&width=168&text=Home"
-                      }}
-                    />
-                  </div>
+              <div className="features-images" style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: '30px',
+                maxWidth: '600px',
+                margin: '0 auto',
+                padding: '20px 0'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  gap: '30px',
+                  width: '100%',
+                  flexWrap: 'wrap'
+                }}>
+                  <img
+                    src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_2.png"
+                    alt="Home Features"
+                    style={{
+                      width: '250px',
+                      height: 'auto',
+                    }}
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=400&width=200&text=Home"
+                    }}
+                  />
+                  <img
+                    src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_4.png"
+                    alt="Booking Features"
+                    style={{
+                      width: '250px',
+                      height: 'auto',
+                    }}
+                    onError={(e) => {
+                      e.target.src = "/placeholder.svg?height=400&width=200&text=Booking"
+                    }}
+                  />
                 </div>
-                <div className="feature-phone">
-                  <div className="phone-notch"></div>
-                  <div className="phone-screen">
-                    <img
-                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_4.png"
-                      alt="Booking Features"
-                      className="screen-bg"
-                      onError={(e) => {
-                        e.target.src = "/placeholder.svg?height=348&width=168&text=Booking"
-                      }}
-                    />
-                  </div>
-                </div>
-                <div className="feature-phone">
-                  <div className="phone-notch"></div>
-                  <div className="phone-screen">
-                    <img
-                      src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_3.png"
-                      alt="Reports Features"
-                      className="screen-bg"
-                      onError={(e) => {
-                        e.target.src = "/placeholder.svg?height=348&width=168&text=Reports"
-                      }}
-                    />
-                  </div>
-                </div>
+                <img
+                  src="/img/portfolio/newphotos/XOXO/XOXO_WebEarl_3.png"
+                  alt="Reports Features"
+                  style={{
+                    width: '250px',
+                    height: 'auto',
+                  }}
+                  onError={(e) => {
+                    e.target.src = "/placeholder.svg?height=400&width=200&text=Reports"
+                  }}
+                />
               </div>
 
               <div className="features-list">
@@ -293,8 +303,7 @@ export default function NowoPortfolio() {
                       width: '100%',
                       height: 'auto',
                       maxHeight: '100%',
-                      borderRadius: '12px',
-                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+                      
                     }}
                     onError={(e) => {
                       e.target.src = "/placeholder.svg?height=600&width=300&text=Dashboard"
