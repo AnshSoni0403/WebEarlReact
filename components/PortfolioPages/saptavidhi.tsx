@@ -26,10 +26,7 @@ export default function SaptaVidhiPortfolio() {
             <div className="hero-left">
               <h1 className="project-title">SaptaVidhi</h1>
               <p className="project-description">
-                ❤️ Welcome to SaptaVidhi – Where Meaningful Matches Begin. At SaptaVidhi, we believe that love is a
-                journey—and every individual deserves a meaningful and lasting connection. Our platform blends
-                traditional values with modern technology, offering a trusted and efficient path to finding your life
-                partner through seamless and personalized matchmaking.
+                ❤️ SaptaVidhi is an enlightened marriage-making application developed in the conviction that one should seek a marriage partner in a dignified, relevant and intuitive manner. With its basis on Indian cultures and a target at the current generation, the platform ensures the users find desirable matches by identifying the things which are important to them, such as; caste, language, income, religion, or lifestyles, etc. SaptaVidhi sets a preference and all the way to real-time chat, it is personal, safe, and transparent.
               </p>
               <div className="project-tags">
                 <span className="tag">matrimonial platform</span>
@@ -101,18 +98,13 @@ export default function SaptaVidhiPortfolio() {
             <h2 className="section-title">Project Objectives</h2>
             <div className="objectives-layout">
               <div className="objectives-text">
-                The objective of this project is to create a comprehensive matrimonial platform that seamlessly blends
-                traditional matchmaking values with modern technology. SaptaVidhi aims to provide a trusted, secure, and
-                culturally-sensitive environment where individuals can find meaningful connections that align with their
-                values, preferences, and life goals. The platform focuses on verified profiles, advanced compatibility
-                algorithms, and personalized matchmaking to ensure users find not just a partner, but a lifelong
-                companion.
+              The main idea of SaptaVidhi is to transform the traditional sense of match-making and providing the most trusted online platform where one can make real connections through allying their personal, cultural, and emotional beliefs. It empowers individuals to take control of their journey toward companionship, enabling them to connect with like-minded people based on meaningful preferences rather than superficial criteria. By combining transparency, personalization, and cultural respect, SaptaVidhi nurtures matches that go beyond algorithms and speak to the heart.
+
               </div>
               <div className="highlight-box">
                 <div className="highlight-text">
-                  The project focuses on creating meaningful connections through cultural understanding, advanced
-                  filtering systems, and secure communication channels for lasting relationships and matrimonial
-                  success.
+                To make life-changing matchmaking with due consideration to individual tastes, cultural and social values, and soul fulfillment all within a trusted space of app.
+
                 </div>
               </div>
             </div>
@@ -161,56 +153,61 @@ export default function SaptaVidhiPortfolio() {
           <div className="approach-content">
             <h2 className="section-title">Project Approach / Solution</h2>
             <p className="approach-intro">
-              Employ a user-focused and culturally-sensitive approach to streamline matrimonial operations, enhance
-              compatibility matching, and secure the platform for meaningful connections and lasting relationships.
+              The solution was built on the idea of user-first approach, and the process of finding a partner became easy, safe, and responsive to the expectation of an individual. Onboarding is initiated with partner preferences as the information that is collected in detail and used to recommend personal matches. SaptaVidhi is more action-oriented and committed to long-term compatibility and openness. The users are allowed to shortlist, reject, reconnect and talk until they become interested or rather to keep within the comfort and control. A strong moderation system tracks fake profiles and suspicious behavior, making the platform trustworthy for serious connections.
+
             </p>
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title">Advanced Profile Verification</h3>
+                <h3 className="solution-title">Preference-Based Matchmaking from the Start
+                </h3>
                 <p className="solution-description">
-                  Implement comprehensive verification protocols to ensure authentic profiles and build trust within the
-                  matrimonial community.
+                Upon login, users are prompted to fill in detailed partner preferences—such as caste, income, language, religion—so that their journey begins with matches that align closely with their expectations.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Cultural Compatibility Matching</h3>
+                <h3 className="solution-title"> Personalized Partner Recommendations
+                </h3>
                 <p className="solution-description">
-                  Develop sophisticated algorithms that consider cultural values, traditions, and lifestyle preferences
-                  for meaningful matches.
+                The platform intelligently curates profiles that match the user's stated preferences, helping users connect with genuinely compatible individuals.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Secure Communication Platform</h3>
+                <h3 className="solution-title">Shortlist Without Sending a Request
+                </h3>
                 <p className="solution-description">
-                  Create a safe and private messaging system that allows users to connect while maintaining privacy and
-                  security.
+                Users can mark people they are interested in without taking immediate action. This feature allows space for thoughtful decisions and private tracking.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Personalized Matchmaking</h3>
+                <h3 className="solution-title">Reject and Reconnect Option                </h3>
                 <p className="solution-description">
-                  Utilize AI-driven recommendations based on preferences, compatibility scores, and behavioral patterns
-                  for better matches.
+                If a user changes their mind after rejecting a profile, they can revisit it and send a connection request again—because second chances matter.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Mobile-First Experience</h3>
+                <h3 className="solution-title">Mutual Chat with Online Status Visibility
+                </h3>
                 <p className="solution-description">
-                  Design responsive interfaces optimized for mobile devices to ensure seamless access across all
-                  platforms.
+                Once two users accept each other’s requests, a secure chat feature is unlocked. Users can also see if the other person is currently online, making real-time conversations easier.
+
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Privacy & Data Protection</h3>
+                <h3 className="solution-title">Advanced Fake Profile Detection
+                </h3>
                 <p className="solution-description">
-                  Implement robust security measures and privacy controls to protect sensitive personal information and
-                  user data.
+                The system monitors chat behavior and connection patterns. Profiles found to be suspicious or inactive are flagged and removed—ensuring user safety and authenticity.
+
                 </p>
               </div>
             </div>
