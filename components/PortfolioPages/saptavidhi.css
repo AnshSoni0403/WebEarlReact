@@ -306,9 +306,9 @@
 
     .screen-image {
       width: 100%;
-      max-width: 280px;
+      max-width: 1280px; /*change by krish for laptop full screen*/
       height: auto;
-      border-radius: 12px;
+      border-radius: 0px;
      
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       margin: 0 auto;
