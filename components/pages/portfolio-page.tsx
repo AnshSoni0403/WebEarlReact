@@ -109,8 +109,7 @@ const PortfolioPage = () => {
                   <Image src="/img/betting-portfolio.png" alt="Betting App" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      Batting App lets cricket enthusiasts create teams and compete in contests, all from their mobile
-                      device.
+                    CricGem is a skill-based fantasy cricket app designed for fans to play, compete, and enjoy the game more deeply.
                     </p>
                     <br />
                     <b>Technology:</b>

@@ -119,7 +119,7 @@ export default function BattingApp() {
                 margin: '0',
                 lineHeight: '1.2'
               }}>
-                BETTING APP
+                CricGem
               </h1>
               <p style={{
                 fontSize: '1.1rem',
@@ -128,30 +128,15 @@ export default function BattingApp() {
                 margin: '0 auto',
                 lineHeight: '1.7'
               }}>
-                Book storage space for personal belongings of travelers when they go off-destination in between a tour.
-                Discover amazing destinations through curated guided tours with transparent pricing and authentic
-                reviews.
+                CricGem is a fantasy cricket app that lets you draft your dream team, join daily contests, and track live match performance. It’s built for fans who love strategy, competition, and an immersive way to enjoy cricket beyond just watching.
               </p>
             </div>
-
-            {/* <div className="section-button">
-              <Link href="http://startyourtour.com" className="btn-primary" target="_blank" rel="noopener noreferrer">
-                🚀 Visit Live Site
-              </Link>
-              <Link href="#" className="btn-secondary">
-                📱 View Demo
-              </Link>
-            </div> */}
           </div>
         </div>
 
         {/* Interactive Visuals Carousel Section */}
         <div className="visuals-section">
           <div className="container">
-            {/* <div className="visuals-header">
-              <h4 className="visuals-title">Visuals</h4>
-              <p className="visuals-subtitle">Explore Start Your Tour across different devices</p>
-            </div> */}
 
             {/* Device Type Selector */}
             <div className="device-selector">
@@ -300,10 +285,9 @@ export default function BattingApp() {
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>Easy Online Booking System</h3>
+                  <h3>Live Match Sync</h3>
                   <p>
-                    Travelers can book tours via an online platform with curated experiences and a range of destination
-                    options.
+                  Stay in sync with real-time match updates and track your fantasy team’s performance as the game unfolds.
                   </p>
                 </div>
 
@@ -316,17 +300,16 @@ export default function BattingApp() {
                 </div>
 
                 <div className="feature-item">
-                  <h3>Automated Tour Updates</h3>
+                  <h3>Multiple Contest Types</h3>
                   <p>
-                    Travelers and guides get updates about the tour status at every stage on the day of the booking.
+                  Play in mega leagues, head-to-head battles, or private games with friends—there’s a contest for every skill level.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Accurate Calendar System</h3>
+                  <h3>Instant Withdrawals</h3>
                   <p>
-                    Travelers can select the exact time slot and place for their tours to be booked, scheduled, and
-                    confirmed.
+                  Securely withdraw your winnings instantly with reliable payment gateways and zero hassle.
                   </p>
                 </div>
               </div>
@@ -342,62 +325,48 @@ export default function BattingApp() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon">🎯</div>
-                <h3>Focused on Tours Only</h3>
+                <h3>Secure Play</h3>
                 <p>
-                  Instead of mixing hotels, flights, and travel guides like most travel platforms, Start Your Tour
-                  specializes only in curated guided tours. This niche focus ensures users aren't overwhelmed and get
-                  relevant results quickly.
+                Play in a safe and fair environment with verified users, anti-cheat systems, and transparent scoring. CricGem is committed to ensuring integrity in every contest.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🎨</div>
-                <h3>Visually Clean & Intuitive</h3>
+                <h3>Quick Setup</h3>
                 <p>
-                  The interface is clean and modern — built using React.js, making it fast, interactive, and
-                  mobile-friendly. Whether a user is planning from desktop or mobile, the layout adapts to ensure ease
-                  of navigation.
+                Register easily, choose a match, and start building your fantasy team in just a few taps. CricGem is designed for smooth and fast onboarding.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🤖</div>
-                <h3>Personalized Recommendations</h3>
+                <h3> Live Leaderboards</h3>
                 <p>
-                  The idea is to help users get suggestions based on their travel style — for example, recommending
-                  eco-adventures to nature lovers or cultural city walks to history enthusiasts. This adds a smart,
-                  personalized layer beyond traditional listings.
+                Track your team’s progress in real time with live score updates and rankings. See how your strategy plays out as matches unfold.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">🔍</div>
-                <h3>Transparent Tour Information</h3>
+                <h3> Refer & Earn</h3>
                 <p>
-                  Each tour listing includes detailed information like itinerary, what's included/excluded, maps,
-                  images, and real customer reviews — so users can make informed choices.
+                Share CricGem with your friends using your referral code. As they join and participate, you unlock special benefits and exclusive in-app features.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">📱</div>
-                <h3>End-to-End Booking Workflow</h3>
+                <h3>Player Insights</h3>
                 <p>
-                  The platform handles everything from browsing to booking, so users won't need to leave the site or
-                  coordinate over calls/messages.
+                Access useful stats, performance history, and expert tips to help you make better team decisions. CricGem supports informed, skillful play.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon">💡</div>
-                <h3>Why It's Useful</h3>
-                <p>
-                  <strong>For Travelers:</strong> Hassle-free tour discovery with rich details and filters. No need to
-                  search across multiple websites or worry about what's authentic — everything is curated.
-                  <br />
-                  <br />
-                  <strong>For Tour Providers:</strong> A focused platform to showcase tours, get more visibility, and
-                  manage bookings efficiently without building a separate website.
+                <h3>Referral Rewards</h3>
+                <p>New users receive a welcome benefit when they join CricGem. Invite friends and grow a network of fellow fans while enjoying added features along the way.
                 </p>
               </div>
             </div>
@@ -407,9 +376,9 @@ export default function BattingApp() {
         {/* CTA Section */}
         <div className="cta-section">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Start Your Adventure?</h2>
+            <h2 className="cta-title">Ready to Build Your Winning Team?</h2>
             <p className="cta-description">
-              Join thousands of travelers who have discovered their perfect tours with our innovative platform.
+            Join thousands of cricket fans already competing on CricGem. Pick your match, build your dream team, and start winning real cash today!
             </p>
           </div>
         </div>
