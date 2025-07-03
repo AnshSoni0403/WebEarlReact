@@ -294,8 +294,7 @@ export default function NowoPortfolio() {
                       width: '100%',
                       height: 'auto',
                       maxHeight: '100%',
-                      borderRadius: '12px',
-                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+                      
                     }}
                     onError={(e) => {
                       e.target.src = "/placeholder.svg?height=600&width=300&text=Dashboard"
