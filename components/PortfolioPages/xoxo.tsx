@@ -68,9 +68,7 @@ export default function NowoPortfolio() {
               {/* <div className="category-label">HEALTHCARE</div> */}
               <h1 className="hero-title">XOXO</h1>
               <p className="hero-description">
-                Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
-                collection at your convenience. With just a few taps on the app, users can schedule tests and receive
-                diagnostic reports without stepping outside.
+              XOXO brings the timeless fun of tic-tac-toe into a vibrant, modern digital format. With a striking neon-themed design, simple controls, and exciting player-versus-AI and multiplayer modes, it redefines casual gaming for all age groups. It delivers a fun, fast-paced brain teaser experience right from your mobile device.
               </p>
             </div>
             <div className="hero-right">
@@ -98,10 +96,7 @@ export default function NowoPortfolio() {
           <div className="about-content">
             <h2 className="section-title">About Project</h2>
             <p className="about-description">
-              Care is a comprehensive healthcare platform that revolutionizes diagnostic testing by bringing lab
-              services directly to your doorstep. Our platform simplifies diagnostic test bookings with an easy-to-use
-              interface, partnerships with NABL-accredited labs, and certified technicians who follow strict safety
-              protocols.
+            The XOXO game app was designed with user-friendly UI, colorful visuals, and addictive gameplay mechanics to make the age-old game of tic-tac-toe more exciting than ever. Built for quick fun and competitive spirit, it supports free play and premium upgrades, offering users flexibility and a rich in-game experience. It’s a perfect blend of strategy, style, and satisfaction for gamers of all ages.
             </p>
 
             <div className="features-showcase">
@@ -161,58 +156,58 @@ export default function NowoPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🏠</div>
+                  <div className="feature-icon">👆</div>
                   <div className="feature-content">
-                    <h3>Doorstep Sample Collection</h3>
-                    <p>Schedule lab tests from home with certified technicians visiting at your convenience</p>
+                    <h3>Easy One-Tap Gameplay</h3>
+                    <p>Tap and play instantly with intuitive controls.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📱</div>
+                  <div className="feature-icon">🤖</div>
                   <div className="feature-content">
-                    <h3>Easy Booking Interface</h3>
-                    <p>Simple and intuitive app design for seamless test booking and scheduling</p>
+                    <h3>Player vs AI Mode</h3>
+                    <p>Challenge the AI and sharpen your skills.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🔬</div>
+                  <div className="feature-icon">👥</div>
                   <div className="feature-content">
-                    <h3>NABL-Accredited Labs</h3>
-                    <p>Trusted partnerships with certified labs ensuring accurate and reliable test results</p>
+                    <h3>Multiplayer Mode</h3>
+                    <p>Battle with friends for the ultimate bragging rights.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📊</div>
+                  <div className="feature-icon">↩️</div>
                   <div className="feature-content">
-                    <h3>Digital Reports</h3>
-                    <p>Instant access to test results with downloadable digital reports and tracking</p>
+                    <h3>Undo Move Option</h3>
+                    <p>Made a mistake? Just undo and try again.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎯</div>
+                  <div className="feature-icon">🎉</div>
                   <div className="feature-content">
-                    <h3>Personalized Recommendations</h3>
-                    <p>AI-driven test suggestions based on age, lifestyle, and medical history</p>
+                    <h3>Winning Animation</h3>
+                    <p>Celebrate victories with colorful fireworks and effects.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📦</div>
+                  <div className="feature-icon">🎨</div>
                   <div className="feature-content">
-                    <h3>Health Packages</h3>
-                    <p>Curated health checkup packages for comprehensive wellness monitoring</p>
+                    <h3>Free & Premium Themes</h3>
+                    <p>Choose from basic and prime visual packages.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">👨‍⚕️</div>
+                  <div className="feature-icon">🪙</div>
                   <div className="feature-content">
-                    <h3>Trained Professionals</h3>
-                    <p>Certified phlebotomists following strict hygiene and safety protocols</p>
+                    <h3>Coin Rewards System</h3>
+                    <p>Earn coins to stay motivated.</p>
                   </div>
                 </div>
               </div>
@@ -225,32 +220,6 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
-                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
-                <p className="revolution-description">
-                  Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
-                  healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
-                  complete safety.
-                </p>
-
-                <div className="revolution-stats">
-                  <div className="stat-item">
-                    <div className="stat-number">50K+</div>
-                    <div className="stat-label">Tests Completed</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">25+</div>
-                    <div className="stat-label">Cities Served</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">98%</div>
-                    <div className="stat-label">Accuracy Rate</div>
-                  </div>
-                  <div className="stat-item">
-                    <div className="stat-number">24/7</div>
-                    <div className="stat-label">Support Available</div>
-                  </div>
-                </div>
 
                 <div className="revolution-features">
                   <div className="mini-feature">
@@ -271,20 +240,20 @@ export default function NowoPortfolio() {
               <div className="revolution-right">
                 <div className="floating-elements">
                   <div className="floating-card card-1">
-                    <div className="card-icon">🩺</div>
-                    <div className="card-text">Professional Care</div>
+                    <div className="card-icon">🧠</div>
+                    <div className="card-text">Strategic</div>
                   </div>
                   <div className="floating-card card-2">
-                    <div className="card-icon">🏠</div>
-                    <div className="card-text">Home Comfort</div>
+                    <div className="card-icon">🌈</div>
+                    <div className="card-text">Vibrant</div>
                   </div>
                   <div className="floating-card card-3">
-                    <div className="card-icon">⏰</div>
-                    <div className="card-text">Time Saving</div>
+                    <div className="card-icon">🏆</div>
+                    <div className="card-text">Competitive</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">📊</div>
-                    <div className="card-text">Instant Reports</div>
+                    <div className="card-icon">🏅</div>
+                    <div className="card-text">Rewarding</div>
                   </div>
                 </div>
 

@@ -159,7 +159,7 @@ export default function NowoPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🏠</div>
+                  <div className="feature-icon">🎮</div>
                   <div className="feature-content">
                     <h3>Progressive Gameplay</h3>
                     <p>Unlock new voyages and challenges as you advance.</p>
@@ -167,7 +167,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📱</div>
+                  <div className="feature-icon">👍</div>
                   <div className="feature-content">
                     <h3>User-Friendly Interface</h3>
                     <p>Smooth controls and clean design for an intuitive experience.</p>
@@ -175,7 +175,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🔬</div>
+                  <div className="feature-icon">🔊</div>
                   <div className="feature-content">
                     <h3>Engaging Sound Effects</h3>
                     <p>Subtle audio adds immersion to every move.</p>
@@ -183,7 +183,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📊</div>
+                  <div className="feature-icon">🏆</div>
                   <div className="feature-content">
                     <h3>Reward System</h3>
                     <p>Earn coins for every win to keep the motivation high.</p>
@@ -191,7 +191,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎯</div>
+                  <div className="feature-icon">💡</div>
                   <div className="feature-content">
                     <h3>Hint Feature</h3>
                     <p> Stuck on a word? Use hints to guide your way forward.</p>
@@ -199,7 +199,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📦</div>
+                  <div className="feature-icon">⏱️</div>
                   <div className="feature-content">
                     <h3>Move Limits</h3>
                     <p>Adds an extra layer of challenge with strategic thinking.</p>
@@ -207,7 +207,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">👨‍⚕️</div>
+                  <div className="feature-icon">➕</div>
                   <div className="feature-content">
                     <h3>Get More Moves</h3>
                     <p>Option to gain additional moves and continue your voyage.</p>
@@ -229,7 +229,7 @@ export default function NowoPortfolio() {
                 Dive into Wordix and let the letters guide your way through wordy wonders.
                 </p>
 
-                <div className="revolution-stats">
+                {/* <div className="revolution-stats">
                   <div className="stat-item">
                     <div className="stat-number">50K+</div>
                     <div className="stat-label">Tests Completed</div>
@@ -261,25 +261,25 @@ export default function NowoPortfolio() {
                     <span className="mini-icon">📱</span>
                     <span>Real-time notifications</span>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="revolution-right">
                 <div className="floating-elements">
                   <div className="floating-card card-1">
-                    <div className="card-icon">🩺</div>
+                    <div className="card-icon">🧘</div>
                     <div className="card-text">Relaxing</div>
                   </div>
                   <div className="floating-card card-2">
-                    <div className="card-icon">🏠</div>
+                    <div className="card-icon">🤝</div>
                     <div className="card-text">Engaging</div>
                   </div>
                   <div className="floating-card card-3">
-                    <div className="card-icon">⏰</div>
+                    <div className="card-icon">🏆</div>
                     <div className="card-text">Rewarding</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">📊</div>
+                    <div className="card-icon">🧠</div>
                     <div className="card-text">Brainy</div>
                   </div>
                 </div>
