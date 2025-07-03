@@ -22,49 +22,48 @@ const PortfolioCarousel = () => {
       id: 1,
       title: 'Start Your Tour',
       image: '/img/syt-portfolio.png',
-      description: 'AI-powered travel experiences with smart itineraries and real-time updates for seamless journeys. Perfect for travelers who want to explore destinations with ease.',
-      technologies: 'Web: ReactJs\nDatabase: MongoDB\nMobile: iOS & Android',
-      detailsLink: 'http://startyourtour.com/',
+      description: 'Discover smarter, personalized travel with transparent listings and tailored experiences for every kind of explorer.',
+      detailsLink: '/portfolio/syt',
       target: '_blank'
     },
     {
       id: 2,
       title: 'Saptavidhi Vendor',
       image: '/img/saptavidhi-vendor-portfolio.png',
-      description: 'Helps users to easily find vendors for all types of events, simplifying event management with a single app. Connect with the best vendors in your area.',
-      detailsLink: 'https://webearl.com/img/pdf/SaptaVidhi_vendor_Mockup.pdf',
+      description: 'SaptaVidhi is a culturally rooted matchmaking platform that blends traditional values with modern technology to help individuals find genuine and lasting relationships.',
+      detailsLink: '/portfolio/saptavidhi',
       target: '_blank'
     },
     {
       id: 3,
       title: 'iCare Health',
       image: '/img/health-care-portfolio.png',
-      description: 'Offers diagnostic report services with doorstep lab visits, allowing users to easily book appointments and track their health records online.',
-      detailsLink: '#',
-      target: ''
+      description: 'iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book appointments through the app.',
+      detailsLink: '/icare',
+      target: '_blank'
     },
     {
       id: 4,
-      title: 'One Click',
-      image: '/img/OneClick Mobile Application.png',
-      description: 'Quickly search for local businesses, goods, or services that is interactive, intuitive, and quick. Find what you need with just one click.',
-      detailsLink: '/img/pdf/OneClick - Mock-up.pdf',
+      title: 'CricGem',
+      image: '/img/betting-portfolio.png',
+      description: 'CricGem is a skill-based fantasy cricket app designed for fans to play, compete, and enjoy the game more deeply.',
+      detailsLink: '/portfolio/battingapp',
       target: '_blank'
     },
     {
       id: 5,
-      title: 'AHA Health App',
-      image: '/img/portfolio/AHA_Application.png',
-      description: 'Receive personalized reports, recommendations, and prescriptions to improve organ function and health. Your health companion for a better life.',
-      detailsLink: '#',
-      target: ''
+      title: 'WayOut',
+      image: '/img/portfolio/Way out.png',
+      description: 'A zombie survival game set in a locked-down college where you fight your way floor-by-floor to escape the walking dead.',
+      detailsLink: '/portfolio/wayout',
+      target: '_blank'
     },
     {
       id: 6,
-      title: 'Energeia Solutions',
-      image: '/img/portfolio/Energieagas1.png',
-      description: 'A channel partner of Bharat Petroleum (BPCL) to supply LPG for Industrial/commercial applications. Reliable energy solutions for businesses.',
-      detailsLink: 'http://www.energeiasolutions.com',
+      title: 'MarkMe',
+      image: '/img/portfolio/MarkMe.png',
+      description: 'Smart, effortless attendance tracking for workplaces, campuses & more.',
+      detailsLink: '/portfolio/markme',
       target: '_blank'
     }
   ];
