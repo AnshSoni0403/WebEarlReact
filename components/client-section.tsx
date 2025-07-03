@@ -7,7 +7,7 @@ export default function ClientSection() {
     { src: "/img/client/markme.png", alt: "Client 2" },
     { src: "/img/saptavidhi-logo.png", alt: "Client 3" },
     { src: "/img/client/wayout.png", alt: "Client 4" },
-    { src: "/img/client/66.png", alt: "Client 5" },
+    { src: "/img/client/icare.png", alt: "Client 5" },
   ]
 
   return (
