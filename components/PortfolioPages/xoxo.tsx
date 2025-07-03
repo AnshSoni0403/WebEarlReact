@@ -156,7 +156,7 @@ export default function NowoPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
-                  <div className="feature-icon">👆</div>
+                  <div className="feature-icon">🏠</div>
                   <div className="feature-content">
                     <h3>Easy One-Tap Gameplay</h3>
                     <p>Tap and play instantly with intuitive controls.</p>
@@ -164,7 +164,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🤖</div>
+                  <div className="feature-icon">📱</div>
                   <div className="feature-content">
                     <h3>Player vs AI Mode</h3>
                     <p>Challenge the AI and sharpen your skills.</p>
@@ -172,7 +172,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">👥</div>
+                  <div className="feature-icon">🔬</div>
                   <div className="feature-content">
                     <h3>Multiplayer Mode</h3>
                     <p>Battle with friends for the ultimate bragging rights.</p>
@@ -180,7 +180,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">↩️</div>
+                  <div className="feature-icon">📊</div>
                   <div className="feature-content">
                     <h3>Undo Move Option</h3>
                     <p>Made a mistake? Just undo and try again.</p>
@@ -188,7 +188,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎉</div>
+                  <div className="feature-icon">🎯</div>
                   <div className="feature-content">
                     <h3>Winning Animation</h3>
                     <p>Celebrate victories with colorful fireworks and effects.</p>
@@ -196,7 +196,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🎨</div>
+                  <div className="feature-icon">📦</div>
                   <div className="feature-content">
                     <h3>Free & Premium Themes</h3>
                     <p>Choose from basic and prime visual packages.</p>
@@ -204,7 +204,7 @@ export default function NowoPortfolio() {
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">💰</div>
+                  <div className="feature-icon">👨‍⚕️</div>
                   <div className="feature-content">
                     <h3>Coin Rewards System</h3>
                     <p>Earn coins to stay motivated.</p>
@@ -220,40 +220,33 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
+                <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
+                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
+                <p className="revolution-description">
+                  Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
+                  healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
+                  complete safety.
+                </p>
 
-                <div className="revolution-features">
-                  <div className="mini-feature">
-                    <span className="mini-icon">⚡</span>
-                    <span>Same-day sample collection</span>
-                  </div>
-                  <div className="mini-feature">
-                    <span className="mini-icon">🔒</span>
-                    <span>100% secure & confidential</span>
-                  </div>
-                  <div className="mini-feature">
-                    <span className="mini-icon">📱</span>
-                    <span>Real-time notifications</span>
-                  </div>
-                </div>
               </div>
 
               <div className="revolution-right">
                 <div className="floating-elements">
                   <div className="floating-card card-1">
-                    <div className="card-icon">🧠</div>
-                    <div className="card-text">Strategic</div>
+                    <div className="card-icon">🩺</div>
+                    <div className="card-text">Professional Care</div>
                   </div>
                   <div className="floating-card card-2">
-                    <div className="card-icon">🌈</div>
-                    <div className="card-text">Vibrant</div>
+                    <div className="card-icon">🏠</div>
+                    <div className="card-text">Home Comfort</div>
                   </div>
                   <div className="floating-card card-3">
-                    <div className="card-icon">🏆</div>
-                    <div className="card-text">Competitive</div>
+                    <div className="card-icon">⏰</div>
+                    <div className="card-text">Time Saving</div>
                   </div>
                   <div className="floating-card card-4">
-                    <div className="card-icon">🎁</div>
-                    <div className="card-text">Rewarding</div>
+                    <div className="card-icon">📊</div>
+                    <div className="card-text">Instant Reports</div>
                   </div>
                 </div>
 
