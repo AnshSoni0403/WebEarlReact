@@ -186,52 +186,44 @@ export default function WayOut() {
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title"> Multi-Themed Story Maps  </h3>
+                <h3 className="solution-title"> 🗺️ Multi-Themed Story Maps  </h3>
                 <p className="solution-description">
                 Explore diverse in-game locations such as science labs, classrooms, dormitories, libraries, sports fields, and parking areas—each featuring unique zombie threats and survival paths.
-
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Narrative-Driven Gameplay                </h3>
+                <h3 className="solution-title">📖 Narrative-Driven Gameplay</h3>
                 <p className="solution-description">
                 Uncover notes, radio messages, and hidden objects that slowly reveal the origin of the virus and the fate of your fellow students.
-
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title"> Power Elements and Health Boosters                </h3>
+                <h3 className="solution-title">💊 Power Elements and Health Boosters</h3>
                 <p className="solution-description">
                 Pick up 2x damage boosters, medikits (+40% health), burgers (+20% health), and bullet reloads to increase your chances of surviving each wave.
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">5 Unlockable Weapons
-                </h3>
+                <h3 className="solution-title">🔫 5 Unlockable Weapons</h3>
                 <p className="solution-description">
                 Unlock and upgrade a variety of military-grade weapons scattered across the destroyed campus—from handguns to high-impact rifles.
-
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title"> Immersive Game Sound Design
-                </h3>
+                <h3 className="solution-title">🔊 Immersive Game Sound Design</h3>
                 <p className="solution-description">
                 Each game action is enhanced by custom sounds—from zombie growls to upgrade clicks—creating a rich audio-visual experience.
-
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title"> League Progression & Visual Appeal
-                </h3>
+                <h3 className="solution-title">🏆 League Progression & Visual Appeal</h3>
                 <p className="solution-description">
                 Progress through Bronze, Silver, Gold, and Platinum leagues while battling horrifying zombie bosses in hauntingly designed campus environments.
-
                 </p>
               </div>
             </div>
