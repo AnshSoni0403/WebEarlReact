@@ -215,26 +215,23 @@ Mark Me allows users to record, manage, and review attendance logs through a sma
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title">Interactive Calendar UI</h3>
+                <h3 className="solution-title">📅 Interactive Calendar UI</h3>
                 <p className="solution-description">
-                Track and view your attendance history at a glance.
-
+                Track and view your attendance history at a glance with our intuitive calendar interface.
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Custom Punch-In Time Selector</h3>
+                <h3 className="solution-title">⏰ Custom Punch-In Time Selector</h3>
                 <p className="solution-description">
-                Modify your punch-in manually using an easy-to-use clock interface for flexibility.
-
+                Modify your punch-in times manually using an easy-to-use clock interface for ultimate flexibility.
                 </p>
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Multi-Space Usability</h3>
+                <h3 className="solution-title">🏢 Multi-Space Usability</h3>
                 <p className="solution-description">
                 Whether it's for offices, colleges, coworking spaces, or remote teams, the app adapts to any environment needing attendance tracking.
-
                 </p>
               </div>
 
