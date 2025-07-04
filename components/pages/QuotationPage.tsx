@@ -355,7 +355,7 @@ export default function QuotationPage() {
                 <h5>{"Let's Make Your IT Vision a Reality – Get a Quote Now!"}</h5>
                 <div className="mb-4">
                   
-                  <div>
+                  <div style={{marginTop: "38px"}}>
                     <h6>Office</h6>
                     <p>11 Cradle, EDII,</p>
                     <p>Near Bhat Circle</p>
@@ -366,7 +366,7 @@ export default function QuotationPage() {
                 </div>
                 <div className="mb-4">
                   
-                  <div>
+                  <div style={{marginTop: "38px"}}  >
                     <h6>Email Us</h6>
                     <p className="d-flex">
                       <b className="">Sales </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
@@ -382,7 +382,7 @@ export default function QuotationPage() {
                 </div>
                 <div>
               
-                  <div>
+                  <div style={{marginTop: "38px"}}>
                     <h6>Join Our Community</h6>
                     <div className="social" style={{ marginTop: 10 }}>
                       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
