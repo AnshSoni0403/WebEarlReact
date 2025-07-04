@@ -68,7 +68,7 @@ export default function NowoPortfolio() {
             <div className="hero-left">
               {/* <div className="category-label">HEALTHCARE</div> */}
               <h1 className="hero-title">NowoChat</h1>
-              <p style={{color:'white',textAlign:'left', marginLeft:"20px"}}><b>Chatting App</b></p>
+              <p style={{color:'white',textAlign:'left', marginLeft:"20px"}}><b>Chat App</b></p>
               <p className="hero-description" style={{
                 textAlign: 'justify',
                 textJustify: 'inter-word',
@@ -80,7 +80,7 @@ export default function NowoPortfolio() {
                 margin: '0 auto',
                 padding: '0 20px'
               }}>
-                An innovative community-based chatting app designed to bring together people who share similar interests, challenges, or career paths. Whether you're a student needing academic help, a patient seeking emotional support, or a professional looking to network, NowoChat helps you discover the right people and communities to connect, chat, and grow with. The platform offers a seamless way to join groups, ask questions, share experiences, and receive expert advice—all within a secure environment.
+                An innovative community-based chat app designed to bring together people who share similar interests, challenges, or career paths. Whether you're a student needing academic help, a patient seeking emotional support, or a professional looking to network, NowoChat helps you discover the right people and communities to connect, chat, and grow with. The platform offers a seamless way to join groups, ask questions, share experiences, and receive expert advice—all within a secure environment.
               </p>
             </div>
             <div className="hero-right">
@@ -108,7 +108,7 @@ export default function NowoPortfolio() {
           <div className="about-content">
             <h2 className="section-title">About Project</h2>
             <p className="about-description">
-            Launched in 2020 by CDK Communication Private Limited, NowoChat was built to address a real need—helping individuals connect with like-minded people when facing specific life or career challenges. From students and job seekers to patients and professionals, NowoChat serves as a powerful interest-focused communication platform where users can join relevant groups, find mentors, ask questions, and build meaningful conversations. It is more than just a chatting app—it's a space for connection, clarity, and community support.
+            Launched in 2020 by CDK Communication Private Limited, NowoChat was built to address a real need—helping individuals connect with like-minded people when facing specific life or career challenges. From students and job seekers to patients and professionals, NowoChat serves as a powerful interest-focused communication platform where users can join relevant groups, find mentors, ask questions, and build meaningful conversations. It is more than just a chat app—it's a space for connection, clarity, and community support.
 
             </p>
 
@@ -224,7 +224,7 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                <div className="revolution-badge"> CHATTING APPLICATION</div>
+                <div className="revolution-badge"> CHAT APPLICATION</div>
                 <h2 className="revolution-title">What Makes NowoChat Unique</h2>
                 <p className="revolution-description">
                 The core mission of NowoChat is to create a safe and structured digital space where users can overcome isolation, confusion, and information overload by directly interacting with the right community. What sets NowoChat apart from random chat apps is its focused and functional approach—it connects people based on shared experiences, expertise, and needs.<br/>

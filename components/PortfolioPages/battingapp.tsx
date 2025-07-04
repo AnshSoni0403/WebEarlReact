@@ -121,7 +121,7 @@ export default function BattingApp() {
               }}>
                 CricGem
               </h1>
-              <p className=""><b>Cricket Betting App</b></p>
+              <p className=""><b>Fantasy Gaming App</b></p>
               <p style={{
                 fontSize: '1.1rem',
                 color: '#4a5568',
