@@ -230,6 +230,7 @@ export default function QuotationPage() {
                           type="text"
                           className="form-control"
                           id="fullName"
+                          name="fullName"
                           placeholder="Enter your full name"
                           required
                         />
@@ -246,6 +247,7 @@ export default function QuotationPage() {
                           type="text"
                           className="form-control"
                           id="companyName"
+                          name="companyName"
                           placeholder="Enter your company name"
                         />
                         <div className="invalid-feedback">Please enter your company name.</div>
@@ -264,6 +266,7 @@ export default function QuotationPage() {
                           type="email"
                           className="form-control"
                           id="emailAddress"
+                          name="emailAddress"
                           placeholder="Enter your email address"
                           required
                         />
@@ -280,6 +283,7 @@ export default function QuotationPage() {
                           type="tel"
                           className="form-control"
                           id="phoneNumber"
+                          name="phoneNumber"
                           placeholder="Enter your phone number"
                           pattern="\d{10}"
                           required
@@ -296,7 +300,7 @@ export default function QuotationPage() {
                         <label htmlFor="callType" className="form-label">
                           Call Type
                         </label>
-                        <select className="form-select" id="callType" required>
+                        <select className="form-select" id="callType" name="callType" required>
                           <option value="">Select call type</option>
                           <option value="Sales">Sales</option>
                           <option value="Support">Support</option>
@@ -310,7 +314,7 @@ export default function QuotationPage() {
                         <label htmlFor="callbackTime" className="form-label">
                           Time for Callback
                         </label>
-                        <select className="form-select" id="callbackTime" required>
+                        <select className="form-select" id="callbackTime" name="callbackTime" required>
                           <option value="">Select time</option>
                           <option value="Morning">Morning</option>
                           <option value="Afternoon">Afternoon</option>
@@ -328,7 +332,7 @@ export default function QuotationPage() {
                         <label htmlFor="enquiryNature" className="form-label">
                           Nature of Enquiry
                         </label>
-                        <select className="form-select" id="enquiryNature" required>
+                        <select className="form-select" id="enquiryNature" name="enquiryNature" required>
                           <option value="">Select nature of enquiry</option>
                           <option value="Product Inquiry">Product Inquiry</option>
                           <option value="Service Inquiry">Service Inquiry</option>
@@ -343,7 +347,7 @@ export default function QuotationPage() {
                         <label htmlFor="existingCustomer" className="form-label">
                           Are you an existing customer?
                         </label>
-                        <select className="form-select" id="existingCustomer" required>
+                        <select className="form-select" id="existingCustomer" name="existingCustomer" required>
                           <option value="">Select</option>
                           <option value="Yes">Yes</option>
                           <option value="No">No</option>
@@ -363,6 +367,7 @@ export default function QuotationPage() {
                         <select 
                           className="form-select" 
                           id="country" 
+                          name="country"
                           value={selectedCountry}
                           onChange={(e) => setSelectedCountry(e.target.value)}
                           required
@@ -386,6 +391,7 @@ export default function QuotationPage() {
                         <select 
                           className="form-select" 
                           id="state" 
+                          name="state"
                           value={selectedState}
                           onChange={(e) => setSelectedState(e.target.value)}
                           disabled={!selectedCountry}
@@ -410,6 +416,7 @@ export default function QuotationPage() {
                         <select 
                           className="form-select" 
                           id="city"
+                          name="city"
                           disabled={!selectedState}
                           required
                         >
@@ -433,6 +440,7 @@ export default function QuotationPage() {
                     <textarea
                       className="form-control"
                       id="additionalInfo"
+                      name="additionalInfo"
                       rows={3}
                       placeholder="Provide any additional details"
                     ></textarea>
