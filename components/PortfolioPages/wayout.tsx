@@ -31,8 +31,8 @@ export default function WayOut() {
 
               </p>
               <div className="project-tags">
-              <span className="tag">Zombie Game</span>
               <span className="tag">Action Game</span>
+              <span className="tag">Zombie Game</span>
               <span className="tag">Survival</span>
               <span className="tag">Horror</span>
               <span className="tag">Shooter</span>
