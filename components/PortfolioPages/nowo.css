@@ -303,7 +303,7 @@
   .feature-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    
     border-radius: 10px;
     display: flex;
     align-items: center;

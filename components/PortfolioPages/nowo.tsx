@@ -40,7 +40,7 @@ export default function NowoPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_3.png"
+                  src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_1.png"
                   alt="Care App Reports"
                   className="screen-bg"
                   onError={(e) => {
@@ -79,7 +79,7 @@ export default function NowoPortfolio() {
                 <div className="phone-notch"></div>
                 <div className="phone-screen">
                   <img
-                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_1.png"
+                    src="/img/portfolio/newphotos/NowoChat/NowoChat_WebEarl_3.png"
                     alt="Care App Homepage"
                     className="screen-bg"
                     onError={(e) => {
