@@ -21,6 +21,52 @@ const ContactPage = () => {
         once: true
       });
     }
+
+    // Contact form submission logic (Web3Forms)
+    const contactForm = document.getElementById("contactForm") as HTMLFormElement | null;
+    if (contactForm) {
+      const handleSubmit = async (e: Event) => {
+        e.preventDefault();
+        const form = e.target as HTMLFormElement;
+        const formData = new FormData(form);
+        const formDataObj: Record<string, any> = {};
+        formData.forEach((value, key) => {
+          formDataObj[key] = value;
+        });
+        formDataObj['subject'] = 'Contact Form Submission';
+        formDataObj['message'] = `
+          Name: ${formDataObj['firstName'] || 'N/A'}
+          Email: ${formDataObj['email'] || 'N/A'}
+          Message: ${formDataObj['message'] || 'N/A'}
+        `;
+        formDataObj['to_email'] = 'info@webearl.com';
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              ...formDataObj,
+              access_key: "eae59eb7-b97f-42ef-b91c-fe683c9e3d09"
+            }),
+          });
+          const result = await response.json();
+          if (result.success) {
+            alert("Your message has been sent successfully!");
+            form.reset();
+          } else {
+            throw new Error(result.message || "Failed to submit form");
+          }
+        } catch (error) {
+          alert("There was an error submitting your message. Please try again.");
+        }
+      };
+      contactForm.addEventListener('submit', handleSubmit);
+      return () => {
+        contactForm.removeEventListener('submit', handleSubmit);
+      };
+    }
   }, []);
 
   return (
@@ -109,12 +155,12 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="contact-form">
-                  <form action="#">
+                  <form id="contactForm">
                     <div style={{ width: '100%' }}>
-                      <input type="text" placeholder="First Name" style={{ width: '100%' }} />
+                      <input type="text" name="firstName" placeholder="First Name" style={{ width: '100%' }} required />
                     </div>
-                    <input type="email" placeholder="Enter your email" />
-                    <textarea placeholder="Write your message"></textarea>
+                    <input type="email" name="email" placeholder="Enter your email" required />
+                    <textarea name="message" placeholder="Write your message" required></textarea>
                     <div className="send-btn">
                       <input type="submit" value="send me" id="formsend" className="btn-1" />
                     </div>

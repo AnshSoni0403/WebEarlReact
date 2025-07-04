@@ -144,16 +144,7 @@ export default function QuotationPage() {
           // Add additional fields
           formDataObj['subject'] = 'Request for Quotation';
           formDataObj['message'] = `
-            Call Type: ${(document.getElementById("callType") as HTMLSelectElement)?.value}
-            Time for Callback: ${(document.getElementById("callbackTime") as HTMLSelectElement)?.value}
-            Nature of Enquiry: ${(document.getElementById("enquiryNature") as HTMLSelectElement)?.value}
-            Full Name: ${formDataObj['fullName'] || 'N/A'}
-            Company Name: ${formDataObj['companyName'] || 'N/A'}
-            Phone Number: ${formDataObj['phoneNumber'] || 'N/A'}
-            Country: ${(document.getElementById("country") as HTMLSelectElement)?.options[(document.getElementById("country") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
-            State: ${(document.getElementById("state") as HTMLSelectElement)?.options[(document.getElementById("state") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
-            City: ${(document.getElementById("city") as HTMLSelectElement)?.options[(document.getElementById("city") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
-            Existing Customer: ${formDataObj['existingCustomer'] || 'No'}
+            
             Additional Information: ${formDataObj['additionalInfo'] || 'N/A'}
           `;
           
