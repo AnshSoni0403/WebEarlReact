@@ -1,13 +1,44 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa";
+import { Country, State, City } from 'country-state-city';
 import Header from '../header';
 import Footer from '../footer';
 import CallToAction from "../call-to-action";
 import "../styles/all.css"
 
 export default function QuotationPage() {
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectedState, setSelectedState] = useState('');
+  const [states, setStates] = useState<any[]>([]);
+  const [cities, setCities] = useState<any[]>([]);
+  
+  // Get all countries
+  const countries = Country.getAllCountries();
+  
+  // Update states when country changes
+  useEffect(() => {
+    if (selectedCountry) {
+      const countryStates = State.getStatesOfCountry(selectedCountry);
+      setStates(countryStates);
+      setSelectedState('');
+      setCities([]);
+    } else {
+      setStates([]);
+      setCities([]);
+    }
+  }, [selectedCountry]);
+  
+  // Update cities when state changes
+  useEffect(() => {
+    if (selectedCountry && selectedState) {
+      const stateCities = City.getCitiesOfState(selectedCountry, selectedState);
+      setCities(stateCities);
+    } else {
+      setCities([]);
+    }
+  }, [selectedCountry, selectedState]);
   useEffect(() => {
     // Google Tag Manager
     ;((w: any, d: any, s: string, l: string, i: string) => {
@@ -72,11 +103,75 @@ export default function QuotationPage() {
           emailField.classList.add("is-invalid")
         }
 
-        // Validate phone number field for exactly 10 digits
+        // Phone number field validation and input restriction
         const phoneField = document.getElementById("phoneNumber") as HTMLInputElement
-        if (phoneField?.value && !/^\d{10}$/.test(phoneField.value)) {
-          isValid = false
-          phoneField.classList.add("is-invalid")
+        
+        // Prevent any non-numeric input
+        if (phoneField) {
+          // Set inputmode to numeric to show numeric keyboard on mobile
+          phoneField.setAttribute('inputmode', 'numeric');
+          
+          // Handle paste event to clean any pasted content
+          phoneField.addEventListener('paste', (e) => {
+            e.preventDefault();
+            const text = (e.clipboardData || (window as any).clipboardData).getData('text');
+            const numbers = text.replace(/\D/g, '');
+            const currentValue = phoneField.value;
+            const start = phoneField.selectionStart || 0;
+            const end = phoneField.selectionEnd || 0;
+            
+            // Insert the numbers at cursor position
+            const newValue = currentValue.substring(0, start) + numbers + currentValue.substring(end);
+            // Keep only numbers and limit to 10 digits
+            phoneField.value = newValue.replace(/\D/g, '').slice(0, 10);
+            
+            // Set cursor position after the pasted text
+            const newCursorPos = start + numbers.length;
+            phoneField.setSelectionRange(newCursorPos, newCursorPos);
+          });
+          
+          // Handle input to ensure only numbers
+          phoneField.addEventListener('input', (e) => {
+            const input = e.target as HTMLInputElement;
+            const cursorPos = input.selectionStart || 0;
+            const inputValue = input.value;
+            
+            // Remove all non-numeric characters and limit to 10 digits
+            const newValue = inputValue.replace(/\D/g, '').slice(0, 10);
+            
+            // Calculate new cursor position
+            const diff = inputValue.length - newValue.length;
+            const newCursorPos = cursorPos - diff;
+            
+            // Update the value
+            input.value = newValue;
+            
+            // Restore cursor position
+            input.setSelectionRange(newCursorPos, newCursorPos);
+          });
+          
+          // Prevent drag and drop of text
+          phoneField.addEventListener('drop', (e) => {
+            e.preventDefault();
+            return false;
+          });
+          
+          // Prevent context menu (right-click) paste
+          phoneField.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            return false;
+          });
+        }
+        
+        // Validation for form submission
+        if (!phoneField?.value || !/^\d{10}$/.test(phoneField.value)) {
+          isValid = false;
+          phoneField?.classList.add("is-invalid");
+          // Add custom validation message
+          const errorMsg = phoneField?.parentElement?.querySelector('.invalid-feedback') as HTMLElement;
+          if (errorMsg) {
+            errorMsg.textContent = 'Please enter a valid 10-digit phone number';
+          }
         }
 
         if (isValid) {
@@ -262,66 +357,91 @@ export default function QuotationPage() {
                       </div>
                     </div>
                     <div className="col-6">
+                      {/* Are you an existing customer? */}
+                      <div className="mb-3">
+                        <label htmlFor="existingCustomer" className="form-label">
+                          Are you an existing customer?
+                        </label>
+                        <select className="form-select" id="existingCustomer" required>
+                          <option value="">Select</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                        <div className="invalid-feedback">Please specify if you are an existing customer.</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-4">
                       {/* Country */}
                       <div className="mb-3">
                         <label htmlFor="country" className="form-label">
                           Country
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="country"
-                          placeholder="Enter your country name"
+                        <select 
+                          className="form-select" 
+                          id="country" 
+                          value={selectedCountry}
+                          onChange={(e) => setSelectedCountry(e.target.value)}
                           required
-                        />
-                        <div className="invalid-feedback">Please enter your country name.</div>
+                        >
+                          <option value="">Select Country</option>
+                          {countries.map((country) => (
+                            <option key={country.isoCode} value={country.isoCode}>
+                              {country.name}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="invalid-feedback">Please select your country.</div>
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4">
                       {/* State */}
                       <div className="mb-3">
                         <label htmlFor="state" className="form-label">
                           State
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="state"
-                          placeholder="Enter your state name"
+                        <select 
+                          className="form-select" 
+                          id="state" 
+                          value={selectedState}
+                          onChange={(e) => setSelectedState(e.target.value)}
+                          disabled={!selectedCountry}
                           required
-                        />
-                        <div className="invalid-feedback">Please enter your state name.</div>
+                        >
+                          <option value="">Select State</option>
+                          {states.map((state) => (
+                            <option key={state.isoCode} value={state.isoCode}>
+                              {state.name}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="invalid-feedback">Please select your state.</div>
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-4">
                       {/* City */}
                       <div className="mb-3">
                         <label htmlFor="city" className="form-label">
                           City
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
+                        <select 
+                          className="form-select" 
                           id="city"
-                          placeholder="Enter your city name"
+                          disabled={!selectedState}
                           required
-                        />
-                        <div className="invalid-feedback">Please enter your city name.</div>
+                        >
+                          <option value="">Select City</option>
+                          {cities.map((city) => (
+                            <option key={city.name} value={city.name}>
+                              {city.name}
+                            </option>
+                          ))}
+                        </select>
+                        <div className="invalid-feedback">Please select your city.</div>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Are you an existing customer? */}
-                  <div className="mb-3">
-                    <label htmlFor="existingCustomer" className="form-label">
-                      Are you an existing customer?
-                    </label>
-                    <select className="form-select" id="existingCustomer" required>
-                      <option value="">Select</option>
-                      <option value="Yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
-                    <div className="invalid-feedback">Please specify if you are an existing customer.</div>
                   </div>
 
                   {/* Additional Information */}
