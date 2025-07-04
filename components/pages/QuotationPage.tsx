@@ -357,7 +357,7 @@ export default function QuotationPage() {
                   
                   <div>
                     <h6>Office</h6>
-                    <p>22 Cradle, EDII,</p>
+                    <p>11 Cradle, EDII,</p>
                     <p>Near Bhat Circle</p>
                     <p>Gandhinagar - Ahmedabad Highway</p>
                     <p>Ahmedabad, Gujarat</p>

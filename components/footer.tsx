@@ -64,7 +64,7 @@ export default function Footer() {
                 <p>
                   <b>WebEarl Technologies Pvt Ltd.</b>
                   <br />
-                  22 Cradle, EDII,
+                  11 Cradle, EDII,
                   <br />
                   Gandhinagar - Ahmedabad Rd,
                   <br />
