@@ -161,10 +161,10 @@ const PortfolioPage = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/betting-portfolio.png" alt="Betting App" width={400} height={300} />
+                  <Image src="/img/portfolio/ChemBizZ.png" alt="Betting App" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    Your ultimate chemical sourcing & selling platform.
+                    ChemBizZ is a modern B2B chemical marketplace designed to simplify chemical procurement, streamline transactions, and foster direct connections between buyers and suppliers across the globe
                     </p>
                     <br />
                     <b>Technology:</b>

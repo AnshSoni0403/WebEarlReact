@@ -67,6 +67,15 @@ const industries = [
 			"Epic IT Solutions for Fantasy Games: Webearl Technologies' Cutting-Edge Innovations",
 	},
 	{
+		key: "Mobile Games",
+		name: "Mobile Games",
+		description:
+			"Webearl Technologies delivers cutting-edge mobile game development solutions designed to captivate players and drive engagement. We create high-performance games across genres—from casual puzzles to intense multiplayer action titles. Our services include game design, development, UI/UX, testing, and post-launch support tailored to your vision. We bring your game ideas to life with immersive graphics and seamless gameplay. Our mobile game solutions are optimized for both iOS and Android, ensuring wide reach, high retention, and a memorable player experience.",
+		image: "/img/mobile_games.png",
+		heading:
+			"Mobile Game Development Solutions That Engage and Entertain",
+	},
+	{
 		key: "chemical",
 		name: "Chemical",
 		description:
