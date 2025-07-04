@@ -172,7 +172,7 @@ const AboutPage = () => {
             </div>
             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-5">
               <div className="callto-action-btn">
-                <Link href="/contact">Hire us</Link>
+                <Link href="/hiring">Hire us</Link>
               </div>
             </div>
           </div>
