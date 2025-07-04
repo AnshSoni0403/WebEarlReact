@@ -252,6 +252,7 @@ export default function Header() {
                     display: 'block',
                     width: '100%',
                     height: '100%',
+                    marginTop: '10px',
                     lineHeight: 1
                   }}>{'>'}</Link>
                 </button>
