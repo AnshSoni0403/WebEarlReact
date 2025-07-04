@@ -207,7 +207,7 @@ const DigitalMarketingPage = () => {
                       Tell your story & attract more customers with sales-driving content marketing strategies.</b> Traditional advertising and marketing campaigns don't produce the results they once did. Today's consumer has a library of information at their fingertips—easily accessible from their laptop or smartphone.
                     </p>
                     <p style={{ marginBottom: '15px', lineHeight: '1.6' }}>
-                      The future of marketing is creating content that is genuinely valuable to your prospects. You want to create content that helps them make better decisions and that establishes your company as THE authority in the process. Do it right and you'll find your website magically appearing on the first page of Google for relevant <b>keyword searches.</b>
+                      The future of marketing is creating content that is genuinely valuable to your prospects. You want to create content that helps them make better decisions and that establishes your company as THE authority in the process. Do it right and you'll find your <Link href="/web-application-development">website</Link> magically appearing on the first page of Google for relevant <b>keyword searches.</b>
                     </p>
                     <p style={{ lineHeight: '1.6' }}>
                       Your prospects will market and build your business for you by sharing your content with others. Content marketing is arguably the most cost-effective way to grow your business and build your brand.

@@ -152,7 +152,7 @@ const PortfolioCarousel = () => {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="portfolio-button-area">
                 <div className="section-button">
-                  <a href="/portfolio">view more</a>
+                  <a href="/portfolio">View more</a>
                 </div>
               </div>
             </div>
