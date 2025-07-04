@@ -102,7 +102,34 @@ const PortfolioPage = () => {
               </div>
             </div>
 
-            {/* single portfolio - Betting App */}
+            {/* single portfolio - WayOut */}
+            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+              <div className="single-portfolio">
+                <div className="portfolio-image">
+                  <Image src="/img/portfolio/Way out.png" alt="WayOut" width={400} height={300} />
+                  <div className="portfolio-content">
+                    <p>
+                    A zombie survival game set in a locked-down college where you fight your way floor-by-floor to escape the walking dead.
+                    </p>
+                    <br />
+                    <b>Technology:</b>
+                    <br />
+                    Web : ReactJs
+                    <br />
+                    Database : MongoDB
+                    <br />
+                    <Link href="/portfolio/wayout">
+                      View Details
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="portfolio-titile">
+                <h4>WayOut</h4>
+              </div>
+            </div>
+
+            {/* single portfolio - CricGem */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
@@ -163,7 +190,7 @@ const PortfolioPage = () => {
               </div>
             </div> */}
 
-            {/* single portfolio */}
+            {/* single portfolio NOWO */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
@@ -191,7 +218,34 @@ const PortfolioPage = () => {
               </div>
             </div>
 
-            {/* single portfolio */}
+             {/* single portfolio - Wordix */}
+             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
+              <div className="single-portfolio">
+                <div className="portfolio-image">
+                  <Image src="/img/portfolio/wordix.jpg" alt="Wordix" width={400} height={300} />
+                  <div className="portfolio-content">
+                    <p>
+                    An enchanting word search puzzle game that sharpens your mind and widens your vocabulary.
+                    </p>
+                    <br />
+                    <b>Technology:</b>
+                    <br />
+                    Web : ReactJs
+                    <br />
+                    Database : MongoDB
+                    <br />
+                    <Link href="/portfolio/word">
+                      View Details
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="portfolio-titile">
+                <h4>Wordix</h4>
+              </div>
+            </div>
+
+            {/* single portfolio LeChalo */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
@@ -220,14 +274,15 @@ const PortfolioPage = () => {
               </div>
             </div>
 
-            {/* single portfolio - Start Your Tour */}
+            {/* single portfolio - iCare */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/portfolio/Way out.png" alt="WayOut" width={400} height={300} />
+                  <Image src="/img/health-care-portfolio.png" alt="iCare" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    A zombie survival game set in a locked-down college where you fight your way floor-by-floor to escape the walking dead.
+                      iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book
+                      appointments through the app.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -236,73 +291,18 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/portfolio/wayout">
+                    <Link href="/icare">
                       View Details
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>WayOut</h4>
+                <h4>Icare</h4>
               </div>
             </div>
 
-            {/* single portfolio - Start Your Tour */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
-              <div className="single-portfolio">
-                <div className="portfolio-image">
-                  <Image src="/img/portfolio/wordix.jpg" alt="Wordix" width={400} height={300} />
-                  <div className="portfolio-content">
-                    <p>
-                    An enchanting word search puzzle game that sharpens your mind and widens your vocabulary.
-                    </p>
-                    <br />
-                    <b>Technology:</b>
-                    <br />
-                    Web : ReactJs
-                    <br />
-                    Database : MongoDB
-                    <br />
-                    <Link href="/portfolio/word">
-                      View Details
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="portfolio-titile">
-                <h4>Wordix</h4>
-              </div>
-            </div>
-
-            {/* single portfolio - Start Your Tour */}
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
-              <div className="single-portfolio">
-                <div className="portfolio-image">
-                  <Image src="/img/portfolio/XOXO.png" alt="XOXO" width={400} height={300} />
-                  <div className="portfolio-content">
-                    <p>
-                    Play, Compete & Conquer in Classic Tic-Tac-Toe!
-
-                    </p>
-                    <br />
-                    <b>Technology:</b>
-                    <br />
-                    Web : ReactJs
-                    <br />
-                    Database : MongoDB
-                    <br />
-                    <Link href="/portfolio/xoxo">
-                      View Details
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="portfolio-titile">
-                <h4>XOXO</h4>
-              </div>
-            </div>
-
-            {/* single portfolio - Start Your Tour */}
+            {/* single portfolio - MArkMe */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
@@ -330,15 +330,15 @@ const PortfolioPage = () => {
               </div>
             </div>
 
-            {/* single portfolio - iCare */}
+            {/* single portfolio - XOXO */}
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 default-margin-mt-sm margin-top-lb-30 margin-top-sb-30 portfolio-headmove">
               <div className="single-portfolio">
                 <div className="portfolio-image">
-                  <Image src="/img/health-care-portfolio.png" alt="iCare" width={400} height={300} />
+                  <Image src="/img/portfolio/XOXO.png" alt="XOXO" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book
-                      appointments through the app.
+                    Play, Compete & Conquer in Classic Tic-Tac-Toe!
+
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -347,14 +347,14 @@ const PortfolioPage = () => {
                     <br />
                     Database : MongoDB
                     <br />
-                    <Link href="/icare">
+                    <Link href="/portfolio/xoxo">
                       View Details
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>Icare</h4>
+                <h4>XOXO</h4>
               </div>
             </div>
 
