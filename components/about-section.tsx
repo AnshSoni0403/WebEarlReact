@@ -27,7 +27,7 @@ export default function AboutSection() {
                   Want to make your own app?
                 </p>
                 <div className="section-button">
-                  <Link href="#">Request Quote</Link>
+                  <Link href="/Quotation">Request Quote</Link>
                 </div>
                 <div className="e-pattern">
                   <Image src="/img/expertise/e-pattern.png" alt="" width={100} height={100} />
