@@ -26,7 +26,7 @@ export default function CareAppPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-booking.png"
+                  src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_2.png"
                   alt="Care App Booking"
                   className="screen-bg"
                   onError={(e) => {
@@ -39,7 +39,7 @@ export default function CareAppPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-reports.png"
+                  src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_3.png"
                   alt="Care App Reports"
                   className="screen-bg"
                   onError={(e) => {
@@ -52,7 +52,7 @@ export default function CareAppPortfolio() {
               <div className="phone-notch"></div>
               <div className="phone-screen">
                 <img
-                  src="/img/care-app-profile.png"
+                  src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_2.png"
                   alt="Care App Profile"
                   className="screen-bg"
                   onError={(e) => {
@@ -66,7 +66,7 @@ export default function CareAppPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               <div className="category-label">HEALTHCARE</div>
-              <h1 className="hero-title">Care</h1>
+              <h1 className="hero-title">I Care</h1>
               <p className="hero-description">
                 Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
                 collection at your convenience. With just a few taps on the app, users can schedule tests and receive
@@ -78,7 +78,7 @@ export default function CareAppPortfolio() {
                 <div className="phone-notch"></div>
                 <div className="phone-screen">
                   <img
-                    src="/img/care-app-home.png"
+                    src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_1.png"
                     alt="Care App Homepage"
                     className="screen-bg"
                     onError={(e) => {
@@ -110,8 +110,12 @@ export default function CareAppPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-home-feature.png"
+                      src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_3.png"
                       alt="Home Features"
+                      style={{
+                        width: '250px',
+                        height: 'auto',
+                      }}
                       className="screen-bg"
                       onError={(e) => {
                         e.target.src = "/placeholder.svg?height=348&width=168&text=Home"
@@ -123,7 +127,11 @@ export default function CareAppPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-booking-feature.png"
+                      src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_4.png"
+                      style={{
+                        width: '250px',
+                        height: 'auto',
+                      }}
                       alt="Booking Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -136,7 +144,11 @@ export default function CareAppPortfolio() {
                   <div className="phone-notch"></div>
                   <div className="phone-screen">
                     <img
-                      src="/img/care-app-reports-feature.png"
+                      src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_5.png"
+                      style={{
+                        width: '250px',
+                        height: 'auto',
+                      }}
                       alt="Reports Features"
                       className="screen-bg"
                       onError={(e) => {
@@ -283,8 +295,12 @@ export default function CareAppPortfolio() {
                     <div className="phone-notch"></div>
                     <div className="phone-screen">
                       <img
-                        src="/img/care-app-dashboard.png"
+                        src="/img/portfolio/newphotos/ICARE/Icare_WebEarl_2.png"
                         alt="Care App Dashboard"
+                        style={{
+                      width: '250px',
+                      height: 'auto',
+                    }}
                         className="screen-bg"
                         onError={(e) => {
                           e.target.src = "/placeholder.svg?height=584&width=284&text=Dashboard"
