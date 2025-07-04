@@ -12,9 +12,14 @@ import QuoteButton from '@/components/common/QuoteButton'
 
 
 export const metadata: Metadata = {
-  title: 'Ansh Krish Clone',
+  title: 'WebEarl Technologies',
   description: 'WebEarl Technologies Pvt Ltd',
   generator: 'v0.dev',
+  icons: {
+    icon: '/img/favicon.png',
+    apple: '/img/favicon.png',
+  },
+  manifest: '/site.webmanifest',
 }
 
 
