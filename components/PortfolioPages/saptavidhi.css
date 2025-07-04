@@ -60,23 +60,45 @@
       font-weight: 500;
       border: 1px solid #e2e8f0;
       transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .tag::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(238.45deg, #42d2ff 3.32%, #49e513 98.6%);
+      z-index: -1;
+      border-radius: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
     .tag:hover {
-      background: #ec4899;
       color: white;
-      border-color: #ec4899;
+      border-color: transparent;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(66, 210, 255, 0.2);
+    }
+
+    .tag:hover::before {
+      opacity: 1;
     }
 
     /* // .logo-container {
     //   width: 100px;
     //   height: 100px;
-    //   background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+    //   background: linear-gradient(238.45deg, #42d2ff 3.32%, #49e513 98.6%);
     //   border-radius: 20px;
     //   display: flex;
     //   align-items: center;
     //   justify-content: center;
-    //   box-shadow: 0 10px 30px rgba(236, 72, 153, 0.3);
+    //   box-shadow: 0 10px 30px rgba(66, 210, 255, 0.3);
     // } */
 
     .logo-text {
@@ -113,7 +135,7 @@
       height: 0;
       border-left: 30px solid transparent;
       border-right: 30px solid transparent;
-      border-bottom: 50px solid #ec4899;
+      border-bottom: 50px solid #42d2ff;
       transform: rotate(15deg);
     }
 
@@ -124,7 +146,7 @@
       height: 0;
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
-      border-bottom: 60px solid #be185d;
+      border-bottom: 60px solid #49e513;
       transform: rotate(-30deg);
     }
 
@@ -135,7 +157,7 @@
       height: 0;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
-      border-bottom: 40px solid #ec4899;
+      border-bottom: 40px solid #42d2ff;
       transform: rotate(45deg);
     }
 
@@ -146,7 +168,7 @@
       height: 0;
       border-left: 35px solid transparent;
       border-right: 35px solid transparent;
-      border-bottom: 55px solid #be185d;
+      border-bottom: 55px solid #49e513;
       transform: rotate(-15deg);
     }
 
@@ -274,7 +296,7 @@
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       padding: 40px;
       border-radius: 20px;
-      border-left: 5px solid #ec4899;
+      border-left: 5px solid #42d2ff;
       position: relative;
     }
 
