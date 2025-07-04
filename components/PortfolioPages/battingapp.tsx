@@ -324,48 +324,48 @@ export default function BattingApp() {
 
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">🛡️</div>
-                <h3>Secure Play</h3>
+                <div className="feature-icon"></div>
+                <h3>🛡️Secure Play</h3>
                 <p>
                 Play in a safe and fair environment with verified users, anti-cheat systems, and transparent scoring. CricGem is committed to ensuring integrity in every contest.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">⚡</div>
-                <h3>Quick Setup</h3>
+                <div className="feature-icon"></div>
+                <h3>⚡Quick Setup</h3>
                 <p>
                 Register easily, choose a match, and start building your fantasy team in just a few taps. CricGem is designed for smooth and fast onboarding.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🏆</div>
-                <h3>Live Leaderboards</h3>
+                <div className="feature-icon"></div>
+                <h3>🏆Live Leaderboards</h3>
                 <p>
                 Track your team's progress in real time with live score updates and rankings. See how your strategy plays out as matches unfold.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">👥</div>
-                <h3>Refer & Earn</h3>
+                <div className="feature-icon"></div>
+                <h3>👥Refer & Earn</h3>
                 <p>
                 Share CricGem with your friends using your referral code. As they join and participate, you unlock special benefits and exclusive in-app features.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📊</div>
-                <h3>Player Insights</h3>
+                <div className="feature-icon"></div>
+                <h3>📊Player Insights</h3>
                 <p>
                 Access useful stats, performance history, and expert tips to help you make better team decisions. CricGem supports informed, skillful play.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🎁</div>
-                <h3>Referral Rewards</h3>
+                <div className="feature-icon"></div>
+                <h3>🎁Referral Rewards</h3>
                 <p>New users receive a welcome benefit when they join CricGem. Invite friends and grow a network of fellow fans while enjoying added features along the way.
                 </p>
               </div>
