@@ -221,31 +221,34 @@ export default function NowoPortfolio() {
           <div className="revolution-content">
             <div className="revolution-grid">
               <div className="revolution-left">
-                {/* <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div> */}
-                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
+                <div className="revolution-badge">Fun Game</div>
+                <h2 className="revolution-title">Let the Xs and Os Begin!</h2>
                 <p className="revolution-description">
-                  Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
-                  healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
-                  complete safety.
+                Challenge your mind. Celebrate every win. Step into the glow of victory with XOXO!
+Strategic – Outthink your opponent every move.<br/>
+Vibrant – Play with dazzling neon visuals.<br/>
+Competitive – Feel the rush of head-to-head battles.<br/>
+Rewarding – Unlock upgrades and enjoy every win.
+
                 </p>
 
               </div>
 
               <div className="revolution-right">
                 <div className="floating-elements">
-                  <div className="floating-card card-1" style={{marginRight: '450px'}}>
+                  <div className="floating-card card-1" style={{marginRight: '550px'}}>
                     <div className="card-icon">🎮</div>
                     <div className="card-text">Classic Gameplay</div>
                   </div>
-                  <div className="floating-card card-2" style={{marginLeft: '450px'}}>
+                  <div className="floating-card card-2" style={{marginLeft: '550px'}}>
                     <div className="card-icon">🤖</div>
                     <div className="card-text">Smart AI Opponent</div>
                   </div>
-                  <div className="floating-card card-3" style={{marginRight: '450px'}}>
+                  <div className="floating-card card-3" style={{marginRight: '900px'}}>
                     <div className="card-icon">👥</div>
                     <div className="card-text">Multiplayer Fun</div>
                   </div>
-                  <div className="floating-card card-4">
+                  <div className="floating-card card-4" style={{marginLeft: '550px'}}>
                     <div className="card-icon">🏆</div>
                     <div className="card-text">Win Rewards</div>
                   </div>
