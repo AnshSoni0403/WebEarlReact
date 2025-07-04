@@ -434,7 +434,7 @@ export default function HiringPage() {
               execute your project with precision and efficiency. Get started today and receive the expert support you
               need to ensure success.
             </h5>
-            <a href="">TALK TO OUR EXPERT</a>
+            {/* <a href="">TALK TO OUR EXPERT</a> */}
           </div>
         </div>
       </section>
