@@ -139,9 +139,9 @@ const PortfolioCarousel = () => {
               <p>
                   We take pride in all of our work and our proud at what we do.
                   We view all of our websites as
-                  <a href="portfolio.html"> ongoing projects</a>, evolving as
+                  <a href="/portfolio"> ongoing projects</a>, evolving as
                   your business changes and grows. Below is a sample of some of
-                  <a href="portfolio.html"> our projects.</a>
+                  <a href="/portfolio"> our projects.</a>
                 </p>
                 <div className="p-pattern">
                   <img src="img/portfolio/p-pattern.png" alt="" />

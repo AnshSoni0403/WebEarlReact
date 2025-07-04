@@ -17,9 +17,17 @@ export default function RecentWorkSection() {
                 <h3>Our Recent Work</h3>
                 <p>
                   We take pride in all of our work and are proud of what we do.
-                  We view all of our websites as <Link href="/portfolio">ongoing projects</Link>,
+                  We view all of our websites as <Link 
+                    className={activeLink.startsWith('/portfolio') ? 'current' : ''} 
+                    href="/portfolio"
+                    style={{ whiteSpace: 'nowrap' }}
+                  >ongoing projects</Link>,
                   evolving as your business changes and grows. Below is a sample
-                  of some of <Link href="/portfolio">our projects.</Link>
+                  of some of <Link 
+                    className={activeLink.startsWith('/portfolio') ? 'current' : ''} 
+                    href="/portfolio"
+                    style={{ whiteSpace: 'nowrap' }}
+                  >our projects.</Link>
                 </p>
                 <div className="p-pattern">
                   <Image src="/img/portfolio/p-pattern.png" alt="pattern" width={160} height={12} />
