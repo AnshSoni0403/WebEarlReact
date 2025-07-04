@@ -74,7 +74,7 @@ export default function WayOut() {
               </div> */}
               <div className="main-image">
                 <img
-                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
+                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
                   alt="Wayout Gameplay"
                   className="screenshot-image"
                   onError={(e) => {
@@ -118,7 +118,7 @@ export default function WayOut() {
           <div className="screens-grid">
             <div className="screenshot-container">
               <img
-                src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
+                src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
                 alt="Wayout Gameplay 1"
                 className="screenshot-image"
                 onError={(e) => {
