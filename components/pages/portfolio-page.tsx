@@ -114,7 +114,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Web : Flutter
                     <br />
                     Database : MongoDB
                     <br />
@@ -141,7 +141,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Web : Flutter
                     <br />
                     Database : MongoDB
                     <br />
@@ -164,7 +164,7 @@ const PortfolioPage = () => {
                   <Image src="/img/betting-portfolio.png" alt="Betting App" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                    CricGem is a skill-based fantasy cricket app designed for fans to play, compete, and enjoy the game more deeply.
+                    Your ultimate chemical sourcing & selling platform.
                     </p>
                     <br />
                     <b>Technology:</b>
@@ -258,7 +258,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Mobile : Flutter
                     <br />
                     Database : MongoDB
                     <br />
@@ -315,7 +315,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Mobile : Flutter
                     <br />
                     Database : MongoDB
                     <br />
@@ -343,7 +343,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Mobile : Flutter
                     <br />
                     Database : MongoDB
                     <br />
@@ -371,7 +371,7 @@ const PortfolioPage = () => {
                     <br />
                     <b>Technology:</b>
                     <br />
-                    Web : ReactJs
+                    Mobile : Flutter
                     <br />
                     Database : MongoDB
                     <br />
