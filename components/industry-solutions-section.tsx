@@ -3,6 +3,22 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+const navLinkStyle = {
+  '.nav-link': {
+    color: '#6c757d',
+    '&:hover, &.active': {
+      color: '#000',
+      fontWeight: 'bold',
+      backgroundColor: 'transparent !important',
+      borderColor: 'transparent !important',
+    },
+    '&.active': {
+      color: '#000 !important',
+      fontWeight: 'bold !important',
+    },
+  },
+} as const;
 import "../styles/all.css";
 
 const industries = [
@@ -113,7 +129,23 @@ export default function IndustrySolutionsSection() {
 				<div className="row">
 					{/* Menu Column */}
 					<div className="col-md-3 col-12">
-						<div className="category-menu-section h-100">
+						<div className="category-menu-section h-100" style={navLinkStyle}>
+                  <style jsx>{`
+                    .nav-link {
+                      color: #6c757d;
+                      transition: all 0.2s ease;
+                    }
+                    .nav-link:hover, .nav-link.active {
+                      color: #000 !important;
+                      font-weight: bold !important;
+                      background-color: transparent !important;
+                      border-color: transparent !important;
+                    }
+                    .nav-link.active {
+                      color: #000 !important;
+                      font-weight: bold !important;
+                    }
+                  `}</style>
 							<ul
 								className="nav flex-column align-items-start nav-pills"
 								id="v-pills-tab"
