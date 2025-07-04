@@ -352,8 +352,8 @@ export default function Lechalo() {
 
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">🎯</div>
-                <h3>Multi-Vehicle Delivery Support</h3>
+                
+                <h3>🎯Multi-Vehicle Delivery Support</h3>
                 <p>
                 Le Chalo offers flexible delivery options with 2-wheelers, 3-wheelers, and 4-wheelers to suit every parcel's size and weight. Whether it’s a quick city drop or an inter-city shipment, we’ve got you covered.
 
@@ -361,8 +361,8 @@ export default function Lechalo() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🎨</div>
-                <h3>Live Bidding System for Drivers</h3>
+                
+                <h3>🎨Live Bidding System for Drivers</h3>
                 <p>
                 Drivers can bid on available delivery requests in real-time, allowing users to get competitive rates. This creates a win-win environment where deliveries are faster and more cost-effective.
 
@@ -370,8 +370,8 @@ export default function Lechalo() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🤖</div>
-                <h3>Dual User Roles – Driver & Sender</h3>
+                
+                <h3>🤖Dual User Roles – Driver & Sender</h3>
                 <p>
                 Whether you're sending a package or picking one up, Le Chalo allows easy profile setup for both users and drivers. This dual flexibility streamlines the entire logistics process.
 
@@ -380,8 +380,8 @@ export default function Lechalo() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🔍</div>
-                <h3>End-to-End Data Security
+                
+                <h3>🔍End-to-End Data Security
                 </h3>
                 <p>
                 All user and delivery data is encrypted, ensuring complete privacy and protection throughout the app experience. Le Chalo follows strict security protocols to safeguard your personal information.
@@ -390,8 +390,8 @@ export default function Lechalo() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📱</div>
-                <h3>Clean, Responsive UI/UX</h3>
+                
+                <h3>📱Clean, Responsive UI/UX</h3>
                 <p>
                 The app’s sleek and minimalist interface is designed for ease of use by everyone — from tech-savvy users to first-time app users. Its responsive performance ensures smooth navigation and quick task execution.
 
@@ -399,8 +399,8 @@ export default function Lechalo() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">💡</div>
-                <h3>All-in-One Super App</h3>
+                
+                <h3>💡All-in-One Super App</h3>
                 <p>
                 Originally launched for ride-sharing, Le Chalo now offers everything from parcel delivery to taxi bookings and shuttle services. It’s a one-stop app tailored for both logistics and travel needs.
 
