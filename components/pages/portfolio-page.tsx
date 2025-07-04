@@ -152,7 +152,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="portfolio-titile">
-                <h4>CricGem</h4>
+                <h4>CricGEM</h4>
               </div>
             </div>
 
@@ -309,8 +309,8 @@ const PortfolioPage = () => {
                   <Image src="/img/health-care-portfolio.png" alt="iCare" width={400} height={300} />
                   <div className="portfolio-content">
                     <p>
-                      iCare offers diagnostic report services with doorstep lab visits, allowing users to easily book
-                      appointments through the app.
+                    Book Lab Tests From the comfort of your home. One-stop app for safe, home-based lab test bookings and digital report delivery.
+
                     </p>
                     <br />
                     <b>Technology:</b>

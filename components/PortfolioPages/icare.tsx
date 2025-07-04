@@ -66,11 +66,10 @@ export default function CareAppPortfolio() {
           <div className="hero-content">
             <div className="hero-left">
               <div className="category-label">HEALTHCARE - E Diagnostics</div>
-              <h1 className="hero-title">I Care</h1>
+              <h1 className="hero-title">ICare</h1>
               <p className="hero-description">
-                Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample
-                collection at your convenience. With just a few taps on the app, users can schedule tests and receive
-                diagnostic reports without stepping outside.
+              I Care is a user-friendly health diagnostics app that eliminates the need to physically visit medical laboratories. From selecting a nearby lab and booking tests to verifying appointments and receiving digital reports, I Care simplifies the testing experience by bringing healthcare directly to your doorstep.
+
               </p>
             </div>
             <div className="hero-right">
@@ -98,10 +97,8 @@ export default function CareAppPortfolio() {
           <div className="about-content">
             <h2 className="section-title">About Project</h2>
             <p className="about-description">
-              Care is a comprehensive healthcare platform that revolutionizes diagnostic testing by bringing lab
-              services directly to your doorstep. Our platform simplifies diagnostic test bookings with an easy-to-use
-              interface, partnerships with NABL-accredited labs, and certified technicians who follow strict safety
-              protocols.
+            The I Care app is designed to offer convenience, security, and efficiency in medical diagnostics. Users can choose a nearby lab, select their required tests for themselves or family members, and book appointments directly through the app. The lab then dispatches a professional to the patient’s home for sample collection, verified through OTP-based security. Test results are uploaded by the lab on a dedicated web portal and automatically delivered to users in PDF format via the app.
+
             </p>
 
             <div className="features-showcase">
@@ -163,58 +160,59 @@ export default function CareAppPortfolio() {
                 <h3 className="features-title">Features</h3>
 
                 <div className="feature-item">
+                  <div className="feature-icon">📍</div>
+                  <div className="feature-content">
+                    <h3>Nearby Lab Selection</h3>
+                    <p>Locate and select nearby labs using GPS integration for convenience and accuracy.</p>
+                  </div>
+                </div>
+
+                <div className="feature-item">
+                  <div className="feature-icon">🧪</div>
+                  <div className="feature-content">
+                    <h3>Easy Test Booking</h3>
+                    <p>Book health tests effortlessly for yourself or your family members through a seamless interface.</p>
+                  </div>
+                </div>
+
+                <div className="feature-item">
+                  <div className="feature-icon">✅ </div>
+                  <div className="feature-content">
+                    <h3>Secure OTP Verification</h3>
+                    <p>Ensure safety and authentication with OTP-based appointment confirmations.</p>
+                  </div>
+                </div>
+
+                <div className="feature-item">
                   <div className="feature-icon">🏠</div>
                   <div className="feature-content">
-                    <h3>Doorstep Sample Collection</h3>
-                    <p>Schedule lab tests from home with certified technicians visiting at your convenience</p>
+                    <h3>Home Sample Collection</h3>
+                    <p>Get your samples collected from the comfort of your home without any hassle.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📱</div>
+                  <div className="feature-icon">📄</div>
                   <div className="feature-content">
-                    <h3>Easy Booking Interface</h3>
-                    <p>Simple and intuitive app design for seamless test booking and scheduling</p>
+                    <h3>Instant Digital Reports</h3>
+                    <p>Receive lab reports directly on the app in secure, downloadable PDF format.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">🔬</div>
+                  <div className="feature-icon">🧾</div>
                   <div className="feature-content">
-                    <h3>NABL-Accredited Labs</h3>
-                    <p>Trusted partnerships with certified labs ensuring accurate and reliable test results</p>
+                    <h3>Order History Tracking</h3>
+                    <p>View your test order history and access past reports anytime, anywhere.</p>
                   </div>
                 </div>
 
                 <div className="feature-item">
-                  <div className="feature-icon">📊</div>
+                  <div className="feature-icon">👤</div>
                   <div className="feature-content">
-                    <h3>Digital Reports</h3>
-                    <p>Instant access to test results with downloadable digital reports and tracking</p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon">🎯</div>
-                  <div className="feature-content">
-                    <h3>Personalized Recommendations</h3>
-                    <p>AI-driven test suggestions based on age, lifestyle, and medical history</p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon">📦</div>
-                  <div className="feature-content">
-                    <h3>Health Packages</h3>
-                    <p>Curated health checkup packages for comprehensive wellness monitoring</p>
-                  </div>
-                </div>
-
-                <div className="feature-item">
-                  <div className="feature-icon">👨‍⚕️</div>
-                  <div className="feature-content">
-                    <h3>Trained Professionals</h3>
-                    <p>Certified phlebotomists following strict hygiene and safety protocols</p>
+                    <h3>Complete Profile Management</h3>
+                    <p> Manage your profile details, addresses, and health records in one place.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -228,14 +226,36 @@ export default function CareAppPortfolio() {
             <div className="revolution-grid">
               <div className="revolution-left">
                 <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div>
-                <h2 className="revolution-title">Bringing Lab to Your Living Room</h2>
+                <h2 className="revolution-title">Your Lab at Your Doorstep</h2>
                 <p className="revolution-description">
                   Gone are the days of waiting in long queues at diagnostic centers. Care transforms your home into a
                   healthcare hub where professional medical services come to you, ensuring comfort, convenience, and
                   complete safety.
                 </p>
+                <div className="revolution-features">
+                  <div className="mini-feature">
+                    <span className="mini-icon"></span>
+                    <span>Smart – Navigate tests and labs with intelligent filtering
+                    </span>
+                  </div>
+                  <div className="mini-feature">
+                    <span className="mini-icon"></span>
+                    <span>Secure – OTP-enabled bookings keep your data protected
+                    </span>
+                  </div>
+                  <div className="mini-feature">
+                    <span className="mini-icon"></span>
+                    <span>Simple – Smooth user interface for stress-free usage
+                    </span>
+                  </div>
+                  <div className="mini-feature">
+                    <span className="mini-icon"></span>
+                    <span>Connected – Syncs users, labs, and results through one platform
 
-                {/* <div className="revolution-stats">
+                    </span>
+                  </div>
+                </div> */}
+                           {/* <div className="revolution-stats">
                   <div className="stat-item">
                     <div className="stat-number">50K+</div>
                     <div className="stat-label">Tests Completed</div>
