@@ -65,7 +65,7 @@ export default function CareAppPortfolio() {
 
           <div className="hero-content">
             <div className="hero-left">
-              <div className="category-label">HEALTHCARE</div>
+              <div className="category-label">HEALTHCARE - E Diagnostics</div>
               <h1 className="hero-title">I Care</h1>
               <p className="hero-description">
                 Hassle-Free Health Checkups at Your Doorstep. Care brings healthcare home by offering lab sample

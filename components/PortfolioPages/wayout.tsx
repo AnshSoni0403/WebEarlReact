@@ -31,8 +31,8 @@ export default function WayOut() {
 
               </p>
               <div className="project-tags">
-              <span className="tag">Zombie Game</span>
               <span className="tag">Action Game</span>
+              <span className="tag">Zombie Game</span>
               <span className="tag">Survival</span>
               <span className="tag">Horror</span>
               <span className="tag">Shooter</span>
@@ -72,22 +72,15 @@ export default function WayOut() {
               {/* <div className="floating-logo">
                 <div className="floating-logo-text">WayOut</div>
               </div> */}
-              <div className="mobile-mockup">
-                <div className="mobile-frame">
-                  <div className="mobile-speaker"></div>
-                  <div className="mobile-camera"></div>
-                  <div className="mobile-screen">
-                    <img
-                      src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
-                      alt="Wayout Homepage"
-                      className="screen-image"
-                      onError={(e) => {
-                        e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Homepage"
-                      }}
-                    />
-                  </div>
-                  <div className="mobile-home-button"></div>
-                </div>
+              <div className="main-image">
+                <img
+                  src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_1.png"
+                  alt="Wayout Gameplay"
+                  className="screenshot-image"
+                  onError={(e) => {
+                    e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Gameplay"
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -123,58 +116,31 @@ export default function WayOut() {
           </div>
 
           <div className="screens-grid">
-            <div className="mobile-mockup-grid large">
-              <div className="mobile-frame">
-                <div className="mobile-speaker"></div>
-                <div className="mobile-camera"></div>
-                <div className="mobile-screen">
-                  <img
-                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
-                    alt="Profile Discovery"
-                    className="screen-image"
-                    onError={(e) => {
-                      e.target.src = "/placeholder.svg?height=400&width=700&text=Profile+Discovery"
-                    }}
-                  />
-                </div>
-                <div className="mobile-home-button"></div>
-              </div>
-            </div>
-
-            <div className="mobile-mockup-grid" style={{ marginLeft: '120px' }}>
-              <div className="mobile-frame">
-                <div className="mobile-speaker"></div>
-                <div className="mobile-camera"></div>
-                <div className="mobile-screen">
-                  <img
-                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_3.png"
-                    alt="Smart Matching"
-                    className="screen-image"
-                    onError={(e) => {
-                      e.target.src = "/placeholder.svg?height=400&width=700&text=Smart+Matching"
-                    }}
-                  />
-                </div>
-                <div className="mobile-home-button"></div>
-              </div>
-            </div>
-
-            <div className="mobile-mockup-grid" style={{ marginLeft: '60px' }}>
-              <div className="mobile-frame">
-                <div className="mobile-speaker"></div>
-                <div className="mobile-camera"></div>
-                <div className="mobile-screen">
-                  <img
-                    src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_4.png"
-                    alt="Secure Communication"
-                    className="screen-image"
-                    onError={(e) => {
-                      e.target.src = "/placeholder.svg?height=400&width=700&text=Secure+Communication"
-                    }}
-                  />
-                </div>
-                <div className="mobile-home-button"></div>
-              </div>
+            <div className="screenshot-container">
+              <img
+                src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_2.png"
+                alt="Wayout Gameplay 1"
+                className="screenshot-image"
+                onError={(e) => {
+                  e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Gameplay+1"
+                }}
+              />
+              <img
+                src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_3.png"
+                alt="Wayout Gameplay 2"
+                className="screenshot-image"
+                onError={(e) => {
+                  e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Gameplay+2"
+                }}
+              />
+              <img
+                src="/img/portfolio/newphotos/WayOut/WayOut_WebEarl_4.png"
+                alt="Wayout Gameplay 3"
+                className="screenshot-image"
+                onError={(e) => {
+                  e.target.src = "/placeholder.svg?height=400&width=700&text=Wayout+Gameplay+3"
+                }}
+              />
             </div>
           </div>
         </div>
