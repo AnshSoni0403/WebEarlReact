@@ -1,11 +1,17 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa";
-import { Country, State, City } from 'country-state-city';
-import Header from '../header';
-import Footer from '../footer';
-import CallToAction from "../call-to-action";
+"use client"
+
+"use client"
+
+"use client"
+
+import { useEffect, useState, FormEvent } from "react"
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaBehance, FaDribbble, FaPinterest } from "react-icons/fa"
+import { Country, State, City } from 'country-state-city'
+import Header from '../header'
+import Footer from '../footer'
+import CallToAction from "../call-to-action"
 import "../styles/all.css"
 
 export default function QuotationPage() {
@@ -71,156 +77,131 @@ export default function QuotationPage() {
     })
 
     // Form validation and submission
-    const callbackForm = document.getElementById("callbackForm")
+    const callbackForm = document.getElementById("callbackForm") as HTMLFormElement | null;
+    
     if (callbackForm) {
-      callbackForm.addEventListener("submit", function (e) {
-        e.preventDefault() // Prevent form from submitting normally
-
-        const form = this as HTMLFormElement
-        const formControls = form.querySelectorAll(".form-control, .form-select")
-
-        let isValid = true
+      // Add phone number validation
+      const phoneField = document.getElementById("phoneNumber") as HTMLInputElement | null;
+      
+      // Allow only numbers in phone field
+      phoneField?.addEventListener('input', (e) => {
+        const input = e.target as HTMLInputElement;
+        input.value = input.value.replace(/\D/g, '').slice(0, 10);
+      });
+      
+      // Handle form submission
+      const handleSubmit = async (e: SubmitEvent) => {
+        e.preventDefault();
+        const form = e.target as HTMLFormElement;
+        const formControls = form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>(".form-control, .form-select, textarea");
+        let isValid = true;
 
         // Reset all previous validation states
         formControls.forEach((control) => {
-          control.classList.remove("is-invalid")
-          control.classList.add("is-valid")
-        })
+          control.classList.remove("is-invalid");
+          control.classList.remove("is-valid");
+        });
 
-        // Validate each field
+        // Validate each required field
         formControls.forEach((control) => {
-          const input = control as HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-          if (control.hasAttribute("required") && !input.value.trim()) {
-            isValid = false
-            control.classList.add("is-invalid")
+          if (control.hasAttribute("required") && !control.value.trim()) {
+            isValid = false;
+            control.classList.add("is-invalid");
+          } else if (control.hasAttribute("required")) {
+            control.classList.add("is-valid");
           }
-        })
+        });
 
-        // Validate email field separately for format
-        const emailField = document.getElementById("emailAddress") as HTMLInputElement
+        // Validate email field format
+        const emailField = form.querySelector<HTMLInputElement>("#emailAddress");
         if (emailField?.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
-          isValid = false
-          emailField.classList.add("is-invalid")
-        }
-
-        // Phone number field validation and input restriction
-        const phoneField = document.getElementById("phoneNumber") as HTMLInputElement
-        
-        // Prevent any non-numeric input
-        if (phoneField) {
-          // Set inputmode to numeric to show numeric keyboard on mobile
-          phoneField.setAttribute('inputmode', 'numeric');
-          
-          // Handle paste event to clean any pasted content
-          phoneField.addEventListener('paste', (e) => {
-            e.preventDefault();
-            const text = (e.clipboardData || (window as any).clipboardData).getData('text');
-            const numbers = text.replace(/\D/g, '');
-            const currentValue = phoneField.value;
-            const start = phoneField.selectionStart || 0;
-            const end = phoneField.selectionEnd || 0;
-            
-            // Insert the numbers at cursor position
-            const newValue = currentValue.substring(0, start) + numbers + currentValue.substring(end);
-            // Keep only numbers and limit to 10 digits
-            phoneField.value = newValue.replace(/\D/g, '').slice(0, 10);
-            
-            // Set cursor position after the pasted text
-            const newCursorPos = start + numbers.length;
-            phoneField.setSelectionRange(newCursorPos, newCursorPos);
-          });
-          
-          // Handle input to ensure only numbers
-          phoneField.addEventListener('input', (e) => {
-            const input = e.target as HTMLInputElement;
-            const cursorPos = input.selectionStart || 0;
-            const inputValue = input.value;
-            
-            // Remove all non-numeric characters and limit to 10 digits
-            const newValue = inputValue.replace(/\D/g, '').slice(0, 10);
-            
-            // Calculate new cursor position
-            const diff = inputValue.length - newValue.length;
-            const newCursorPos = cursorPos - diff;
-            
-            // Update the value
-            input.value = newValue;
-            
-            // Restore cursor position
-            input.setSelectionRange(newCursorPos, newCursorPos);
-          });
-          
-          // Prevent drag and drop of text
-          phoneField.addEventListener('drop', (e) => {
-            e.preventDefault();
-            return false;
-          });
-          
-          // Prevent context menu (right-click) paste
-          phoneField.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-            return false;
-          });
-        }
-        
-        // Validation for form submission
-        if (!phoneField?.value || !/^\d{10}$/.test(phoneField.value)) {
           isValid = false;
-          phoneField?.classList.add("is-invalid");
-          // Add custom validation message
-          const errorMsg = phoneField?.parentElement?.querySelector('.invalid-feedback') as HTMLElement;
+          emailField.classList.add("is-invalid");
+        }
+        
+        // Validate phone number
+        if (phoneField && (!phoneField.value || !/^\d{10}$/.test(phoneField.value))) {
+          isValid = false;
+          phoneField.classList.add("is-invalid");
+          const errorMsg = phoneField.parentElement?.querySelector('.invalid-feedback') as HTMLElement;
           if (errorMsg) {
             errorMsg.textContent = 'Please enter a valid 10-digit phone number';
           }
         }
 
-        if (isValid) {
-          // Create an object to hold form data
-          const formData = {
-            access_key: "eae59eb7-b97f-42ef-b91c-fe683c9e3d09", // your Web3Forms access key
-            subject: "Request for Quotation",
-            from_name: (document.getElementById("fullName") as HTMLInputElement)?.value,
-            email: (document.getElementById("emailAddress") as HTMLInputElement)?.value,
-            message: `
-              Call Type: ${(document.getElementById("callType") as HTMLSelectElement)?.value}
-              Time for Callback: ${(document.getElementById("callbackTime") as HTMLSelectElement)?.value}
-              Nature of Enquiry: ${(document.getElementById("enquiryNature") as HTMLSelectElement)?.value}
-              Full Name: ${(document.getElementById("fullName") as HTMLInputElement)?.value}
-              Company Name: ${(document.getElementById("companyName") as HTMLInputElement)?.value || "N/A"}
-              Phone Number: ${(document.getElementById("phoneNumber") as HTMLInputElement)?.value}
-              Country: ${(document.getElementById("country") as HTMLInputElement)?.value}
-              State: ${(document.getElementById("state") as HTMLInputElement)?.value}
-              City: ${(document.getElementById("city") as HTMLInputElement)?.value}
-              Existing Customer: ${(document.getElementById("existingCustomer") as HTMLSelectElement)?.value}
-              Additional Information: ${(document.getElementById("additionalInfo") as HTMLTextAreaElement)?.value || "N/A"}
-          `,
-          }
+        if (!isValid) return;
 
-          // Send the form data using Fetch API
-          fetch("https://api.web3forms.com/submit", {
+        try {
+          // Prepare form data
+          const formData = new FormData(form);
+          const formDataObj: Record<string, any> = {};
+          
+          // Convert FormData to plain object
+          formData.forEach((value, key) => {
+            formDataObj[key] = value;
+          });
+          
+          // Add additional fields
+          formDataObj['subject'] = 'Request for Quotation';
+          formDataObj['message'] = `
+            Call Type: ${(document.getElementById("callType") as HTMLSelectElement)?.value}
+            Time for Callback: ${(document.getElementById("callbackTime") as HTMLSelectElement)?.value}
+            Nature of Enquiry: ${(document.getElementById("enquiryNature") as HTMLSelectElement)?.value}
+            Full Name: ${formDataObj['fullName'] || 'N/A'}
+            Company Name: ${formDataObj['companyName'] || 'N/A'}
+            Phone Number: ${formDataObj['phoneNumber'] || 'N/A'}
+            Country: ${(document.getElementById("country") as HTMLSelectElement)?.options[(document.getElementById("country") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
+            State: ${(document.getElementById("state") as HTMLSelectElement)?.options[(document.getElementById("state") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
+            City: ${(document.getElementById("city") as HTMLSelectElement)?.options[(document.getElementById("city") as HTMLSelectElement)?.selectedIndex]?.text || 'N/A'}
+            Existing Customer: ${formDataObj['existingCustomer'] || 'No'}
+            Additional Information: ${formDataObj['additionalInfo'] || 'N/A'}
+          `;
+          
+          // Set the recipient email
+          formDataObj['to_email'] = 'sindhav88@gmail.com';
+          
+          // Send the form data using Web3Forms
+          const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify(formData),
-          })
-            .then((response) => response.json())
-            .then((result) => {
-              if (result.success) {
-                alert("Your request has been submitted successfully!")
-                form.reset() // Clear the form
-                form.querySelectorAll(".is-valid").forEach((control) => {
-                  control.classList.remove("is-valid") // Reset validation states
-                })
-              } else {
-                alert("There was an error submitting your request. Please try again.")
-              }
-            })
-            .catch((error) => {
-              alert("There was an error submitting your request. Please try again.")
-            })
+            body: JSON.stringify({
+              ...formDataObj,
+              access_key: "eae59eb7-b97f-42ef-b91c-fe683c9e3d09"
+            }),
+          });
+          
+          const result = await response.json();
+          
+          if (result.success) {
+            alert("Your request has been submitted successfully!");
+            form.reset();
+            // Reset form state
+            setSelectedCountry('');
+            setSelectedState('');
+            setStates([]);
+            setCities([]);
+            // Reset validation states
+            form.querySelectorAll(".is-valid").forEach((control) => {
+              control.classList.remove("is-valid");
+            });
+          } else {
+            throw new Error(result.message || "Failed to submit form");
+          }
+        } catch (error) {
+          console.error("Error submitting form:", error);
+          alert("There was an error submitting your request. Please try again.");
         }
-      })
+      };
+      
+      // Add submit event listener
+      callbackForm.addEventListener('submit', handleSubmit);
+      
+      // Cleanup function
+      return () => {
+        callbackForm.removeEventListener('submit', handleSubmit);
+      };
     }
   }, [])
 

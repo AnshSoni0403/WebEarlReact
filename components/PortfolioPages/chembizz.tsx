@@ -39,10 +39,10 @@ export default function SYT() {
   const getScreenInfo = () => {
     const screens = {
       desktop: [
-        { title: "Homepage", description: "Clean and intuitive landing page with tour discovery" },
-        { title: "Tour Listings", description: "Comprehensive tour catalog with filters and search" },
-        { title: "Booking Process", description: "Streamlined booking flow with calendar integration" },
-        { title: "User Profile", description: "Personal dashboard for managing bookings and preferences" },
+        { title: "", description: "" },
+        { title: "", description: "" },
+        { title: "", description: "" },
+        { title: "", description: "" },
       ],
       tablet: [
         { title: "Tablet Homepage", description: "Optimized tablet experience with touch-friendly interface" },
@@ -117,10 +117,11 @@ export default function SYT() {
                 />
               </div>
               <h1 className="main-title">ChemBizz</h1>
-              <p className="main-subtitle"><b>Travel Website</b></p>
+              <p className="main-subtitle"><b>Chemical Marketplace</b></p>
               
               <p className="main-subtitle">
-              Start Your Tour is a digital travel-tech platform. that bridges the gap between travellers and travel agencies. We provide an all-in-one solution for trip customisation, package management, and booking operations, making travel planning seamless and efficient.
+              ChemBizZ is a modern B2B chemical marketplace designed to simplify chemical procurement, streamline transactions, and foster direct connections between buyers and suppliers across the globe. Built with a focus on usability, real-time communication, and complete transparency, ChemBizZ enables businesses to buy, sell, and grow efficiently in the chemical industry.
+
 
               </p>
             </div>
@@ -158,27 +159,7 @@ export default function SYT() {
                 <span>Desktop</span>
               </button>
 
-              {/* <button
-                className={`device-btn ${activeDevice === "tablet" ? "active" : ""}`}
-                onClick={() => setActiveDevice("tablet")}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="12" cy="18" r="1" fill="currentColor" />
-                </svg>
-                <span>Tablet</span>
-              </button> */}
-
-              {/* <button
-                className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
-                onClick={() => setActiveDevice("mobile")}
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
-                  <circle cx="12" cy="18" r="1" fill="currentColor" />
-                </svg>
-                <span>Mobile</span>
-              </button> */}
+             
             </div>
 
             {/* Carousel Container */}
@@ -295,33 +276,41 @@ export default function SYT() {
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>👥 User-Friendly Interface</h3>
-                  <p>
-                  The decent, easy to use, app experience provided by SYT, guarantees there are no problems navigating the app, whether you are a customer booking trips, or a services provider dealing with bookings.
-
-                  </p>
-                </div>
-
-                <div className="feature-item">
-                  <h3>🔔 Real-Time Update & Alerts</h3>
-                  <p>
-                  Users and vendors are instantaneously notified of booking, messages, changes and confirmations.
-                  </p>
-                </div>
-
-                <div className="feature-item">
-                  <h3>🎨 Customization Flexibility</h3>
-                  <p>
-                  Customers are able to order specialized packages, and sellers can simply design and adjust packages, hence the process is customized and streamlined.
-
-                  </p>
-                </div>
-
-                <div className="feature-item">
-                  <h3>🛡️ Safe & Clear deals
+                  <h3>👥 Live Inventory Access
                   </h3>
                   <p>
-                  This will guarantee a convenient, clear and safe system to both vendors and users when booking an event and paying.
+                  View and manage real-time stock availability from verified vendors globally, ensuring transparency and faster decisions.
+
+
+                  </p>
+                </div>
+
+                <div className="feature-item">
+                  <h3>🔔 Integrated Financial Tools
+                  </h3>
+                  <p>
+                  Seamlessly manage invoices, e-way bills, and payment terms with over 12,000k financial institution integrations.
+
+
+
+                  </p>
+                </div>
+
+                <div className="feature-item">
+                  <h3>🎨 Smart Chat & Quotation Engine</h3>
+                  <p>
+                  Engage in direct chats, receive or send instant quotations, and approve deals right from the dashboard.
+
+                  </p>
+                </div>
+
+                <div className="feature-item">
+                  <h3>🛡️ Procurement Lifecycle Tracking
+
+                  </h3>
+                  <p>
+                  From inquiry to delivery, every step of the buying process is visualized and tracked with clear status updates.
+
                   </p>
                 </div>
               </div>
@@ -337,44 +326,43 @@ export default function SYT() {
             <div className="features-grid">
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>🎯Vendor-Customer Direct Connection</h3>
+                <h3>🎯Live Global Inventory Access</h3>
                 <p>
-                Passing through intermediaries, the travellers do not need middlemen; they can talk and communicate with the confirmed local sellers and personalise the process of planning.
-
+                Enables faster procurement decisions and reduces risks of stockouts or delays by providing up-to-date inventory status.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>🗺️Clear Tour Details</h3>
+                <h3>🗺️Smart Chat & Instant Quotation System</h3>
                 <p>
-                Every touring itinerary is well-specified with itineraries, included/ excluded items, maps of localities, actual pictures, and true customer feedback, making users feel certain and consider their choices.
+                Direct, real-time communication between buyers and sellers with instant quotation approval.Eliminates the need for lengthy email chains, speeding up negotiation and closing of deals.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>🧩Flexible Travel Packages</h3>
+                <h3>🧩Integrated Financial & Compliance Tools
+                </h3>
                 <p>
-                Travellers can request, and vendors can build, fully personalised itineraries —  personal trips made easy.
-
+                Built-in invoicing, e-way bill generation, and 12,000k+ financial institution integrations.Simplifies post-deal formalities, ensuring a smooth financial and logistical workflow under a single platform.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>📲The All-in-One App experience</h3>
+                <h3>📲End-to-End Procurement Lifecycle Tracking</h3>
                 <p>
-                Finding a vendor, booking and paying everything takes place in the app- on both sides, the vendor and the user.
-
+                Visual tracking system from inquiry to delivery with real-time status updates.Enhances transparency, minimizes miscommunication, and helps stakeholders stay updated at all times.
                 </p>
               </div>
 
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>🎯Personalised Recommendations</h3>
+                <h3>🎯Verified Seller Compliance Documentation</h3>
                 <p>
-                The idea is to help users get suggestions based on their travel style — for example, recommending  journeys within the style of their travel, contemporary smartness, and thoughtful experience.
+                Easy access to GMP, cGMP, WHO certifications and legal documents.Builds trust and ensures buyers are sourcing only from compliant and quality-assured vendors.
+
 
                 
                 </p>
@@ -382,9 +370,11 @@ export default function SYT() {
 
               <div className="feature-card">
                 <div className="feature-icon"></div>
-                <h3>💡Intelligent Travel Aids</h3>
+                <h3>💡Flexible, Scalable Subscription Plans</h3>
                 <p>
-                Vendors have access to real-time analytics, reservation intelligence and trends data, whereas users can receive quick updates, filters, and saved trips.
+                Custom pricing models for Raw Materials, KSMs, Intermediates, and APIs. Offers cost-effective access tailored to the business size and specialization within the chemical industry.
+
+
 
                 </p>
               </div>
@@ -395,9 +385,10 @@ export default function SYT() {
         {/* CTA Section */}
         <div className="cta-section">
           <div className="cta-content">
-            <h2 className="cta-title">Connecting Explorers & Experience Creators</h2>
+            <h2 className="cta-title">Objective of the App</h2>
             <p className="cta-description">
-            Whether you're planning your next trip or offering unforgettable experiences, everything starts here!
+            The core objective of ChemBizZ is to revolutionize chemical commerce by providing a unified digital platform that connects verified buyers and sellers. From managing inquiries to generating e-way bills, ChemBizZ covers every step of the procurement cycle.
+
             </p>
           </div>
         </div>
