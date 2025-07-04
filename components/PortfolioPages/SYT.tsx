@@ -280,7 +280,7 @@ export default function SYT() {
 
               <div className="features-right">
                 <div className="feature-item">
-                  <h3>User-Friendly Interface</h3>
+                  <h3>👥 User-Friendly Interface</h3>
                   <p>
                   The decent, easy to use, app experience provided by SYT, guarantees there are no problems navigating the app, whether you are a customer booking trips, or a services provider dealing with bookings.
 
@@ -288,14 +288,14 @@ export default function SYT() {
                 </div>
 
                 <div className="feature-item">
-                  <h3>Real-Time Update & Alerts</h3>
+                  <h3>🔔 Real-Time Update & Alerts</h3>
                   <p>
                   Users and vendors are instantaneously notified of booking, messages, changes and confirmations.
                   </p>
                 </div>
 
                 <div className="feature-item">
-                  <h3>Customization Flexibility</h3>
+                  <h3>🎨 Customization Flexibility</h3>
                   <p>
                   Customers are able to order specialized packages, and sellers can simply design and adjust packages, hence the process is customized and streamlined.
 
@@ -303,7 +303,7 @@ export default function SYT() {
                 </div>
 
                 <div className="feature-item">
-                  <h3>Safe & Clear deals
+                  <h3>🛡️ Safe & Clear deals
                   </h3>
                   <p>
                   This will guarantee a convenient, clear and safe system to both vendors and users when booking an event and paying.
@@ -330,16 +330,16 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🗺️</div>
-                <h3>Clear Tour Details</h3>
+                <div className="feature-icon"></div>
+                <h3>🗺️Clear Tour Details</h3>
                 <p>
                 Every touring itinerary is well-specified with itineraries, included/ excluded items, maps of localities, actual pictures, and true customer feedback, making users feel certain and consider their choices.
                 </p>
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🧩</div>
-                <h3>Flexible Travel Packages</h3>
+                <div className="feature-icon"></div>
+                <h3>🧩Flexible Travel Packages</h3>
                 <p>
                 Travellers can request, and vendors can build, fully personalised itineraries —  personal trips made easy.
 
@@ -347,8 +347,8 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">📲</div>
-                <h3>The All-in-One App experience</h3>
+                <div className="feature-icon"></div>
+                <h3>📲The All-in-One App experience</h3>
                 <p>
                 Finding a vendor, booking and paying everything takes place in the app- on both sides, the vendor and the user.
 
@@ -356,8 +356,8 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">🎯</div>
-                <h3>Personalised Recommendations</h3>
+                <div className="feature-icon"></div>
+                <h3>🎯Personalised Recommendations</h3>
                 <p>
                 The idea is to help users get suggestions based on their travel style — for example, recommending  journeys within the style of their travel, contemporary smartness, and thoughtful experience.
 
@@ -366,8 +366,8 @@ export default function SYT() {
               </div>
 
               <div className="feature-card">
-                <div className="feature-icon">💡</div>
-                <h3>Intelligent Travel Aids</h3>
+                <div className="feature-icon"></div>
+                <h3>💡Intelligent Travel Aids</h3>
                 <p>
                 Vendors have access to real-time analytics, reservation intelligence and trends data, whereas users can receive quick updates, filters, and saved trips.
 
