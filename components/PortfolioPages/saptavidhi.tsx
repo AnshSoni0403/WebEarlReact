@@ -160,8 +160,7 @@ export default function SaptaVidhiPortfolio() {
 
             <div className="solutions-grid">
               <div className="solution-card">
-                <h3 className="solution-title">Preference-Based Matchmaking from the Start
-                </h3>
+                <h3 className="solution-title">🔍 Preference-Based Matchmaking from the Start</h3>
                 <p className="solution-description">
                 Upon login, users are prompted to fill in detailed partner preferences—such as caste, income, language, religion—so that their journey begins with matches that align closely with their expectations.
 
@@ -169,7 +168,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title"> Personalized Partner Recommendations
+                <h3 className="solution-title">💝 Personalized Partner Recommendations
                 </h3>
                 <p className="solution-description">
                 The platform intelligently curates profiles that match the user's stated preferences, helping users connect with genuinely compatible individuals.
@@ -178,7 +177,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Shortlist Without Sending a Request
+                <h3 className="solution-title">⭐ Shortlist Without Sending a Request
                 </h3>
                 <p className="solution-description">
                 Users can mark people they are interested in without taking immediate action. This feature allows space for thoughtful decisions and private tracking.
@@ -187,7 +186,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Reject and Reconnect Option                </h3>
+                <h3 className="solution-title">🔄 Reject and Reconnect Option                </h3>
                 <p className="solution-description">
                 If a user changes their mind after rejecting a profile, they can revisit it and send a connection request again—because second chances matter.
 
@@ -195,7 +194,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Mutual Chat with Online Status Visibility
+                <h3 className="solution-title">💬 Mutual Chat with Online Status Visibility
                 </h3>
                 <p className="solution-description">
                 Once two users accept each other’s requests, a secure chat feature is unlocked. Users can also see if the other person is currently online, making real-time conversations easier.
@@ -204,7 +203,7 @@ export default function SaptaVidhiPortfolio() {
               </div>
 
               <div className="solution-card">
-                <h3 className="solution-title">Advanced Fake Profile Detection
+                <h3 className="solution-title">🛡️ Advanced Fake Profile Detection
                 </h3>
                 <p className="solution-description">
                 The system monitors chat behavior and connection patterns. Profiles found to be suspicious or inactive are flagged and removed—ensuring user safety and authenticity.
