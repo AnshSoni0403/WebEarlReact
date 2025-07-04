@@ -227,7 +227,11 @@ export default function NowoPortfolio() {
                 {/* <div className="revolution-badge">🏥 HEALTHCARE REVOLUTION</div> */}
                 <h2 className="revolution-title">Ready to Twist Your Mind?</h2>
                 <p className="revolution-description">
-                Dive into Wordix and let the letters guide your way through wordy wonders.
+                Step into the world of Wordix, where every letter holds a secret and every word is a challenge waiting to be cracked. Sharpen your mind, test your vocabulary, and dive into a puzzle-packed adventure that’s as thrilling as it is brain-boosting.
+Can you find them all? Let the letters lead your way through a maze of wordy wonders!
+Every level gets tougher — are you smart enough to conquer them all?
+
+
                 </p>
 
                 {/* <div className="revolution-stats">
