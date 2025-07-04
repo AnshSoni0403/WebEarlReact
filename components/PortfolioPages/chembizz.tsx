@@ -12,7 +12,7 @@ export default function SYT() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   // Screen arrays for different devices
-  const desktopScreens = ["/img/portfolio/SYT/home.png", "/img/portfolio/newphotos/SYT/Web1.png", "/img/portfolio/newphotos/SYT/Web2.png", "/img/portfolio/newphotos/SYT/Web3.png"]
+  const desktopScreens = ["/img/portfolio/newphotos/chembizz/Chembizz_WebEarl_1.png", "/img/portfolio/newphotos/chembizz/Chembizz_WebEarl_2.png", "/img/portfolio/newphotos/chembizz/Chembizz_WebEarl_3.png", "/img/portfolio/newphotos/chembizz/Chembizz_WebEarl_4.png"]
 
   const tabletScreens = ["/img/SYTTab.png", "/img/SYTTabTours.png", "/img/SYTTabBooking.png", "/img/SYTTabProfile.png"]
 
@@ -92,13 +92,28 @@ export default function SYT() {
         <div className="hero-section">
           <div className="container">
             <div className="logo-section">
-              <div className="logo-icon">
+              <div style={{
+                width: '120px',
+                height: '120px',
+                margin: '0 auto 30px auto',
+                position: 'relative',
+                transition: 'all 0.3s ease',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}>
                 <Image
-                  src="/img/sytlogo.png"
-                  alt="Start Your Tour Logo"
-                  width={100}
-                  height={100}
-                  className="logo-image"
+                  src="/img/portfolio/newphotos/chembizz/LogoChemBizz.png"
+                  alt="ChemBizz Logo"
+                  width={120}
+                  height={120}
+                  style={{
+                    transition: 'all 0.3s ease',
+                    objectFit: 'contain',
+                    maxWidth: '100%',
+                    maxHeight: '100%',
+                    display: 'block'
+                  }}
                 />
               </div>
               <h1 className="main-title">ChemBizz</h1>
@@ -154,7 +169,7 @@ export default function SYT() {
                 <span>Tablet</span>
               </button> */}
 
-              <button
+              {/* <button
                 className={`device-btn ${activeDevice === "mobile" ? "active" : ""}`}
                 onClick={() => setActiveDevice("mobile")}
               >
@@ -163,7 +178,7 @@ export default function SYT() {
                   <circle cx="12" cy="18" r="1" fill="currentColor" />
                 </svg>
                 <span>Mobile</span>
-              </button>
+              </button> */}
             </div>
 
             {/* Carousel Container */}
