@@ -1,4 +1,4 @@
-import Header2 from "@/components/header2"
+import Header3 from "@/components/header3"
 import IndustrySolutionsSection from "@/components/industry-solutions-section"
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
@@ -18,7 +18,7 @@ import Footer from "@/components/footer"
 export default function HomePage() {
   return (
     <div>
-      <Header2 />
+      <Header3 />
       
       <HeroSection />
       <AboutSection />
