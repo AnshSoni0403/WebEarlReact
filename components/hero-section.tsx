@@ -47,8 +47,8 @@ export default function HeroSection() {
                     delay={1500}
                     duration={1200}
                   >
-                    <Link href="#" className="skill-btn">
-                      hire us
+                    <Link href="/hiring" className="skill-btn" style={{ textTransform: 'none' }}>
+                      Hire Us
                     </Link>
                     <div className="learnmore2">{/* YouTube link can be added here */}</div>
                   </AnimatedText>
