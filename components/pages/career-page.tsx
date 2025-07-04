@@ -235,6 +235,12 @@ export default function CareerPage() {
                 </div>
               </div>
               <div>
+                <h4 className="mb-0">Game Developer</h4>
+                <div>
+                  <p className="mb-0">0 - 2 Years | Bhat, Ahmedabad </p>
+                </div>
+              </div>
+              <div>
                 <h4 className="mb-0">UI/UX Graphics Designer</h4>
                 <div>
                   <p className="mb-0">0 - 2 Years | Bhat, Ahmedabad </p>
