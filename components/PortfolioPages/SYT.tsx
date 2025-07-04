@@ -321,8 +321,8 @@ export default function SYT() {
 
             <div className="features-grid">
               <div className="feature-card">
-                <div className="feature-icon">🎯</div>
-                <h3>Vendor-Customer Direct Connection</h3>
+                <div className="feature-icon"></div>
+                <h3>🎯Vendor-Customer Direct Connection</h3>
                 <p>
                 Passing through intermediaries, the travellers do not need middlemen; they can talk and communicate with the confirmed local sellers and personalise the process of planning.
 
