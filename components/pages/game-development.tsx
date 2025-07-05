@@ -39,8 +39,8 @@ const GameDevelopmentPage = () => {
         }}
       >
         <div className="blog-hero-banner-text">
-          <h1>Know more about Game Development</h1>
-          <p>The future of mobile is the future of online. It is how people access online content now.</p>
+          <h1>Know more about Mobile Game Development</h1>
+          <p>Every great game starts as a dream. We turn that dream into a playable reality.</p>
         </div>
       </div>
       
@@ -63,7 +63,7 @@ const GameDevelopmentPage = () => {
                 
                 {/* About Section */}
                 <div className="author-profile">
-                  <h3>About Game Development</h3>
+                  <h3>About Mobile Game Development</h3>
                   <div className="author-content">
                     <Image 
                       src="/img/game-side.png" 
@@ -73,8 +73,8 @@ const GameDevelopmentPage = () => {
                       className="img-fluid"
                       style={{ width: '100%', height: 'auto' }}
                     />
-                    <h4>Game Development</h4>
-                    <p>Mobility is the most disruptive innovation that enterprises are embracing today. Mobility empowers businesses to have access to business processes, customer requests, sales pipeline real-time & taking informed decisions on the move without having to be bound by desks. This immensely powerful innovation presents its own challenges whilst leveraging it to adapt to the current business processes. Having real time access to highly sensitive business information, besides its sheer power, can be risky as well, involving security threats.</p>
+                    <h4>Mobile Game Development</h4>
+                    <p>Every game built carries the weight of cost, time, and vision. These must be measured against innovation, engagement, and scalability. At WebEarl Technologies, we bring your game ideas to life with precision, creativity, and cutting-edge technology. We specialize in custom game development services tailored to your audience, genre, and monetization strategy—helping you level up in the gaming industry.</p>
                   </div>
                 </div>
                 
@@ -83,11 +83,14 @@ const GameDevelopmentPage = () => {
                   <h3>Technology</h3>
                   <div className="category-list">
                     <ul>
-                      <li>Android with JAVA & Kotlin</li>
-                      <li>iOS Swift</li>
-                      <li>Flutter</li>
-                      <li>React Native</li>
-                      <li>Xamarin</li>
+                    <li>Unity</li>
+<li>Unreal Engine</li>
+<li>Flutter</li>
+<li>Godot Engine</li>
+<li>Phaser</li>
+<li>Cocos2d-x</li>
+<li>Blender</li>
+<li>Firebase & Node.js</li>
                     </ul>
                   </div>
                 </div>
@@ -98,12 +101,15 @@ const GameDevelopmentPage = () => {
             <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
               <div className="right-side">
                 <div className="blog-post-heading">
-                  <h1>Game Development</h1>
+                  <h1>Mobile Game Development</h1>
                   <span className="publishe-date">With WebEarl Technologies Pvt Ltd</span>
                 </div>
                 
                 <div className="blog-body-content">
-                  <p>Mobile has come a long way from being just a communication channel to being an information channel. Advancement in communication technology and information technology has presented us with another channel for accessing real time information coming from every possible nook & cranny on the globe delivering web content, applications and real time connectivity with people & systems that hitherto were residing in silos.</p>
+                  <p>We are a trusted Game Development Company offering high-quality 2D/3D, mobile, desktop, and multiplayer games. Our expert developers and designers create thrilling gameplay mechanics, realistic graphics, and immersive storytelling. Whether you're a startup, indie developer, or an enterprise brand, our team delivers scalable, high-performance games across platforms. Let WebEarl Technologies Pvt. Ltd. turn your game concept into a digital reality. We help you stay ahead of the competition with innovative, scalable, and unforgettable gaming experiences. Contact us now to schedule your free consultation and game development demo!</p>
+                  <br/>
+                  <p>Every game built carries the weight of cost, time, and vision. These must be measured against innovation, engagement, and scalability. At WebEarl Technologies, we bring your game ideas to life with precision, creativity, and cutting-edge technology. We specialize in custom game development services tailored to your audience, genre, and monetization strategy—helping you level up in the gaming industry.
+                  </p>
                   
                   {/* Blog Image */}
                   <div className="blog-inner">
@@ -119,25 +125,40 @@ const GameDevelopmentPage = () => {
                   
                   {/* Android Application Section */}
                   <div className="blog-post-heading">
-                    <span className="publishe-date">Android Application</span>
+                    <span className="publishe-date">Mobile Game Development
+                    </span>
                   </div>
-                  <p>WebEarl's team of application developers have in-depth knowledge and substantial experience in leveraging the Software Development Kit (SDK) APIs, Android Native Development Kit (NDK), emulator, and debugging resources. It is with a command on Kotlin, Java, C, C++ HTML, and CSS that enables us to deliver innovative apps. They stay informed and updated with the new versions to support customers with creating next-generation solutions. Further, as an Android application development company, we are well versed in the practical app development approach. It is in-line with our objective to help businesses reach the widest audience and achieve maximum ROI.</p><br/>
+                  <p>Our mobile game developers build engaging iOS and Android games using cross-platform tools and native SDKs. From casual games to complex RPGs and strategy games, we create addictive user experiences with real-time performance optimization.</p><br/>
                   
                   {/* iOS Application Section */}
                   <div className="blog-post-heading">
-                    <span className="publishe-date">iOS Application</span>
+                    <span className="publishe-date">Unity 3D Game Development
+                    </span>
                   </div>
-                  <p>WebEarl's helps create engaging apps with its iOS Development focus. We cover the entire development cycle, right from the concept to distribution — it is with the creation of custom applications for iPhone and iPad. We serve customers across industries, ranging from banking, finance, media, logistics, Tourism, <a href='/ecommerce-development'>eCommerce</a>, <a href='/digital-marketing'>social media</a>, healthcare, and hospitality.</p><br/>
+                  <p>Our team specializes in Unity Game Engine to build cross-platform, high-quality games for mobile, desktop, web, and consoles. Unity is ideal for real-time multiplayer, 3D worlds, and interactive animations.</p><br/>
                   
                   {/* Cross-Platform Section */}
                   <div className="blog-post-heading">
-                    <span className="publishe-date">Cross-Platform Development</span>
+                    <span className="publishe-date">Educational & Simulation Games
+                    </span>
                   </div>
-                  <p>Multi-platform game development provides the user experience and functionality of native apps with the multi-platform compatibility of mobile web apps. This approach provides the best of both worlds and has been gaining a lot of acceptance due to the trade-offs with native development and mobile web approaches. In today’s dynamic marketplace where the future is unclear, cross-platform apps provide a middle ground to achieve success for your mobile strategy.</p>
+                  <p>Build interactive games for learning, training, and simulation purposes. Perfect for eLearning platforms, corporate training modules, and edutainment apps.
+                  </p><br/>
+
+                  <div className="blog-post-heading">
+                    <span className="publishe-date">Game Art & Animation
+
+                    </span>
+                  </div>
+                  <p>Our design team produces visually stunning 2D/3D art assets, animations, UI/UX, and VFX that bring your game world to life. We support both stylized and realistic art styles tailored to your brand.
+
+                  </p><br/>
                   
                  
                   
                 </div>
+
+                
               </div>
             </div>
           </div>
