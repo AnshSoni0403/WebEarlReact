@@ -39,7 +39,7 @@ const GameDevelopmentPage = () => {
         }}
       >
         <div className="blog-hero-banner-text">
-          <h1>Know more about Mobile Application Development</h1>
+          <h1>Know more about Game Development</h1>
           <p>The future of mobile is the future of online. It is how people access online content now.</p>
         </div>
       </div>
@@ -63,17 +63,17 @@ const GameDevelopmentPage = () => {
                 
                 {/* About Section */}
                 <div className="author-profile">
-                  <h3>About Mobile Application Development</h3>
+                  <h3>About Game Development</h3>
                   <div className="author-content">
                     <Image 
                       src="/img/blog/mobile_application_4.jpg" 
-                      alt="Mobile Application Development" 
+                      alt="Game Development" 
                       width={300} 
                       height={200}
                       className="img-fluid"
                       style={{ width: '100%', height: 'auto' }}
                     />
-                    <h4>Mobile Application Development</h4>
+                    <h4>Game Development</h4>
                     <p>Mobility is the most disruptive innovation that enterprises are embracing today. Mobility empowers businesses to have access to business processes, customer requests, sales pipeline real-time & taking informed decisions on the move without having to be bound by desks. This immensely powerful innovation presents its own challenges whilst leveraging it to adapt to the current business processes. Having real time access to highly sensitive business information, besides its sheer power, can be risky as well, involving security threats.</p>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const GameDevelopmentPage = () => {
             <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
               <div className="right-side">
                 <div className="blog-post-heading">
-                  <h1>Mobile Application Development</h1>
+                  <h1>Game Development</h1>
                   <span className="publishe-date">With WebEarl Technologies Pvt Ltd</span>
                 </div>
                 
@@ -108,8 +108,8 @@ const GameDevelopmentPage = () => {
                   {/* Blog Image */}
                   <div className="blog-inner">
                     <Image 
-                      src="/img/blog/mobile_application_1.jpg" 
-                      alt="Mobile Application Development" 
+                      src="/img/blog/game_development_1.jpg" 
+                      alt="Game Development" 
                       width={800} 
                       height={450}
                       className="img-fluid"
@@ -133,7 +133,7 @@ const GameDevelopmentPage = () => {
                   <div className="blog-post-heading">
                     <span className="publishe-date">Cross-Platform Development</span>
                   </div>
-                  <p>Multi-platform mobile application development provides the user experience and functionality of native apps with the multi-platform compatibility of mobile web apps. This approach provides the best of both worlds and has been gaining a lot of acceptance due to the trade-offs with native development and mobile web approaches. In today’s dynamic marketplace where the future is unclear, cross-platform apps provide a middle ground to achieve success for your mobile strategy.</p>
+                  <p>Multi-platform game development provides the user experience and functionality of native apps with the multi-platform compatibility of mobile web apps. This approach provides the best of both worlds and has been gaining a lot of acceptance due to the trade-offs with native development and mobile web approaches. In today’s dynamic marketplace where the future is unclear, cross-platform apps provide a middle ground to achieve success for your mobile strategy.</p>
                   
                  
                   
