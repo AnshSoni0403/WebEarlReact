@@ -32,7 +32,7 @@ const GameDevelopmentPage = () => {
       <div 
         className="blog-hero-banner" 
         style={{
-          backgroundImage: 'url(/img/blog/mobile_application_3.jpg)',
+          backgroundImage: 'url(/img/game-banner.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -66,7 +66,7 @@ const GameDevelopmentPage = () => {
                   <h3>About Game Development</h3>
                   <div className="author-content">
                     <Image 
-                      src="/img/blog/mobile_application_4.jpg" 
+                      src="/img/game-side.png" 
                       alt="Game Development" 
                       width={300} 
                       height={200}
@@ -108,7 +108,7 @@ const GameDevelopmentPage = () => {
                   {/* Blog Image */}
                   <div className="blog-inner">
                     <Image 
-                      src="/img/blog/game_development_1.jpg" 
+                      src="/img/game.jpg" 
                       alt="Game Development" 
                       width={800} 
                       height={450}
